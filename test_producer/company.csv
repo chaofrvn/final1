@@ -1,0 +1,1612 @@
+,organCode,ticker,comGroupCode,icbCode,organTypeCode,comTypeCode,organName,organShortName
+0,0104498100,VVS,UpcomIndex,3353,DN,CT,Công ty Cổ phần Đầu tư Phát triển Máy Việt Nam,Đầu tư Phát triển Máy Việt Nam
+1,0108720772,VMK,UpcomIndex,7535,DN,CT,Công ty Cổ Phần Vimarko,Vimarko
+2,0109204756,HIO,UpcomIndex,7535,DN,CT,Công ty Cổ Phần Helio Energy,Helio Energy
+3,0313140100,SBG,VNINDEX,2727,DN,CT,Công ty Cổ Phần Tập Đoàn Cơ Khí Công Nghệ Cao Siba,Tập Đoàn Cơ Khí Công Nghệ Cao Siba
+4,0700519785,THM,UpcomIndex,3763,DN,CT,Công ty Cổ phần Tứ Hải Hà Nam,Tứ Hải Hà Nam
+5,10659,HSV,UpcomIndex,1757,DN,CT,Công ty Cổ phần Tập đoàn HSV Việt Nam,Gang Thép Hà Nội
+6,10669,CST,UpcomIndex,1771,DN,CT,Công ty Cổ phần Than Cao Sơn - TKV,Than Cao Sơn - TKV
+7,10708,BVL,UpcomIndex,8637,DN,CT,Công ty Cổ phần BV Land,BV Land
+8,10709,SGI,UpcomIndex,3763,DN,CT,Công ty Cổ phần Đầu tư phát triển Sài Gòn 3 Group,ĐT PT Sài Gòn 3 Group
+9,10729,TOS,UpcomIndex,0573,DN,CT,Công ty Cổ phần Dịch vụ biển Tân Cảng,Dịch vụ biển Tân Cảng
+10,10780,VTZ,HNXIndex,1353,DN,CT,Công ty Cổ phần Sản xuất và Thương mại Nhựa Việt Thành,Nhựa Việt Thành
+11,10825,SSH,UpcomIndex,8633,DN,CT,Công ty Cổ phần Phát triển Sunshine Homes,Phát triển Sunshine Homes
+12,10847,BCA,UpcomIndex,1757,DN,CT,Công ty cổ phần B.C.H,Công ty B.C.H
+13,10919,FUCTVGF3,VNINDEX,8985,OTHER,QU,Quỹ Đầu tư Tăng trưởng Thiên Việt 3,Quỹ Đầu tư Tăng trưởng Thiên Việt 3
+14,10929,FUEIP100,VNINDEX,8985,OTHER,QU,Quỹ ETF IPAAM VN100,ETF IPAAM VN100
+15,10966,GMH,VNINDEX,2353,DN,CT,Công ty Cổ phần Minh Hưng Quảng Trị,Minh Hưng Quảng Trị
+16,10969,BIG,UpcomIndex,8637,DN,CT,Công ty cổ phần BIG Invest Group,BIG Invest Group
+17,10990,CMM,UpcomIndex,3577,DN,CT,Công ty Cổ phần Camimex,Camimex
+18,11009,CNA,UpcomIndex,3573,DN,CT,Công ty Cổ phần Tổng công ty Chè Nghệ An,Tổng công ty Chè Nghệ An - CTCP
+19,11096,FUEKIV30,VNINDEX,8985,OTHER,QU,Quỹ ETF KIM GROWTH VN30,KIM GROWTH VN30 ETF
+20,12109,ODE,UpcomIndex,5553,DN,CT,Công ty cổ phần Tập đoàn Truyền thông và Giải trí ODE,Tập đoàn Truyền thông và Giải trí ODE
+21,12110,HMR,HNXIndex,2353,DN,CT,Công ty cổ phần Đá Hoàng Mai,Đá Hoàng Mai
+22,12166,PCH,HNXIndex,1353,DN,CT,Công ty Cổ phần Nhựa Picomat,Nhựa Picomat
+23,12211,DSD,UpcomIndex,5755,DN,CT,Công ty cổ phần DHC Suối Đôi,DHC Suối Đôi
+24,12215,NO1,VNINDEX,2757,DN,CT,Công ty Cổ phần Tâp đoàn 911,Tâp đoàn 911
+25,12220,MGR,UpcomIndex,8633,DN,CT,Công ty cổ phần Tập đoàn MGROUP,Tập đoàn MGROUP
+26,12281,PPT,HNXIndex,7573,DN,CT,Công ty cổ phần Petro Times,Petro Times
+27,12464,CAR,UpcomIndex,2793,DN,CT,Công ty cổ phần Tập đoàn Giáo dục Trí Việt,Tập đoàn Giáo dục Trí Việt
+28,12562,GPC,UpcomIndex,4577,DN,CT,Công ty Cổ phần Tập đoàn Green+,Tập đoàn Green+
+29,12615,FUCTVGF4,VNINDEX,8985,OTHER,QU,Quỹ Đầu tư Tăng trưởng Thiên Việt 4,Quỹ Đầu tư Tăng trưởng Thiên Việt 4
+30,2040143,FUEDCMID,VNINDEX,8985,OTHER,QU,Quỹ ETF DCVFMVNMIDCAP,Quỹ ETF DCVFMVNMIDCAP
+31,2040177,FUEKIVFS,VNINDEX,8985,OTHER,QU,Quỹ ETF KIM GROWTH VNFINSELECT,KIM GROWTH VNFINSELECT ETF
+32,2172623,FUEMAVND,VNINDEX,8985,OTHER,QU,Quỹ ETF MAFM VNDIAMOND,Quỹ ETF MAFM VNDIAMOND
+33,2173235,FUEFCV50,VNINDEX,8985,OTHER,QU,Quỹ ETF FPT CAPITAL VNX50,Quỹ ETF FPT CAPITAL VNX50
+34,2250002,FUEBFVND,VNINDEX,8985,OTHER,QU,Quỹ ETF BVFVN DIAMOND,ETF BVFVN DIAMOND
+35,2349197,FUCTVGF5,VNINDEX,8985,OTHER,QU,Quỹ đầu tư tăng trưởng Thiên Việt 5,Quỹ đầu tư tăng trưởng Thiên Việt 5
+36,2400379403,AAH,UpcomIndex,1771,DN,CT,Công ty Cổ phần Hợp Nhất,Than Hợp Nhất
+37,2440105,FUEKIVND,VNINDEX,8985,OTHER,QU,Quỹ ETF KIM GROWTH VN DIAMOND,Quỹ ETF KIM GROWTH VN DIAMOND
+38,3600248576,D17,UpcomIndex,1775,DN,CT,Công ty Cổ Phần Đồng Tân,Khai thác mỏ Đồng Tân
+39,3602503768,GCF,UpcomIndex,3577,DN,CT,Công ty Cổ phần Thực phẩm G.C,Thực phẩm G.C
+40,9646,LPT,UpcomIndex,2793,DN,CT,Công ty Cổ phần Thương mại và Sản xuất Lập Phương Thành,TM và SX Lập Phương Thành
+41,AAA,AAA,VNINDEX,1353,DN,CT,Công ty Cổ phần Nhựa An Phát Xanh,An Phát Bioplastics
+42,AAM,AAM,VNINDEX,3573,DN,CT,Công ty Cổ Phần Thủy Sản MeKong,Thủy sản Mekong
+43,AAT,AAT,VNINDEX,3763,DN,CT,Công ty Cổ phần Tập đoàn Tiên Sơn Thanh Hóa,Tập đoàn Tiên Sơn Thanh Hóa
+44,AAV,AAV,HNXIndex,8633,DN,CT,Công ty Cổ phần AAV Group,Việt Tiên Sơn Địa ốc
+45,ABB,ABB,UpcomIndex,8355,DN,NH,Ngân hàng Thương mại Cổ phần An Bình,Ngân hàng An Bình
+46,ABI,ABI,UpcomIndex,8536,OTHER,BH,Công ty Cổ phần Bảo hiểm Ngân hàng Nông Nghiệp,BH NH Nông Nghiệp
+47,ABR,ABR,VNINDEX,2791,DN,CT,Công ty Cổ phần Đầu tư Nhãn Hiệu Việt,Đầu tư Nhãn Hiệu Việt
+48,ABS,ABS,VNINDEX,5379,DN,CT,Công ty Cổ phần Dịch vụ Nông nghiệp Bình Thuận,DV Nông nghiệp Bình Thuận
+49,ABSC,ABW,UpcomIndex,8777,DN,CK,Công ty Cổ phần Chứng khoán An Bình,Chứng khoán An Bình
+50,ABT,ABT,VNINDEX,3573,DN,CT,Công ty Cổ phần Xuất nhập khẩu Thủy sản Bến Tre,Thủy sản Bến Tre
+51,ACB,ACB,VNINDEX,8355,DN,NH,Ngân hàng Thương mại Cổ phần Á Châu,ACB
+52,ACC,ACC,VNINDEX,2353,DN,CT,Công ty Cổ phần Đầu tư và Xây dựng Bình Dương ACC,Đầu tư và XD Bình Dương ACC
+53,ACE,ACE,UpcomIndex,2353,DN,CT,Công ty Cổ phần Bê tông ly tâm An Giang,Bê tông An Giang
+54,ACL,ACL,VNINDEX,3573,DN,CT,Công ty Cổ phần Xuất nhập khẩu Thủy sản Cửu Long An Giang,Thủy sản CL An Giang
+55,ACM,ACM,UpcomIndex,1775,DN,CT,Công ty Cổ phần Tập đoàn Khoáng sản Á Cường,Tập đoàn Khoáng sản Á Cường
+56,ACSC,ACS,UpcomIndex,2357,DN,CT,Công ty Cổ phần Xây lắp Thương mại 2,Xây lắp Thương mại 2
+57,ACVN,ACV,UpcomIndex,2777,DN,CT,Tổng Công ty Cảng Hàng không Việt Nam - CTCP,Cảng Hàng không VN
+58,ADC,ADC,HNXIndex,5557,DN,CT,Công ty Cổ phần Mĩ thuật và Truyền thông,Mĩ thuật và Truyền thông
+59,ADP,ADP,VNINDEX,2353,DN,CT,Công ty Cổ phần Sơn Á Đông,Sơn Á Đông
+60,AFIEX,AFX,UpcomIndex,5337,DN,CT,Công ty Cổ phần Xuất Nhập khẩu Nông sản Thực phẩm An Giang,Xuất Nhập khẩu Nông sản Thực phẩm An Giang
+61,AGF,AGF,UpcomIndex,3573,DN,CT,Công ty Cổ phần Xuất nhập khẩu Thủy sản An Giang,Thủy sản An Giang
+62,AGIMECO,CKA,UpcomIndex,2757,DN,CT,Công ty Cổ phần Cơ khí An Giang,Cơ khí An Giang
+63,AGIMEX,AGP,UpcomIndex,4577,DN,CT,Công ty Cổ phần Dược phẩm AGIMEXPHARM,Dược phẩm AGIMEXPHARM
+64,AGM,AGM,VNINDEX,3577,DN,CT,Công ty Cổ phần Xuất nhập khẩu An Giang,XNK An Giang
+65,AGPORT,CAG,HNXIndex,2777,DN,CT,Công ty Cổ phần Cảng An Giang,Cảng An Giang
+66,AGPPS,LTG,UpcomIndex,1357,DN,CT,Công ty Cổ phần Tập đoàn Lộc Trời,Tập đoàn Lộc Trời (BVTV An Giang)
+67,AGR,AGR,VNINDEX,8777,DN,CK,Công ty Cổ phần Chứng khoán AGRIBANK,Agriseco
+68,AGRE,AGG,VNINDEX,8633,DN,CT,Công ty Cổ phần Đầu tư và Phát triển Bất động sản An Gia,Bất động sản An Gia
+69,AGREX,AGX,UpcomIndex,5337,DN,CT,Công ty Cổ phần Thực phẩm Nông sản Xuất khẩu Sài Gòn,Nông sản Xuất khẩu Sài Gòn
+70,AGTEX1,AG1,UpcomIndex,3763,DN,CT,Công ty Cổ phần 28.1,28.1 JSC
+71,ALT,ALT,HNXIndex,5557,DN,CT,Công ty Cổ phần Văn hóa Tân Bình,Văn hóa Tân Bình
+72,ALV,ALV,UpcomIndex,2357,DN,CT,Công ty Cổ phần Xây dựng ALVICO,Xây dựng ALVICO
+73,AMC,AMC,HNXIndex,1775,DN,CT,Công ty Cổ phần Khoáng sản Á Châu,Khoáng sản Á Châu
+74,AMD,AMD,UpcomIndex,8633,DN,CT,Công ty Cổ phần Đầu tư và Khoáng sản FLC Stone,FLC Stone
+75,AME,AME,HNXIndex,2737,DN,CT,Công ty cổ phần Alphanam E&C,Cơ điện Alphanam
+76,AMP,AMP,UpcomIndex,4577,DN,CT,Công ty Cổ phần Armephaco,Armephaco
+77,AMV,AMV,HNXIndex,4535,DN,CT,Công ty Cổ phần Sản xuất Kinh doanh Dược và Trang thiết bị Y tế Việt Mỹ,Dược-TB Y tế Việt Mỹ
+78,ANCUONGWOOD,ACG,VNINDEX,1733,DN,CT,Công ty Cổ phần Gỗ An Cường,Gỗ An Cường
+79,ANOVA,NCG,UpcomIndex,3573,DN,CT,Công ty Cổ phần Tập đoàn Nova Consumer,Nova Consumer
+80,ANTESCO,ANT,UpcomIndex,3577,DN,CT,Công ty Cổ phần Rau quả Thực phẩm An Giang,Rau quả thực phẩm An Giang
+81,ANV,ANV,VNINDEX,3573,DN,CT,Công ty Cổ phần Nam Việt,Thủy sản Nam Việt
+82,APC,APC,VNINDEX,4573,DN,CT,Công ty Cổ phần Chiếu xạ An Phú,Chiếu xạ An Phú
+83,APF,APF,UpcomIndex,3577,DN,CT,Công ty Cổ phần Nông sản Thực phẩm Quảng Ngãi,Nông sản Quảng Ngãi
+84,APG,APG,VNINDEX,8777,DN,CK,Công ty Cổ phần Chứng khoán APG,Chứng khoán APG
+85,APHOLD,APH,VNINDEX,2723,DN,CT,Công ty Cổ phần Tập đoàn An Phát Holdings,Tập đoàn An Phát Holdings
+86,API,API,HNXIndex,8633,DN,CT,Công ty Cổ phần Đầu tư Châu Á - Thái Bình Dương,Đầu tư Châu Á - Thái Bình Dương
+87,APL,APL,UpcomIndex,2757,DN,CT,Công ty Cổ phần Cơ khí và Thiết bị áp lực - VVMI,Cơ khí và Thiết bị áp lực - VVMI
+88,APP,APP,UpcomIndex,1357,DN,CT,Công ty Cổ phần Phát triển Phụ gia và Sản phẩm dầu mỏ,Phụ gia và SP Dầu mỏ
+89,APS,APS,HNXIndex,8777,DN,CK,Công ty Cổ phần Chứng khoán Châu Á - Thái Bình Dương,CK Châu Á - TBD
+90,APYB,HII,VNINDEX,1353,DN,CT,Công ty Cổ phần An Tiến Industries,An Tiến Industries
+91,ARM,ARM,HNXIndex,2797,DN,CT,Công ty Cổ phần Xuất nhập khẩu Hàng không,XNK Hàng không
+92,ASA,ASA,UpcomIndex,3767,DN,CT,Công ty Cổ phần ASA,Hàng tiêu dùng ASA
+93,ASECO32,A32,UpcomIndex,3765,DN,CT,Công ty Cổ phần 32,Công ty 32
+94,ASGC,ASG,VNINDEX,2777,DN,CT,Công ty Cổ phần Tập đoàn ASG,Tập đoàn ASG
+95,ASM,ASM,VNINDEX,3573,DN,CT,Công ty Cổ phần Tập đoàn Sao Mai,Tập đoàn Sao Mai
+96,ASP,ASP,VNINDEX,7573,DN,CT,Công ty Cổ phần Tập đoàn Dầu khí An Pha,Dầu khí An Pha
+97,ATA,ATA,UpcomIndex,3573,DN,CT,Công ty Cổ phần NTACO,NTACO
+98,ATAJSC,ATG,UpcomIndex,1775,DN,CT,Công ty Cổ phần An Trường An,An Trường An
+99,ATB,ATB,UpcomIndex,2357,DN,CT,Công ty Cổ phần An Thịnh,Công ty An Thịnh
+100,ATS,ATS,HNXIndex,5757,DN,CT,Công ty Cổ phần Tập đoàn Dược phẩm Atesco,Tập đoàn Dược phẩm Atesco
+101,AVF,AVF,UpcomIndex,3573,DN,CT,Công ty Cổ phần Việt An,Thủy sản Việt An
+102,AVHPC,AVC,UpcomIndex,7535,DN,CT,Công ty Cổ phần Thủy điện A Vương,Thủy điện A Vương
+103,B82,B82,UpcomIndex,2357,DN,CT,Công ty Cổ phần 482,Công ty 482
+104,BAFVN,BAF,VNINDEX,3573,DN,CT,Công ty Cổ phần Nông nghiệp BAF Việt Nam,Nông nghiệp BAF Việt Nam
+105,BALPAC,BAL,UpcomIndex,2723,DN,CT,Công ty Cổ phần Bao bì Bia - Rượu - Nước giải khát,Bao bì Balpac
+106,BANGGIANG,BCV,UpcomIndex,5753,DN,CT,Công ty cổ phần Du lịch và Thương mại Bằng Giang Cao Bằng - Vimico,Du lịch và Thương mại Bằng Giang Cao Bằng - Vimico
+107,BAONGOCCORP,BNA,HNXIndex,3577,DN,CT,Công ty Cổ phần Đầu tư Sản xuất Bảo Ngọc,Đầu tư SX Bảo Ngọc
+108,BARU,BRR,UpcomIndex,1353,DN,CT,Công ty Cổ phần Cao su Bà Rịa,Cao su Bà Rịa
+109,BBC,BBC,VNINDEX,3577,DN,CT,Công ty Cổ phần Bibica,Bánh kẹo BIBICA
+110,BBCC,VLB,UpcomIndex,2353,DN,CT,Công ty Cổ phần Xây dựng và Sản xuất Vật liệu Xây dựng Biên Hòa,VLXD Biên Hòa
+111,BBH,BBH,UpcomIndex,2723,DN,CT,Công ty Cổ phần Bao bì Hoàng Thạch,Bao bì Hoàng Thạch
+112,BBS,BBS,HNXIndex,2723,DN,CT,Công ty Cổ phần VICEM Bao bì Bút Sơn,Bao bì Xi măng Bút Sơn
+113,BBT,BBT,UpcomIndex,3767,DN,CT,Công ty Cổ phần Bông Bạch Tuyết,Bông Bạch Tuyết
+114,BCB,BCB,UpcomIndex,1771,DN,CT,Công ty Cổ phần 397,Công ty 397
+115,BCC,BCC,HNXIndex,2353,DN,CT,Công ty Cổ phần Xi măng Bỉm Sơn,Xi măng Bỉm Sơn
+116,BCE,BCE,VNINDEX,2357,DN,CT,Công ty Cổ phần Xây dựng và Giao thông Bình Dương,XD và GT Bình Dương
+117,BCG,BCG,VNINDEX,8775,DN,CT,Công ty Cổ phần Tập đoàn Bamboo Capital,Bamboo Capital
+118,BCGLAND,BCR,UpcomIndex,2357,DN,CT,Công ty Cổ phần BCG Land,BCG Land
+119,BCP,BCP,UpcomIndex,4577,DN,CT,Công ty Cổ phần Dược Enlie,Dược Enlie
+120,BDB,BDB,HNXIndex,5557,DN,CT,Công ty Cổ phần Sách và Thiết bị Bình Định,Sách Bình Định
+121,BDBMC,MVC,UpcomIndex,2353,DN,CT,Công ty Cổ phần Vật liệu và Xây dựng Bình Dương,Vật liệu và XD Bình Dương
+122,BDFC,BFC,VNINDEX,1357,DN,CT,Công ty Cổ phần Phân bón Bình Điền,Phân bón Bình Điền
+123,BDGAR,BDG,UpcomIndex,3763,DN,CT,Công ty Cổ phần May mặc Bình Dương,May mặc Bình Dương
+124,BDHC,BSA,UpcomIndex,7535,DN,CT,Công ty Cổ phần Thủy điện Buôn Đôn,Thủy điện Buôn Đôn
+125,BDMIE,PRT,UpcomIndex,1737,DN,CT,Tổng Công ty Sản xuất - Xuất nhập khẩu Bình Dương - Công ty cổ phần,Sản xuất - XNK Bình Dương
+126,BDW,BDW,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp thoát nước Bình Định,Cấp thoát nước Bình Định
+127,BED,BED,HNXIndex,5557,DN,CT,Công ty Cổ phần Sách và Thiết bị trường học Đà Nẵng,Sách Đà Nẵng
+128,BELCO,BEL,UpcomIndex,3743,DN,CT,Công ty Cổ phần Điện tử Biên Hòa,Điện tử Biên Hoà
+129,BEWACO,NBT,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp thoát nước Bến Tre,Cấp thoát nước Bến Tre
+130,BGWS,BGW,UpcomIndex,7577,DN,CT,Công ty Cổ phần Nước sạch Bắc Giang,Nước sạch Bắc Giang
+131,BHA,BHA,UpcomIndex,7535,DN,CT,Công ty cổ phần Thủy điện Bắc Hà,Thủy điện Bắc Hà
+132,BHC,BHC,UpcomIndex,2353,DN,CT,Công ty Cổ phần Bê tông Biên Hòa,Bê tông Biên Hòa
+133,BHK,BHK,UpcomIndex,3533,DN,CT,Công ty Cổ phần Bia Hà Nội - Kim Bài,Bia Hà Nội - Kim Bài
+134,BHN,BHN,VNINDEX,3533,DN,CT,Tổng Công ty Cổ phần Bia - Rượu - Nước giải khát Hà Nội,HABECO
+135,BHP,BHP,UpcomIndex,3533,DN,CT,Công ty Cổ phần Bia Hà Nội - Hải Phòng,Bia Hà Nội - Hải Phòng
+136,BIC,BIC,VNINDEX,8536,OTHER,BH,Tổng Công ty Cổ phần Bảo hiểm Ngân hàng Đầu tư và Phát triển Việt Nam,Bảo hiểm BIDV
+137,BID,BID,VNINDEX,8355,DN,NH,Ngân hàng Thương mại Cổ phần Đầu tư và Phát triển Việt Nam,BIDV
+138,BIDC,BCM,VNINDEX,8633,DN,CT,Tổng Công ty Đầu tư và Phát triển Công nghiệp - CTCP,Becamex IDC
+139,BIDIFOOD,BLT,UpcomIndex,3577,DN,CT,Công ty Cổ phần Lương thực Bình Định,Lương Thực Bình Định
+140,BIDIP,DBD,VNINDEX,4577,DN,CT,Công ty Cổ phần Dược - Trang thiết bị y tế Bình Định,Dược - TB Y tế Bình Định
+141,BIENHOTEA,BHG,UpcomIndex,3537,DN,CT,Công ty Cổ phần Chè Biển Hồ,Chè Biển Hồ
+142,BII,BII,UpcomIndex,8633,DN,CT,Công ty Cổ phần Đầu tư và Phát triển Công nghiệp Bảo Thư,Đầu tư và Phát triển Công nghiệp Bảo Thư
+143,BIOPHARCO,BIO,UpcomIndex,4577,DN,CT,Công ty Cổ phần Vắc xin và Sinh phẩm Nha Trang,Vắc xin và Sinh phẩm Nha Trang
+144,BIWASE,BWE,VNINDEX,7577,DN,CT,Công ty Cổ phần - Tổng công ty Nước - Môi trường Bình Dương,Nước - Môi trường Bình Dương
+145,BKC,BKC,HNXIndex,1775,DN,CT,Công ty Cổ phần Khoáng sản Bắc Kạn,Khoáng sản Bắc Kạn
+146,BKGVN,BKG,VNINDEX,3767,DN,CT,Công ty Cổ phần Đầu tư BKG Việt Nam,Đầu tư BKG Việt Nam
+147,BLF,BLF,UpcomIndex,3573,DN,CT,Công ty Cổ phần Thủy sản Bạc Liêu,Thủy sản Bạc Liêu
+148,BLIC,BLI,UpcomIndex,8536,DN,BH,Tổng Công ty Cổ phần Bảo hiểm Bảo Long,Bảo hiểm Nhà Rồng
+149,BLIP,MH3,UpcomIndex,8633,DN,CT,Công ty Cổ phần Khu công nghiệp Cao su Bình Long,KCN Cao su Bình Long
+150,BLURBAN,DTB,UpcomIndex,2799,DN,CT,Công ty Cổ phần Công trình Đô thị Bảo Lộc,Công trình Đô thị Bảo Lộc
+151,BMC,BMC,VNINDEX,1775,DN,CT,Công ty Cổ phần Khoáng sản Bình Định,Khoáng sản Bình Định
+152,BMD,BMD,UpcomIndex,2799,DN,CT,Công ty Cổ phần Môi trường và Dịch vụ Đô thị Bình Thuận,Môi trường và DV Đô thị Bình Thuận
+153,BMF,BMF,UpcomIndex,7573,DN,CT,Công ty Cổ phần Vật liệu Xây dựng và Chất đốt Đồng Nai,VLXD và Chất đốt Đồng Nai
+154,BMI,BMI,VNINDEX,8536,DN,BH,Tổng Công ty Cổ phần Bảo Minh,Bảo hiểm Bảo Minh
+155,BMIG,BMG,UpcomIndex,3763,DN,CT,Công ty Cổ phần May Bình Minh,May Bình Minh
+156,BMJ,BMJ,UpcomIndex,1775,DN,CT,Công ty Cổ phần Khoáng sản Miền Đông AHP,Khoáng sản Miền Đông AHP
+157,BMN,BMN,UpcomIndex,2357,DN,CT,Công ty Cổ phần 715,Công ty 715
+158,BMP,BMP,VNINDEX,2353,DN,CT,Công ty Cổ phần Nhựa Bình Minh,Nhựa Bình Minh
+159,BMSC,BMS,UpcomIndex,8777,DN,CK,Công ty Cổ phần Chứng khoán Bảo Minh,Chứng khoán Bảo Minh
+160,BNURENCO,MBN,UpcomIndex,2799,DN,CT,Công ty Cổ phần Môi trường và Công trình đô thị Bắc Ninh,Môi trường và Công trình ĐT Bắc Ninh
+161,BNWSSC,BNW,UpcomIndex,7577,DN,CT,Công ty Cổ phần Nước sạch Bắc Ninh,Nước sạch Bắc Ninh
+162,BOT,BOT,UpcomIndex,2357,DN,CT,Công ty Cổ phần BOT Cầu Thái Hà,BOT Cầu Thái Hà
+163,BPC,BPC,HNXIndex,2723,DN,CT,Công ty Cổ phần Vicem Bao bì Bỉm Sơn,Bao bì Bỉm Sơn
+164,BRC,BRC,VNINDEX,1353,DN,CT,Công ty Cổ phần Cao su Bến Thành,Cao su Bến Thành
+165,BRS,BRS,UpcomIndex,2799,DN,CT,Công ty Cổ phần Dịch vụ Đô thị Bà Rịa,Dịch vụ Đô thị Bà Rịa
+166,BRVT,VTG,UpcomIndex,5759,DN,CT,Công ty Cổ phần Du lịch tỉnh Bà Rịa - Vũng Tàu,Du lịch tỉnh BR-VT
+167,BSC,BSC,HNXIndex,5379,DN,CT,Công ty Cổ phần Dịch vụ Bến Thành,Dịch vụ Bến Thành
+168,BSGPT,BSP,UpcomIndex,3533,DN,CT,Công ty Cổ phần Bia Sài Gòn - Phú Thọ,Bia Sài Gòn - Phú Thọ
+169,BSHCO,BHI,UpcomIndex,8536,OTHER,BH,Tổng Công ty Cổ phần Bảo hiểm Sài Gòn - Hà Nội,Bảo hiểm Sài Gòn - Hà Nội
+170,BSI,BSI,VNINDEX,8777,DN,CK,Công ty Cổ phần Chứng khoán BIDV,Chứng khoán BIDV
+171,BSRC,BSR,UpcomIndex,0533,DN,CT,Công ty Cổ phần Lọc Hóa dầu Bình Sơn,BSR
+172,BST,BST,HNXIndex,5557,DN,CT,Công ty Cổ phần Sách và Thiết bị Bình Thuận,Sách và Thiết bị Bình Thuận
+173,BT6,BT6,UpcomIndex,2353,DN,CT,Công ty Cổ phần BETON 6,Bê tông 6
+174,BTG,BTG,UpcomIndex,2723,DN,CT,Công ty Cổ phần Bao bì Tiền Giang,Bao bì Tiền Giang
+175,BTH,BTH,UpcomIndex,2737,DN,CT,Công ty Cổ phần Chế tạo Biến thế và Vật liệu Điện Hà Nội,Biến thế và Vật liệu Điện Hà Nội
+176,BTN,BTN,UpcomIndex,2353,DN,CT,Công ty Cổ phần Đầu tư Bitco Bình Định,Gạch Tuy Nen Bình Định
+177,BTP,BTP,VNINDEX,7535,DN,CT,Công ty Cổ phần Nhiệt điện Bà Rịa,Nhiệt điện Bà Rịa
+178,BTS,BTS,HNXIndex,2353,DN,CT,Công ty Cổ phần Xi măng VICEM Bút Sơn,Xi măng Bút Sơn
+179,BTT,BTT,VNINDEX,5373,DN,CT,Công ty Cổ phần Thương mại - Dịch vụ Bến Thành,TM - DV Bến Thành
+180,BTTD,BTD,UpcomIndex,2353,DN,CT,Công ty Cổ phần Bê tông ly tâm Thủ Đức,Bê tông ly tâm Thủ Đức
+181,BTTOUR,BTV,UpcomIndex,5759,DN,CT,Công ty Cổ phần Dịch vụ Du lịch Bến Thành,DV Du lịch Bến Thành
+182,BTU,BTU,UpcomIndex,2799,DN,CT,Công ty Cổ phần Công trình Đô thị Bến Tre,Công trình Đô thị Bến Tre
+183,BTW,BTW,HNXIndex,7577,DN,CT,Công ty Cổ phần Cấp nước Bến Thành,Cấp nước Bến Thành
+184,BUSLN,BLN,UpcomIndex,5759,DN,CT,Công ty Cổ phần Vận tải và Dịch vụ Liên Ninh,Xe buýt Liên Ninh
+185,BVG,BVG,UpcomIndex,1757,DN,CT,Công ty cổ phần Group Bắc Việt,Group Bắc Việt
+186,BVH,BVH,VNINDEX,8575,DN,BH,Tập đoàn Bảo Việt,Tập đoàn Bảo Việt
+187,BVN,BVN,UpcomIndex,3767,DN,CT,Công ty Cổ phần Bông Việt Nam,Bông Việt Nam
+188,BVQTTN,TNH,VNINDEX,4533,DN,CT,Công ty Cổ phần Bệnh viện Quốc tế Thái Nguyên,Bệnh viện Quốc tế Thái Nguyên
+189,BVS,BVS,HNXIndex,8777,DN,CK,Công ty Cổ phần Chứng khoán Bảo Việt,Chứng khoán Bảo Việt
+190,BWA,BWA,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp thoát nước và Xây dựng Bảo Lộc,Cấp thoát nước và Xây dựng Bảo Lộc
+191,BWAC,BWS,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp Nước Bà Rịa - Vũng Tàu,Cấp Nước Bà Rịa Vũng Tàu
+192,BXH,BXH,HNXIndex,2723,DN,CT,Công ty Cổ phần VICEM Bao bì Hải Phòng,Bao bì Xi măng HP
+193,BXHN,HNB,UpcomIndex,2777,DN,CT,Công ty Cổ phần Bến xe Hà Nội,Bến xe Hà Nội
+194,C1369,C69,HNXIndex,2357,DN,CT,Công ty Cổ phần Xây dựng 1369,Xây dựng 1369
+195,C21,C21,UpcomIndex,8633,DN,CT,Công ty Cổ phần Thế kỷ 21,Thế kỷ 21
+196,C22,C22,UpcomIndex,3577,DN,CT,Công ty Cổ phần 22,Công ty 22
+197,C32,C32,VNINDEX,2353,DN,CT,Công ty Cổ phần CIC39,CIC39
+198,C47,C47,VNINDEX,2357,DN,CT,Công ty Cổ phần Xây dựng 47,Xây dựng 47
+199,C532,TS3,UpcomIndex,2357,DN,CT,Công ty Cổ phần Trường Sơn 532,Trường Sơn 532
+200,C92,C92,UpcomIndex,2357,DN,CT,Công ty Cổ phần Xây dựng và Đầu tư 492,Xây dựng và Đầu tư 492
+201,CAD,CAD,UpcomIndex,3573,DN,CT,Công ty Cổ phần Chế biến và Xuất khẩu Thủy sản Cadovimex,Thủy sản Cadovimex
+202,CAFEPA,CPA,UpcomIndex,3537,DN,CT,Công ty Cổ phần Cà phê Phước An,Cà phê Phước An
+203,CAFETL,CFV,UpcomIndex,3537,DN,CT,Công ty Cổ phần Cà phê Thắng Lợi,Cà phê Thắng Lợi
+204,CAN,CAN,HNXIndex,3577,DN,CT,Công ty Cổ phần Đồ hộp Hạ Long,Đồ hộp Hạ Long
+205,CANTHOP,CCT,UpcomIndex,2777,DN,CT,Công ty Cổ phần Cảng Cần Thơ,Cảng Cần Thơ
+206,CAP,CAP,HNXIndex,1737,DN,CT,Công ty Cổ phần Lâm Nông sản Thực phẩm Yên Bái,Lâm nông sản Yên Bái
+207,CASEAMEX,CCA,UpcomIndex,3573,DN,CT,Công ty Cổ phần Xuất nhập khẩu Thủy sản Cần Thơ,XNK Thuỷ sản Cần Thơ
+208,CAUPHA,HFB,UpcomIndex,2357,DN,CT,Công ty Cổ phần Công trình Cầu phà Thành phố Hồ Chí Minh,Công trình Cầu phà TP HCM
+209,CAV,CAV,VNINDEX,2733,DN,CT,Công ty Cổ Phần Dây cáp điện Việt Nam,Dây cáp điện Việt Nam
+210,CAWASU,CMW,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp nước Cà Mau,Cấp nước Cà Mau
+211,CBMC,KCB,UpcomIndex,1775,DN,CT,Công ty Cổ phần Khoáng Sản và Luyện Kim Cao Bằng,Khoáng Sản Luyện Kim Cao Bằng
+212,CBSU,CBS,UpcomIndex,3577,DN,CT,Công ty Cổ phần Mía đường Cao Bằng,Mía đường Cao Bằng
+213,CCI,CCI,VNINDEX,7573,DN,CT,Công ty Cổ phần Đầu tư Phát triển Công nghiệp Thương mại Củ Chi,CIDICO
+214,CCL,CCL,VNINDEX,8633,DN,CT,Công ty Cổ phần Đầu tư và Phát triển Đô thị Dầu khí Cửu Long,Đầu tư và Phát triển Đô thị Dầu khí Cửu Long
+215,CCLTD,VSM,HNXIndex,2777,DN,CT,Công ty Cổ phần Container Miền Trung,Container Miền Trung
+216,CCM,CCM,UpcomIndex,2353,DN,CT,Công ty Cổ phần Khoáng sản và Xi măng Cần Thơ,Xi măng Cần Thơ
+217,CCR,CCR,HNXIndex,2777,DN,CT,Công ty Cổ phần Cảng Cam Ranh,Cảng Cam Ranh
+218,CDC,CDC,VNINDEX,2357,DN,CT,Công ty Cổ phần Chương Dương,Chương Dương Corp
+219,CDH,CDH,UpcomIndex,2799,DN,CT,Công ty Cổ phần Công trình Công cộng và Dịch vụ Du lịch Hải Phòng,CTCC và DV Du lịch Hải Phòng
+220,CDJC,CDG,UpcomIndex,2353,DN,CT,Công ty Cổ phần Cầu Đuống,VLXD Cầu Đuống
+221,CDO,CDO,UpcomIndex,2357,DN,CT,Công ty Cổ phần Tư vấn Thiết kế và Phát triển Đô thị,Tư vấn Thiết kế và PT Đô thị
+222,CEN,CEN,UpcomIndex,5373,DN,CT,Công ty Cổ phần CENCON Việt Nam,CENCON Việt Nam
+223,CENLAND,CRE,VNINDEX,8633,DN,CT,Công ty Cổ phần Bất động sản Thế Kỷ,Bất động sản Thế Kỷ
+224,CENTURY,STK,VNINDEX,3763,DN,CT,Công ty Cổ phần Sợi Thế Kỷ,Sợi Thế Kỷ
+225,CEO,CEO,HNXIndex,8633,DN,CT,Công ty Cổ phần Tập đoàn C.E.O,Tập đoàn CEO
+226,CETECO,TW3,UpcomIndex,4577,DN,CT,Công ty Cổ phần Dược Trung Ương 3,Dược TW3
+227,CFM,CFM,UpcomIndex,2793,DN,CT,Công ty Cổ phần Đầu tư CFM,Đầu tư CFM
+228,CH5,CH5,UpcomIndex,2357,DN,CT,Công ty Cổ phần Xây dựng số 5 Hà Nội,Xây dựng số 5 Hà Nội
+229,CHFC,CHC,UpcomIndex,2353,DN,CT,Công ty Cổ phần Cẩm Hà,Nội thất Cẩm Hà
+230,CHOLIMEX,CLX,UpcomIndex,3577,DN,CT,Công ty Cổ phần Xuất nhập khẩu và Đầu tư Chợ Lớn (CHOLIMEX),XNK và Đầu tư Chợ Lớn (CHOLIMEX)
+231,CHP,CHP,VNINDEX,7535,DN,CT,Công ty Cổ phần Thủy điện Miền Trung,Thủy điện Miền Trung
+232,CI5,CI5,UpcomIndex,2357,DN,CT,Công ty Cổ phần Đầu tư Xây dựng số 5,Đầu tư Xây dựng số 5
+233,CID,CID,UpcomIndex,2357,DN,CT,Công ty Cổ phần Xây dựng và Phát triển Cơ sở Hạ tầng,Xây dựng và Phát triển Cơ sở Hạ tầng
+234,CIE1,CE1,UpcomIndex,2757,DN,CT,Công ty Cổ phần Xây dựng và Thiết bị Công nghiệp CIE1,Thiết bị Công nghiệp CIE1
+235,CIEG,CEG,UpcomIndex,2357,DN,CT,Công ty Cổ phần Tập đoàn Xây dựng và Thiết bị Công nghiệp,XD và Thiết bị Công nghiệp
+236,CIEN4,C4G,UpcomIndex,2357,DN,CT,Công ty Cổ phần Tập Đoàn Cienco4,Tập Đoàn Cienco4
+237,CIENCO1,C12,UpcomIndex,2357,DN,CT,Công ty Cổ phần Cầu 12,Cầu 12
+238,CIG,CIG,VNINDEX,2357,DN,CT,Công ty Cổ phần COMA 18,Xây dựng COMA 18
+239,CII,CII,VNINDEX,2357,DN,CT,Công ty Cổ phần Đầu tư Hạ tầng Kỹ thuật Thành phố Hồ Chí Minh,Hạ tầng Kỹ thuật TP.HCM
+240,CIIC,CKG,VNINDEX,8633,DN,CT,Công ty Cổ phần Tập đoàn Tư vấn Đầu tư Xây dựng Kiên Giang,Xây dựng Kiên Giang
+241,CIPC,CIP,UpcomIndex,2357,DN,CT,Công ty Cổ phần Xây lắp và Sản xuất Công nghiệp,XL và SX công nghiệp
+242,CISCO,CBI,UpcomIndex,1757,DN,CT,Công ty Cổ phần Gang thép Cao Bằng,Gang thép Cao Bằng
+243,CJC,CJC,HNXIndex,2737,DN,CT,Công ty Cổ phần Cơ điện Miền Trung,Cơ điện Miền Trung
+244,CK120,CK8,UpcomIndex,8633,DN,CT,Công ty Cổ phần Cơ khí 120,Cơ khí 120
+245,CKD,CKD,UpcomIndex,2757,DN,CT,Công ty Cổ phần Cơ khí Đông Anh Licogi,Đông Anh Licogi
+246,CKMK,CMK,UpcomIndex,2757,DN,CT,Công ty Cổ phần Cơ khí Mạo Khê - Vinacomin,Cơ khí Mạo Khê - Vinacomin
+247,CKV,CKV,HNXIndex,9578,DN,CT,Công ty Cổ phần CokyVina,CokyVina
+248,CLC,CLC,VNINDEX,3785,DN,CT,Công ty Cổ phần Cát Lợi,Thuốc lá Cát Lợi
+249,CLEVERADS,ADG,VNINDEX,5555,DN,CT,Công ty Cổ phần Clever Group,Clever Group
+250,CLG,CLG,UpcomIndex,8633,DN,CT,Công ty Cổ phần Đầu tư và Phát triển Nhà đất Cotec,Cotec Land
+251,CLL,CLL,VNINDEX,2777,DN,CT,Công ty Cổ phần Cảng Cát Lái,Cảng Cát Lái
+252,CLMF,CMF,UpcomIndex,3577,DN,CT,Công ty Cổ phần Thực phẩm Cholimex,Thực phẩm Cholimex
+253,CLW,CLW,VNINDEX,7577,DN,CT,Công ty Cổ phần Cấp nước Chợ Lớn,Cấp nước Chợ Lớn
+254,CMBVN,TVH,UpcomIndex,2357,DN,CT,Công ty Cổ phần Tư vấn Xây dựng công trình Hàng hải,Tư vấn XD công trình Hàng hải
+255,CMC,CMC,HNXIndex,3353,DN,CT,Công ty Cổ phần Đầu tư CMC,Đầu tư CMC
+256,CMFC,TIN,UpcomIndex,8771,DN,NH,Công ty Tài chính Cổ phần Tín Việt,Tài chính Cổ phần Tín Việt
+257,CMG,CMG,VNINDEX,9533,DN,CT,Công ty Cổ phần Tập đoàn Công nghệ CMC,Tập đoàn Công nghệ CMC
+258,CMI,CMI,UpcomIndex,2353,DN,CT,Công ty Cổ phần CMISTONE Việt Nam,CMISTONE Việt Nam
+259,CMID,CMD,UpcomIndex,2353,DN,CT,Công ty Cổ phần Vật liệu xây dựng và Trang trí nội thất TP Hồ Chí Minh,VLXD và Nội thất TP.HCM
+260,CMP,CMP,UpcomIndex,2777,DN,CT,Công ty Cổ phần Cảng Chân Mây,Cảng Chân Mây
+261,CMS,CMS,HNXIndex,2357,DN,CT,Công ty Cổ phần Tập đoàn CMH Việt Nam,Tập đoàn CMH Việt Nam
+262,CMSF,CAT,UpcomIndex,3573,DN,CT,Công ty Cổ phần Thủy sản Cà Mau,Thủy sản Cà Mau
+263,CMT,CMT,UpcomIndex,9537,DN,CT,Công ty Cổ phần Công nghệ mạng và Truyền thông,CN mạng và Truyền thông
+264,CMV,CMV,VNINDEX,5373,DN,CT,Công ty Cổ phần Thương nghiệp Cà Mau,Thương nghiệp Cà Mau
+265,CMX,CMX,VNINDEX,3573,DN,CT,Công ty Cổ phần CAMIMEX Group,CAMIMEX Group
+266,CNC,CNC,UpcomIndex,4577,DN,CT,Công ty Cổ phần Công nghệ cao Traphaco,Công nghệ cao Traphaco
+267,CNG,CNG,VNINDEX,7573,DN,CT,Công ty Cổ phần CNG Việt Nam,CNG Việt Nam
+268,CNT,CNT,UpcomIndex,2357,DN,CT,Công ty Cổ phần Tập đoàn CNT,Tập đoàn CNT
+269,COC1,CC1,UpcomIndex,2357,DN,CT,Tổng Công ty Xây dựng số 1 - CTCP,TCT Xây dựng số 1
+270,CODUPHA,CDP,UpcomIndex,4577,DN,CT,Công ty Cổ phần Dược phẩm Trung ương Codupha,Dược phẩm TW Codupha
+271,COM,COM,VNINDEX,5379,DN,CT,Công ty Cổ phần Vật tư Xăng dầu,Vật tư Xăng dầu
+272,COMA,TCK,UpcomIndex,2357,DN,CT,Tổng Công ty Cơ khí Xây dựng - CTCP,COMA
+273,COMIFOOD,CMN,UpcomIndex,3577,DN,CT,Công ty Cổ phần Lương thực Thực phẩm Colusa - Miliket,Colusa -  Miliket
+274,CONAC,ICN,UpcomIndex,2357,DN,CT,Công ty Cổ phần Đầu tư Xây dựng Dầu khí IDICO,XD Dầu Khí IDICO
+275,CONIN,CNN,UpcomIndex,2357,DN,CT,"Công ty Cổ phần Tư vấn Công nghệ, Thiết bị và Kiểm định Xây dựng - CONINCO",Xây dựng Coninco
+276,CPC,CPC,HNXIndex,1357,DN,CT,Công ty Cổ phần Thuốc sát trùng Cần Thơ,Thuốc sát trùng Cần Thơ
+277,CPC1,DP1,UpcomIndex,4577,DN,CT,Công ty Cổ phần Dược phẩm Trung ương CPC1,Dược phẩm Trung ương CPC1
+278,CPC1HN,DTP,UpcomIndex,4577,DN,CT,Công ty Cổ phần Dược phẩm CPC1 Hà Nội,Dược phẩm CPC1 Hà Nội
+279,CPH,CPH,UpcomIndex,5377,DN,CT,Công ty Cổ phần Phục vụ Mai táng Hải Phòng,PV mai táng Hải Phòng
+280,CPI,CPI,UpcomIndex,2777,DN,CT,Công ty Cổ phần Đầu tư Cảng Cái Lân,Đầu tư Cảng Cái Lân
+281,CRAC,CIA,HNXIndex,2777,DN,CT,Công ty Cổ Phần Dịch Vụ Sân Bay Quốc Tế Cam Ranh,DV Sân Bay Cam Ranh
+282,CREATEVN,CRC,VNINDEX,2353,DN,CT,Công ty Cổ phần Create Capital Việt Nam,Create Capital Việt Nam
+283,CSC,CSC,HNXIndex,2357,DN,CT,Công ty Cổ phần Tập đoàn COTANA,Tập đoàn COTANA
+284,CSGC,SGP,UpcomIndex,2777,DN,CT,Công ty Cổ phần Cảng Sài Gòn,Cảng Sài Gòn
+285,CSM,CSM,VNINDEX,3357,DN,CT,Công ty Cổ phần Công nghiệp Cao su Miền Nam,Cao su Miền Nam
+286,CSV,CSV,VNINDEX,1357,DN,CT,Công ty Cổ phần Hóa chất Cơ bản miền Nam,Hóa chất Cơ bản miền Nam
+287,CT3,CT3,UpcomIndex,2357,DN,CT,Công ty Cổ phần Đầu tư và Xây dựng công trình 3,Xây dựng công trình 3
+288,CT6,CT6,UpcomIndex,2357,DN,CT,Công ty Cổ phần Công trình 6,Công trình 6
+289,CTA,CTA,UpcomIndex,2357,DN,CT,Công ty Cổ phần Vinavico,Xây dựng Vinavico
+290,CTB,CTB,HNXIndex,2757,DN,CT,Công ty Cổ phần Chế tạo Bơm Hải Dương,Bơm Hải Dương
+291,CTC,CTC,HNXIndex,5759,DN,CT,Công ty Cổ phần Tập đoàn Hoàng Kim Tây Nguyên,Tập đoàn Hoàng Kim Tây Nguyên
+292,CTD,CTD,VNINDEX,2357,DN,CT,Công ty Cổ phần Xây dựng Coteccons,Xây dựng Coteccons
+293,CTF,CTF,VNINDEX,3353,DN,CT,Công ty Cổ phần City Auto,City Auto
+294,CTG,CTG,VNINDEX,8355,DN,NH,Ngân hàng Thương mại Cổ phần Công thương Việt Nam,VietinBank
+295,CTGTSG,GTS,UpcomIndex,2357,DN,CT,Công ty Cổ phần Công trình Giao thông Sài Gòn,Công trình Giao thông Sài Gòn
+296,CTI,CTI,VNINDEX,2357,DN,CT,Công ty Cổ phần Đầu tư Phát triển Cường Thuận IDICO,Cường Thuận IDICO
+297,CTIN,ICT,VNINDEX,9537,DN,CT,Công ty Cổ phần Viễn thông - Tin học Bưu điện,Viễn thông - Tin học Bưu điện
+298,CTN,CTN,UpcomIndex,2357,DN,CT,Công ty Cổ phần Xây dựng Công trình ngầm,VINAVICO
+299,CTP,CTP,HNXIndex,3537,DN,CT,Công ty Cổ phần Minh Khang Capital Trading Public,Minh Khang Capital Trading Public
+300,CTR,CTR,VNINDEX,2357,DN,CT,Tổng Công ty Cổ phần Công trình Viettel,Công trình Viettel
+301,CTS,CTS,VNINDEX,8777,DN,CK,Công ty Cổ phần Chứng khoán Ngân hàng Công thương Việt Nam,Chứng khoán Vietinbank
+302,CTT,CTT,HNXIndex,2757,DN,CT,Công ty Cổ phần Chế tạo máy Vinacomin,Chế tạo máy Vinacomin
+303,CTTR,TTS,UpcomIndex,1757,DN,CT,Công ty Cổ phần Cán thép Thái Trung,Cán thép Thái Trung
+304,CTW,CTW,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp thoát nước Cần Thơ,Cấp thoát nước Cần Thơ
+305,CTX,CTX,UpcomIndex,2357,DN,CT,Tổng Công ty Cổ phần Đầu tư Xây dựng và Thương mại Việt Nam,CONSTREXIM
+306,CVN,CVN,HNXIndex,4535,DN,CT,Công ty Cổ phần Vinam,Vinam Group
+307,CVT,CVT,VNINDEX,2353,DN,CT,Công ty Cổ phần CMC,CMC JSC
+308,CX8,CX8,HNXIndex,2357,DN,CT,Công ty Cổ phần Đầu tư và Xây lắp Constrexim số 8,Constrexim số 8
+309,CYC,CYC,UpcomIndex,2353,OTHER,CT,Công ty Cổ phần Gạch men Chang Yih,Gạch men Chang YIH
+310,D11,D11,HNXIndex,8633,DN,CT,Công ty Cổ phần Địa ốc 11,Địa ốc 11
+311,D2D,D2D,VNINDEX,8633,DN,CT,Công ty Cổ phần Phát triển Đô thị Công nghiệp số 2,Phát triển Đô thị số 2
+312,DAC,DAC,UpcomIndex,2353,DN,CT,Công ty Cổ phần 382 Đông Anh,CTCP 382 Đông Anh
+313,DACERA,DCR,UpcomIndex,2353,DN,CT,Công ty Cổ phần Gạch men COSEVCO,Gạch men COSEVCO
+314,DAD,DAD,HNXIndex,5557,DN,CT,Công ty Cổ phần Đầu tư và Phát triển Giáo dục Đà Nẵng,Phát triển GD Đà Nẵng
+315,DAE,DAE,HNXIndex,5557,DN,CT,Công ty Cổ phần Sách Giáo dục tại Thành phố Đà Nẵng,Sách Giáo dục Đà Nẵng
+316,DAG,DAG,VNINDEX,1353,DN,CT,Công ty Cổ phần Tập đoàn Nhựa Đông Á,TĐ Nhựa Đông Á
+317,DAGAR,DCG,UpcomIndex,3763,DN,CT,Công ty Cổ phần Tổng Công ty May Đáp Cầu,May Đáp Cầu
+318,DAH,DAH,VNINDEX,5753,DN,CT,Công ty Cổ phần Tập đoàn Khách sạn Đông Á,Tập đoàn Khách sạn Đông Á
+319,DAKLAKRU,DRG,UpcomIndex,1353,DN,CT,Công ty Cổ phần Cao su Đắk Lắk,Cao su Đắk Lắk
+320,DAKRUCO,DRI,UpcomIndex,1353,DN,CT,Công ty Cổ phần Đầu tư Cao su Đắk Lắk,Đầu tư Cao su Đắk Lắk
+321,DAKURENCO,UDL,UpcomIndex,2799,DN,CT,Công ty Cổ phần Đô thị và Môi trường Đắk Lắk,Đô thị và Môi trường Đắk Lắk
+322,DAKWACO,DWC,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp nước Đắk Lắk,Cấp nước Đắk Lắk
+323,DAMHB,DHB,UpcomIndex,1357,DN,CT,Công ty Cổ phần Phân đạm và Hóa chất Hà Bắc,Đạm Hà Bắc
+324,DAMSAN,ADS,VNINDEX,3763,DN,CT,Công ty Cổ phần DAMSAN,Dệt sợi DAMSAN
+325,DANAPHA,DAN,UpcomIndex,4577,DN,CT,Công ty Cổ phần Dược Danapha,Dược Danapha
+326,DANURENCO,DNE,UpcomIndex,2799,DN,CT,Công ty Cổ phần Môi trường Đô thị Đà Nẵng,Môi trường Đô thị Đà Nẵng
+327,DAS,DAS,UpcomIndex,2753,DN,CT,Công ty Cổ phần Máy - Thiết bị Dầu khí Đà Nẵng,Thiết bị Dầu khí Đà Nẵng
+328,DATPHUONG,DPG,VNINDEX,2357,DN,CT,Công ty Cổ phần Tập đoàn Đạt Phương,Tập đoàn Đạt Phương
+329,DBC,DBC,VNINDEX,3573,DN,CT,Công ty Cổ phần Tập đoàn Dabaco Việt Nam,Tập đoàn DABACO
+330,DBHP,TDB,UpcomIndex,7535,DN,CT,Công ty Cổ phần Thủy điện Định Bình,Thủy điện Định Bình
+331,DBM,DBM,UpcomIndex,4577,DN,CT,Công ty Cổ phần Dược - Vật tư Y tế Đắk Lắk,BAMEPHARM
+332,DBT,DBT,VNINDEX,4577,DN,CT,Công ty Cổ phần Dược phẩm Bến Tre,Dược phẩm Bến Tre
+333,DC2,DC2,HNXIndex,2357,DN,CT,Công ty Cổ phần Đầu tư Phát triển - Xây dựng (DIC) số 2,DIC Số 2
+334,DC4,DC4,VNINDEX,2357,DN,CT,Công ty Cổ phần Xây dựng DIC Holdings,Xây dựng DIC Holdings
+335,DCL,DCL,VNINDEX,4577,DN,CT,Công ty Cổ phần Dược phẩm Cửu Long,Dược phẩm Cửu Long
+336,DCM,DCM,VNINDEX,1357,DN,CT,Công ty Cổ phần Phân bón Dầu Khí Cà Mau,Đạm Cà Mau
+337,DCS,DCS,UpcomIndex,3726,DN,CT,Công ty Cổ phần Tập đoàn Đại Châu,Đại Châu
+338,DCT,DCT,UpcomIndex,2353,DN,CT,Công ty Cổ phần Tấm lợp Vật liệu Xây dựng Đồng Nai,Tấm lợp VLXD Đồng Nai
+339,DCVBTKV,VBG,UpcomIndex,1775,DN,CT,Công ty Cổ phần Địa chất Việt Bắc - TKV,Địa chất Việt Bắc - TKV
+340,DDM,DDM,UpcomIndex,2773,DN,CT,Công ty Cổ phần Hàng hải Đông Đô,Hàng hải Đông Đô
+341,DDN,DDN,UpcomIndex,4577,DN,CT,Công ty Cổ phần Dược - Thiết bị y tế Đà Nẵng,Dược - TB Y tế Đà Nẵng
+342,DDV,DDV,UpcomIndex,1357,DN,CT,Công ty Cổ phần DAP - Vinachem,DAP - Vinachem
+343,DECOFI,DCF,UpcomIndex,2357,DN,CT,Công ty Cổ phần Xây dựng và Thiết kế số 1,XD và Thiết kế số 1
+344,DETMAY7,DM7,UpcomIndex,3763,DN,CT,Công ty Cổ phần Dệt may 7,Dệt may 7
+345,DFF,DFF,UpcomIndex,2357,DN,CT,Công ty Cổ phần Tập đoàn Đua Fat,Tập đoàn Đua Fat
+346,DGC,DGC,VNINDEX,1357,DN,CT,Công ty Cổ phần Tập đoàn Hóa chất Đức Giang,Hóa chất Đức Giang
+347,DGT,DGT,UpcomIndex,2357,DN,CT,Công ty Cổ phần Công trình Giao thông Đồng Nai,Công trình GT Đồng Nai
+348,DGW,DGW,VNINDEX,5379,DN,CT,Công ty Cổ phần Thế Giới Số,Thế Giới Số
+349,DHA,DHA,VNINDEX,2353,DN,CT,Công ty Cổ phần Hóa An,Hóa An
+350,DHC,DHC,VNINDEX,1737,DN,CT,Công ty Cổ phần Đông Hải Bến Tre,Đông Hải Bến Tre
+351,DHG,DHG,VNINDEX,4577,DN,CT,Công ty Cổ phần Dược Hậu Giang,Dược Hậu Giang
+352,DHM,DHM,VNINDEX,1775,DN,CT,Công ty Cổ phần Thương mại & Khai thác Khoáng sản Dương Hiếu,Khoáng sản Dương Hiếu
+353,DHP,DHP,HNXIndex,2737,DN,CT,Công ty Cổ phần Điện cơ Hải Phòng,Điện cơ Hải Phòng
+354,DHT,DHT,HNXIndex,5333,DN,CT,Công ty Cổ phần Dược phẩm Hà Tây,Dược phẩm Hà Tây
+355,DIC,DIC,UpcomIndex,2357,DN,CT,Công ty Cổ phần Đầu tư và Thương mại DIC,ĐT và TM DIC
+356,DIC1,DC1,UpcomIndex,2357,DN,CT,Công ty Cổ phần Đầu tư Phát triển Xây dựng số 1,Phát triển Xây dựng số 1 (DIC1)
+357,DID,DID,UpcomIndex,2353,DN,CT,Công ty Cổ phần DIC - Đồng Tiến,DIC - Đồng Tiến
+358,DIENTRUONGTHINH,TTE,VNINDEX,7535,DN,CT,Công ty Cổ phần Đầu tư Năng lượng Trường Thịnh,ĐT Năng lượng Trường Thịnh
+359,DIG,DIG,VNINDEX,8633,DN,CT,Tổng Công ty Cổ phần Đầu tư Phát triển Xây dựng,DIC Corp
+360,DIH,DIH,HNXIndex,2357,DN,CT,Công ty Cổ phần Đầu tư Phát triển Xây dựng - Hội An,PT Xây dựng Hội An
+361,DL1,DL1,HNXIndex,2777,DN,CT,Công ty Cổ phần Tập đoàn Alpha Seven,Tập đoàn Alpha 7
+362,DLD,DLD,UpcomIndex,5753,DN,CT,Công ty Cổ phần Du lịch Đắk Lắk,Du lịch Đắk Lắk
+363,DLG,DLG,VNINDEX,1733,DN,CT,Công ty Cổ phần Tập đoàn Đức Long Gia Lai,Đức Long Gia Lai
+364,DLR,DLR,UpcomIndex,2357,DN,CT,Công ty Cổ phần Địa ốc Đà Lạt,Địa ốc Đà Lạt
+365,DLURBAN,DUS,UpcomIndex,2799,DN,CT,Công ty Cổ phần Dịch vụ Đô thị Đà Lạt,Dịch vụ Đô thị Đà Lạt
+366,DMC,DMC,VNINDEX,4577,DN,CT,Công ty Cổ phần Xuất nhập khẩu Y tế DOMESCO,Dược phẩm DOMESCO
+367,DMCS,DMS,UpcomIndex,7573,DN,CT,Công ty Cổ phần Hóa phẩm dầu khí DMC - Miền Nam,Dầu khí DMC-miền Nam
+368,DNALP,NSS,UpcomIndex,3573,DN,CT,Công ty Cổ phần Nông súc sản Đồng Nai,Nông súc sản Đồng Nai
+369,DNC,DNC,HNXIndex,7535,DN,CT,Công ty Cổ phần Điện nước Lắp máy Hải Phòng,Điện nước Hải Phòng
+370,DNCWS,DNW,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp nước Đồng Nai,Cấp nước Đồng Nai
+371,DNH,DNH,UpcomIndex,7535,DN,CT,Công ty Cổ phần Thủy điện Đa Nhim - Hàm Thuận - Đa Mi,Thủy điện Đa Nhim-Hàm Thuận-Đa Mi
+372,DNL,DNL,UpcomIndex,2777,DN,CT,Công ty Cổ phần Logistics Cảng Đà Nẵng,Logistics Cảng Đà Nẵng
+373,DNM,DNM,UpcomIndex,4537,DN,CT,Tổng Công ty Cổ phần Y tế Danameco,Y tế Danameco
+374,DNMB,DND,UpcomIndex,2353,DN,CT,Công ty Cổ phần Đầu tư Xây dựng và Vật liệu Đồng Nai,XD và Vật liệu Đồng Nai
+375,DNN,DNN,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp nước Đà Nẵng,Cấp nước Đà Nẵng
+376,DNP,DNP,HNXIndex,2353,DN,CT,Công ty Cổ phần DNP Holding,Nhựa Đồng Nai
+377,DNPORT,CDN,HNXIndex,2777,DN,CT,Công ty Cổ phần Cảng Đà Nẵng,Cảng Đà Nẵng
+378,DNSC,DSC,UpcomIndex,8777,DN,CK,Công ty Cổ phần Chứng khoán DSC,Chứng khoán DSC
+379,DNT,DNT,UpcomIndex,5755,DN,CT,Công ty Cổ phần Du lịch Đồng Nai,Du lịch Đồng Nai
+380,DOCAM,DOC,UpcomIndex,1357,DN,CT,Công ty Cổ phần Vật tư nông nghiệp Đồng Nai,Vật tư nông nghiệp Đồng Nai
+381,DOLICO,BSD,UpcomIndex,3533,DN,CT,"Công ty Cổ phần Bia, Rượu Sài Gòn - Đồng Xuân","Bia, rượu Sài Gòn - Đồng Xuân"
+382,DOMENAL,DMN,UpcomIndex,3573,DN,CT,Công ty Cổ phần Domenal,Domenal
+383,DOPET,DOP,UpcomIndex,2779,DN,CT,Công ty Cổ phần Vận tải Xăng dầu Đồng Tháp,Vận tải XD Đồng Tháp
+384,DORUC,CDR,UpcomIndex,2357,DN,CT,Công ty Cổ phần Xây dựng Cao su Đồng Nai,Xây dựng Cao su Đồng Nai
+385,DOWASEN,DWS,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp nước và Môi trường Đô thị Đồng Tháp,Cấp nước Đồng Tháp
+386,DPC,DPC,HNXIndex,2723,DN,CT,Công ty Cổ phần Nhựa Đà Nẵng,Nhựa Đà Nẵng
+387,DPM,DPM,VNINDEX,1357,DN,CT,Tổng Công ty Phân bón và Hóa chất Dầu khí - Công ty Cổ phần,Tổng Công ty Phân bón và Hóa chất Dầu khí
+388,DPP,DPP,UpcomIndex,4577,DN,CT,Công ty Cổ phần Dược Đồng Nai,Dược Đồng Nai
+389,DPR,DPR,VNINDEX,1353,DN,CT,Công ty Cổ phần Cao su Đồng Phú,Cao su Đồng Phú
+390,DPS,DPS,UpcomIndex,1757,DN,CT,Công ty Cổ phần Đầu tư Phát triển Sóc Sơn,Đầu tư Phát triển Sóc Sơn
+391,DPTW2,DP2,UpcomIndex,4577,DN,CT,Công ty Cổ phần Dược phẩm Trung ương 2,Dược phẩm TW 2
+392,DQC,DQC,VNINDEX,3726,DN,CT,Công ty Cổ phần Tập đoàn Điện Quang,Tập đoàn Điện Quang
+393,DRC,DRC,VNINDEX,3357,DN,CT,Công ty Cổ phần Cao su Đà Nẵng,Cao su Đà Nẵng
+394,DRH,DRH,VNINDEX,8633,DN,CT,Công ty Cổ phần DRH Holdings,DRH Holdings
+395,DRL,DRL,VNINDEX,7535,DN,CT,Công ty Cổ phần Thủy điện - Điện lực 3,Thủy điện - Điện lực 3
+396,DSN,DSN,VNINDEX,5755,DN,CT,Công ty Cổ phần Công viên nước Đầm Sen,Công viên nước Đầm Sen
+397,DST,DST,HNXIndex,5557,DN,CT,Công ty Cổ phần Đầu tư Sao Thăng Long,Đầu tư Sao Thăng Long
+398,DSV,DSV,UpcomIndex,2775,DN,CT,Công ty Cổ phần Đường sắt Vĩnh Phú,Đường sắt Vĩnh Phú
+399,DTA,DTA,VNINDEX,8633,DN,CT,Công ty Cổ phần Đệ Tam,BĐS Đệ Tam
+400,DTBMC,BDT,UpcomIndex,2353,DN,CT,Công ty Cổ phần Xây lắp và Vật liệu xây dựng Đồng Tháp,VLXD Đồng Tháp
+401,DTC,DTC,HNXIndex,2353,DN,CT,Công ty Cổ phần Viglacera Đông Triều,Viglacera Đông Triều
+402,DTE,DTE,UpcomIndex,7535,DN,CT,Công ty Cổ phần Đầu tư Năng lượng Đại Trường Thành Holdings,Đại Trường Thành Holdings
+403,DTI,DTI,UpcomIndex,5753,DN,CT,Công ty Cổ phần Đầu tư Đức Trung,Đầu tư Đức Trung
+404,DTL,DTL,VNINDEX,1757,DN,CT,Công ty Cổ phần Đại Thiên Lộc,Đại Thiên Lộc
+405,DTT,DTT,VNINDEX,1353,DN,CT,Công ty Cổ phần Kỹ nghệ Đô Thành,Kỹ nghệ Đô Thành
+406,DTV,DTV,UpcomIndex,7535,DN,CT,Công ty Cổ phần Phát triển điện Trà Vinh,PT điện Nông thôn Trà Vinh
+407,DTVT,MTV,UpcomIndex,2799,DN,CT,Công ty Cổ phần Dịch vụ Môi trường và Công trình Đô thị Vũng Tàu,Công trình đô thị Vũng Tàu
+408,DUGRACO,MGG,UpcomIndex,3763,DN,CT,Tổng Công ty Đức Giang - Công ty Cổ phần,May Đức Giang
+409,DVC,DVC,UpcomIndex,7573,DN,CT,Công ty Cổ phần Thương mại dịch vụ Tổng Hợp Cảng Hải Phòng,TM dịch vụ Cảng Hải Phòng
+410,DVG,DVG,HNXIndex,2353,DN,CT,Công ty Cổ phần Đại Việt Group DVG,Tập đoàn Sơn Đại Việt
+411,DVP,DVP,VNINDEX,2777,DN,CT,Công ty Cổ phần Đầu tư và Phát triển Cảng Đình Vũ,ĐT và PT Cảng Đình Vũ
+412,DVSG,DSG,UpcomIndex,2353,DN,CT,Công ty Cổ phần Kính Đáp Cầu,Kính Đáp Cầu
+413,DVW,DVW,UpcomIndex,2357,DN,CT,Công ty Cổ phần Dịch vụ và Xây dựng cấp nước Đồng Nai,DV và XD cấp nước Đồng Nai
+414,DXG,DXG,VNINDEX,8633,DN,CT,Công ty Cổ phần Tập đoàn Đất Xanh,Địa ốc Đất Xanh
+415,DXL,DXL,UpcomIndex,5753,DN,CT,Công ty Cổ phần Du lịch và Xuất nhập khẩu Lạng Sơn,Du lịch và Xuất nhập khẩu Lạng Sơn
+416,DXP,DXP,HNXIndex,2777,DN,CT,Công ty Cổ phần Cảng Đoạn Xá,Cảng Đoạn Xá
+417,DXRES,DXS,VNINDEX,8637,DN,CT,Công ty Cổ phần Dịch vụ Bất động sản Đất Xanh,Dịch vụ BĐS Đất Xanh
+418,DXV,DXV,VNINDEX,2353,DN,CT,Công ty Cổ phần VICEM Vật liệu Xây dựng Đà Nẵng,Vật liệu Xây dựng Đà Nẵng
+419,DZM,DZM,UpcomIndex,2757,DN,CT,Công ty Cổ phần Cơ điện Dzĩ An,Cơ điện Dzĩ An
+420,E1SSHN30,FUESSV50,VNINDEX,8985,OTHER,QU,Quỹ ETF SSIAM VNX50,Quỹ ETF SSIAM VNX50
+421,E1VFVN30,E1VFVN30,VNINDEX,8985,OTHER,QU,Quỹ ETF DCVFMVN30,Quỹ ETF DCVFMVN30
+422,EBS,EBS,HNXIndex,5557,DN,CT,Công ty Cổ phần Sách Giáo dục tại Thành phố Hà Nội,Sách Giáo dục Hà Nội
+423,EC29,E29,UpcomIndex,2357,DN,CT,Công ty cổ phần Đầu tư Xây dựng và Kỹ thuật 29,Đầu tư XD và Kỹ thuật 29
+424,ECI,ECI,HNXIndex,5557,DN,CT,Công ty Cổ phần Tập đoàn ECI,Bản đồ và tranh ảnh GD
+425,EFI,EFI,UpcomIndex,8633,DN,CT,Công ty Cổ phần Đầu tư Tài chính Giáo dục,Tài chính giáo dục
+426,EIB,EIB,VNINDEX,8355,DN,NH,Ngân hàng Thương mại Cổ phần Xuất nhập khẩu Việt Nam,Eximbank
+427,EID,EID,HNXIndex,5557,DN,CT,Công ty Cổ phần Đầu tư và Phát triển Giáo dục Hà Nội,Phát triển GD Hà Nội
+428,ELC,ELC,VNINDEX,9578,DN,CT,Công ty Cổ phần Công nghệ - Viễn thông ELCOM,ELCOM
+429,EMEC,EME,UpcomIndex,2737,DN,CT,Công ty Cổ phần Điện Cơ,Điện Cơ
+430,EMESCO,EMG,UpcomIndex,2737,DN,CT,Công ty Cổ phần Thiết bị Phụ tùng Cơ điện,Thiết bị phụ tùng cơ điện
+431,EMSP,EMS,UpcomIndex,2771,DN,CT,Tổng Công ty Chuyển phát nhanh Bưu điện - Công ty Cổ phần,Chuyển phát nhanh Bưu điện
+432,EPOCO,EPC,UpcomIndex,3537,DN,CT,Công ty Cổ phần Cà Phê Ea Pốk,Cà Phê Ea Pốk
+433,ETFSSIAM,FUESSVFL,VNINDEX,8985,OTHER,QU,Quỹ ETF SSIAM VNFIN LEAD,Quỹ ETF SSIAM VNFIN LEAD
+434,EVE,EVE,VNINDEX,3763,DN,CT,Công ty Cổ phần Everpia,Everpia
+435,EVGC,EVG,VNINDEX,2357,DN,CT,Công ty Cổ phần Tập đoàn Everland,Tập đoàn Everland
+436,EVNF,EVF,VNINDEX,8773,DN,NH,Công ty Tài chính Cổ phần Điện Lực,Tài chính Điện lực
+437,EVNI,EIC,UpcomIndex,2357,DN,CT,Công ty Cổ phần EVN Quốc Tế,EVN Quốc Tế
+438,EVNLC,LEC,VNINDEX,8633,DN,CT,Công ty Cổ phần Bất động sản Điện lực Miền Trung,BĐS Điện lực Miền Trung
+439,FAHASA,FHS,UpcomIndex,5557,DN,CT,Công ty Cổ phần Phát hành sách Thành phố Hồ Chí Minh - FAHASA,Phát hành sách TP HCM - FAHASA
+440,FAROS,ROS,UpcomIndex,2357,DN,CT,Công ty Cổ phần Xây dựng FLC FAROS,Xây dựng FLC FAROS
+441,FBA,FBA,UpcomIndex,3726,DN,CT,Công ty Cổ phần Tập đoàn Quốc tế FBA,Tập đoàn Quốc tế FBA
+442,FCM,FCM,VNINDEX,2353,DN,CT,Công ty Cổ phần Khoáng sản FECON,Khoáng sản FECON
+443,FCN,FCN,VNINDEX,2357,DN,CT,Công ty Cổ phần FECON,FECON CORP
+444,FDC,FDC,VNINDEX,8633,DN,CT,Công ty Cổ phần Ngoại thương và Phát triển Đầu tư Thành phố Hồ Chí Minh,FIDECO
+445,FICO1,FIC,UpcomIndex,2353,DN,CT,Tổng Công ty Vật liệu Xây dựng số 1 - Công ty Cổ phần,VLXD số 1
+446,FID,FID,HNXIndex,8637,DN,CT,Công ty Cổ phần Đầu tư và Phát triển Doanh nghiệp Việt Nam,Đầu tư và PT doanh nghiệp VN
+447,FIRSTREAL,FIR,VNINDEX,8633,DN,CT,Công ty Cổ phần Địa ốc First Real,Địa ốc First Real
+448,FISHIPCO,FSO,UpcomIndex,2753,DN,CT,Công ty Cổ phần Cơ khí đóng tàu thủy sản Việt Nam,Đóng tàu thủy sản VN
+449,FIT,FIT,VNINDEX,8775,DN,CT,Công ty Cổ phần Tập đoàn F.I.T,Tập đoàn F.I.T
+450,FLC,FLC,UpcomIndex,8633,DN,CT,Công ty Cổ phần Tập đoàn FLC,Tập đoàn FLC
+451,FLCS,ART,UpcomIndex,8777,DN,CK,Công ty Cổ phần Chứng khoán BOS,Chứng khoán BOS
+452,FMC,FMC,VNINDEX,3573,DN,CT,Công ty Cổ phần Thực phẩm Sao Ta,Thực phẩm Sao Ta
+453,FOCC,FOC,UpcomIndex,5555,DN,CT,Công ty Cổ phần Dịch vụ Trực tuyến FPT,FPT Online
+454,FOMECO,FBC,UpcomIndex,2757,DN,CT,Công ty Cổ phần Cơ khí Phổ Yên,Cơ khí Phổ Yên
+455,FOODCOSA,FCS,UpcomIndex,3577,DN,CT,Công ty Cổ phần Lương thực Thành phố Hồ Chí Minh,Lương thực TP Hồ Chí Minh
+456,FORIMEX,FRM,UpcomIndex,1733,DN,CT,Công ty Cổ phần Lâm nghiệp Sài Gòn,Lâm nghiệp Sài Gòn
+457,FORIP,DP3,HNXIndex,4577,DN,CT,Công ty Cổ Phần Dược Phẩm Trung Ương 3,Dược Phẩm TW3
+458,FORTEX,FTM,UpcomIndex,3763,DN,CT,Công ty Cổ phần Đầu tư và Phát triển Đức Quân,Phát triển Đức Quân
+459,FPT,FPT,VNINDEX,9537,DN,CT,Công ty Cổ phần FPT,FPT Corp
+460,FPTR,FRT,VNINDEX,5379,DN,CT,Công ty Cổ phần Bán lẻ Kỹ thuật số FPT,Bán lẻ FPT
+461,FPTS,FTS,VNINDEX,8777,DN,CK,Công ty Cổ phần Chứng khoán FPT,Chứng khoán FPT
+462,FRC,FRC,UpcomIndex,1733,DN,CT,Công ty Cổ phần Lâm đặc sản xuất khẩu Quảng Nam,Lâm đặc sản xuất khẩu Quảng Nam
+463,FT1,FT1,UpcomIndex,2757,DN,CT,Công ty Cổ phần Phụ tùng máy số 1,Phụ tùng máy số 1
+464,FTEL,FOX,UpcomIndex,6535,DN,CT,Công ty Cổ phần Viễn thông FPT,FPT Telecom
+465,FTI,FTI,UpcomIndex,3355,DN,CT,Công ty Cổ phần Công nghiệp - Thương mại Hữu Nghị,Công nghiệp - Thương mại Hữu Nghị
+466,FUEMAV30,FUEMAV30,VNINDEX,8985,OTHER,QU,Quỹ ETF MAFM VN30,Quỹ ETF MAFM VN30
+467,FUESSV30,FUESSV30,VNINDEX,8985,OTHER,QU,Quỹ ETF SSIAM VN30,Quỹ ETF SSIAM VN30
+468,FUEVFVND,FUEVFVND,VNINDEX,8985,OTHER,QU,Quỹ ETF DCVFMVN DIAMOND,Quỹ ETF DCVFMVN DIAMOND
+469,FUEVN100,FUEVN100,VNINDEX,8985,OTHER,QU,Quỹ ETF VINACAPITAL VN100,Quỹ ETF VINACAPITAL VN100
+470,G20,G20,UpcomIndex,3763,DN,CT,Công ty Cổ phần Đầu tư Dệt may Vĩnh Phúc,Đầu tư Dệt may Vĩnh Phúc
+471,GABJSC,GAB,UpcomIndex,2353,DN,CT,Công ty Cổ phần Đầu tư Khai khoáng & Quản lý Tài sản FLC,Đầu tư Khai khoáng và Quản lý Tài sản FLC
+472,GAR10,M10,UpcomIndex,3763,DN,CT,Tổng công ty May 10 - Công ty Cổ phần,May10
+473,GAS,GAS,VNINDEX,7573,DN,CT,Tổng Công ty Khí Việt Nam - Công ty Cổ phần,PV Gas
+474,GDB,BVB,UpcomIndex,8355,DN,NH,Ngân hàng Thương mại Cổ phần Bản Việt,Ngân hàng Bản Việt - BVBank
+475,GDT,GDT,VNINDEX,3726,DN,CT,Công ty Cổ phần Chế biến Gỗ Đức Thành,Gỗ Đức Thành
+476,GDW,GDW,HNXIndex,7577,DN,CT,Công ty Cổ phần Cấp nước Gia Định,Cấp nước Gia Định
+477,GELEX,GEX,VNINDEX,2737,DN,CT,Công ty Cổ phần Tập đoàn Gelex,Tập đoàn Gelex
+478,GELEXTBD,GEE,UpcomIndex,2737,DN,CT,Công ty Cổ phần Điện lực Gelex,Thiết bị điện GELEX
+479,GEN3,PGV,VNINDEX,7535,DN,CT,Tổng Công ty Phát điện 3 - Công ty Cổ phần,Tổng Công ty Phát điện 3
+480,GER,GER,UpcomIndex,1353,DN,CT,Công ty Cổ phần Thể thao Ngôi sao Geru,Thể thao Ngôi sao Geru
+481,GGG,GGG,UpcomIndex,3353,DN,CT,Công ty Cổ phần Ô tô Giải Phóng,Ôtô Giải Phóng
+482,GHC,GHC,UpcomIndex,7535,DN,CT,Công ty Cổ phần Thủy điện Gia Lai,Thủy điện Gia Lai
+483,GIALAICOFFEE,FGL,UpcomIndex,3537,DN,CT,Công ty Cổ phần Cà phê Gia Lai,Cà Phê Gia Lai
+484,GIALAIWACO,GLW,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp thoát nước Gia Lai,Cấp thoát nước Gia Lai
+485,GIL,GIL,VNINDEX,3763,DN,CT,Công ty Cổ phần Sản xuất Kinh doanh Xuất nhập khẩu Bình Thạnh,XNK Bình Thạnh
+486,GLC,GLC,UpcomIndex,1777,DN,CT,Công ty Cổ phần Vàng Lào Cai,Vàng Lào Cai
+487,GLEC,GEG,VNINDEX,7535,DN,CT,Công ty Cổ phần Điện Gia Lai,Điện Gia Lai
+488,GLT,GLT,HNXIndex,3743,DN,CT,Công ty Cổ phần Kỹ thuật điện Toàn Cầu,KT Điện Toàn Cầu
+489,GMA,GMA,HNXIndex,3353,DN,CT,Công ty Cổ phần G-Automobile,G-Automobile
+490,GMC,GMC,VNINDEX,3763,DN,CT,Công ty Cổ phần Garmex Sài Gòn,Garmex Sài Gòn
+491,GMD,GMD,VNINDEX,2777,DN,CT,Công ty Cổ phần Gemadept,Gemadept
+492,GMX,GMX,HNXIndex,2353,DN,CT,Công ty Cổ phần Gạch ngói Gốm xây dựng Mỹ Xuân,Gạch ngói Mỹ Xuân
+493,GREENDI,GIC,HNXIndex,2777,DN,CT,Công ty Cổ phần Đầu tư Dịch vụ và Phát triển Xanh,ĐT Dịch vụ và PT Xanh
+494,GSM,GSM,UpcomIndex,7535,DN,CT,Công ty Cổ phần Thủy điện Hương Sơn,Thủy điện Hương Sơn
+495,GSP,GSP,VNINDEX,2773,DN,CT,Công ty Cổ phần Vận tải Sản phẩm Khí Quốc tế,Vận tải Sản phẩm Khí Quốc tế
+496,GTA,GTA,VNINDEX,1733,DN,CT,Công ty Cổ phần Chế biến Gỗ Thuận An,Gỗ Thuận An
+497,GTDTHP,DDH,UpcomIndex,2777,DN,CT,Công ty Cổ phần Đảm bảo giao thông đường thủy Hải Phòng,Đảm bảo GTĐT Hải Phòng
+498,GTT,GTT,UpcomIndex,5755,DN,CT,Công ty Cổ phần Thuận Thảo,Thuận Thảo Group
+499,H11,H11,UpcomIndex,2357,DN,CT,Công ty Cổ phần Xây dựng HUD101,Xây dựng HUD101
+500,HABACO,PHN,HNXIndex,2733,DN,CT,Công ty Cổ phần Pin Hà Nội,Pin Hà Nội
+501,HACC1,HC1,UpcomIndex,2357,DN,CT,Công ty Cổ phần Xây dựng số 1 Hà Nội,Xây dựng số 1 Hà Nội
+502,HACHIBA,HCB,UpcomIndex,3763,DN,CT,Công ty Cổ phần Dệt may 29/3,Dệt may 29/3
+503,HACO3,HC3,UpcomIndex,2357,DN,CT,Công ty Cổ phần Xây dựng số 3 Hải Phòng,Xây dựng số 3 Hải Phòng
+504,HAD,HAD,HNXIndex,3533,DN,CT,Công ty Cổ phần Bia Hà Nội - Hải Dương,Bia Hà Nội - Hải Dương
+505,HADIPHAR,HDP,UpcomIndex,4577,DN,CT,Công ty Cổ phần Dược Hà Tĩnh,Dược Hà Tĩnh
+506,HAG,HAG,VNINDEX,3573,DN,CT,Công ty Cổ phần Hoàng Anh Gia Lai,Hoàng Anh Gia Lai
+507,HAH,HAH,VNINDEX,2777,DN,CT,Công ty Cổ phần Vận tải và Xếp dỡ Hải An,Vận tải và Xếp dỡ Hải An
+508,HAI,HAI,UpcomIndex,1357,DN,CT,Công ty Cổ phần Nông dược HAI,Nông Dược HAI
+509,HAIPHATGROUP,HPX,VNINDEX,8633,DN,CT,Công ty Cổ phần Đầu tư Hải Phát,Đầu tư Hải Phát
+510,HALCOM,HID,VNINDEX,2357,DN,CT,Công ty Cổ phần Halcom Vietnam,Halcom Vietnam
+511,HALICO,HNR,UpcomIndex,3535,DN,CT,Công ty Cổ phần Rượu và Nước Giải Khát Hà Nội,Cồn Rượu và Nước Giải Khát Hà Nội
+512,HALOBECO,HLB,UpcomIndex,3533,DN,CT,Công ty Cổ phần Bia và Nước giải khát Hạ Long,Bia và NGK Hạ Long
+513,HALOTEX,HLT,UpcomIndex,3763,DN,CT,Công ty Cổ phần Dệt may Hoàng Thị Loan,Dệt may Hoàng Thị Loan
+514,HAMACO,HAM,UpcomIndex,2353,DN,CT,Công ty Cổ phần Vật tư Hậu Giang,Vật tư Hậu Giang
+515,HAMADECO,HHV,VNINDEX,2357,DN,CT,Công ty Cổ phần Đầu tư Hạ tầng Giao thông Đèo Cả,Đầu tư Hạ tầng Giao thông Đèo Cả
+516,HAMIS,AAS,UpcomIndex,8777,DN,CK,Công ty Cổ phần Chứng khoán SmartInvest,Chứng khoán SmartInvest
+517,HANABECO,BBM,UpcomIndex,3533,DN,CT,Công ty Cổ phần Bia Hà Nội - Nam Định,Bia Hà Nội - Nam Định
+518,HANCO,HAN,UpcomIndex,2357,DN,CT,Tổng Công ty Xây dựng Hà Nội - CTCP,Xây dựng Hà Nội
+519,HANDI6,HD6,UpcomIndex,8633,DN,CT,Công ty Cổ phần Đầu tư và Phát triển nhà số 6 Hà Nội,Phát triển nhà số 6 Hà Nội
+520,HANELP,HNP,UpcomIndex,1353,DN,CT,Công ty Cổ phần Hanel Xốp Nhựa,Hanel Xốp Nhựa
+521,HANOSIMEX,HSM,UpcomIndex,3763,DN,CT,Tổng Công ty Cổ phần Dệt May Hà Nội,HANOSIMEX
+522,HAP,HAP,VNINDEX,1737,DN,CT,Công ty Cổ phần Tập Đoàn Hapaco,Tập đoàn Hapaco
+523,HAPRO,HTM,UpcomIndex,5373,DN,CT,Tổng Công ty Thương mại Hà Nội – Công ty cổ phần,Thương mại Hà Nội - Hapro
+524,HAR,HAR,VNINDEX,8633,DN,CT,Công ty Cổ phần Đầu tư Thương mại Bất động sản An Dương Thảo Điền,BĐS An Dương Thảo Điền
+525,HAS,HAS,VNINDEX,2357,DN,CT,Công ty Cổ phần Hacisco,Hacisco
+526,HASECO,HES,UpcomIndex,5755,DN,CT,Công ty Cổ phần Dịch vụ Giải trí Hà Nội,Dịch vụ Giải trí Hà Nội
+527,HAT,HAT,HNXIndex,3533,DN,CT,Công ty Cổ phần Thương mại Bia Hà Nội,TM Bia Hà Nội
+528,HATOS,GH3,UpcomIndex,2357,DN,CT,Công ty Cổ phần Công trình giao thông Hà Nội,Công trình giao thông Hà Nội
+529,HAV,HAV,UpcomIndex,3535,DN,CT,Công ty Cổ phần Rượu Hapro,Rượu Hapro
+530,HAWAS,HGW,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp thoát nước - Công trình Đô thị Hậu Giang,Công trình đô thị Hậu Giang
+531,HAX,HAX,VNINDEX,3353,DN,CT,Công ty Cổ phần Dịch vụ Ô tô Hàng Xanh,Ô tô Hàng Xanh
+532,HBC,HBC,VNINDEX,2357,DN,CT,Công ty Cổ phần Tập đoàn Xây dựng Hòa Bình,Tập đoàn Xây dựng Hòa Bình
+533,HBD,HBD,UpcomIndex,2723,DN,CT,Công ty Cổ phần Bao bì PP Bình Dương,Bao bì PP Bình Dương
+534,HBHP,HBH,UpcomIndex,3533,DN,CT,Công ty Cổ phần HABECO - Hải Phòng,HABECO Hải Phòng
+535,HBS,HBS,HNXIndex,8777,DN,CK,Công ty Cổ phần Chứng khoán Hòa Bình,Chứng khoán Hòa Bình
+536,HCC,HCC,HNXIndex,2353,DN,CT,Công ty Cổ phần Bê tông Hòa Cầm - Intimex,Bê tông Hòa Cầm
+537,HCCI,XDH,UpcomIndex,8633,DN,CT,Công ty Cổ phần Đầu tư Xây dựng Dân dụng Hà Nội,Đầu tư XD Dân dụng Hà Nội
+538,HCDG,HCD,VNINDEX,1353,DN,CT,Công ty Cổ phần Đầu tư Sản xuất và Thương mại HCD,SX và Thương mại HCD
+539,HCI,HCI,UpcomIndex,2357,DN,CT,Công ty Cổ phần Đầu tư - Xây dựng Hà Nội,Đầu tư - XD Hà Nội
+540,HCM,HCM,VNINDEX,8777,DN,CK,Công ty Cổ phần Chứng khoán Thành phố Hồ Chí Minh,Chứng khoán HSC
+541,HCMPC,HTE,UpcomIndex,7535,DN,CT,Công ty Cổ phần Đầu tư Kinh doanh Điện lực Thành phố Hồ Chí Minh,Kinh doanh điện lực TP HCM
+542,HCT,HCT,HNXIndex,2779,DN,CT,Công ty Cổ phần Thương mại - Dịch vụ - Vận tải Xi măng Hải Phòng,TM - DV - Vận tải Xi măng Hải Phòng 
+543,HDA,HDA,HNXIndex,2353,DN,CT,Công ty Cổ phần Hãng sơn Đông Á,Hãng sơn Đông Á
+544,HDB,HDB,VNINDEX,8355,DN,NH,Ngân hàng Thương mại Cổ phần Phát Triển Thành phố Hồ Chí Minh,HDBank
+545,HDC,HDC,VNINDEX,8633,DN,CT,Công ty Cổ phần Phát triển Nhà Bà Rịa Vũng Tàu,Phát triển Nhà BR-VT
+546,HDG,HDG,VNINDEX,8633,DN,CT,Công ty Cổ phần Tập đoàn Hà Đô,Tập đoàn Hà Đô
+547,HDM,HDM,UpcomIndex,3763,DN,CT,Công ty Cổ phần Dệt May Huế,Dệt May Huế
+548,HDO,HDO,UpcomIndex,2723,DN,CT,Công ty Cổ phần Hưng Đạo Container,Hưng Đạo Container
+549,HDPHAR,DHD,UpcomIndex,4577,DN,CT,Công ty Cổ phần Dược Vật Tư Y Tế Hải Dương,Dược Vật Tư Y Tế Hải Dương
+550,HDWACO,HDW,UpcomIndex,7577,DN,CT,Công ty Cổ phần Kinh doanh Nước sạch Hải Dương,Nước sạch Hải Dương
+551,HEC2,HEC,UpcomIndex,2791,DN,CT,Công ty Cổ phần Tư vấn xây dựng Thủy Lợi II,Tư vấn XD Thủy Lợi II (HEC II)
+552,HEJ,HEJ,UpcomIndex,2357,DN,CT,Tổng Công ty Tư vấn Xây dựng Thủy Lợi Việt Nam - CTCP,Tư vấn Xây dựng Thủy Lợi VN
+553,HEMC,HEM,UpcomIndex,2737,DN,CT,Công ty Cổ phần Chế tạo Điện cơ Hà Nội,Chế tạo điện cơ Hà Nội
+554,HEP,HEP,UpcomIndex,2799,DN,CT,Công ty Cổ phần Môi trường và Công trình đô thị Huế,Môi trường và Công trình đô thị Huế
+555,HEV,HEV,HNXIndex,5557,DN,CT,Công ty Cổ phần Sách Đại học - Dạy nghề,Sách Đại học - Dạy nghề
+556,HFC,HFC,UpcomIndex,7573,DN,CT,Công ty Cổ phần Xăng dầu HFC,Xăng dầu HFC
+557,HFX,HFX,UpcomIndex,5373,DN,CT,Công ty Cổ phần Sản xuất - Xuất nhập khẩu Thanh Hà,XNK Thanh Hà
+558,HGM,HGM,HNXIndex,1775,DN,CT,Công ty Cổ phần Cơ khí và Khoáng sản Hà Giang,Khoáng sản Hà Giang
+559,HGTC,HGT,UpcomIndex,5759,DN,CT,Công ty Cổ phần Du lịch Hương Giang,Du lịch Hương Giang
+560,HHC,HHC,HNXIndex,3577,DN,CT,Công ty Cổ phần Bánh kẹo Hải Hà,Bánh kẹo Hải Hà
+561,HHG,HHG,UpcomIndex,5759,DN,CT,Công ty Cổ phần Hoàng Hà,Vận tải Hoàng Hà
+562,HHN,HHN,UpcomIndex,2777,DN,CT,Công ty Cổ phần Vận tải và Dịch vụ Hàng hóa Hà Nội,Vận tải và DV Hàng hóa Hà Nội
+563,HHPPAPER,HHP,VNINDEX,1737,DN,CT,Công ty Cổ phần HHP Global,Giấy Hoàng Hà Hải Phòng
+564,HHRAIL,HHR,UpcomIndex,2775,DN,CT,Công ty Cổ phần Đường sắt Hà Hải,Đường sắt Hà Hải
+565,HHS,HHS,VNINDEX,3353,DN,CT,Công ty Cổ phần Đầu tư Dịch vụ Hoàng Huy,Đầu tư DV Hoàng Huy
+566,HHSF,TCH,VNINDEX,8633,DN,CT,Công ty Cổ phần Đầu tư Dịch vụ Tài chính Hoàng Huy,ĐT DV Tài chính Hoàng Huy
+567,HHSLAGRI,HSL,VNINDEX,3577,DN,CT,Công ty Cổ phần Đầu tư Phát triển Thực phẩm Hồng Hà,Thực phẩm Hồng Hà
+568,HIG,HIG,UpcomIndex,9537,DN,CT,Công ty Cổ phần Tập đoàn HIPT,Tập đoàn HIPT
+569,HIPC,HPI,UpcomIndex,8633,DN,CT,Công ty Cổ phần Khu công nghiệp Hiệp Phước,Khu công nghiệp Hiệp Phước
+570,HJS,HJS,HNXIndex,7535,DN,CT,Công ty Cổ phần Thủy điện Nậm Mu,Thủy điện Nậm Mu
+571,HKB,HKB,UpcomIndex,3577,DN,CT,Công ty Cổ phần Nông nghiệp và Thực phẩm Hà Nội - Kinh Bắc,Thực phẩm Hà Nội - Kinh Bắc
+572,HKT,HKT,HNXIndex,3537,DN,CT,Công ty Cổ phần Đầu tư Ego Việt Nam,Đầu tư Ego Việt Nam
+573,HLA,HLA,UpcomIndex,1757,DN,CT,Công ty Cổ phần Hữu Liên Á Châu,Hữu Liên Á Châu
+574,HLC,HLC,HNXIndex,1771,DN,CT,Công ty Cổ phần Than Hà Lầm - Vinacomin,Than Hà Lầm
+575,HLD,HLD,HNXIndex,8633,DN,CT,Công ty Cổ phần Đầu tư và Phát triển Bất động sản HUDLAND,Bất động sản HUDLAND
+576,HLR,HLR,UpcomIndex,2775,DN,CT,Công ty Cổ phần Đường sắt Hà Lạng,Đường sắt Hà Lạng
+577,HLSC,HLS,UpcomIndex,2733,DN,CT,Công ty Cổ phần Sứ kỹ thuật Hoàng Liên Sơn,Sứ Hoàng Liên Sơn
+578,HLY,HLY,UpcomIndex,2353,DN,CT,Công ty Cổ phần Gốm Xây Dựng Yên Hưng,Gốm Xây Dựng Yên Hưng
+579,HMC,HMC,VNINDEX,1757,DN,CT,Công ty Cổ phần Kim khí Thành phố Hồ Chí Minh - VNSTEEL,Kim khí TP.HCM
+580,HMCC,HMS,UpcomIndex,2357,DN,CT,Công ty Cổ phần Xây dựng Bảo tàng Hồ Chí Minh,XD Bảo tàng Hồ Chí Minh
+581,HMG,HMG,UpcomIndex,1757,DN,CT,Công ty Cổ phần Kim Khí Hà Nội - VNSTEEL,Kim Khí Hà Nội
+582,HMH,HMH,HNXIndex,2779,DN,CT,Công ty Cổ phần Hải Minh,Tập đoàn Hải Minh
+583,HNCADAS,DCH,UpcomIndex,8637,DN,CT,Công ty Cổ phần Địa chính Hà Nội,Địa chính Hà Nội
+584,HNFOOD,HAF,UpcomIndex,3577,DN,CT,Công ty Cổ phần Thực phẩm Hà Nội,Thực phẩm Hà Nội
+585,HNG,HNG,VNINDEX,3573,DN,CT,Công ty Cổ phần Nông nghiệp Quốc tế Hoàng Anh Gia Lai,Nông nghiệp Quốc tế HAGL
+586,HNHC,HNA,VNINDEX,7535,DN,CT,Công ty Cổ phần Thủy điện Hủa Na,Thủy điện Hủa Na
+587,HNM,HNM,UpcomIndex,3577,DN,CT,Công ty Cổ phần Sữa Hà Nội,HANOIMILK
+588,HNPHARM,DHN,UpcomIndex,4577,DN,CT,Công ty Cổ phần Dược phẩm Hà Nội,Dược Hà Nội
+589,HNRAIL,HRT,UpcomIndex,5759,DN,CT,Công ty Cổ phần Vận tải đường sắt Hà Nội,Vận tải đường sắt Hà Nội
+590,HNTOR,TSJ,UpcomIndex,5759,DN,CT,Công ty Cổ phần Du lịch Dịch vụ Hà Nội,Hanoi Toserco
+591,HOAVIET,HJC,UpcomIndex,3785,DN,CT,Công ty Cổ phần Hòa Việt,Công ty Cổ phần Hòa Việt
+592,HOM,HOM,HNXIndex,2353,DN,CT,Công ty Cổ phần Xi măng VICEM Hoàng Mai,Xi măng VICEM Hoàng Mai
+593,HOT,HOT,UpcomIndex,5759,DN,CT,Công ty Cổ phần Du lịch - Dịch vụ Hội An,Du lịch - DV Hội An
+594,HPB,HPB,UpcomIndex,2723,DN,CT,Công ty Cổ phần Bao bì PP,Bao bì PP
+595,HPC,HAC,UpcomIndex,8777,DN,CK,Công ty Cổ phần Chứng khoán Hải Phòng,Chứng khoán Hải Phòng
+596,HPCC,CCP,UpcomIndex,2777,DN,CT,Công ty Cổ phần Cảng Cửa Cấm Hải Phòng,Cảng Cửa Cấm
+597,HPD,HPD,UpcomIndex,7535,DN,CT,Công ty Cổ phần Thủy điện Đăk Đoa,Thủy điện Đăk Đoa
+598,HPG,HPG,VNINDEX,1757,DN,CT,Công ty Cổ phần Tập đoàn Hòa Phát,Hòa Phát
+599,HPH,HPH,UpcomIndex,1357,DN,CT,Công ty Cổ phần Hóa Chất Hưng Phát Hà Bắc,Hóa Chất Hưng Phát Hà Bắc
+600,HPMC,HPM,UpcomIndex,1775,DN,CT,Công ty Cổ phần Xây dựng Thương mại và Khoáng sản Hoàng Phúc,Khoáng sản Hoàng Phúc
+601,HPP,HPP,UpcomIndex,2353,DN,CT,Công ty Cổ phần Sơn Hải Phòng,HPP
+602,HPPHARM,DPH,UpcomIndex,4577,DN,CT,Công ty Cổ phần Dược phẩm Hải Phòng,Dược phẩm Hải Phòng
+603,HPT,HPT,UpcomIndex,9537,DN,CT,Công ty Cổ phần Dịch vụ Công nghệ Tin học HPT,DV Công nghệ Tin học HPT
+604,HPTT,TUG,UpcomIndex,2777,DN,CT,Công ty Cổ phần Lai dắt và Vận tải Cảng Hải Phòng,Lai dắt và VT cảng Hải Phòng
+605,HPWC,HPW,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp nước Hải Phòng,Cấp nước Hải Phòng
+606,HQC,HQC,VNINDEX,8633,DN,CT,Công ty Cổ phần Tư vấn - Thương mại - Dịch vụ Địa ốc Hoàng Quân,Địa ốc Hoàng Quân
+607,HRB,HRB,UpcomIndex,8633,DN,CT,Công ty Cổ phần Harec Đầu tư và Thương Mại,Harec Đầu tư và Thương Mại
+608,HRC,HRC,VNINDEX,1353,DN,CT,Công ty Cổ phần Cao su Hòa Bình,Cao su Hòa Bình
+609,HSA,HSA,UpcomIndex,2791,DN,CT,Công ty Cổ phần HESTIA,HESTIA
+610,HSG,HSG,VNINDEX,1757,DN,CT,Công ty Cổ phần Tập đoàn Hoa Sen,Tập đoàn Hoa Sen
+611,HSI,HSI,UpcomIndex,1357,DN,CT,Công ty Cổ phần Vật tư Tổng hợp và Phân bón Hóa sinh,Phân bón Hóa sinh
+612,HSPC,HSP,UpcomIndex,2353,DN,CT,Công ty Cổ phần Sơn Tổng hợp Hà Nội,Sơn Tổng hợp Hà Nội
+613,HT1,HT1,VNINDEX,2353,DN,CT,Công ty Cổ phần Xi măng VICEM Hà Tiên,VICEM Hà Tiên
+614,HTC,HTC,HNXIndex,7573,DN,CT,Công ty Cổ phần Thương mại Hóc Môn,Thương mại Hóc Môn
+615,HTG,HTG,VNINDEX,3763,DN,CT,Tổng Công ty Cổ phần Dệt may Hòa Thọ,Dệt may Hòa Thọ
+616,HTI,HTI,VNINDEX,2357,DN,CT,Công ty Cổ phần Đầu tư Phát triển Hạ tầng IDICO,PT Hạ tầng IDICO
+617,HTINCONS,HTN,VNINDEX,8633,DN,CT,Công ty Cổ phần Hưng Thịnh Incons,Hưng Thịnh Incons
+618,HTL,HTL,VNINDEX,3353,DN,CT,Công ty Cổ phần Kỹ thuật và Ô tô Trường Long,Ô tô Trường Long
+619,HTP,HTP,HNXIndex,5557,DN,CT,Công ty Cổ phần In Sách Giáo Khoa Hòa Phát,In SGK Hòa Phát
+620,HTT,HTT,UpcomIndex,5373,DN,CT,Công ty Cổ phần Thương mại Hà Tây,Thương mại Hà Tây
+621,HTV,HTV,VNINDEX,2773,DN,CT,Công ty Cổ phần Logistics Vicem,Logistics Vicem
+622,HU1,HU1,VNINDEX,2357,DN,CT,Công ty Cổ phần Đầu tư và Xây dựng HUD1,Xây dựng HUD1
+623,HU3,HU3,UpcomIndex,2357,DN,CT,Công ty Cổ phần Đầu tư và Xây dựng HUD3,Xây dựng HUD3
+624,HU4,HU4,UpcomIndex,2357,DN,CT,Công ty Cổ phần Đầu tư và Xây dựng HUD4,Đầu tư và Xây dựng HUD4
+625,HUD2,HD2,UpcomIndex,8633,DN,CT,Công ty Cổ phần Đầu tư phát triển nhà HUD2,Đầu tư phát triển nhà HUD 2
+626,HUD6,HU6,UpcomIndex,8633,DN,CT,Công ty Cổ phần Đầu tư Phát triển Nhà và Đô thị HUD6,PT Nhà và Đô thị HUD6
+627,HUD8,HD8,UpcomIndex,8633,DN,CT,Công ty Cổ phần Đầu tư Phát triển Nhà và Đô thị HUD8,PT Nhà và Đô thị HUD8
+628,HUEWACO,HWS,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp nước Thừa Thiên Huế,Cấp nước Thừa Thiên Huế
+629,HUGA,HNI,UpcomIndex,3763,DN,CT,Công ty Cổ phần May Hữu Nghị,May Hữu Nghị
+630,HUGACO,HUG,UpcomIndex,3763,DN,CT,Tổng công ty May Hưng Yên - Công ty Cổ phần,May Hưng Yên
+631,HUT,HUT,HNXIndex,2357,DN,CT,Công ty Cổ phần Tasco,HUD - Tasco
+632,HUUNGHI,HNF,UpcomIndex,3577,DN,CT,Công ty Cổ phần Thực phẩm Hữu Nghị,Bánh kẹo Hữu Nghị
+633,HVA,HVA,UpcomIndex,3573,DN,CT,Công ty Cổ phần Đầu tư HVA,Đầu tư HVA
+634,HVCIT,HVH,VNINDEX,2357,DN,CT,Công ty Cổ phần Đầu tư và Công nghệ HVC,Đầu tư và Công nghệ HVC
+635,HVG,HVG,UpcomIndex,3573,DN,CT,Công ty Cổ phần Hùng Vương,Thủy sản Hùng Vương
+636,HVT,HVT,HNXIndex,1357,DN,CT,Công ty Cổ phần Hóa chất Việt Trì,Hóa chất Việt trì
+637,HVX,HVX,VNINDEX,2353,DN,CT,Công ty Cổ phần Xi măng Vicem Hải Vân,Xi măng Vicem Hải Vân
+638,I40,L40,HNXIndex,2357,DN,CT,Công ty Cổ phần Đầu tư và Xây dựng 40,Đầu tư và Xây dựng 40
+639,IBC,IBC,UpcomIndex,8775,DN,CT,Công ty Cổ phần Đầu tư APAX Holdings,Đầu tư APAX Holdings
+640,ICC,ICC,UpcomIndex,2357,DN,CT,Công ty Cổ phần Xây dựng công nghiệp,Xây dựng công nghiệp
+641,ICDLB,ILB,VNINDEX,2777,DN,CT,Công ty Cổ phần ICD Tân Cảng - Long Bình,ICD Tân Cảng Long Bình
+642,ICF,ICF,UpcomIndex,3573,DN,CT,Công ty Cổ phần Đầu tư-Thương mại-Thủy sản,Đầu tư Thương mại Thủy sản
+643,ICG,ICG,HNXIndex,2357,DN,CT,Công ty Cổ phần Xây dựng Sông Hồng,Xây dựng Sông Hồng
+644,ICI,ICI,UpcomIndex,2357,DN,CT,Công ty Cổ phần Đầu tư và Xây dựng Công nghiệp,Đầu tư và XD Công nghiệp
+645,ICON4,CC4,UpcomIndex,2357,DN,CT,Công ty Cổ phần Đầu tư và Xây dựng số 4,ĐT và XD số 4
+646,IDI,IDI,VNINDEX,3573,DN,CT,Công ty Cổ phần Đầu tư và Phát triển Đa Quốc Gia I.D.I,Đầu tư và PT Đa Quốc Gia
+647,IDICO,IDC,HNXIndex,8633,DN,CT,Tổng Công ty IDICO - CTCP,IDICO
+648,IDJ,IDJ,HNXIndex,8633,DN,CT,Công ty Cổ phần Đầu tư IDJ Việt Nam,Đầu tư IDJ Việt Nam
+649,IDP,IDP,UpcomIndex,3577,DN,CT,Công ty Cổ phần Sữa Quốc tế,Sữa Quốc tế
+650,IDV,IDV,HNXIndex,8633,DN,CT,Công ty Cổ phần Phát triển Hạ tầng Vĩnh Phúc,PT Hạ tầng Vĩnh Phúc
+651,IFS,IFS,UpcomIndex,3537,DN,CT,Công ty Cổ phần Thực phẩm Quốc tế,Thực phẩm Quốc tế
+652,IHK,IHK,UpcomIndex,5557,DN,CT,Công ty Cổ phần In Hàng Không,In Hàng Không
+653,IJC,IJC,VNINDEX,8633,DN,CT,Công ty Cổ phần Phát triển Hạ tầng Kỹ thuật,Becamex IJC
+654,ILA,ILA,UpcomIndex,3573,DN,CT,Công ty Cổ phần ILA,Công ty ILA
+655,ILC,ILC,UpcomIndex,2793,DN,CT,Công ty Cổ phần Hợp tác lao động với nước ngoài,Hợp tác lao động với nước ngoài
+656,IME,IME,UpcomIndex,2757,DN,CT,Công ty Cổ phần Cơ khí và Xây lắp Công nghiệp,Xây lắp Công nghiệp
+657,IMP,IMP,VNINDEX,4577,DN,CT,Công ty Cổ phần Dược phẩm IMEXPHARM,IMEXPHARM
+658,IN4,IN4,UpcomIndex,5557,DN,CT,Công ty Cổ phần In số 4,In số 4
+659,INBID,IBD,UpcomIndex,5557,DN,CT,Công ty Cổ phần In Tổng hợp Bình Dương,In Tổng hợp Bình Dương
+660,INC,INC,HNXIndex,2357,DN,CT,Công ty Cổ phần Tư vấn Đầu tư IDICO,Tư vấn Đầu tư IDICO
+661,INDOCHINEINMEX,DDG,HNXIndex,7573,DN,CT,Công ty Cổ phần Đầu tư Công nghiệp Xuất nhập khẩu Đông Dương,Đầu tư CN XNK Đông Dương
+662,INN,INN,HNXIndex,2723,DN,CT,Công ty Cổ phần Bao bì và In Nông nghiệp,Bao bì và In Nông Nghiệp
+663,INRUCO,IRC,UpcomIndex,1353,DN,CT,Công ty Cổ phần Cao su Công nghiệp,Cao su Công nghiệp
+664,INTERSERCO,ILS,UpcomIndex,2723,DN,CT,Công ty Cổ phần Đầu tư Thương mại và Dịch vụ Quốc tế,TM và Dịch vụ Quốc tế
+665,IPAG,IPA,HNXIndex,2791,DN,CT,Công ty Cổ phần Tập đoàn Đầu tư I.P.A,Tập đoàn Đầu tư I.P.A
+666,ISLC,ISG,UpcomIndex,2773,DN,CT,Công ty Cổ phần Vận tải biển và Hợp tác lao động Quốc Tế,Vận tải biển và Hợp tác LĐ Quốc Tế
+667,IST,IST,UpcomIndex,2777,DN,CT,Công ty Cổ phần ICD Tân Cảng Sóng Thần,ICD Tân Cảng Sóng Thần
+668,ITA,ITA,VNINDEX,8633,DN,CT,Công ty Cổ phần Đầu tư và Công nghiệp Tân Tạo,Đầu tư CN Tân Tạo
+669,ITASCO,ITS,UpcomIndex,2757,DN,CT,"Công ty Cổ phần Đầu tư, Thương mại và Dịch vụ - Vinacomin",Thương mại và DV - Vinacomin
+670,ITC,ITC,VNINDEX,8633,DN,CT,Công ty Cổ phần Đầu tư - Kinh doanh nhà,Đầu tư kinh doanh Nhà
+671,ITD,ITD,VNINDEX,9572,DN,CT,Công ty Cổ phần Công nghệ Tiên Phong,Công nghệ Tiên Phong
+672,ITQ,ITQ,HNXIndex,1757,DN,CT,Công ty Cổ phần Tập đoàn Thiên Quang,Tập đoàn Thiên Quang
+673,IVS,IVS,HNXIndex,8777,DN,CK,Công ty Cổ phần Chứng khoán Guotai Junan (Việt Nam),Chứng khoán Guotai Junan (Việt Nam)
+674,JVC,JVC,VNINDEX,4535,DN,CT,Công ty Cổ phần Đầu tư và Phát triển Y tế Việt Nhật,Đầu tư và Phát triển Y tế Việt Nhật
+675,KAC,KAC,UpcomIndex,8633,DN,CT,Công ty Cổ phần Đầu tư Địa ốc Khang An,Địa ốc Khang An
+676,KBC,KBC,VNINDEX,8633,DN,CT,Tổng Công ty Phát triển Đô thị Kinh Bắc,TCT Đô thị Kinh Bắc
+677,KCE,KCE,UpcomIndex,2353,DN,CT,Công ty Cổ phần Bê tông Ly tâm Điện lực Khánh Hòa,Bê tông Ly tâm ĐL Khánh Hòa
+678,KDC,KDC,VNINDEX,3577,DN,CT,Công ty Cổ phần Tập đoàn KIDO,Tập đoàn KIDO
+679,KDH,KDH,VNINDEX,8633,DN,CT,Công ty Cổ phần Đầu tư và Kinh doanh nhà Khang Điền,Nhà Khang Điền
+680,KDM,KDM,HNXIndex,2357,DN,CT,Công ty Cổ phần Tập đoàn GCL,Tập đoàn GCL
+681,KGTTC,KTC,UpcomIndex,3577,DN,CT,Công ty Cổ phần Thương mại Kiên Giang,Thương mại Kiên Giang
+682,KHAIHOANLAND,KHG,VNINDEX,8633,DN,CT,Công ty Cổ phần Tập đoàn Khải Hoàn Land,Tập đoàn Khải Hoàn Land
+683,KHAWASSCO,KHW,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp thoát nước Khánh Hòa,Cấp thoát nước Khánh Hòa
+684,KHL,KHL,UpcomIndex,2353,DN,CT,Công ty Cổ phần Khoáng sản và Vật liệu Xây dựng Hưng Long,VLXD Hưng Long
+685,KHP,KHP,VNINDEX,7535,DN,CT,Công ty Cổ phần Điện lực Khánh Hòa,Điện lực Khánh Hòa
+686,KIGIMEX,KGM,UpcomIndex,5373,DN,CT,Công ty Cổ phần Xuất nhập khẩu Kiên Giang,XNK Kiên Giang
+687,KIHUSEA,KHS,HNXIndex,3573,DN,CT,Công ty Cổ phần Kiên Hùng,Thủy sản Kiên Hùng
+688,KKC,KKC,HNXIndex,1757,DN,CT,Công ty Cổ phần Tập đoàn Thành Thái,Tập đoàn Thành Thái
+689,KLB,KLB,UpcomIndex,8355,DN,NH,Ngân hàng Thương mại Cổ phần Kiên Long,KienlongBank
+690,KLF,KLF,UpcomIndex,5755,DN,CT,Công ty Cổ phần Đầu tư Thương mại và Xuất nhập khẩu CFS,KLF Global
+691,KLMNT,KLM,UpcomIndex,1755,DN,CT,Công ty Cổ phần Kim loại màu Nghệ Tĩnh,Kim loại màu Nghệ Tĩnh
+692,KMBC,GKM,HNXIndex,2353,DN,CT,Công ty Cổ phần GKM Holdings,Khang Minh Group
+693,KMR,KMR,VNINDEX,3763,DN,CT,Công ty Cổ phần Mirae,MIRAE
+694,KMT,KMT,HNXIndex,1757,DN,CT,Công ty Cổ phần Kim khí Miền Trung,Kim khí Miền Trung
+695,KONTUMWATER,KTW,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp nước Kon Tum,Cấp nước Kon Tum
+696,KOSY,KOS,VNINDEX,8633,DN,CT,Công ty Cổ phần KOSY,Công ty KOSY
+697,KPF,KPF,VNINDEX,2353,DN,CT,Công ty Cổ phần Đầu tư Tài sản KOJI,Đầu tư Tài sản KOJI
+698,KSB,KSB,VNINDEX,1775,DN,CT,Công ty Cổ phần Khoáng sản và Xây dựng Bình Dương,Khoáng sản Bình Dương
+699,KSD,KSD,HNXIndex,3722,DN,CT,Công ty Cổ phần Đầu tư DNA,Đầu tư DNA
+700,KSH,KSH,UpcomIndex,1775,DN,CT,Công ty Cổ phần Damac GLS,Damac GLS
+701,KSHD,KHD,UpcomIndex,1775,DN,CT,"Công ty Cổ phần Khai thác, Chế biến Khoáng sản Hải Dương",Khoáng sản Hải Dương
+702,KSLATCA,LMC,UpcomIndex,1775,DN,CT,Công ty Cổ phần Long Beach LMC,Khoáng sản LATCA
+703,KSQ,KSQ,HNXIndex,1775,DN,CT,Công ty Cổ phần CNC Capital Việt Nam,CNC Capital Việt Nam
+704,KSS,KSS,UpcomIndex,1775,DN,CT,Tổng Công ty Cổ phần Khoáng sản Na Rì Hamico,Na Rì Hamico
+705,KST,KST,HNXIndex,9578,DN,CT,Công ty Cổ phần KASATI,KASATI
+706,KSV,KSV,HNXIndex,1775,DN,CT,Tổng Công ty Khoáng sản TKV - Công ty Cổ phần,Khoáng sản TKV
+707,KTL,KTL,UpcomIndex,1757,DN,CT,Công ty Cổ phần Kim khí Thăng Long,Kim khí Thăng Long
+708,KTS,KTS,HNXIndex,3577,DN,CT,Công ty Cổ phần Đường Kon Tum,Đường Kon Tum
+709,KTT,KTT,HNXIndex,2357,DN,CT,Công ty Cổ phần Tập đoàn Đầu tư KTT,Tập đoàn Đầu tư KTT
+710,KVC,KVC,UpcomIndex,1757,DN,CT,Công ty Cổ phần Sản xuất Xuất nhập khẩu Inox Kim Vĩ,XNK Inox Kim Vĩ
+711,L10,L10,VNINDEX,2757,DN,CT,Công ty Cổ phần Lilama 10,LILAMA 10
+712,L14,L14,HNXIndex,2357,DN,CT,Công ty Cổ phần Licogi 14,Licogi 14
+713,L18,L18,HNXIndex,2357,DN,CT,Công ty Cổ phần Đầu tư và Xây dựng số 18,LICOGI - 18
+714,L35,L35,UpcomIndex,2757,DN,CT,Công ty Cổ phần Cơ khí Lắp máy Lilama,Cơ khí Lilama
+715,L43,L43,HNXIndex,2757,DN,CT,Công ty Cổ phần Lilama 45.3,LILAMA 45.3
+716,L44,L44,UpcomIndex,2757,DN,CT,Công ty Cổ phần Lilama 45.4,LILAMA 45.4
+717,L451,L45,UpcomIndex,2357,DN,CT,Công ty Cổ phần Lilama 45.1,Lilama 45.1
+718,L61,L61,HNXIndex,2757,DN,CT,Công ty Cổ phần Lilama 69-1,LILAMA 69-1
+719,L62,L62,HNXIndex,2757,DN,CT,Công ty Cổ phần Lilama 69 - 2,LILAMA 69.2
+720,L693,L63,UpcomIndex,2757,DN,CT,Công ty Cổ phần Lilama 69-3,Lilama 69-3
+721,LAF,LAF,VNINDEX,3577,DN,CT,Công ty Cổ phần Chế biến Hàng Xuất khẩu Long An,Chế biến Hàng XK Long An
+722,LAMA,LMI,UpcomIndex,2757,DN,CT,Công ty Cổ phần Đầu tư Xây dựng Lắp máy IDICO,Lắp máy IDICO
+723,LAMCO,DKC,UpcomIndex,5373,DN,CT,Công ty Cổ phần Chợ Lạng Sơn,Chợ Lạng Sơn
+724,LANDSG,LSG,UpcomIndex,8633,DN,CT,Công ty Cổ phần Bất động sản Sài Gòn Vi na,BĐS Sài Gòn Vina
+725,LAS,LAS,HNXIndex,1357,DN,CT,Công ty Cổ phần Supe Phốt phát và Hóa chất Lâm Thao,Hóa chất Lâm Thao
+726,LAW,LAW,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp thoát nước Long An,Cấp thoát nước Long An
+727,LBC,LBC,UpcomIndex,5373,DN,CT,Công ty Cổ phần Thương mại - Đầu tư Long Biên,Thương mại - Đầu tư Long Biên
+728,LBE,LBE,HNXIndex,5557,DN,CT,Công ty Cổ phần Sách và Thiết bị Trường học Long An,Sách và Thiết bị Trường học Long An
+729,LBM,LBM,VNINDEX,2353,DN,CT,Công ty Cổ phần Khoáng sản và Vật liệu xây dựng Lâm Đồng,Khoáng sản Lâm Đồng
+730,LCC,LCC,UpcomIndex,2353,DN,CT,Công ty Cổ phần Xi măng Hồng Phong,Xi măng Hồng Phong
+731,LCD,LCD,HNXIndex,2357,DN,CT,Công ty Cổ phần Lắp máy - Thí nghiệm cơ điện,Thí nghiệm cơ điện
+732,LCG,LCG,VNINDEX,2357,DN,CT,Công ty Cổ phần Lizen,LIZEN
+733,LCGQN,LQN,UpcomIndex,2757,DN,CT,Công ty Cổ phần Licogi Quảng Ngãi,Licogi Quảng Ngãi
+734,LCM,LCM,UpcomIndex,1775,DN,CT,Công ty Cổ phần Khai thác và Chế biến Khoáng sản Lào Cai,Khoáng sản Lào Cai
+735,LCS,LCS,UpcomIndex,2357,DN,CT,Công ty Cổ phần Licogi 16.6,Licogi 16.6
+736,LDGROUP,LDG,VNINDEX,8637,DN,CT,Công ty Cổ phần Đầu tư LDG,Đầu tư LDG
+737,LDP,LDP,HNXIndex,4577,DN,CT,Công ty Cổ phần Dược Lâm Đồng - Ladophar,Dược Lâm Đồng - Ladophar
+738,LDWSS,LDW,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp thoát nước Lâm Đồng,Cấp thoát nước Lâm Đồng
+739,LEGAMEX,LGM,UpcomIndex,3763,DN,CT,Công ty Cổ phần Giày da và may mặc xuất khẩu (Legamex),Giày da và may mặc XK (Legamex)
+740,LGC,LGC,VNINDEX,2357,DN,CT,Công ty Cổ phần Đầu tư Cầu đường CII,Đầu tư Cầu đường CII
+741,LGL,LGL,VNINDEX,8633,DN,CT,Công ty Cổ phần Đầu tư và Phát triển Đô thị Long Giang,Long Giang Land
+742,LHC,LHC,HNXIndex,2357,DN,CT,Công ty Cổ phần Đầu tư và Xây dựng Thủy lợi Lâm Đồng,XD Thủy lợi Lâm Đồng
+743,LHG,LHG,VNINDEX,8633,DN,CT,Công ty Cổ phần Long Hậu,KCN Long Hậu
+744,LICOGI,LIC,UpcomIndex,2357,DN,CT,Tổng Công ty LICOGI - Công ty Cổ phần,LICOGI
+745,LICOGI12,L12,UpcomIndex,2357,DN,CT,Công ty Cổ phần Licogi 12,LICOGI 12
+746,LICOGI9,LG9,UpcomIndex,2357,DN,CT,Công ty Cổ phần Cơ giới và Xây lắp số 9,Cơ giới và XL số 9 (Licogi 9)
+747,LIG,LIG,HNXIndex,2357,DN,CT,Công ty Cổ phần Licogi 13,Licogi 13
+748,LILAMA,LLM,UpcomIndex,2757,DN,CT,Tổng Công ty lắp máy Việt Nam - Công ty Cổ phần,LILAMA
+749,LINCO,LAI,UpcomIndex,2357,DN,CT,Công ty Cổ phần Đầu tư Xây dựng Long An IDICO,XD Long An IDICO
+750,LISEM2,AMS,UpcomIndex,2797,DN,CT,Công ty Cổ phần Cơ khí Xây dựng AMECC,Cơ khí Xây dựng AMECC (Xây dựng LISEMCO 2)
+751,LIX,LIX,VNINDEX,3767,DN,CT,Công ty Cổ phần Bột Giặt LiX,Bột Giặt Lix
+752,LKW,LKW,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp nước Long Khánh,Cấp nước Long Khánh
+753,LM3,LM3,UpcomIndex,2357,DN,CT,Công ty Cổ phần Lilama 3,Lilama 3
+754,LM7,LM7,UpcomIndex,2757,DN,CT,Công ty Cổ phần Lilama 7,LILAMA 7
+755,LM8,LM8,VNINDEX,2357,DN,CT,Công ty Cổ phần Lilama 18,LILAMA 18
+756,LMH,LMH,UpcomIndex,8633,DN,CT,Công ty Cổ phần Quốc Tế Holding,Quoc te Holding
+757,LNQB,LNC,UpcomIndex,1353,DN,CT,Công ty Cổ phần Lệ Ninh,Lệ Ninh - Quảng Bình
+758,LO5,LO5,UpcomIndex,2757,DN,CT,Công ty Cổ phần Lilama 5,LILAMA 5
+759,LSS,LSS,VNINDEX,3577,DN,CT,Công ty Cổ phần Mía đường Lam Sơn,Mía đường Lam Sơn
+760,LTC,LTC,UpcomIndex,9572,DN,CT,Công ty Cổ phần Điện nhẹ Viễn Thông,Điện nhẹ Viễn thông
+761,LUT,LUT,UpcomIndex,2357,DN,CT,Công ty Cổ phần Đầu tư Xây dựng Lương Tài,Đầu tư Xây dựng Lương Tài
+762,LVB,LPB,VNINDEX,8355,DN,NH,Ngân hàng Thương mại Cổ phần Bưu Điện Liên Việt,LienVietPostBank
+763,MAC,MAC,HNXIndex,2753,DN,CT,Công ty Cổ phần Cung ứng và Dịch vụ Kỹ thuật Hàng Hải,Cung ứng và Dịch vụ Kỹ thuật Hàng Hải
+764,MACHIN1,MA1,UpcomIndex,8633,DN,CT,Công ty Cổ phần Thiết bị,MACHINCO1
+765,MAS,MAS,HNXIndex,5759,DN,CT,Công ty cổ phần Dịch vụ Hàng Không Sân Bay Đà Nẵng,Sân bay Đà Nẵng
+766,MBB,MBB,VNINDEX,8355,DN,NH,Ngân hàng Thương mại Cổ phần Quân đội,MBBank
+767,MCC,MCC,HNXIndex,2353,DN,CT,Công ty Cổ phần Gạch ngói cao cấp,Gạch ngói cao cấp
+768,MCF,MCF,HNXIndex,3577,DN,CT,Công ty Cổ phần Xây lắp Cơ khí và Lương thực Thực phẩm,Cơ khí và Lương thực Thực phẩm
+769,MCG,MCG,UpcomIndex,2357,DN,CT,Công ty Cổ phần Năng lượng và Bất động sản MCG,Năng lượng và Bất động sản MCG
+770,MCMILK,MCM,UpcomIndex,3577,DN,CT,Công ty Cổ phần Giống bò sữa Mộc Châu,Giống bò sữa Mộc Châu
+771,MCO,MCO,HNXIndex,2357,DN,CT,Công ty Cổ phần Đầu tư và Xây dựng BDC Việt Nam,BDC Việt Nam
+772,MCP,MCP,VNINDEX,2723,DN,CT,Công ty Cổ phần In và Bao bì Mỹ Châu,In và Bao bì Mỹ Châu
+773,MDA,MDA,UpcomIndex,2799,DN,CT,Công ty Cổ phần Môi trường Đô thị Đông Anh,Môi trường Đô thị Đông Anh
+774,MDC,MDC,HNXIndex,1771,DN,CT,Công ty Cổ phần Than Mông Dương - Vinacomin,Than Mông Dương
+775,MDF,MDF,UpcomIndex,1733,DN,CT,Công ty Cổ phần Gỗ MDF VRG - Quảng Trị,Gỗ MDF VRG - Quảng Trị
+776,MDG,MDG,VNINDEX,2353,DN,CT,Công ty Cổ phần Miền Đông,Xây dựng Miền Đông
+777,MEC,MEC,UpcomIndex,2357,DN,CT,Công ty Cổ phần Cơ khí - Lắp máy Sông Đà,Lắp máy Sông Đà
+778,MED,MED,HNXIndex,4577,DN,CT,Công ty Cổ phần Dược Trung ương Mediplantex,Dược Mediplantex
+779,MEF,MEF,UpcomIndex,4537,DN,CT,Công ty Cổ phần MEINFA,MEINFA
+780,MELIN,MEL,HNXIndex,1757,DN,CT,Công ty Cổ phần Thép Mê Lin,Thép Mê Lin
+781,MERUFA,MRF,UpcomIndex,4535,DN,CT,Công ty Cổ phần MERUFA,Cao su y tế MERUFA
+782,MESCVN,MES,UpcomIndex,2357,DN,CT,Công ty Cổ phần Cơ điện Công trình,Cơ điện Công trình
+783,MFS,MFS,UpcomIndex,6575,DN,CT,Công ty Cổ phần Dịch vụ kỹ thuật Mobifone,Mobifone Service
+784,MHC,MHC,VNINDEX,2779,DN,CT,Công ty Cổ phần MHC,CTCP MHC
+785,MHJC,JOS,UpcomIndex,3573,DN,CT,Công ty Cổ phần Chế biến Thủy sản Xuất khẩu Minh Hải,Thủy sản Minh Hải
+786,MHL,MHL,HNXIndex,1757,DN,CT,Công ty Cổ phần Minh Hữu Liên,Minh Hữu Liên
+787,MIC,MIC,UpcomIndex,1775,DN,CT,Công ty Cổ phần Kỹ nghệ Khoáng sản Quảng Nam,Khoáng sản Quảng Nam
+788,MIEC,MIE,UpcomIndex,2757,DN,CT,Tổng Công ty Máy và Thiết bị Công nghiệp - CTCP,Máy và Thiết bị Công nghiệp
+789,MIM,MIM,UpcomIndex,1775,DN,CT,Công ty Cổ phần Khoáng sản và Cơ khí,Khoáng sản và Cơ khí
+790,MINC,MIG,VNINDEX,8536,OTHER,BH,Tổng Công ty Cổ phần Bảo hiểm Quân đội,Bảo hiểm Quân đội
+791,MITRA,MTA,UpcomIndex,1775,DN,CT,Tổng Công ty Khoáng sản và Thương mại Hà Tĩnh - Công ty Cổ phần,Khoáng sản và TM Hà Tĩnh
+792,MITRACO,MLS,UpcomIndex,3573,DN,CT,Công ty Cổ phần Chăn nuôi - Mitraco,Chăn nuôi Mitraco
+793,MKP,MKP,UpcomIndex,4577,DN,CT,Công ty Cổ phần Hóa - Dược phẩm Mekophar,Dược phẩm Mekophar
+794,MKV,MKV,HNXIndex,4577,DN,CT,Công ty Cổ phần Dược Thú Y Cai Lậy,Dược Thú Y Cai Lậy
+795,MLC,MLC,UpcomIndex,2799,DN,CT,Công ty Cổ phần Môi trường Đô thị Tỉnh Lào Cai,Môi trường Đô thị Tỉnh Lào Cai
+796,MNSCORP,MML,UpcomIndex,3577,DN,CT,Công ty Cổ phần Masan MEATLife,Masan MEATLife
+797,MPC,MPC,UpcomIndex,3573,DN,CT,Công ty Cổ phần Tập đoàn Thủy sản Minh Phú,Thủy sản Minh Phú
+798,MPT,MPT,UpcomIndex,3763,DN,CT,Công ty Cổ phần Tập đoàn MPT,Tập đoàn MPT
+799,MPY,MPY,UpcomIndex,2799,DN,CT,Công ty Cổ phần Môi trường đô thị Phú Yên,Môi trường đô thị Phú Yên
+800,MQB,MQB,UpcomIndex,2799,DN,CT,Công ty Cổ phần Môi trường và Phát triển đô thị Quảng Bình,Môi trường và PT đô thị Quảng Bình
+801,MSB,MSB,VNINDEX,8355,DN,NH,Ngân hàng Thương mại Cổ phần Hàng Hải Việt Nam,MSB Bank
+802,MSCC,MCH,UpcomIndex,3577,DN,CT,Công ty Cổ phần Hàng Tiêu Dùng MaSan,Hàng Tiêu Dùng MaSan
+803,MSN,MSN,VNINDEX,3577,DN,CT,Công ty Cổ phần Tập đoàn Masan,Tập đoàn Masan
+804,MSRC,MSR,UpcomIndex,1775,DN,CT,Công ty Cổ phần Masan High-Tech Materials,Masan High-Tech Materials
+805,MST,MST,HNXIndex,2357,DN,CT,Công ty Cổ phần Đầu tư MST,Đầu tư MST
+806,MTC,MTC,UpcomIndex,5757,DN,CT,Công ty Cổ phần Dịch vụ Du lịch Mỹ Trà,Dịch Vụ Du Lịch Mỹ Trà
+807,MTG,MTG,UpcomIndex,7573,DN,CT,Công ty Cổ phần MT Gas,MTGAS
+808,MTH,MTH,UpcomIndex,2799,DN,CT,Công ty Cổ phần Môi trường Đô thị Hà Đông,Môi trường Đô thị Hà Đông
+809,MTL,MTL,UpcomIndex,2799,DN,CT,Công ty Cổ phần Dịch vụ Môi trường Đô thị Từ Liêm,Môi trường Đô thị Từ Liêm
+810,MTNGHEAN,NAU,UpcomIndex,2799,DN,CT,Công ty Cổ phần Môi trường và Công trình Đô thị Nghệ An,Công trình Đô thị Nghệ An
+811,MTP,MTP,UpcomIndex,4577,DN,CT,Công ty Cổ phần Dược Medipharco,Dược Medipharco
+812,MWG,MWG,VNINDEX,5379,DN,CT,Công ty Cổ phần Đầu tư Thế Giới Di Động,Thế giới di động
+813,NAB,NAB,VNINDEX,8355,DN,NH,Ngân hàng Thương mại Cổ phần Nam Á,Ngân hàng Nam Á
+814,NADY,NDP,UpcomIndex,4577,DN,CT,Công ty Cổ phần Dược phẩm 2/9,Dược phẩm 2/9
+815,NAF,NAF,VNINDEX,3537,DN,CT,Công ty Cổ phần Nafoods Group,Nafoods Group
+816,NAG,NAG,HNXIndex,2733,DN,CT,Công ty Cổ phần Tập đoàn Nagakawa,Tập đoàn Nagakawa
+817,NAGA,NJC,UpcomIndex,3763,DN,CT,Công ty Cổ phần May Nam Định,May Nam Định
+818,NAGECO,NAC,UpcomIndex,2357,DN,CT,Công ty Cổ phần Tư vấn Xây dựng Tổng hợp,Tư vấn xây dựng Tổng hợp
+819,NAMDO,FHN,UpcomIndex,5337,DN,CT,Công ty Cổ phần Xuất nhập khẩu Lương thực - Thực phẩm Hà Nội,XNK lương thực Hà Nội
+820,NAP,NAP,HNXIndex,2777,DN,CT,Công ty Cổ phần Cảng Nghệ Tĩnh,Cảng Nghệ Tĩnh
+821,NAPHARM,NTF,UpcomIndex,4577,DN,CT,Công ty Cổ phần Dược - Vật tư y tế Nghệ An,Dược Nghệ An
+822,NASB,BAB,HNXIndex,8355,DN,NH,Ngân hàng Thương mại Cổ phần Bắc Á,Ngân hàng Bắc Á
+823,NASCO,NAS,UpcomIndex,2777,DN,CT,Công ty Cổ phần Dịch vụ Hàng không Sân bay Nội Bài,DV Hàng không SB Nội Bài
+824,NAV,NAV,VNINDEX,2353,DN,CT,Công ty Cổ phần Nam Việt,Tấm lợp và gỗ Nam Việt
+825,NAVET,VET,UpcomIndex,1357,DN,CT,Công ty Cổ phần Thuốc Thú y Trung ương NAVETCO,Thuốc thú y trung ương Navetco
+826,NAWASCO,NAW,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp nước Nghệ An,Cấp nước Nghệ An
+827,NBB,NBB,VNINDEX,8633,DN,CT,Công ty Cổ phần Đầu tư Năm Bảy Bảy,577 CORP
+828,NBC,NBC,HNXIndex,1771,DN,CT,Công ty Cổ phần Than Núi Béo - Vinacomin,Than Núi Béo
+829,NBEE,NBE,UpcomIndex,5557,DN,CT,Công ty Cổ phần Sách và Thiết bị Giáo dục Miền Bắc,Sách và Thiết bị GD Miền Bắc
+830,NBP,NBP,HNXIndex,7535,DN,CT,Công ty Cổ phần Nhiệt Điện Ninh Bình,Nhiệt điện Ninh Bình
+831,NBW,NBW,HNXIndex,7577,DN,CT,Công ty Cổ phần Cấp nước Nhà Bè,Cấp nước Nhà Bè
+832,NCS,NCS,UpcomIndex,3577,DN,CT,Công ty Cổ phần Suất ăn Hàng không Nội Bài,Suất ăn Hàng không Nội Bài
+833,NCT,NCT,VNINDEX,2777,DN,CT,Công ty Cổ phần Dịch vụ Hàng hóa Nội Bài,DV Hàng hóa Nội Bài
+834,ND2,ND2,UpcomIndex,7535,DN,CT,Công ty Cổ phần Đầu tư và Phát triển điện Miền Bắc 2,Đầu tư và PT điện Miền Bắc 2
+835,NDC,NDC,UpcomIndex,4577,DN,CT,Công ty Cổ phần Nam Dược,Dược phẩm Nam Dược
+836,NDEC,MND,UpcomIndex,2799,DN,CT,Công ty Cổ phần Môi trường Nam Định,Môi trường Nam Định
+837,NDF,NDF,UpcomIndex,3577,DN,CT,Công ty Cổ phần Chế biến thực phẩm nông sản xuất khẩu Nam Định,Nông sản XK Nam Định
+838,NDHP,HND,UpcomIndex,7535,DN,CT,Công ty Cổ phần Nhiệt điện Hải Phòng,Nhiệt điện Hải Phòng
+839,NDN,NDN,HNXIndex,8633,DN,CT,Công ty Cổ phần Đầu tư Phát triển Nhà Đà Nẵng,PT Nhà Đà Nẵng
+840,NDWATER,NDW,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp nước Nam Định,Cấp nước Nam Định
+841,NDX,NDX,HNXIndex,2353,DN,CT,Công ty Cổ phần Xây lắp Phát triển Nhà Đà Nẵng,Phát triển Nhà Đà Nẵng
+842,NEED,NED,UpcomIndex,2357,DN,CT,Công ty Cổ phần Đầu tư và Phát triển Điện Tây Bắc,Phát triển Điện Tây Bắc
+843,NEEM,NEM,UpcomIndex,2737,DN,CT,Công ty Cổ phần Thiết bị Điện Miền Bắc,Thiết bị Điện Miền Bắc
+844,NET,NET,HNXIndex,3767,DN,CT,Công ty Cổ phần Bột giặt Net,Bột giặt Net
+845,NETLAND,NRC,HNXIndex,8633,DN,CT,Công ty Cổ phần Tập đoàn Danh Khôi,Tập đoàn Danh Khôi
+846,NFC,NFC,HNXIndex,1357,DN,CT,Công ty Cổ phần Phân lân Ninh Bình,Phân lân Ninh Bình
+847,NGC,NGC,UpcomIndex,3573,DN,CT,Công ty Cổ phần Chế biến Thủy sản Xuất khẩu Ngô Quyền,Thủy sản Ngô Quyền
+848,NHA,NHA,VNINDEX,2357,DN,CT,Tổng Công ty Đầu tư Phát triển Nhà và Đô thị Nam Hà Nội,PT Nhà và Đô thị Nam HN
+849,NHABE,MNB,UpcomIndex,3763,DN,CT,Tổng Công ty May Nhà Bè - Công ty Cổ phần,May Nhà Bè
+850,NHANCO,VCE,UpcomIndex,2357,DN,CT,Công ty Cổ phần Xây lắp Môi trường,Xây lắp Môi trường
+851,NHC,NHC,HNXIndex,2353,DN,CT,Công ty Cổ phần Gạch ngói Nhị Hiệp,Gạch ngói Nhị Hiệp
+852,NHH,NHH,VNINDEX,1353,DN,CT,Công ty Cổ phần Nhựa Hà Nội,Nhựa Hà Nội
+853,NHN,VHM,VNINDEX,8633,DN,CT,Công ty Cổ phần Vinhomes,Vinhomes
+854,NHP,NHP,UpcomIndex,2723,DN,CT,Công ty Cổ phần Sản xuất Xuất nhập khẩu NHP,Sản xuất XNK NHP
+855,NHTOYS,NHT,VNINDEX,3747,DN,CT,Công ty Cổ phần Sản xuất và Thương mại Nam Hoa,Sản xuất và Thương mại Nam Hoa
+856,NHVT,NHV,UpcomIndex,1755,DN,CT,Công ty Cổ phần Sức khỏe Hồi sinh Việt Nam,Đầu tư NHV
+857,NKG,NKG,VNINDEX,1757,DN,CT,Công ty Cổ phần Thép Nam Kim,Thép Nam Kim
+858,NLG,NLG,VNINDEX,8633,DN,CT,Công ty Cổ phần Đầu tư Nam Long,BĐS Nam Long
+859,NLS,NLS,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp thoát nước Lạng Sơn,Cấp thoát nước Lạng Sơn
+860,NNC,NNC,VNINDEX,2353,DN,CT,Công ty Cổ phần Đá Núi Nhỏ,Đá Núi Nhỏ
+861,NNT,NNT,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp nước Ninh Thuận,Cấp nước Ninh Thuận
+862,NOS,NOS,UpcomIndex,2773,DN,CT,Công ty Cổ phần Vận tải Biển và Thương mại Phương Đông,Vận tải Biển và Thương mại Phương Đông
+863,NOVALAND,NVL,VNINDEX,8633,DN,CT,Công ty Cổ phần Tập đoàn Đầu tư Địa ốc No Va,Novaland
+864,NPFC,PMB,HNXIndex,1357,DN,CT,Công ty Cổ phần Phân bón và Hóa chất Dầu khí Miền Bắc,Phân bón và Hóa chất Dầu khí Miền Bắc
+865,NQB,NQB,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp nước Quảng Bình,Cấp nước Quảng Bình
+866,NQT,NQT,UpcomIndex,7577,DN,CT,Công ty Cổ phần Nước sạch Quảng Trị,Nước sạch Quảng Trị
+867,NS2,NS2,UpcomIndex,7577,DN,CT,Công ty Cổ phần Nước sạch số 2 Hà Nội,Nước sạch số 2 Hà Nội
+868,NSC,NSC,VNINDEX,3573,DN,CT,Công ty Cổ phần Tập đoàn Giống cây trồng Việt Nam,Tập đoàn Giống cây trồng Việt Nam
+869,NSHPETRO,PSH,VNINDEX,7573,DN,CT,Công ty Cổ phần Thương mại Đầu tư Dầu khí Nam Sông Hậu,TMại ĐT Dầu khí Nam Sông Hậu
+870,NST,NST,HNXIndex,3785,DN,CT,Công ty Cổ phần Ngân Sơn,Thuốc lá Ngân Sơn
+871,NT2,NT2,VNINDEX,7535,DN,CT,Công ty Cổ phần Điện lực Dầu khí Nhơn Trạch 2,Điện lực Nhơn Trạch 2
+872,NTB,NTB,UpcomIndex,8633,DN,CT,Công ty Cổ phần Đầu tư Xây dựng và Khai thác Công trình giao thông 584,Công trình giao thông 584
+873,NTC,NTC,UpcomIndex,8633,DN,CT,Công ty Cổ phần Khu Công nghiệp Nam Tân Uyên,KCN Nam Tân Uyên
+874,NTGATEX,NTT,UpcomIndex,3763,DN,CT,Công ty Cổ phần Dệt - May Nha Trang,Dệt - May Nha Trang
+875,NTL,NTL,VNINDEX,8633,DN,CT,Công ty Cổ phần Phát triển Đô thị Từ Liêm,Đô thị Từ Liêm
+876,NTP,NTP,HNXIndex,2353,DN,CT,Công ty Cổ phần Nhựa Thiếu niên Tiền Phong,Nhựa Tiền Phong
+877,NTUREN,NUE,UpcomIndex,2799,DN,CT,Công ty Cổ phần Môi trường Đô thị Nha Trang,Môi trường Đô thị Nha Trang
+878,NTW,NTW,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp nước Nhơn Trạch,Cấp nước Nhơn Trạch
+879,NVB,NVB,HNXIndex,8355,DN,NH,Ngân hàng Thương mại Cổ phần Quốc Dân,Ngân hàng Quốc Dân
+880,NVT,NVT,VNINDEX,8633,DN,CT,Công ty Cổ phần Bất động sản Du lịch Ninh Vân Bay,Ninh Vân Bay
+881,NWT,NWT,UpcomIndex,5759,DN,CT,Công ty Cổ phần Vận tải Newway,Vận tải Newway
+882,NXT,NXT,UpcomIndex,2353,DN,CT,Công ty Cổ phần Sản xuất và Cung ứng vật liệu xây dựng Kon Tum,SX và Cung ứng VLXD Kon Tum
+883,OCB,OCB,VNINDEX,8355,DN,NH,Ngân hàng Thương mại Cổ phần Phương Đông,Ngân hàng Phương Đông
+884,OCH,OCH,HNXIndex,3577,DN,CT,Công ty Cổ phần One Capital Hospitality,Khách sạn và Dịch vụ OCH
+885,OCSC,EVS,HNXIndex,8777,OTHER,CK,Công ty Cổ phần Chứng khoán Everest,Chứng khoán Everest
+886,OGC,OGC,VNINDEX,8775,DN,CT,Công ty Cổ phần Tập đoàn Đại Dương,Tập đoàn Đại Dương
+887,OMONWACO,TOW,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp nước Trà Nóc - Ô Môn,Cấp nước Trà Nóc - Ô Môn
+888,ONE,ONE,HNXIndex,9572,DN,CT,Công ty Cổ phần Công nghệ ONE,Truyền thông Số 1
+889,ONW,ONW,UpcomIndex,5755,DN,CT,Công ty Cổ phần Dịch vụ Một Thế giới,Dịch vụ Một Thế giới
+890,OPC,OPC,VNINDEX,4577,DN,CT,Công ty Cổ phần Dược Phẩm OPC,Dược phẩm OPC
+891,ORS,ORS,VNINDEX,8777,DN,CK,Công ty Cổ phần Chứng khoán Tiên Phong,Chứng khoán Tiên Phong
+892,PAC,PAC,VNINDEX,2733,DN,CT,Công ty Cổ phần Pin Ắc quy Miền Nam,Pin Ắc quy Miền Nam
+893,PAIC,PAI,UpcomIndex,6535,DN,CT,"Công ty Cổ phần Công nghê thông tin, Viễn thông và Tự động hóa Dầu khí","CNTT, VT và Tự động hóa Dầu khí - PAIC"
+894,PAN,PAN,VNINDEX,3577,DN,CT,Công ty Cổ phần Tập đoàn PAN,Tập đoàn PAN
+895,PAPC,PAP,UpcomIndex,2777,DN,CT,Công ty Cổ phần Dầu khí đầu tư khai thác Cảng Phước An,Cảng Phước An
+896,PAS,PAS,UpcomIndex,1757,DN,CT,Công ty Cổ phần Quốc tế Phương Anh,Quốc tế Phương Anh
+897,PBP,PBP,HNXIndex,2723,DN,CT,Công ty Cổ phần Bao bì Dầu khí Việt Nam,Bao bì Dầu khí VN
+898,PCC1,PC1,VNINDEX,2357,DN,CT,Công ty Cổ phần Tập đoàn PC1,Tập đoàn PC1
+899,PCC1P,PCC,UpcomIndex,2357,DN,CT,Công ty Cổ phần Tập đoàn Xây lắp 1 - Petrolimex,Xây lắp 1- Petrolimex
+900,PCG,PCG,HNXIndex,7573,DN,CT,Công ty Cổ phần Đầu tư Phát triển Gas Đô thị,Đầu tư PT Gas Đô thị
+901,PCM,PCM,UpcomIndex,2353,DN,CT,Công ty Cổ phần Vật liệu Xây dựng Bưu điện,VLXD Bưu điện
+902,PCSC,CSI,UpcomIndex,8777,DN,CK,Công ty Cổ phần Chứng khoán Kiến thiết Việt Nam,Chứng khoán Kiến thiết VN
+903,PCT,PCT,HNXIndex,2779,DN,CT,Công ty Cổ phần Vận tải Biển Global Pacific,Vận tải Biển Global Pacific
+904,PDB,PDB,HNXIndex,2353,DN,CT,Công ty Cổ phần Tập đoàn Đầu tư DIN Capital,DIN Capital
+905,PDC,PDC,UpcomIndex,5759,DN,CT,Công ty Cổ phần Du lịch Dầu khí Phương Đông,Dầu khí Phương Đông
+906,PDN,PDN,VNINDEX,2777,DN,CT,Công ty Cổ phần Cảng Đồng Nai,Cảng Đồng Nai
+907,PDR,PDR,VNINDEX,8633,DN,CT,Công ty Cổ phần Phát triển Bất động sản Phát Đạt,BĐS Phát Đạt
+908,PDVC,PDV,UpcomIndex,2773,DN,CT,Công ty Cổ phần Vận tải và Tiếp vận Phương Đông Việt,Vận tải Phương Đông Việt
+909,PEC,PEC,UpcomIndex,2757,DN,CT,Công ty Cổ phần Cơ khí Điện lực,Cơ khí Điện lực
+910,PECO,PEQ,UpcomIndex,0573,DN,CT,Công ty Cổ phần Thiết bị xăng dầu Petrolimex,Thiết bị xăng dầu Petrolimex
+911,PEN,PEN,HNXIndex,2357,DN,CT,Công ty Cổ phần Xây lắp III Petrolimex,Xây lắp III Petrolimex
+912,PET,PET,VNINDEX,5379,DN,CT,Tổng Công ty Cổ phần Dịch vụ Tổng hợp Dầu khí,Dịch vụ Tổng hợp Dầu khí
+913,PETEC,PCF,UpcomIndex,3537,DN,CT,Công ty Cổ phần Cà phê PETEC,Cà phê PETEC
+914,PETECC,PEG,UpcomIndex,7573,DN,CT,Tổng Công ty Thương mại Kỹ thuật và Đầu tư - Công ty Cổ phần,TM Kỹ thuật và Đầu tư (PETEC)
+915,PETECHIM,PTV,UpcomIndex,0573,DN,CT,Công ty Cổ phần Thương mại Dầu khí,Thương mại dầu khí
+916,PETRO,PLX,VNINDEX,0533,DN,CT,Tập đoàn Xăng dầu Việt Nam,Petrolimex
+917,PFL,PFL,UpcomIndex,2357,DN,CT,Công ty Cổ phần Dầu khí Đông Đô,Dầu khí Đông Đô
+918,PGB,PGB,UpcomIndex,8355,DN,NH,Ngân hàng Thương mại Cổ phần Thịnh vượng và Phát triển,PG Bank
+919,PGC,PGC,VNINDEX,7573,DN,CT,Tổng Công ty Gas Petrolimex - Công ty Cổ phần,Gas Petrolimex
+920,PGD,PGD,VNINDEX,7573,DN,CT,Công ty Cổ phần Phân phối khí thấp áp dầu khí Việt Nam,PV GAS D
+921,PGI,PGI,VNINDEX,8536,DN,BH,Tổng Công ty Cổ phần Bảo hiểm Petrolimex,Bảo hiểm PJICO
+922,PGN,PGN,HNXIndex,1353,DN,CT,Công ty Cổ phần Phụ Gia Nhựa,Phụ Gia Nhựa
+923,PGS,PGS,HNXIndex,7573,DN,CT,Công ty Cổ phần Kinh doanh Khí Miền Nam,Khí Miền Nam
+924,PGT,PGT,HNXIndex,5759,DN,CT,Công ty Cổ phần PGT Holdings,PGT Holdings
+925,PHALE,PLP,VNINDEX,1353,DN,CT,Công ty Cổ phần Sản xuất và Công nghệ Nhựa Pha Lê,SX và CN Nhựa Pha Lê
+926,PHARBACO,PBC,UpcomIndex,4577,DN,CT,Công ty Cổ phần Dược Phẩm Trung ương 1 - Pharbaco,Dược Phẩm TW 1- Pharbaco
+927,PHC,PHC,VNINDEX,2357,DN,CT,Công ty Cổ phần Xây dựng Phục Hưng Holdings,Xây dựng Phục Hưng Holdings
+928,PHH,PHH,UpcomIndex,2357,DN,CT,Công ty Cổ phần Hồng Hà Việt Nam,Hồng Hà Việt Nam
+929,PHP,PHP,UpcomIndex,2777,DN,CT,Công ty Cổ phần Cảng Hải Phòng,Cảng Hải Phòng
+930,PHR,PHR,VNINDEX,1353,DN,CT,Công ty Cổ phần Cao su Phước Hòa,Cao su Phước Hòa
+931,PHS,PHS,UpcomIndex,8777,DN,CK,Công ty Cổ phần Chứng khoán Phú Hưng,Chứng khoán Phú Hưng
+932,PIACOM,PIA,HNXIndex,6535,DN,CT,Công ty Cổ phần Tin học Viễn thông Petrolimex,Tin học Viễn thông Petrolimex
+933,PIC,PIC,HNXIndex,7535,DN,CT,Công ty Cổ phần Đầu tư Điện lực 3,Đầu tư Điện lực 3
+934,PID,PID,UpcomIndex,2357,DN,CT,Công ty Cổ phần Trang trí nội thất Dầu khí,Trang trí nội thất Dầu khí
+935,PISIC,PIS,UpcomIndex,1733,DN,CT,Tổng Công ty Pisico Bình Định - Công ty Cổ phần,Pisico Bình Định
+936,PIST,EIN,UpcomIndex,5753,DN,CT,Công ty Cổ phần Đầu tư - Thương Mại - Dịch vụ Điện lực,Đầu tư - TM - DV Điện lực
+937,PIT,PIT,VNINDEX,5373,DN,CT,Công ty Cổ phần Xuất nhập khẩu Petrolimex,XNK PETROLIMEX
+938,PIV,PIV,UpcomIndex,8637,DN,CT,Công ty Cổ phần PIV,PIV JSC
+939,PJC,PJC,HNXIndex,7573,DN,CT,Công ty Cổ phần Thương mại và Vận tải Petrolimex Hà Nội,TM và Vận tải Petrolimex HN
+940,PJS,PJS,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp nước Phú Hòa Tân,Cấp nước Phú Hòa Tân
+941,PJT,PJT,VNINDEX,2773,DN,CT,Công ty Cổ phần Vận tải Xăng dầu đường thủy Petrolimex,Vận tải thủy PETROLIMEX
+942,PLAND,PLA,UpcomIndex,8633,DN,CT,Công ty Cổ phần Đầu tư và Dịch vụ hạ tầng Xăng dầu,Đầu tư và Dịch vụ hạ tầng Xăng dầu (PLAND)
+943,PLC,PLC,HNXIndex,1357,DN,CT,Tổng Công ty Hóa dầu Petrolimex - Công ty Cổ phần,Hóa dầu Petrolimex
+944,PLCO,PLO,UpcomIndex,2777,DN,CT,Công ty Cổ phần Kho vận Petec,Kho vận Petec
+945,PLE,PLE,UpcomIndex,2357,DN,CT,Công ty Cổ phần Tư vấn Xây dựng Petrolimex,Tư vấn Xây dựng Petrolimex
+946,PMC,PMC,HNXIndex,4577,DN,CT,Công ty Cổ phần Dược phẩm Dược liệu Pharmedic,Pharmedic
+947,PMGAS,PMG,VNINDEX,7573,DN,CT,Công ty Cổ phần Đầu tư và Sản xuất Petro Miền Trung,ĐT và SX Petro Miền Trung
+948,PMJ,PMJ,UpcomIndex,9578,DN,CT,Công ty cổ phần Vật tư Bưu điện,Vật tư Bưu điện
+949,PMPACK,PMP,HNXIndex,2723,DN,CT,Công ty Cổ phần Bao bì Đạm Phú Mỹ,Bao bì Đạm Phú Mỹ
+950,PMS,PMS,HNXIndex,2757,DN,CT,Công ty Cổ phần Cơ khí Xăng dầu,Cơ khí xăng dầu
+951,PMT,PMT,UpcomIndex,9578,DN,CT,Công ty Cổ phần Viễn thông Telvina Việt Nam,Telvina Việt Nam
+952,PMWC,PMW,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp Nước Phú Mỹ,Cấp Nước Phú Mỹ
+953,PNC,PNC,VNINDEX,5557,DN,CT,Công ty Cổ phần Văn hóa Phương Nam,Văn hóa Phương Nam
+954,PNCO,PNG,UpcomIndex,5373,DN,CT,Công ty Cổ phần Thương Mại Phú Nhuận,Thương Mại Phú Nhuận
+955,PND,PND,UpcomIndex,7573,DN,CT,Công ty Cổ phần Xăng dầu Dầu khí Nam Định,Xăng dầu Dầu khí Nam Định
+956,PNJ,PNJ,VNINDEX,3767,DN,CT,Công ty Cổ phần Vàng bạc Đá quý Phú Nhuận,Vàng Phú Nhuận
+957,PNP,PNP,UpcomIndex,2773,DN,CT,Công ty Cổ phần Tân Cảng – Phú Hữu,Tân Cảng - Phú Hữu
+958,PNTECHCONS,PNT,UpcomIndex,2357,DN,CT,Công ty Cổ phần Kỹ thuật Xây dựng Phú Nhuận,Kỹ thuật XD Phú Nhuận
+959,POB,POB,UpcomIndex,7573,DN,CT,Công ty Cổ phần Xăng dầu Dầu khí Thái Bình,PVOIL Thái Bình
+960,POM,POM,VNINDEX,1757,DN,CT,Công ty Cổ phần Thép Pomina,Thép Pomina
+961,POT,POT,HNXIndex,9572,DN,CT,Công ty Cổ phần Thiết bị Bưu điện,Thiết bị Bưu điện Postef
+962,POV,POV,UpcomIndex,7573,DN,CT,Công ty Cổ phần Xăng dầu Dầu khí Vũng Áng,PV Oil Vũng Áng
+963,POWACO,DNA,UpcomIndex,7577,DN,CT,Công ty Cổ phần Điện nước An Giang,Điện nước An Giang
+964,PPC,PPC,VNINDEX,7535,DN,CT,Công ty Cổ phần Nhiệt điện Phả Lại,Nhiệt điện Phả Lại
+965,PPE,PPE,HNXIndex,2791,DN,CT,Công ty Cổ phần Tư vấn Đầu tư PP Enterprise,PVPower Engineering
+966,PPHC,PPH,UpcomIndex,3763,DN,CT,Tổng Công ty Cổ phần Phong Phú,Phong Phú Corp.
+967,PPI,PPI,UpcomIndex,8633,DN,CT,Công ty Cổ phần Đầu tư và Phát triển dự án hạ tầng Thái Bình Dương,BĐS Thái Bình Dương
+968,PPP,PPP,HNXIndex,4577,DN,CT,Công ty Cổ phần Dược phẩm Phong Phú,PP.Pharco
+969,PPS,PPS,HNXIndex,2791,DN,CT,Công ty Cổ phần Dịch vụ Kỹ thuật Điện lực Dầu khí Việt Nam,DVKT Điện lực Dầu khí
+970,PRC,PRC,HNXIndex,2779,DN,CT,Công ty Cổ phần Logistics Portserco,Vận tải Portserco
+971,PRO,PRO,UpcomIndex,3577,DN,CT,Công ty Cổ phần Procimex Việt Nam,Procimex Việt Nam
+972,PSB,PSB,UpcomIndex,2357,DN,CT,Công ty Cổ phần Đầu tư Dầu khí Sao Mai Bến Đình,Sao Mai Bến Đình
+973,PSC,PSC,HNXIndex,2779,DN,CT,Công ty Cổ phần Vận tải và Dịch vụ Petrolimex Sài Gòn,Vận tải Petrolimex SG
+974,PSC1,BT1,UpcomIndex,1357,DN,CT,Công ty Cổ phần Bảo vệ thực vật 1 Trung ương,Bảo vệ thực vật 1 TW
+975,PSD,PSD,HNXIndex,5379,DN,CT,Công ty Cổ phần Dịch vụ Phân phối Tổng hợp Dầu khí,Phân phối Tổng hợp Dầu khí
+976,PSE,PSE,HNXIndex,1357,DN,CT,Công ty Cổ phần Phân bón và hóa chất dầu khí Đông Nam Bộ,Phân bón và hóa chất dầu khí Đông Nam Bộ
+977,PSG,PSG,UpcomIndex,2357,DN,CT,Công ty Cổ phần Đầu tư và Xây lắp Dầu khí Sài Gòn,XL Dầu khí Sài Gòn
+978,PSI,PSI,HNXIndex,8777,DN,CK,Công ty Cổ phần Chứng khoán Dầu khí,Chứng khoán Dầu khí
+979,PSL,PSL,UpcomIndex,3573,DN,CT,Công ty Cổ phần Chăn nuôi Phú Sơn,Chăn nuôi Phú Sơn
+980,PSP,PSP,UpcomIndex,2779,DN,CT,Công ty Cổ phần Cảng Dịch vụ Dầu khí Đình Vũ,DV Dầu Khí Đình Vũ
+981,PTB,PTB,VNINDEX,1733,DN,CT,Công ty Cổ phần Phú Tài,Công ty Cổ phần Phú Tài
+982,PTBD,GCB,UpcomIndex,7573,DN,CT,Công ty Cổ phần PETEC Bình Định,PETEC Bình Định
+983,PTC,PTC,VNINDEX,2357,DN,CT,Công ty Cổ phần Đầu tư ICAPITAL,Đầu tư ICAPITAL
+984,PTCM,PTE,UpcomIndex,2353,DN,CT,Công ty Cổ phần Xi măng Phú Thọ,Xi măng Phú Thọ
+985,PTCO,PTO,UpcomIndex,2357,DN,CT,Công ty Cổ phần Dịch vụ - Xây dựng Công trình Bưu điện,Xây dựng Công trình Bưu điện
+986,PTCOIN,KSF,HNXIndex,8633,DN,CT,Công ty cổ phần Tập đoàn Real Tech,Tập đoàn Real Tech
+987,PTD,PTD,HNXIndex,2357,DN,CT,Công ty Cổ phần Thiết kế - Xây dựng - Thương mại Phúc Thịnh,Thiết kế-XD-TM Phúc Thịnh
+988,PTG,PTG,UpcomIndex,3763,DN,CT,Công ty Cổ phần May Xuất Khẩu Phan Thiết,May Phan Thiết
+989,PTH,PTH,UpcomIndex,7573,DN,CT,Công ty Cổ phần Vận tải và Dịch vụ Petrolimex Hà Tây,Vận tải và DV Petrolimex Hà Tây
+990,PTI,PTI,HNXIndex,8536,OTHER,BH,Tổng Công ty Cổ phần Bảo hiểm Bưu điện,Bảo hiểm Bưu điện
+991,PTL,PTL,VNINDEX,8633,DN,CT,Công ty Cổ phần Victory Capital,Victory Capital
+992,PTP,PTP,UpcomIndex,6535,DN,CT,Công ty Cổ phần Dịch vụ Viễn Thông và In Bưu điện,Viễn Thông và In Bưu điện
+993,PTS,PTS,HNXIndex,2779,DN,CT,Công ty Cổ phần Vận tải và Dịch vụ Petrolimex Hải Phòng,Vận tải Petrolimex HP
+994,PTSC,POS,UpcomIndex,0573,DN,CT,"Công ty Cổ phần Dịch vụ lắp đặt, vận hành và bảo dưỡng công trình dầu khí biển PTSC",Bảo dưỡng công trình DK biển
+995,PTSCTH,PSN,UpcomIndex,2777,DN,CT,Công ty Cổ phần Dịch vụ Kỹ thuật PTSC Thanh Hóa,PTSC Thanh Hóa
+996,PTSNT,PTX,UpcomIndex,2779,DN,CT,Công ty Cổ phần Vận tải và Dịch vụ Petrolimex Nghệ Tĩnh,VT Petrolimex Nghệ Tĩnh
+997,PTT,PTT,UpcomIndex,2779,DN,CT,Công ty Cổ phần Vận tải Dầu khí Đông Dương,Vận tải Dầu khí Đông Dương
+998,PTTC,DSP,UpcomIndex,5759,DN,CT,Công ty Cổ phần Dịch vụ Du lịch Phú Thọ,Dịch vụ Du lịch Phú Thọ
+999,PTTD,DTD,HNXIndex,8633,DN,CT,Công ty Cổ phần Đầu tư Phát triển Thành Đạt,Đầu tư Phát triển Thành Đạt
+1000,PTTHUYSAN,DAT,VNINDEX,3573,DN,CT,Công ty Cổ phần Đầu tư Du lịch và Phát triển Thủy sản,ĐT Du lịch và PT Thủy sản
+1001,PV2,PV2,HNXIndex,8633,DN,CT,Công ty Cổ phần Đầu tư PV2,Đầu tư PV2
+1002,PVA,PVA,UpcomIndex,2357,DN,CT,Công ty Cổ phần Tổng Công ty Xây lắp Dầu khí Nghệ An,Xây dựng dầu khí Nghệ An
+1003,PVB,PVB,HNXIndex,0573,DN,CT,Công ty Cổ phần Bọc ống Dầu khí Việt Nam,Bọc ống Dầu khí Việt Nam
+1004,PVBUILDING,PBT,UpcomIndex,2723,DN,CT,Công ty Cổ Phần Nhà và Thương mại Dầu khí,PV Building
+1005,PVC,PVC,HNXIndex,0573,DN,CT,Tổng Công ty Hóa chất và Dịch vụ Dầu khí - Công ty Cổ phần,Hóa chất và Dịch vụ Dầu khí
+1006,PVCE,PCE,HNXIndex,1357,DN,CT,Công ty Cổ phần Phân bón và hóa chất dầu khí Miền Trung,Phân bón và Hóa chất DK Miền Trung
+1007,PVCMC,PVM,UpcomIndex,2797,DN,CT,Công ty Cổ phần Máy - Thiết bị Dầu khí,Thiết bị dầu khí (PV MACHINO)
+1008,PVCMK,PXC,UpcomIndex,8633,DN,CT,Công ty Cổ phần Phát triển Đô thị Dầu khí,Phát triển Đô thị Dầu khí
+1009,PVCTH,PVH,UpcomIndex,2357,DN,CT,Công ty Cổ phần Xây lắp Dầu khí Thanh Hóa,Xây lắp Dầu khí Thanh Hóa
+1010,PVD,PVD,VNINDEX,0573,DN,CT,Tổng Công ty Cổ phần Khoan và Dịch vụ khoan Dầu khí,Khoan Dầu khí PVDrilling
+1011,PVDMCN,PCN,UpcomIndex,1357,DN,CT,Công ty Cổ phần Hóa phẩm dầu khí DMC - Miền Bắc,Dầu khí DMC-Miền Bắc
+1012,PVE,PVE,UpcomIndex,0573,DN,CT,Tổng Công ty Tư vấn Thiết kế Dầu khí - Công ty Cổ phần,Tư vấn Dầu khí
+1013,PVFCSW,PSW,HNXIndex,1357,DN,CT,Công ty Cổ phần Phân bón và hóa chất dầu khí Tây Nam Bộ,Phân bón hóa chất dầu khí Tây Nam Bộ
+1014,PVG,PVG,HNXIndex,7573,DN,CT,Công ty Cổ phần Kinh doanh LPG Việt Nam,Kinh doanh LPG Việt Nam
+1015,PVI,PVI,HNXIndex,8536,DN,BH,Công ty Cổ phần PVI,Bảo hiểm PVI
+1016,PVIRE,PRE,HNXIndex,8538,OTHER,BH,Tổng Công ty Cổ phần Tái bảo hiểm Hà Nội,Tái bảo hiểm PVI
+1017,PVL,PVL,UpcomIndex,8633,DN,CT,Công ty Cổ phần Đầu tư Nhà Đất Việt,Đầu tư Nhà Đất Việt
+1018,PVOIL,OIL,UpcomIndex,0533,DN,CT,Tổng Công ty Dầu Việt Nam - Công ty Cổ phần,PV Oil
+1019,PVOPY,PPY,HNXIndex,7573,DN,CT,Công ty Cổ phần Xăng dầu dầu khí Phú Yên,Xăng dầu dầu khí Phú Yên
+1020,PVPOWER,POW,VNINDEX,7535,DN,CT,Tổng Công ty Điện lực Dầu khí Việt Nam - CTCP,Điện lực Dầu khí Việt Nam
+1021,PVR,PVR,UpcomIndex,8633,DN,CT,Công ty Cổ phần Đầu tư PVR Hà Nội,Đầu tư PVR Hà Nội
+1022,PVS,PVS,HNXIndex,0573,DN,CT,Tổng Công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam,DVKT Dầu khí PTSC
+1023,PVSY,PVY,UpcomIndex,2357,DN,CT,Công ty Cổ phần Chế tạo Giàn khoan Dầu khí,Chế tạo Giàn khoan Dầu khí
+1024,PVT,PVT,VNINDEX,2773,DN,CT,Tổng Công ty Cổ phần Vận tải Dầu khí,Vận tải Dầu khí PVTrans
+1025,PVTRANS,PVP,VNINDEX,2779,DN,CT,Công ty Cổ phần Vận tải Dầu khí Thái Bình Dương,Vận tải Dầu khí Thái Bình Dương
+1026,PVV,PVV,UpcomIndex,2357,DN,CT,Công ty Cổ phần Vinaconex 39,Vinaconex 39
+1027,PVX,PVX,UpcomIndex,2357,DN,CT,Tổng Công ty Cổ phần Xây lắp Dầu khí Việt Nam,Xây lắp Dầu khí Việt Nam
+1028,PWACO,PWA,UpcomIndex,8633,DN,CT,Công ty Cổ phần Bất động sản dầu khí,Bất động sản dầu khí
+1029,PX1,PX1,UpcomIndex,2353,DN,CT,Công ty Cổ phần Xi măng Sông Lam 2,Xi măng Sông Lam 2
+1030,PXA,PXA,UpcomIndex,8633,DN,CT,Công ty Cổ phần Đầu tư và Thương mại Dầu khí Nghệ An,Đầu tư và Thương mại Dầu khí Nghệ An
+1031,PXI,PXI,UpcomIndex,2357,DN,CT,Công ty Cổ phần Xây dựng Công nghiệp và Dân dụng Dầu khí,XL CN và dân dụng Dầu khí
+1032,PXL,PXL,UpcomIndex,8633,DN,CT,Công ty Cổ phần Đầu tư Khu Công Nghiệp Dầu khí Long Sơn,KCN Dầu khí Long Sơn
+1033,PXM,PXM,UpcomIndex,2357,DN,CT,Công ty Cổ phần Xây lắp Dầu khí Miền Trung,Xây lắp Dầu khí Miền Trung
+1034,PXS,PXS,UpcomIndex,2357,DN,CT,Công ty Cổ phần Kết cấu Kim loại và Lắp máy Dầu khí,Lắp máy Dầu khí
+1035,PXT,PXT,UpcomIndex,2357,DN,CT,Công ty Cổ phần Xây lắp Đường ống Bể chứa Dầu khí,Xây lắp Đường ống Dầu khí
+1036,PYWS,PWS,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp thoát nước Phú Yên,Cấp thoát nước Phú Yên
+1037,QBBECO,BQB,UpcomIndex,3533,DN,CT,Công ty Cổ phần Bia Hà Nội - Quảng Bình,Bia Hà Nội - Quảng Bình
+1038,QBS,QBS,VNINDEX,1357,DN,CT,Công ty Cổ phần Xuất nhập khẩu Quảng Bình,Xuất nhập khẩu Quảng Bình
+1039,QCC,QCC,UpcomIndex,2357,DN,CT,Công ty Cổ phần Đầu tư Xây dựng và Phát triển Hạ tầng Viễn Thông,Đầu tư Xây dựng và Phát triển Hạ tầng Viễn Thông
+1040,QCG,QCG,VNINDEX,8633,DN,CT,Công ty Cổ phần Quốc Cường Gia Lai,Quốc Cường Gia Lai
+1041,QHD,QHD,HNXIndex,2727,DN,CT,Công ty Cổ phần Que hàn điện Việt Đức,Que hàn Việt Đức
+1042,QHW,QHW,UpcomIndex,3537,DN,CT,Công ty Cổ phần Nước khoáng Quảng Ninh,Nước khoáng Quảng Ninh
+1043,QNC,QNC,UpcomIndex,2353,DN,CT,Công ty Cổ phần Xi măng và Xây dựng Quảng Ninh,Xi măng Quảng Ninh
+1044,QNGURENCO,MQN,UpcomIndex,2799,DN,CT,Công ty Cổ phần Môi trường đô thị Quảng Ngãi,Môi trường đô thị Quảng Ngãi
+1045,QNNP,QSP,UpcomIndex,2777,DN,CT,Công ty Cổ phần Tân cảng Quy Nhơn,Tân cảng Quy Nhơn
+1046,QNNPORT,QNP,VNINDEX,2777,DN,CT,Công ty Cổ phần Cảng Quy Nhơn,Cảng Quy Nhơn
+1047,QNPORT,CQN,UpcomIndex,2777,DN,CT,Công ty Cổ phần Cảng Quảng Ninh,Cảng Quảng Ninh
+1048,QNPS,PQN,UpcomIndex,2777,DN,CT,Công ty Cổ phần Dịch vụ Dầu khí Quảng Ngãi PTSC,DV Dầu khí Quảng Ngãi PTSC
+1049,QNSC,QNS,UpcomIndex,3577,DN,CT,Công ty Cổ phần Đường Quảng Ngãi,Đường Quảng Ngãi
+1050,QNT,QNT,UpcomIndex,2357,DN,CT,Công ty Cổ phần Tư vấn và Đầu tư Phát triển Quảng Nam,Tư vấn và Đầu tư Phát triển Quảng Nam
+1051,QNTPC,QTP,UpcomIndex,7535,DN,CT,Công ty Cổ phần Nhiệt điện Quảng Ninh,Nhiệt điện Quảng Ninh
+1052,QNU,QNU,UpcomIndex,2799,DN,CT,Công ty Cổ phần Môi trường Đô thị Quảng Nam,Môi trường Đô thị Quảng Nam
+1053,QNWASC,QNW,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp thoát nước và xây dựng Quảng Ngãi,Cấp thoát nước và XD Quảng Ngãi
+1054,QPH,QPH,UpcomIndex,7535,DN,CT,Công ty Cổ phần Thủy điện Quế Phong,Thủy điện Quế Phong
+1055,QST,QST,HNXIndex,5557,DN,CT,Công ty Cổ phần Sách và Thiết bị trường học Quảng Ninh,Sách Quảng Ninh
+1056,QTC,QTC,HNXIndex,2357,DN,CT,Công ty Cổ phần Công trình Giao thông Vận tải Quảng Nam,GTVT Quảng Nam
+1057,QUAWACO,NQN,UpcomIndex,7577,DN,CT,Công ty Cổ phần Nước sạch Quảng Ninh,Nước sạch Quảng Ninh
+1058,RAL,RAL,VNINDEX,3726,DN,CT,Công ty Cổ phần Bóng đèn Phích nước Rạng Đông,Bóng đèn Phích nước Rạng Đông
+1059,RATRACO,RAT,UpcomIndex,2779,DN,CT,Công ty Cổ phần Vận tải và Thương mại Đường sắt,VT và TM Đường sắt
+1060,RCC,RCC,UpcomIndex,2357,DN,CT,Công ty Cổ phần Tổng Công ty Công trình Đường sắt,Công trình Đường sắt
+1061,RCD,RCD,UpcomIndex,2357,DN,CT,Công ty Cổ phần Xây dựng - Địa ốc Cao su,XD - Địa ốc Cao su
+1062,RCL,RCL,HNXIndex,8633,DN,CT,Công ty Cổ phần Địa ốc Chợ Lớn,Địa Ốc Chợ Lớn
+1063,RDP,RDP,VNINDEX,1353,DN,CT,Công ty Cổ phần Rạng Đông Holding,Nhựa Rạng Đông
+1064,REE,REE,VNINDEX,2757,DN,CT,Công ty Cổ phần Cơ điện Lạnh,Cơ Điện Lạnh REE
+1065,RESCO,TBR,UpcomIndex,8633,DN,CT,Công ty Cổ phần Địa ốc Tân Bình,Địa ốc Tân Bình
+1066,RIC,RIC,UpcomIndex,5755,DN,CT,Công ty Cổ phần Quốc Tế Hoàng Gia,Quốc tế Hoàng Gia
+1067,RIMACO3,DS3,HNXIndex,2777,DN,CT,Công ty Cổ phần DS3,Quản lý Đường sông số 3
+1068,RUBICO,RBC,UpcomIndex,1353,DN,CT,Công ty Cổ phần Công Nghiệp và Xuất nhập khẩu Cao Su,Công Nghiệp và Xuất nhập khẩu Cao Su
+1069,S12,S12,UpcomIndex,2357,DN,CT,Công ty Cổ phần Sông Đà 12,Sông Đà 12
+1070,S27,S27,UpcomIndex,2357,DN,CT,Công ty Cổ phần Sông Đà 27,Sông Đà 27
+1071,S55,S55,HNXIndex,2357,DN,CT,Công ty Cổ phần Sông Đà 505,Sông Đà 505
+1072,S702,S72,UpcomIndex,2357,DN,CT,Công ty Cổ phần Sông Đà 7.02,Sông Đà 7.02
+1073,S74,S74,UpcomIndex,2357,DN,CT,Công ty Cổ phần Sông Đà 7.04,Sông Đà 7.04
+1074,S96,S96,UpcomIndex,2357,DN,CT,Công ty Cổ phần Sông Đà 9.06,Sông Đà 9.06
+1075,S99,S99,HNXIndex,2357,DN,CT,Công ty Cổ phần SCI,Sông Đà 9.09 (SCI)
+1076,SABECOHN,BSH,UpcomIndex,3533,DN,CT,Công ty Cổ phần Bia Sài Gòn - Hà Nội,Bia Sài Gòn - Hà Nội
+1077,SABEQN,BSQ,UpcomIndex,3533,DN,CT,Công ty Cổ phần Bia Sài Gòn - Quảng Ngãi,Bia Sài Gòn - Quảng Ngãi
+1078,SAF,SAF,HNXIndex,3577,DN,CT,Công ty Cổ phần Lương thực Thực phẩm SAFOCO,Thực Phẩm SAFOCO
+1079,SAGS,SGN,VNINDEX,2777,DN,CT,Công ty Cổ phần Phục vụ mặt đất Sài Gòn,Phục vụ mặt đất Sài Gòn
+1080,SAL,SAL,UpcomIndex,2753,DN,CT,Công ty Cổ phần Trục vớt Cứu hộ Việt Nam,Trục vớt Cứu hộ Việt Nam
+1081,SAM,SAM,VNINDEX,9578,DN,CT,Công ty Cổ phần SAM Holdings,SAM Holdings
+1082,SANESTDK,SKV,UpcomIndex,3537,DN,CT,Công ty Cổ phần Nước Giải khát Yến sào Khánh Hòa,NGK Yến sào Khánh Hòa
+1083,SANESTKH,SKH,UpcomIndex,3537,DN,CT,Công ty Cổ phần Nước giải khát Sanest Khánh Hòa,NGK Sanest Khánh Hòa
+1084,SAP,SAP,UpcomIndex,5557,DN,CT,Công ty Cổ phần In Sách Giáo khoa TP.Hồ Chí Minh,In Sách TP.HCM
+1085,SAPT,APT,UpcomIndex,3573,DN,CT,Công ty Cổ phần Kinh doanh thủy hải sản Sài Gòn,Thủy hải sản Sài Gòn
+1086,SAPULICO,CHS,UpcomIndex,7575,DN,CT,Công ty Cổ phần Chiếu sáng Công cộng Thành phố Hồ Chí Minh,Chiếu sáng TPHCM
+1087,SAS,SAS,UpcomIndex,5379,DN,CT,Công ty Cổ phần Dịch vụ Hàng không Sân bay Tân Sơn Nhất,DV Hàng không sân bay TSN
+1088,SASO,BSL,UpcomIndex,3533,DN,CT,Công ty Cổ phần Bia Sài Gòn - Sông Lam,Bia Sài Gòn - Sông Lam
+1089,SASTECO,SAC,UpcomIndex,2777,DN,CT,Công ty Cổ phần Xếp dỡ và Dịch vụ cảng Sài Gòn,Dịch vụ cảng Sài Gòn
+1090,SAV,SAV,VNINDEX,1733,DN,CT,Công ty Cổ phần Hợp tác Kinh tế và Xuất nhập khẩu Savimex,Savimex
+1091,SAVINA,VNB,UpcomIndex,5557,DN,CT,Công ty Cổ phần Sách Việt Nam,Sách Việt Nam
+1092,SBA,SBA,VNINDEX,7535,DN,CT,Công ty Cổ phần Sông Ba,Sông Ba JSC
+1093,SBCO,SAB,VNINDEX,3533,DN,CT,Tổng Công ty Cổ phần Bia - Rượu - Nước Giải khát Sài Gòn,SABECO
+1094,SBDC,SBD,UpcomIndex,9537,DN,CT,Công ty Cổ phần Công nghệ Sao Bắc Đẩu,Công nghệ Sao Bắc Đẩu
+1095,SBHEVN,SBH,UpcomIndex,7535,DN,CT,Công ty Cổ phần Thủy điện Sông Ba Hạ,Thủy điện Sông Ba Hạ
+1096,SBL,SBL,UpcomIndex,3533,DN,CT,Công ty Cổ phần Bia Sài Gòn - Bạc Liêu,Bia Sài Gòn - Bạc Liêu
+1097,SBMC,SBM,UpcomIndex,2357,DN,CT,Công ty Cổ phần Đầu tư phát triển Bắc Minh,Đầu tư PT Bắc Minh
+1098,SBS,SBS,UpcomIndex,8777,DN,CK,Công ty Cổ phần Chứng khoán SBS,Chứng khoán Sacombank
+1099,SBT,SBT,VNINDEX,3577,DN,CT,Công ty Cổ phần Thành Thành Công - Biên Hòa,Mía đường Thành Thành Công - Biên Hòa
+1100,SC5,SC5,VNINDEX,2357,DN,CT,Công ty Cổ phần Xây dựng số 5,Xây dựng Số 5
+1101,SCC,SCC,UpcomIndex,2353,DN,CT,Công ty Cổ phần Thương mại Đầu tư SHB,Thương mại Đầu tư SHB
+1102,SCD,SCD,VNINDEX,3537,DN,CT,Công ty Cổ phần Nước giải khát Chương Dương,Giải khát Chương Dương
+1103,SCG,SCG,HNXIndex,2357,DN,CT,Công ty Cổ phần Tập đoàn Xây dựng SCG,Xây dựng SCG
+1104,SCI,SCI,HNXIndex,2357,DN,CT,Công ty Cổ phần SCI E&C,SCI E&C
+1105,SCID,SID,UpcomIndex,8633,DN,CT,Công ty Cổ phần Đầu tư Phát triển Sài Gòn Co.op,Đầu tư PT Sài Gòn Co.op
+1106,SCJ,SCJ,UpcomIndex,2353,DN,CT,Công ty Cổ phần Xi măng Sài Sơn,Xi măng Sài Sơn
+1107,SCL,SCL,UpcomIndex,2353,DN,CT,Công ty Cổ phần Sông Đà Cao Cường,Sông Đà Cao Cường
+1108,SCO,SCO,UpcomIndex,2757,DN,CT,Công ty Cổ phần Công nghiệp Thủy sản,Công nghiệp Thủy Sản
+1109,SCR,SCR,VNINDEX,8633,DN,CT,Công ty Cổ phần Địa Ốc Sài Gòn Thương Tín,TTC Land
+1110,SCSC,SCS,VNINDEX,5751,DN,CT,Công ty Cổ phần Dịch vụ Hàng hóa Sài Gòn,DV Hàng hóa Sài Gòn
+1111,SCY,SCY,UpcomIndex,2753,DN,CT,Công ty Cổ phần Đóng tàu Sông Cấm,Đóng tàu Sông Cấm
+1112,SD1,SD1,UpcomIndex,2357,DN,CT,Công ty Cổ phần Sông Đà 1,Sông Đà 1
+1113,SD2,SD2,UpcomIndex,2357,DN,CT,Công ty Cổ phần Sông Đà 2,Sông Đà 2
+1114,SD3,SD3,UpcomIndex,2357,DN,CT,Công ty Cổ phần Sông Đà 3,Sông Đà 3
+1115,SD4,SD4,UpcomIndex,2357,DN,CT,Công ty Cổ phần Sông Đà 4,Sông Đà 4
+1116,SD5,SD5,HNXIndex,2357,DN,CT,Công ty Cổ phần Sông Đà 5,Sông Đà 5
+1117,SD6,SD6,HNXIndex,2357,DN,CT,Công ty Cổ phần Sông Đà 6,Sông Đà 6
+1118,SD7,SD7,UpcomIndex,2357,DN,CT,Công ty Cổ phần Sông Đà 7,Sông Đà 7
+1119,SD8,SD8,UpcomIndex,2357,DN,CT,Công ty Cổ phần Sông Đà 8,Sông Đà 8
+1120,SD9,SD9,HNXIndex,2357,DN,CT,Công ty Cổ phần Sông Đà 9,Sông Đà 9
+1121,SDA,SDA,HNXIndex,2793,DN,CT,Công ty Cổ phần SIMCO Sông Đà,XKLĐ Sông Đà
+1122,SDB,SDB,UpcomIndex,2357,DN,CT,Công ty Cổ phần Sông Đà 207,Sông Đà 207
+1123,SDC,SDC,HNXIndex,2791,DN,CT,Công ty Cổ phần Tư vấn Sông Đà,Tư vấn Sông Đà
+1124,SDD,SDD,UpcomIndex,2357,DN,CT,Công ty Cổ phần Đầu tư và Xây lắp Sông Đà,Xây lắp Sông Đà
+1125,SDG,SDG,HNXIndex,2723,DN,CT,Công ty Cổ phần Sadico Cần Thơ,Sadico Cần Thơ
+1126,SDJ,SDJ,UpcomIndex,2353,DN,CT,Công ty Cổ phần Sông Đà 25,Sông Đà 25
+1127,SDK,SDK,UpcomIndex,2757,DN,CT,Công ty Cổ phần Cơ khí Luyện Kim,Cơ khí Luyện Kim
+1128,SDN,SDN,HNXIndex,2353,DN,CT,Công ty Cổ phần Sơn Đồng Nai,Sơn Đồng Nai
+1129,SDP,SDP,UpcomIndex,2353,DN,CT,Công ty Cổ phần SDP,Công ty Cổ phần SDP
+1130,SDSEC,XLV,UpcomIndex,2357,DN,CT,Công ty Cổ phần Xây lắp và Dịch vụ Sông Đà,XL và DV Sông Đà
+1131,SDT,SDT,UpcomIndex,2357,DN,CT,Công ty Cổ phần Sông Đà 10,Sông Đà 10
+1132,SDU,SDU,HNXIndex,2357,DN,CT,Công ty Cổ phần Đầu tư Xây dựng và Phát triển Đô thị Sông Đà,Đô thị Sông Đà
+1133,SDV,SDV,UpcomIndex,2799,DN,CT,Công ty Cổ phần Dịch vụ Sonadezi,Dịch vụ Sonadezi
+1134,SDX,SDX,UpcomIndex,2357,DN,CT,Công ty Cổ phần Phòng cháy chữa cháy và Đầu tư Xây dựng Sông Đà,PCCC và Đầu tư XD Sông Đà
+1135,SDY,SDY,UpcomIndex,2353,DN,CT,Công ty Cổ phần Xi măng Sông Đà Yaly,Xi măng Sông Đà Yaly
+1136,SEAB,SSB,VNINDEX,8355,DN,NH,Ngân hàng Thương mại Cổ phần Đông Nam Á,SeABank
+1137,SEAPRODEX,SEA,UpcomIndex,3573,DN,CT,Tổng Công ty Thủy sản Việt Nam - Công ty Cổ phần,SEAPRODEX
+1138,SEAS,SPV,UpcomIndex,3573,DN,CT,Công ty Cổ phần Thủy Đặc Sản,Thủy đặc sản
+1139,SEB,SEB,HNXIndex,7535,DN,CT,Công ty Cổ phần Đầu tư và Phát triển Điện Miền Trung,Điện miền Trung
+1140,SED,SED,HNXIndex,5557,DN,CT,Công ty Cổ phần Đầu tư và Phát triển Giáo dục Phương Nam,Phát triển GD Phương Nam
+1141,SEP,SEP,UpcomIndex,1353,DN,CT,Công ty Cổ phần Tổng Công ty Thương mại Quảng Trị,Thương mại Quảng Trị
+1142,SFC,SFC,VNINDEX,7573,DN,CT,Công ty Cổ phần Nhiên liệu Sài Gòn,Nhiên liệu Sài Gòn
+1143,SFG,SFG,VNINDEX,1357,DN,CT,Công ty Cổ phần Phân bón Miền Nam,Phân bón Miền Nam
+1144,SFI,SFI,VNINDEX,2773,DN,CT,Công ty Cổ phần Đại lý Vận tải SAFI,Vận tải SAFI
+1145,SFN,SFN,HNXIndex,2797,DN,CT,Công ty Cổ phần Dệt lưới Sài Gòn,Dệt lưới Sài Gòn
+1146,SGB,SGB,UpcomIndex,8355,DN,NH,Ngân hàng Thương mại Cổ phần Sài Gòn Công thương,Sài Gòn Công thương
+1147,SGBTB,SBB,UpcomIndex,3533,DN,CT,Công ty cổ phần Tập đoàn Bia Sài Gòn Bình Tây,Bia Sài Gòn Bình Tây
+1148,SGBUS,BSG,UpcomIndex,5759,DN,CT,Công ty Cổ phần Xe khách Sài Gòn,Xe khách Sài Gòn
+1149,SGC,SGC,HNXIndex,3577,DN,CT,Công ty Cổ phần Xuất nhập khẩu Sa Giang,Bánh phồng tôm Sa Giang
+1150,SGD,SGD,HNXIndex,5557,DN,CT,Công ty Cổ phần Sách Giáo dục tại Thành phố Hồ Chí Minh,Sách GD TP.HCM
+1151,SGH,SGH,HNXIndex,5753,DN,CT,Công ty Cổ phần Khách sạn Sài Gòn,Khách sạn Sài Gòn
+1152,SGPLAS,NSG,UpcomIndex,1353,DN,CT,Công ty Cổ phần Nhựa Sài Gòn,Nhựa Sài Gòn
+1153,SGR,SGR,VNINDEX,8633,DN,CT,Công ty Cổ phần Tổng Công ty Cổ phần Địa ốc Sài Gòn,Địa ốc Sài Gòn
+1154,SGRAIL,SRT,UpcomIndex,5759,DN,CT,Công ty Cổ phần Vận tải Đường sắt Sài Gòn,Vận tải Đường sắt Sài Gòn
+1155,SGS,SGS,UpcomIndex,2773,DN,CT,Công ty Cổ phần Vận tải biển Sài Gòn,Vận tải biển Sài Gòn
+1156,SGT,SGT,VNINDEX,9535,DN,CT,Công ty Cổ phần Công nghệ Viễn thông Sài Gòn,Sài Gòn Telecom
+1157,SGVRG,SIP,VNINDEX,8633,DN,CT,Công ty Cổ phần Đầu tư Sài Gòn VRG,Đầu tư Sài Gòn VRG
+1158,SGYT,TPS,UpcomIndex,5759,DN,CT,Công ty Cổ phần Bến bãi vận tải Sài Gòn,Bến bãi vận tải Sài Gòn
+1159,SHA,SHA,VNINDEX,1757,DN,CT,Công ty Cổ phần Sơn Hà Sài Gòn,Sơn Hà Sài Gòn
+1160,SHAL,NSH,HNXIndex,1753,DN,CT,Công ty Cổ phần Tập đoàn Nhôm Sông Hồng Shalumi,Nhôm Sông Hồng
+1161,SHB,SHB,VNINDEX,8355,DN,NH,Ngân hàng Thương mại Cổ phần Sài Gòn – Hà Nội,SHB
+1162,SHC,SHC,UpcomIndex,2773,DN,CT,Công ty Cổ phần Hàng hải Sài Gòn,Hàng hải Sài Gòn
+1163,SHG,SHG,UpcomIndex,2357,DN,CT,Tổng Công ty Cổ phần Sông Hồng,Tổng Công ty Sông Hồng
+1164,SHGC,MSH,VNINDEX,3763,DN,CT,Công ty Cổ phần May Sông Hồng,May Sông Hồng
+1165,SHI,SHI,VNINDEX,1757,DN,CT,Công ty Cổ phần Quốc tế Sơn Hà,Quốc tế Sơn Hà
+1166,SHN,SHN,HNXIndex,1771,DN,CT,Công ty Cổ phần Đầu tư Tổng hợp Hà Nội,Đầu tư Tổng hợp Hà Nội
+1167,SHP,SHP,VNINDEX,7535,DN,CT,Công ty Cổ phần Thủy điện Miền Nam,Thủy điện Miền Nam
+1168,SHS,SHS,HNXIndex,8777,DN,CK,Công ty Cổ phần Chứng khoán Sài Gòn - Hà Nội,Chứng khoán SG - HN
+1169,SIAMB,SBV,VNINDEX,5379,DN,CT,Công ty Cổ phần Siam Brothers Việt Nam,Siam Brothers Việt Nam
+1170,SIDC,SZC,VNINDEX,8633,DN,CT,Công ty Cổ phần Sonadezi Châu Đức,Sonadezi Châu Đức
+1171,SII,SII,UpcomIndex,7577,DN,CT,Công ty Cổ phần Hạ tầng Nước Sài Gòn,Hạ tầng Nước Sài Gòn
+1172,SIVICO,SIV,UpcomIndex,1357,DN,CT,Công ty Cổ phần SIVICO,SIVICO
+1173,SJ1,SJ1,HNXIndex,3573,DN,CT,Công ty Cổ phần Nông nghiệp Hùng Hậu,Nông nghiệp Hùng Hậu
+1174,SJC,SJC,UpcomIndex,2357,DN,CT,Công ty Cổ phần Sông Đà 1.01,Sông Đà 1.01
+1175,SJD,SJD,VNINDEX,7535,DN,CT,Công ty Cổ phần Thủy điện Cần Đơn,Thủy điện Cần Đơn
+1176,SJE,SJE,HNXIndex,2357,DN,CT,Công ty Cổ phần Sông Đà 11,Sông Đà 11
+1177,SJF,SJF,VNINDEX,1357,DN,CT,Công ty Cổ phần Đầu tư Sao Thái Dương,Đầu tư Sao Thái Dương
+1178,SJM,SJM,UpcomIndex,2357,DN,CT,Công ty Cổ phần Sông Đà 19,Sông Đà 19
+1179,SJS,SJS,VNINDEX,8633,DN,CT,Công ty Cổ phần SJ Group,SJ Group
+1180,SKG,SKG,VNINDEX,5759,DN,CT,Công ty Cổ phần Tàu Cao tốc Superdong - Kiên Giang,Tàu Cao tốc Superdong
+1181,SKN,SKN,UpcomIndex,3537,DN,CT,Công ty Cổ phần Nước giải khát Sanna Khánh Hòa,NGK Sanna Khánh Hòa
+1182,SLS,SLS,HNXIndex,3577,DN,CT,Công ty Cổ phần Mía đường Sơn La,Mía đường Sơn La
+1183,SMA,SMA,VNINDEX,7535,DN,CT,Công ty Cổ phần Thiết bị Phụ tùng Sài Gòn,Thiết bị Phụ tùng Sài Gòn
+1184,SMB,SMB,VNINDEX,3533,DN,CT,Công ty Cổ phần Bia Sài Gòn - Miền Trung,Bia Sài Gòn - Miền Trung
+1185,SMC,SMC,VNINDEX,1757,DN,CT,Công ty Cổ phần Đầu tư Thương mại SMC,Đầu tư Thương mại SMC
+1186,SMT,SMT,HNXIndex,9578,DN,CT,Công ty Cổ phần SAMETEL,SAMETEL
+1187,SNC,SNC,UpcomIndex,3573,DN,CT,Công ty Cổ phần Xuất nhập khẩu Thủy sản Năm Căn,Thủy sản Năm Căn
+1188,SOBEE,SMN,HNXIndex,5557,DN,CT,Công ty Cổ phần Sách và thiết bị giáo dục Miền Nam,Sách và thiết bị GD miền Nam
+1189,SODIC,SIG,UpcomIndex,2357,DN,CT,Công ty Cổ phần Đầu tư và Thương mại Sông Đà,Đầu tư và Thương mại Sông Đà
+1190,SONA,SNZ,UpcomIndex,2357,DN,CT,Tổng Công ty Cổ phần Phát triển Khu Công nghiệp,SONADEZI
+1191,SONADEZIGD,SZG,UpcomIndex,8633,DN,CT,Công ty Cổ phần Sonadezi Giang Điền,Sonadezi Giang Điền
+1192,SONGDA,SJG,UpcomIndex,2357,DN,CT,Tổng Công ty Sông Đà,Tổng Công ty Sông Đà
+1193,SONHADRE,SHE,HNXIndex,3722,DN,CT,Công ty Cổ phần Phát triển Năng Lượng Sơn Hà,PT Năng Lượng Sơn Hà
+1194,SORUCO,SBR,UpcomIndex,1353,DN,CT,Công ty Cổ phần Cao su Sông Bé,Cao su Sông Bé
+1195,SOWASUCO,NSL,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp nước Sơn La,Cấp nước Sơn La
+1196,SPB,SPB,UpcomIndex,3763,DN,CT,Công ty Cổ phần Sợi Phú Bài,Sợi Phú Bài
+1197,SPC,SPC,HNXIndex,1357,DN,CT,Công ty Cổ phần Bảo vệ Thực vật Sài Gòn,BV Thực vật Sài Gòn
+1198,SPD,SPD,UpcomIndex,3573,DN,CT,Công ty Cổ phần Xuất nhập khẩu Thủy sản Miền Trung,Thủy sản Miền Trung
+1199,SPH,SPH,UpcomIndex,3573,DN,CT,Công ty Cổ phần Xuất Nhập khẩu Thủy sản Hà Nội,XNK Thủy sản Hà Nội
+1200,SPH2,SP2,UpcomIndex,7535,DN,CT,Công ty Cổ phần Thủy điện Sử Pán 2,Thủy điện Sử Pán 2
+1201,SPI,SPI,HNXIndex,1775,DN,CT,Công ty Cổ phần Spiral Galaxy,Spiral Galaxy
+1202,SPM,SPM,VNINDEX,4577,DN,CT,Công ty Cổ phần S.P.M,S.P.M CORP
+1203,SPMI,ISH,UpcomIndex,7535,DN,CT,Công ty Cổ phần Thủy điện Srok Phu Miêng IDICO,Thủy điện Srok Phu Miêng
+1204,SQC,SQC,UpcomIndex,1775,DN,CT,Công ty Cổ phần Khoáng sản Sài Gòn - Quy Nhơn,Khoáng sản SG-Quy Nhơn
+1205,SRA,SRA,HNXIndex,9537,DN,CT,Công ty Cổ phần SARA Việt Nam,SARA Việt Nam
+1206,SRB,SRB,UpcomIndex,9537,DN,CT,Công ty Cổ phần Tập đoàn Sara,SARA
+1207,SRC,SRC,VNINDEX,3357,DN,CT,Công ty Cổ phần Cao su Sao Vàng,Cao su Sao Vàng
+1208,SRF,SRF,VNINDEX,2757,DN,CT,Công ty Cổ phần Searefico,SEAREFICO
+1209,SRTS,TSG,UpcomIndex,2777,DN,CT,Công ty Cổ phần Thông tin Tín hiệu Đường sắt Sài Gòn,TTTH Đường sắt Sài Gòn
+1210,SS4A,S4A,VNINDEX,7535,DN,CT,Công ty Cổ phần Thủy điện Sê San 4A,Thủy điện Sê San 4A
+1211,SSC,SSC,VNINDEX,3573,DN,CT,Công ty Cổ phần Giống cây trồng Miền Nam,Giống cây trồng Miền Nam
+1212,SSF,SSF,UpcomIndex,3765,DN,CT,Công ty Cổ phần Giáo dục G Sài Gòn,Giáo dục G Sài Gòn
+1213,SSG,SSG,UpcomIndex,2773,DN,CT,Công ty Cổ phần Vận tải Biển Hải Âu,Vận tải Biển Hải Âu
+1214,SSI,SSI,VNINDEX,8777,DN,CK,Công ty Cổ phần Chứng khoán SSI,Chứng khoán SSI
+1215,SSM,SSM,HNXIndex,1757,DN,CT,Công ty Cổ phần Chế tạo kết cấu thép VNECO.SSM,Kết cấu Thép VNECO
+1216,SSN,SSN,UpcomIndex,3573,DN,CT,Công ty Cổ phần Xuất nhập khẩu Thủy sản Sài Gòn,Thủy sản Sài Gòn
+1217,ST8,ST8,VNINDEX,9574,DN,CT,Công ty Cổ phần Đầu tư Phát triển ST8,Đầu tư Phát triển ST8
+1218,STB,STB,VNINDEX,8355,DN,NH,Ngân hàng Thương mại Cổ phần Sài Gòn Thương Tín,Sacombank
+1219,STC,STC,HNXIndex,5557,DN,CT,Công ty Cổ phần Sách và Thiết bị trường học Thành phố Hồ Chí Minh,Sách và Thiết bị trường học Tp Hồ Chí Minh
+1220,STG,STG,VNINDEX,2777,DN,CT,Công ty Cổ phần Kho Vận Miền Nam,Kho Vận Miền Nam
+1221,STL,STL,UpcomIndex,8633,DN,CT,Công ty Cổ phần Sông Đà - Thăng Long,Sông Đà - Thăng Long
+1222,STP,STP,HNXIndex,2723,DN,CT,Công ty Cổ phần Công nghiệp Thương mại Sông Đà,CN Thương Mại Sông Đà
+1223,STS,STS,UpcomIndex,2779,DN,CT,Công ty Cổ phần Dịch vụ vận tải Sài Gòn,Dịch vụ vận tải Sài Gòn
+1224,STT,STT,UpcomIndex,5759,DN,CT,Công ty Cổ phần Vận chuyển Sài Gòn Tourist,Vận chuyển Sài Gòn Tourist
+1225,STWACO,STW,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp nước Sóc Trăng,Cấp nước Sóc Trăng
+1226,SVC,SVC,VNINDEX,3353,DN,CT,Công ty Cổ phần Dịch vụ tổng hợp Sài Gòn,SAVICO
+1227,SVD,SVD,VNINDEX,3763,DN,CT,Công ty Cổ phần Đầu tư & Thương mại Vũ Đăng,Đầu tư & Thương mại Vũ Đăng
+1228,SVG,SVG,UpcomIndex,2727,DN,CT,Công ty Cổ phần Hơi kỹ nghệ Que hàn,Hơi kỹ nghệ Que hàn
+1229,SVH,SVH,UpcomIndex,7535,DN,CT,Công ty Cổ phần Thủy điện Sông Vàng,Thủy điện Sông Vàng
+1230,SVI,SVI,VNINDEX,2723,DN,CT,Công ty Cổ phần Bao bì Biên Hòa,Bao bì Biên Hòa
+1231,SVN,SVN,HNXIndex,2357,DN,CT,Công ty Cổ phần Tập đoàn Vexilla Việt Nam,Tập đoàn Vexilla Việt Nam
+1232,SVT,SVT,VNINDEX,1737,DN,CT,Công ty Cổ phần Công nghệ Sài Gòn Viễn Đông,Công nghệ SG Viễn Đông
+1233,SWC,SWC,UpcomIndex,2773,DN,CT,Tổng Công ty Cổ phần Đường Sông Miền Nam,Đường Sông Miền Nam
+1234,SZE,SZE,UpcomIndex,2799,DN,CT,Công ty Cổ phần Môi trường Sonadezi,Môi trường Sonadezi
+1235,SZL,SZL,VNINDEX,8633,DN,CT,Công ty Cổ phần Sonadezi Long Thành,Sonadezi Long Thành
+1236,SZLB,SZB,HNXIndex,8633,DN,CT,Công ty Cổ phần Sonadezi Long Bình,Sonadezi Long Bình
+1237,TA3,TA3,UpcomIndex,2357,DN,CT,Công ty cổ phần Đầu tư và Xây lắp Thành An 386,ĐT và Xây lắp Thành An 386
+1238,TA6,TA6,UpcomIndex,2357,DN,CT,Công ty Cổ phần Đầu tư và Xây lắp Thành An 665,Đầu tư và Xây lắp Thành An 665
+1239,TA96,TA9,HNXIndex,2357,DN,CT,Công ty Cổ phần Xây lắp Thành An 96,Xây lắp Thành An 96
+1240,TANKHANHAN,TKA,UpcomIndex,2723,DN,CT,Công ty Cổ phần Bao bì Tân Khánh An,Bao bì Tân Khánh An
+1241,TASECOAIRS,AST,VNINDEX,5379,DN,CT,Công ty Cổ phần Dịch vụ Hàng không Taseco,Dịch vụ Hàng không Taseco
+1242,TASECOLAND,TAL,UpcomIndex,8633,DN,CT,Công Ty Cổ Phần Đầu Tư Bất Động Sản Taseco,Đầu Tư Bất Động Sản Taseco
+1243,TAW,TAW,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp nước Trung An,Cấp nước Trung An
+1244,TB8,TB8,UpcomIndex,2723,DN,CT,Công ty Cổ phần Sản xuất và Kinh doanh Vật tư Thiết bị - VVMI,SX và KD Vật tư Thiết bị - VVMI
+1245,TBC,TBC,VNINDEX,7535,DN,CT,Công ty Cổ phần Thủy điện Thác Bà,Thủy điện Thác Bà
+1246,TBD,TBD,UpcomIndex,2737,DN,CT,Tổng công ty Thiết bị điện Đông Anh - Công ty Cổ phần,Thiết bị điện Đông Anh
+1247,TBHC,TBH,UpcomIndex,2777,DN,CT,Công ty Cổ phần Tổng Bách Hóa,Tổng Bách Hóa
+1248,TBRC,RTB,UpcomIndex,1353,DN,CT,Công ty Cổ phần Cao su Tân Biên,Cao su Tân Biên
+1249,TBT,TBT,UpcomIndex,2357,DN,CT,Công ty Cổ phần Xây dựng Công trình Giao thông Bến Tre,XD Công trình GT Bến Tre
+1250,TBWATER,TBW,UpcomIndex,7577,DN,CT,Công ty cổ phần Nước sạch Thái Bình,Nước sạch Thái Bình
+1251,TBX,TBX,HNXIndex,2353,DN,CT,Công ty Cổ phần Xi măng Thái Bình,Xi măng Thái Bình
+1252,TC6,TC6,HNXIndex,1771,DN,CT,Công ty Cổ phần Than Cọc Sáu - Vinacomin,Than Cọc Sáu
+1253,TCB,TCB,VNINDEX,8355,DN,NH,Ngân hàng Thương mại Cổ phần Kỹ thương Việt Nam,Techcombank
+1254,TCL,TCL,VNINDEX,2779,DN,CT,Công ty Cổ phần Đại lý Giao nhận Vận tải Xếp dỡ Tân Cảng,Tan Cang Logistics
+1255,TCM,TCM,VNINDEX,3763,DN,CT,Công ty Cổ phần Dệt may - Đầu tư - Thương mại Thành Công,Dệt may Thành Công
+1256,TCO,TCO,VNINDEX,2779,DN,CT,Công ty Cổ phần TCO Holdings,TCO Holdings
+1257,TCR,TCR,VNINDEX,2353,DN,CT,Công ty Cổ phần Công nghiệp Gốm sứ TAICERA,Gốm sứ TAICERA
+1258,TCREIT,FUCVREIT,VNINDEX,8985,OTHER,QU,Quỹ đầu tư Bất động sản Techcom Việt Nam,Quỹ đầu tư BĐS Techcom Việt Nam
+1259,TCSC,TCI,VNINDEX,8777,DN,CK,Công ty Cổ phần Chứng khoán Thành Công,Chứng khoán Thành Công
+1260,TCT,TCT,VNINDEX,5759,DN,CT,Công ty Cổ phần Cáp treo Núi Bà Tây Ninh,Cáp treo Tây Ninh
+1261,TCT36,G36,UpcomIndex,2357,DN,CT,Tổng Công ty 36 - Công ty Cổ phần,Tổng Công ty 36
+1262,TCWC,TCW,UpcomIndex,2777,DN,CT,Công ty Cổ phần Kho Vận Tân Cảng,Kho Vận Tân Cảng
+1263,TDC,TDC,VNINDEX,8637,DN,CT,Công ty Cổ phần Kinh doanh và Phát triển Bình Dương,Becamex TDC
+1264,TDCD,VCP,UpcomIndex,7535,DN,CT,Công ty Cổ phần Xây dựng và Năng lượng VCP,Xây dựng và Năng lượng VCP
+1265,TDFW,GTD,UpcomIndex,3765,DN,CT,Công ty Cổ phần Giầy Thượng Đình,Giầy Thượng Đình
+1266,TDGAS,TDG,VNINDEX,7573,DN,CT,Công ty Cổ phần Đầu tư TDG Global,Đầu tư TDG Global
+1267,TDH,TDH,VNINDEX,8633,DN,CT,Công ty Cổ phần Phát triển Nhà Thủ Đức,Thủ Đức House
+1268,TDHC,TTD,UpcomIndex,4533,DN,CT,Công ty Cổ phần Bệnh viện Tim Tâm Đức,Bệnh viện Tim Tâm Đức
+1269,TDMWATER,TDM,VNINDEX,7577,DN,CT,Công ty Cổ phần Nước Thủ Dầu Một,Nước Thủ Dầu Một
+1270,TDN,TDN,HNXIndex,1771,DN,CT,Công ty Cổ phần Than Đèo Nai - Vinacomin,Than Đèo Nai
+1271,TDNT,NTH,HNXIndex,7535,DN,CT,Công ty Cổ phần Thủy điện Nước Trong,Thủy điện Nước Trong
+1272,TDP,TDP,VNINDEX,2723,DN,CT,Công ty Cổ phần Thuận Đức,Công ty Thuận Đức
+1273,TDS,TDS,UpcomIndex,1757,DN,CT,Công ty Cổ phần Thép Thủ Đức - VNSTEEL,Thép Thủ Đức
+1274,TDTGROUP,TDT,HNXIndex,3763,DN,CT,Công ty Cổ phần Đầu tư và Phát triển TDT,Đầu tư và Phát triển TDT
+1275,TDW,TDW,VNINDEX,7577,DN,CT,Công ty Cổ phần Cấp nước Thủ Đức,Cấp nước Thủ Đức
+1276,TECHVINA,CET,HNXIndex,3767,DN,CT,Công ty Cổ phần HTC Holding,HTC Holding 
+1277,TEDIN,TED,UpcomIndex,2357,DN,CT,Tổng Công ty Tư vấn Thiết kế Giao thông Vận tải - CTCP,Thiết kế GTVT
+1278,TEG,TEG,VNINDEX,8633,DN,CT,Công ty Cổ phần Năng Lượng và Bất động sản Trường Thành,TECGROUP
+1279,TELCOM,TEL,UpcomIndex,2357,DN,CT,Công ty Cổ phần Phát triển công trình viễn thông,Phát triển công trình viễn thông
+1280,TET,TET,HNXIndex,3763,DN,CT,Công ty Cổ phần Vải sợi May mặc Miền Bắc,May mặc Miền Bắc
+1281,TFC,TFC,HNXIndex,3577,DN,CT,Công ty Cổ phần Trang,Trang Corp.
+1282,TGIC,TGG,UpcomIndex,2357,DN,CT,Công ty Cổ phần The Golden Group,The Golden Group
+1283,TGP,TGP,UpcomIndex,2733,DN,CT,Công ty Cổ phần Trường Phú,Cáp Trường Phú
+1284,TH1,TH1,UpcomIndex,5337,DN,CT,Công ty Cổ phần Xuất nhập khẩu Tổng hợp I Việt Nam,XNK Tổng hợp 1
+1285,THAIBINHEUP,MTB,UpcomIndex,2799,DN,CT,Công ty Cổ phần Môi trường và Công trình đô thị tỉnh Thái Bình,Công trình đô thị tỉnh Thái Bình
+1286,THALEXIM,TLP,UpcomIndex,7573,DN,CT,Tổng Công ty Thương mại Xuất nhập khẩu Thanh Lễ - CTCP,Thương mại XNK Thanh Lễ
+1287,THANHHOAWATER,THN,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp nước Thanh Hóa,Cấp nước Thanh Hóa
+1288,THB,THB,HNXIndex,3533,DN,CT,Công ty Cổ phần Bia Hà Nội - Thanh Hóa,Bia Hà Nội - Thanh Hóa
+1289,THBECO,BTB,UpcomIndex,3533,DN,CT,Công ty Cổ phần Bia Hà Nội - Thái Bình,Bia Hà Nội - Thái Bình
+1290,THD,THD,HNXIndex,8633,DN,CT,Công ty Cổ phần Thaiholdings,Công ty Thaiholdings
+1291,THEPHA,DTH,UpcomIndex,4535,DN,CT,Công ty Cổ phần Dược - Vật tư Y tế Thanh Hóa,Vật tư Y tế Thanh Hóa
+1292,THG,THG,VNINDEX,2357,DN,CT,Công ty Cổ phần Đầu tư và Xây dựng Tiền Giang,XD Tiền Giang
+1293,THQN,TQN,UpcomIndex,1733,DN,CT,Công ty Cổ phần Thông Quảng Ninh,Thông Quảng Ninh
+1294,THS,THS,HNXIndex,5373,DN,CT,Công ty Cổ phần Thanh Hoa Sông Đà,Thanh Hoa Sông Đà
+1295,THT,THT,HNXIndex,1771,DN,CT,Công ty Cổ phần Than Hà Tu - Vinacomin,Than Hà Tu
+1296,THU,THU,UpcomIndex,2799,DN,CT,Công ty Cổ phần Môi trường và Công trình đô thị Thanh Hóa,Môi trường và CTĐT Thanh Hóa
+1297,THUANAN,TAN,UpcomIndex,3537,DN,CT,Công ty Cổ phần Cà phê Thuận An,Cà phê Thuận An
+1298,THW,THW,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp nước Tân Hòa,Cấp nước Tân Hòa
+1299,TIE,TIE,UpcomIndex,2733,DN,CT,Công ty Cổ phần TIE,Điện tử TIE
+1300,TIENTHANH,TTH,HNXIndex,5371,DN,CT,Công ty Cổ phần Thương mại và Dịch vụ Tiến Thành,TM và DV Tiến Thành
+1301,TIG,TIG,HNXIndex,8633,DN,CT,Công ty Cổ phần Tập đoàn Đầu tư Thăng Long,Tập đoàn Đầu tư Thăng Long
+1302,TINN,TID,UpcomIndex,8633,DN,CT,Công ty Cổ phần Tổng Công ty Tín Nghĩa,Tổng Công ty Tín Nghĩa
+1303,TIP,TIP,VNINDEX,8633,DN,CT,Công ty Cổ phần Phát triển Khu công nghiệp Tín Nghĩa,PT KCN Tín Nghĩa
+1304,TIPHAR,DTG,HNXIndex,4577,DN,CT,Công ty Cổ phần Dược phẩm Tipharco,Dược phẩm Tipharco
+1305,TIS,TIS,UpcomIndex,1757,DN,CT,Công ty Cổ phần Gang thép Thái Nguyên,Gang thép Thái Nguyên
+1306,TIX,TIX,VNINDEX,8633,DN,CT,Công ty Cổ phần Sản xuất Kinh doanh Xuất nhập khẩu Dịch vụ và Đầu tư Tân Bình,TANIMEX
+1307,TJC,TJC,HNXIndex,2779,DN,CT,Công ty Cổ phần Dịch vụ Vận tải và Thương mại,Dịch vụ Vận tải và Thương mại
+1308,TKC,TKC,UpcomIndex,2357,DN,CT,Công ty Cổ phần Xây dựng và Kinh doanh Địa ốc Tân Kỷ,Địa ốc Tân Kỷ
+1309,TKG,TKG,HNXIndex,1757,DN,CT,Công ty Cổ phần Sản xuất và Thương mại Tùng Khánh,SX và T.Mại Tùng Khánh
+1310,TKU,TKU,HNXIndex,1753,DN,CT,Công ty Cổ phần Công nghiệp Tung Kuang,Công nghiệp Tung Kuang
+1311,TL4,TL4,UpcomIndex,2357,DN,CT,Tổng Công ty Xây dựng Thủy lợi 4 - Công ty Cổ phần,XD Thủy lợi 4
+1312,TLDECO,TLD,VNINDEX,8633,DN,CT,Công ty Cổ phần Đầu tư Xây dựng và Phát triển Đô thị Thăng Long,ĐT XD và PT Đô thị Thăng Long
+1313,TLG,TLG,VNINDEX,3724,DN,CT,Công ty Cổ phần Tập đoàn Thiên Long,Tập đoàn Thiên Long
+1314,TLGROUP,TTL,HNXIndex,2357,DN,CT,Tổng Công ty Thăng Long - Công ty Cổ phần,TCT Thăng Long
+1315,TLH,TLH,VNINDEX,1757,DN,CT,Công ty Cổ phần Tập đoàn Thép Tiến Lên,Thép Tiến Lên
+1316,TLIG,TLI,UpcomIndex,3763,DN,CT,Công ty Cổ phần May Quốc tế Thắng Lợi,May Quốc tế Thắng Lợi
+1317,TLSC,MBS,HNXIndex,8777,DN,CK,Công ty Cổ phần Chứng khoán MB,Chứng khoán MB
+1318,TLT,TLT,UpcomIndex,2353,DN,CT,Công ty Cổ phần Viglacera Thăng Long,Viglacera Thăng long
+1319,TMC,TMC,HNXIndex,7573,DN,CT,Công ty Cổ phần Thương mại Xuất nhập khẩu Thủ Đức,XNK Thủ Đức
+1320,TMP,TMP,VNINDEX,7535,DN,CT,Công ty Cổ phần Thủy điện Thác Mơ,Thủy điện Thác Mơ
+1321,TMS,TMS,VNINDEX,2777,DN,CT,Công ty Cổ phần Transimex,Transimex
+1322,TMT,TMT,VNINDEX,3353,DN,CT,Công ty Cổ phần Ô tô TMT,Ô tô TMT
+1323,TMW,TMW,UpcomIndex,1733,DN,CT,Công ty Cổ phần Tổng hợp Gỗ Tân Mai,Gỗ Tân Mai
+1324,TMX,TMX,HNXIndex,2353,DN,CT,Công ty Cổ phần VICEM Thương mại Xi măng,Thương mại Xi măng
+1325,TN1,TN1,VNINDEX,8633,DN,CT,Công ty Cổ phần Rox Key Holdings,Rox Key Holdings
+1326,TNA,TNA,VNINDEX,1757,DN,CT,Công ty Cổ phần Thương mại Xuất nhập khẩu Thiên Nam,XNK Thiên Nam
+1327,TNB,TNB,UpcomIndex,1757,DN,CT,Công ty Cổ phần Thép Nhà Bè - VNSTEEL,Thép Nhà Bè
+1328,TNBOOK,STH,UpcomIndex,5557,DN,CT,Công ty Cổ phần Phát hành sách Thái Nguyên,Phát hành sách Thái Nguyên
+1329,TNC,TNC,VNINDEX,1353,DN,CT,Công ty Cổ phần Cao su Thống Nhất,Cao su Thống Nhất
+1330,TNC1,BAX,HNXIndex,2357,DN,CT,Công ty Cổ phần Thống Nhất,Công ty Thống Nhất
+1331,TNFS,TNS,UpcomIndex,1757,DN,CT,Công ty Cổ phần Thép Tấm Lá Thống Nhất,Thép tấm lá Thống Nhất
+1332,TNG,TNG,HNXIndex,3763,DN,CT,Công ty Cổ phần Đầu tư và Thương mại TNG,Đầu tư và Thương mại TNG
+1333,TNGROUP,TNI,VNINDEX,1757,DN,CT,Công ty Cổ phần Tập đoàn Thành Nam,Tập đoàn Thành Nam
+1334,TNM,TNM,UpcomIndex,2357,DN,CT,Công ty Cổ phần Xuất nhập khẩu và Xây dựng Công trình,XNK và XD Công trình
+1335,TNPORT,TNP,UpcomIndex,2777,DN,CT,Công ty Cổ phần Cảng Thị Nại,Cảng Thị Nại
+1336,TNT,TNT,VNINDEX,1775,DN,CT,Công ty Cổ phần Tập đoàn TNT,Tập đoàn TNT
+1337,TOCHAU,TCJ,UpcomIndex,3573,DN,CT,Công ty Cổ phần Tô Châu,Tô Châu
+1338,TONDA,GDA,UpcomIndex,1757,DN,CT,Công ty Cổ phần Tôn Đông Á,Tôn Đông Á
+1339,TOP,TOP,UpcomIndex,5373,DN,CT,Công ty Cổ phần Phân phối Top One,Phân phối Top One
+1340,TOT,TOT,HNXIndex,2779,DN,CT,Công ty Cổ phần Transimex Logistics,Vận tải Transimex
+1341,TPB,TPB,VNINDEX,8355,DN,NH,Ngân hàng Thương mại Cổ phần Tiên Phong,TPBank
+1342,TPBC,BCF,HNXIndex,3577,DN,CT,Công ty Cổ phần Thực phẩm Bích Chi,Thực phẩm Bích Chi
+1343,TPC,TPC,VNINDEX,1353,DN,CT,Công ty Cổ phần Nhựa Tân Đại Hưng,Nhựa Tân Đại Hưng
+1344,TPH,TPH,HNXIndex,5557,DN,CT,Công ty Cổ phần In Sách giáo khoa tại Thành phố Hà Nội,In Sách giáo khoa TP.Hà Nội
+1345,TPP,TPP,HNXIndex,2723,DN,CT,Công ty Cổ phần Tân Phú Việt Nam,Nhựa Tân Phú VN
+1346,TPST,THP,UpcomIndex,3573,DN,CT,Công ty Cổ phần Thủy sản và Thương mại Thuận Phước,Thủy sản và TMại Thuận Phước
+1347,TRA,TRA,VNINDEX,4577,DN,CT,Công ty Cổ phần Traphaco,Traphaco
+1348,TRACO1,TR1,UpcomIndex,2777,DN,CT,Công ty Cổ phần Vận Tải 1 Traco,Vận Tải 1 Traco
+1349,TRACODI,TCD,VNINDEX,2357,DN,CT,Công ty Cổ phần Đầu tư Phát triển Công nghiệp và Vận tải,ĐT Phát triển CN và Vận tải
+1350,TRC,TRC,VNINDEX,1353,DN,CT,Công ty Cổ phần Cao su Tây Ninh,Cao su Tây Ninh
+1351,TRS,TRS,UpcomIndex,2773,DN,CT,Công ty Cổ phần Vận tải và Dịch vụ Hàng Hải,Vận tải và Dịch vụ Hàng Hải
+1352,TRUNGANRICE,TAR,HNXIndex,3573,DN,CT,Công ty Cổ phần Nông nghiệp Công nghệ cao Trung An,Nông nghiệp CN cao Trung An
+1353,TRUNGDO,TDF,UpcomIndex,2353,DN,CT,Công ty Cổ phần Trung Đô,Xây dựng Trung Đô
+1354,TRVS,TVB,VNINDEX,8777,OTHER,CK,Công ty Cổ phần Chứng khoán Trí Việt,Chứng khoán Trí Việt
+1355,TS4,TS4,UpcomIndex,3573,DN,CT,Công ty Cổ phần Thủy sản số 4,Thủy sản số 4
+1356,TSB,TSB,HNXIndex,2733,DN,CT,Công ty Cổ phần Ắc quy Tia Sáng,Ắc quy Tia Sáng
+1357,TSC,TSC,VNINDEX,1357,DN,CT,Công ty Cổ phần Vật tư Kỹ thuật Nông nghiệp Cần Thơ,Kỹ thuật NN Cần Thơ
+1358,TSCOECCO,TSD,UpcomIndex,5759,DN,CT,Công ty Cổ phần Du lịch Trường Sơn Coecco,Du lịch Trường Sơn Coecco
+1359,TST,TST,UpcomIndex,9533,DN,CT,Công ty Cổ phần Dịch vụ Kỹ thuật Viễn thông,Dịch vụ KT Viễn Thông
+1360,TTA,TTA,VNINDEX,7535,DN,CT,Công ty Cổ phần Đầu tư Xây dựng và Phát triển Trường Thành,XD và PT Trường Thành
+1361,TTB,TTB,UpcomIndex,2353,DN,CT,Công ty Cổ phần Tập đoàn Tiến Bộ,Tập đoàn Tiến Bộ
+1362,TTC,TTC,HNXIndex,2353,DN,CT,Công ty Cổ phần Gạch men Thanh Thanh,Gạch men Thanh Thanh
+1363,TTCO,TTT,HNXIndex,5759,DN,CT,Công ty Cổ phần Du Lịch - Thương Mại Tây Ninh,Du lịch - Thương Mại Tây Ninh
+1364,TTF,TTF,VNINDEX,1733,DN,CT,Công ty Cổ phần Tập đoàn Kỹ nghệ Gỗ Trường Thành,Gỗ Trường Thành
+1365,TTG,TTG,UpcomIndex,3763,DN,CT,Công ty Cổ phần May Thanh Trì,May Thanh Trì
+1366,TTHC,HUB,VNINDEX,2357,DN,CT,Công ty Cổ phần Xây lắp Thừa Thiên Huế,Xây lắp Huế
+1367,TTJC,TRT,UpcomIndex,2353,DN,CT,Công ty Cổ phần RedstarCera,CTCP RedstarCera
+1368,TTN,TTN,UpcomIndex,6535,DN,CT,Công ty Cổ phần Công nghệ & Truyền thông Việt Nam,Công nghệ và Truyền thông VN
+1369,TTP,TTP,UpcomIndex,2723,DN,CT,Công ty Cổ phần Bao bì Tân Tiến,Bao bì nhựa Tân Tiến
+1370,TTZ,TTZ,UpcomIndex,2353,DN,CT,Công ty Cổ phần Đầu tư Xây dựng và Công nghệ Tiến Trung,Xây dựng Tiến Trung
+1371,TUILDONAI,GND,UpcomIndex,2353,DN,CT,Công ty Cổ phần Gạch ngói Đồng Nai,Gạch ngói Đồng Nai
+1372,TUWASE,TQW,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp thoát nước Tuyên Quang,Cấp thoát nước Tuyên Quang
+1373,TV1,TV1,UpcomIndex,2791,DN,CT,Công ty Cổ phần Tư vấn Xây dựng Điện 1,Tư vấn XD Điện 1
+1374,TV2,TV2,VNINDEX,2791,DN,CT,Công ty Cổ phần Tư vấn Xây dựng Điện 2,Tư vấn XD Điện 2
+1375,TV3,TV3,HNXIndex,2357,DN,CT,Công ty Cổ phần Tư vấn Xây dựng Điện 3,Tư vấn XD điện 3
+1376,TV4,TV4,HNXIndex,2791,DN,CT,Công ty Cổ phần Tư vấn Xây dựng Điện 4,Tư vấn XD Điện 4
+1377,TV6,TV6,UpcomIndex,5379,DN,CT,Công ty Cổ phần Thương mại Đầu tư xây lắp điện Thịnh Vượng,TM ĐT xây lắp điện Thịnh Vượng
+1378,TVA,TVA,UpcomIndex,2353,DN,CT,Công ty cổ phần Sứ Viglacera Thanh Trì,Sứ Viglacera Thanh Trì
+1379,TVC,TVC,HNXIndex,8775,DN,CT,Công ty Cổ phần Tập đoàn Quản lý Tài sản Trí Việt,Tập đoàn Trí Việt
+1380,TVD,TVD,HNXIndex,1771,DN,CT,Công ty Cổ phần Than Vàng Danh - Vinacomin,Than Vàng Danh
+1381,TVG,TVG,UpcomIndex,2357,DN,CT,Công ty Cổ phần Tư vấn Đầu tư và Xây dựng Giao thông Vận tải,XD Giao thông Vận tải
+1382,TVS,TVS,VNINDEX,8777,DN,CK,Công ty Cổ phần Chứng khoán Thiên Việt,Chứng khoán Thiên Việt
+1383,TWACO,TNW,UpcomIndex,7577,DN,CT,Công ty Cổ phần Nước sạch Thái Nguyên,Nước sạch Thái Nguyên
+1384,TXM,TXM,HNXIndex,2353,DN,CT,Công ty Cổ phần VICEM Thạch cao Xi Măng,Thạch cao Xi măng
+1385,TYA,TYA,VNINDEX,2733,DN,CT,Công ty Cổ phần Dây và Cáp điện Taya Việt Nam,Dây và Cáp điện Taya
+1386,UCT,UCT,UpcomIndex,2799,DN,CT,Công ty Cổ phần Đô thị Cần Thơ,Đô thị Cần Thơ
+1387,UDC,UDC,UpcomIndex,2357,DN,CT,Công ty Cổ phần Xây dựng và Phát triển đô thị Tỉnh Bà Rịa - Vũng Tàu,Xây dựng và Phát triển đô thị Bà Rịa - Vũng Tàu
+1388,UDJ,UDJ,UpcomIndex,2357,DN,CT,Công ty Cổ phần Phát triển Đô thị,Becamex UDJ
+1389,UEMC,UEM,UpcomIndex,2757,DN,CT,Công ty Cổ phần Cơ điện Uông Bí - Vinacomin,Cơ điện Uông Bí - Vinacomin
+1390,UFC,FCC,UpcomIndex,3533,DN,CT,Công ty Cổ phần Liên hợp Thực phẩm,Liên hợp Thực phẩm
+1391,UIC,UIC,VNINDEX,2357,DN,CT,Công ty Cổ phần Đầu tư Phát triển Nhà và Đô thị IDICO,Phát triển Nhà và Đô thị IDICO
+1392,UMC,UMC,UpcomIndex,2357,DN,CT,Công ty Cổ phần Công trình đô thị Nam Định,Công trình đô thị Nam Định
+1393,UNI,UNI,HNXIndex,9533,DN,CT,Công ty Cổ phần Đầu tư và Phát triển Sao Mai Việt,Đầu tư và Phát triển Sao Mai Việt
+1394,UPC,UPC,UpcomIndex,7575,DN,CT,Công ty Cổ phần Phát triển Công viên Cây xanh và Đô thị Vũng Tàu,Cây xanh Vũng Tàu
+1395,UPHACE,UPH,UpcomIndex,4577,DN,CT,Công ty Cổ phần Dược phẩm TW25,Dược phẩm TW25
+1396,USC,USC,UpcomIndex,2357,DN,CT,Công ty Cổ phần Khảo sát và Xây dựng - USCO,Khảo sát và Xây dựng - USCO
+1397,USD,USD,UpcomIndex,2799,DN,CT,Công ty Cổ phần Công trình Đô thị Sóc Trăng,Công trình Đô thị Sóc Trăng
+1398,V11,V11,UpcomIndex,8633,DN,CT,Công ty Cổ phần Xây dựng số 11,VINACONEX No11
+1399,V12,V12,HNXIndex,2357,DN,CT,Công ty Cổ phần Xây dựng số 12,VINACONEX 12
+1400,V15,V15,UpcomIndex,2357,DN,CT,Công ty Cổ phần Xây dựng số 15,Vinaconex 15
+1401,V21,V21,HNXIndex,8633,DN,CT,Công ty Cổ phần Vinaconex 21,Vinaconex 21
+1402,VAB,VAB,UpcomIndex,8355,DN,NH,Ngân hàng Thương mại Cổ phần Việt Á,Ngân hàng Việt Á
+1403,VAF,VAF,VNINDEX,1357,DN,CT,Công ty Cổ phần Phân lân nung chảy Văn Điển,Phân lân Văn Điển
+1404,VAPAC,PAT,UpcomIndex,1357,DN,CT,Công ty Cổ phần Phốt pho Apatit Việt Nam,Phốt pho Apatit Việt Nam
+1405,VAV,VAV,UpcomIndex,7577,DN,CT,Công ty Cổ phần VIWACO,VIWACO
+1406,VBC,VBC,HNXIndex,2723,DN,CT,"Công ty Cổ phần Nhựa, Bao bì Vinh",Nhựa - Bao bì Vinh
+1407,VBH,VBH,UpcomIndex,2733,DN,CT,Công ty Cổ phần Điện tử Bình Hòa,Điện tử Bình Hòa
+1408,VC1,VC1,HNXIndex,2357,DN,CT,Công ty Cổ phần Xây dựng số 1,Xây dựng số 1
+1409,VC2,VC2,HNXIndex,2357,DN,CT,Công ty Cổ phần Đầu tư và Xây dựng VINA2,Đầu tư và Xây dựng VINA2
+1410,VC3,VC3,HNXIndex,8637,DN,CT,Công ty Cổ phần Tập đoàn Nam Mê Kông,Tập đoàn Nam Mê Kông
+1411,VC5,VC5,UpcomIndex,2357,DN,CT,Công ty Cổ phần xây dựng số 5,Xây dựng Số 5
+1412,VC6,VC6,HNXIndex,2357,DN,CT,Công ty cổ phần Xây dựng và Đầu tư Visicons,Visicons
+1413,VC7,VC7,HNXIndex,2357,DN,CT,Công ty Cổ phần Tập đoàn BGI,BGI Group
+1414,VC9,VC9,HNXIndex,2357,DN,CT,Công ty Cổ phần Xây dựng số 9 - VC9,Xây dựng số 9
+1415,VCA,VCA,VNINDEX,1757,DN,CT,Công ty Cổ phần Thép VICASA - VNSTEEL,Thép VICASA - VNSTEEL
+1416,VCB,VCB,VNINDEX,8355,DN,NH,Ngân hàng Thương mại Cổ phần Ngoại thương Việt Nam,Vietcombank
+1417,VCC,VCC,HNXIndex,2357,DN,CT,Công ty Cổ phần Vinaconex 25,Vinaconex 25
+1418,VCCEC,CCV,UpcomIndex,2357,DN,CT,Công ty Cổ phần Tư vấn Xây dựng Công nghiệp và Đô thị Việt Nam,XD CN và đô thị Việt Nam
+1419,VCF,VCF,VNINDEX,3537,DN,CT,Công ty Cổ phần VinaCafé Biên Hòa,VinaCafé Biên Hòa
+1420,VCG,VCG,VNINDEX,2357,DN,CT,Tổng Công ty Cổ phần Xuất nhập khẩu và Xây dựng Việt Nam,VINACONEX
+1421,VCGHN,VIH,UpcomIndex,2353,DN,CT,Công ty Cổ phần Viglacera Hà Nội,Viglacera Hà Nội
+1422,VCIE,CLM,HNXIndex,1771,DN,CT,Công ty Cổ phần Xuất nhập khẩu Than - Vinacomin,Xuất nhập khẩu Than - Vinacomin
+1423,VCM,VCM,HNXIndex,2793,DN,CT,Công ty Cổ phần BV Life,BV Life
+1424,VCR,VCR,UpcomIndex,8633,DN,CT,Công ty Cổ phần Đầu tư và Phát triển Du lịch Vinaconex,Vinaconex - ITC
+1425,VCS,VCS,HNXIndex,2353,DN,CT,Công ty Cổ phần VICOSTONE,VICOSTONE
+1426,VCSC,VCI,VNINDEX,8777,DN,CK,Công ty Cổ phần Chứng khoán Vietcap,Chứng khoán Vietcap
+1427,VCT,VCT,UpcomIndex,2791,DN,CT,Công ty Cổ phần Tư vấn Xây dựng Vinaconex,Tư vấn XD Vinaconex
+1428,VCX,VCX,UpcomIndex,2353,DN,CT,Công ty Cổ phần Xi măng Yên Bình,Xi măng Yên Bình
+1429,VDB,VDB,UpcomIndex,1771,DN,CT,Công ty Cổ phần Vận tải và Chế biến Than Đông Bắc,Vận tải và CB Than Đông Bắc
+1430,VDL,VDL,HNXIndex,3535,DN,CT,Công ty Cổ phần Thực phẩm Lâm Đồng,Thực phẩm Lâm Đồng
+1431,VDN,VDN,UpcomIndex,3763,DN,CT,Công ty Cổ phần Vinatex Đà Nẵng,Vinatex Đà Nẵng
+1432,VDS,VDS,VNINDEX,8777,DN,CK,Công ty Cổ phần Chứng khoán Rồng Việt,Chứng khoán Rồng Việt
+1433,VDT,VDT,UpcomIndex,1757,DN,CT,Công ty Cổ phần Lưới thép Bình Tây,Lưới thép Bình Tây
+1434,VE1,VE1,HNXIndex,2357,DN,CT,Công ty Cổ phần Xây dựng điện VNECO 1,VNECO 1
+1435,VE2,VE2,UpcomIndex,2357,DN,CT,Công ty Cổ phần Xây dựng Điện VNECO 2,Xây dựng Điện VNECO 2
+1436,VE3,VE3,HNXIndex,2357,DN,CT,Công ty Cổ phần Xây dựng điện VNECO 3,Xây dựng điện VNECO 3
+1437,VE4,VE4,HNXIndex,2357,DN,CT,Công ty Cổ phần Xây dựng điện VNECO4,Xây dựng điện VNECO4
+1438,VE8,VE8,HNXIndex,2357,DN,CT,Công ty Cổ phần Xây dựng Điện Vneco 8,Xây dựng Điện Vneco 8
+1439,VE9,VE9,UpcomIndex,2357,DN,CT,Công ty Cổ phần Đầu tư và Xây dựng VNECO 9,VNECO 9
+1440,VEAM,VEA,UpcomIndex,2757,DN,CT,Tổng Công ty Máy động lực và Máy nông nghiệp Việt Nam - CTCP,Máy động lực và Máy NN
+1441,VEF,VEF,UpcomIndex,5555,DN,CT,Công ty Cổ phần Trung tâm Hội chợ Triển lãm Việt Nam,Hội chợ Triển lãm Việt Nam
+1442,VEIC,VEC,UpcomIndex,9572,DN,CT,Tổng Công ty Cổ phần Điện tử và Tin học Việt Nam,Điện tử và Tin học VN
+1443,VES,VES,UpcomIndex,2757,DN,CT,Công ty Cổ phần Đầu tư và Xây dựng Điện MÊ CA VNECO,MÊ CA VNECO
+1444,VFC,VFC,UpcomIndex,2773,DN,CT,Công ty Cổ phần VINAFCO,Vận tải biển VINAFCO
+1445,VFG,VFG,VNINDEX,1357,DN,CT,Công ty Cổ phần Khử trùng Việt Nam,Khử trùng Việt Nam
+1446,VFR,VFR,UpcomIndex,2773,DN,CT,Công ty Cổ phần Vận tải và Thuê tàu,Vận tải Vietfracht
+1447,VFSC,VFS,HNXIndex,8777,DN,CK,Công ty Cổ phần Chứng khoán Nhất Việt,Chứng khoán Nhất Việt
+1448,VGC,VGC,VNINDEX,2353,DN,CT,Tổng Công ty Viglacera - Công ty Cổ phần,Tổng Công ty Viglacera
+1449,VGP,VGP,HNXIndex,2777,DN,CT,Công ty Cổ phần Cảng Rau Quả,Cảng Rau Quả
+1450,VGS,VGS,HNXIndex,1757,DN,CT,Công ty Cổ phần Ống thép Việt Đức VG PIPE,Ống thép Việt Đức
+1451,VGSC,VUA,UpcomIndex,8777,DN,CK,Công ty Cổ phần Chứng khoán Stanley Brothers,Chứng khoán Stanley Brothers
+1452,VGTND,NDT,UpcomIndex,3763,DN,CT,Tổng Công ty Cổ phần Dệt may Nam Định,Dệt may Nam Định
+1453,VHC,VHC,VNINDEX,3573,DN,CT,Công ty Cổ phần Vĩnh Hoàn,Thủy sản Vĩnh Hoàn
+1454,VHF,VHF,UpcomIndex,3577,DN,CT,Công ty Cổ phần Xây dựng và Chế biến lương thực Vĩnh Hà,Chế biến lương thực Vĩnh Hà
+1455,VHG,VHG,UpcomIndex,2727,DN,CT,Công ty Cổ phần Đầu tư và Phát triển Việt Trung Nam,Công ty Cổ phần Đầu tư và Phát triển Việt Trung Nam
+1456,VHH,VHH,UpcomIndex,2353,DN,CT,Công ty Cổ phần Đầu tư Kinh doanh nhà Thành Đạt,Kinh doanh nhà Thành Đạt
+1457,VHL,VHL,HNXIndex,2353,DN,CT,Công ty Cổ phần Viglacera Hạ Long,Viglacera Hạ Long
+1458,VIB,VIB,VNINDEX,8355,DN,NH,Ngân hàng Thương mại Cổ phần Quốc tế Việt Nam,VIBBank
+1459,VIC,VIC,VNINDEX,8633,DN,CT,Tập đoàn Vingroup - Công ty CP,VinGroup
+1460,VICOTEX,TVT,VNINDEX,3763,DN,CT,Tổng Công ty Việt Thắng - CTCP,May Việt Thắng
+1461,VID,VID,VNINDEX,1737,DN,CT,Công ty Cổ phần Đầu tư Phát triển Thương mại Viễn Đông,Viễn Đông
+1462,VIDA,SB1,UpcomIndex,3533,DN,CT,Công ty Cổ phần Bia Sài Gòn - Nghệ Tĩnh,Bia Sài Gòn - Nghệ Tĩnh
+1463,VIDAMO,PVO,UpcomIndex,1357,DN,CT,Công ty Cổ phần Dầu nhờn PV Oil,Dầu nhờn PV Oil
+1464,VIDIC,MBG,HNXIndex,2353,DN,CT,Công ty Cổ phần Tập đoàn MBG,Tập đoàn MBG
+1465,VIDIPHA,VDP,VNINDEX,4577,DN,CT,Công ty Cổ phần Dược phẩm Trung ương VIDIPHA,Dược phẩm VIDIPHA
+1466,VIE,VIE,UpcomIndex,9578,DN,CT,Công ty Cổ phần Công nghệ Viễn thông VI TE CO,CN Viễn thông VI TE CO
+1467,VIETBAC,MVB,HNXIndex,1775,DN,CT,Tổng Công ty Công nghiệp mỏ Việt Bắc TKV - Công ty Cổ phần,Mỏ Việt Bắc - TKV
+1468,VIETJET,VJC,VNINDEX,5751,DN,CT,Công ty Cổ phần Hàng không Vietjet,Vietjet Air
+1469,VIETMEC,DVM,HNXIndex,4577,DN,CT,Công ty Cổ phần Dược liệu Việt Nam,Dược liệu Việt Nam
+1470,VIETOURIST,VTD,UpcomIndex,5759,DN,CT,Công ty Cổ phần Vietourist Holdings,Du lịch Vietourist
+1471,VIETRA,VTR,UpcomIndex,5759,DN,CT,Công ty Cổ phần Du lịch và tiếp thị giao thông vận tải Việt Nam - Vietravel,Du lịch Vietravel
+1472,VIG,VIG,HNXIndex,8777,OTHER,CK,Công ty Cổ phần Chứng khoán Đầu tư Tài chính Việt Nam,Chứng khoán Đầu tư Tài chính Việt Nam
+1473,VILICO,VLC,UpcomIndex,3573,DN,CT,Tổng Công ty Chăn nuôi Việt Nam - Công ty Cổ phần,Chăn nuôi Việt Nam
+1474,VIMC,VIM,UpcomIndex,1775,DN,CT,Công ty Cổ phần Khoáng sản Viglacera,Khoáng sản Viglacera
+1475,VIMCC,TVM,UpcomIndex,2791,DN,CT,Công ty Cổ phần Tư vấn đầu tư Mỏ và công nghiệp - Vinacomin,Tư vấn đầu tư Mỏ
+1476,VIMICO,TMG,UpcomIndex,1757,DN,CT,Công ty Cổ phần Kim loại màu Thái Nguyên - Vimico,Kim loại màu Thái Nguyên - Vimico
+1477,VIN,VIN,UpcomIndex,2777,DN,CT,Công ty Cổ phần Giao nhận Kho vận Ngoại thương Việt Nam,Kho vận ngoại thương VN
+1478,VINACOMINPOWER,DTK,HNXIndex,7535,DN,CT,Tổng Công ty Điện lực TKV - Công ty Cổ phần,Vinacomin Power
+1479,VINAFOR,VIF,HNXIndex,1733,DN,CT,Tổng Công ty Lâm nghiệp Việt Nam - Công ty Cổ phần,Lâm nghiệp Việt Nam
+1480,VINAHERB,VHE,HNXIndex,4577,DN,CT,Công ty Cổ phần Dược liệu và Thực phẩm Việt Nam,Dược liệu và Thực phẩm VN
+1481,VINAHUD,VHD,UpcomIndex,8633,DN,CT,Công ty Cổ phần Đầu tư phát triển nhà và đô thị VINAHUD,PT Nhà và Đô thị Vinaconex
+1482,VINAINCON,VVN,UpcomIndex,2357,DN,CT,Tổng Công ty Cổ phần Xây dựng Công nghiệp Việt Nam,XD Công nghiệp Việt Nam
+1483,VINAKIP,KIP,UpcomIndex,2737,DN,CT,Công ty Cổ phần K.I.P Việt Nam,K.I.P Việt Nam
+1484,VINATEX,VGT,UpcomIndex,3763,DN,CT,Tập đoàn Dệt May Việt Nam,VINATEX
+1485,VINATRANSDN,VMT,UpcomIndex,2779,DN,CT,Công ty Cổ phần Giao nhận Vận tải Miền Trung,Giao nhận Vận tải Miền Trung
+1486,VINGAL,VGL,UpcomIndex,1757,DN,CT,Công ty Cổ phần Mạ kẽm công nghiệp Vingal-Vnsteel,Mạ kẽm công nghiệp Vingal-Vnsteel
+1487,VIP,VIP,VNINDEX,2773,DN,CT,Công ty Cổ phần Vận tải Xăng dầu VIPCO,Vận tải Xăng dầu VIPCO
+1488,VIPC,GVT,UpcomIndex,1737,DN,CT,Công ty Cổ phần Giấy Việt Trì,Giấy Việt Trì
+1489,VIPES,VPS,VNINDEX,1357,DN,CT,Công ty Cổ phần Thuốc sát trùng Việt Nam,Thuốc sát trùng Việt Nam
+1490,VIPGP,VGR,UpcomIndex,2777,DN,CT,Công ty Cổ phần Cảng xanh VIP,Cảng xanh VIP
+1491,VIPUCO,VLP,UpcomIndex,2799,DN,CT,Công ty Cổ phần Công trình Công cộng Vĩnh Long,Công trình Công cộng Vĩnh Long
+1492,VIR,VIR,UpcomIndex,5753,DN,CT,Công ty Cổ phần Du lịch Quốc tế Vũng Tàu,Du lịch Vũng Tàu
+1493,VISSAN,VSN,UpcomIndex,3577,DN,CT,Công ty Cổ phần Việt Nam Kỹ Nghệ Súc Sản,VN Kỹ Nghệ Súc Sản (VISSAN)
+1494,VIT,VIT,HNXIndex,2353,DN,CT,Công ty Cổ phần Viglacera Tiên Sơn,Viglacera Tiên Sơn
+1495,VIWASE,VWS,UpcomIndex,7577,DN,CT,Công ty Cổ phần Nước và Môi trường Việt Nam,Nước và Môi trường VN
+1496,VIWASEEN,VIW,UpcomIndex,2357,DN,CT,Tổng công ty Đầu tư Nước và Môi trường Việt Nam - Công ty Cổ phần,Đầu tư nước và môi trường VN - Viwaseen
+1497,VIX,VIX,VNINDEX,8777,DN,CK,Công ty Cổ phần Chứng khoán VIX,Chứng khoán VIX
+1498,VKC,VKC,UpcomIndex,3357,DN,CT,Công ty Cổ phần VKC Holdings,VKC Holdings
+1499,VKP,VKP,UpcomIndex,1353,DN,CT,Công ty Cổ phần Nhựa Tân Hóa,Nhựa Tân Hóa
+1500,VLA,VLA,HNXIndex,9537,DN,CT,Công ty Cổ phần Đầu tư và Phát triển Công nghệ Văn Lang,PT Công nghệ Văn Lang
+1501,VLF,VLF,UpcomIndex,3577,DN,CT,Công ty Cổ phần Lương thực Thực phẩm Vĩnh Long,Lương thực Vĩnh Long
+1502,VMC,VMC,HNXIndex,2357,DN,CT,Công ty Cổ phần VIMECO,VIMECO
+1503,VMD,VMD,VNINDEX,4577,DN,CT,Công ty Cổ phần Y Dược phẩm Vimedimex,Y Dược phẩm Vimedimex
+1504,VMDCO,VMS,HNXIndex,2777,DN,CT,Công ty Cổ phần Phát triển Hàng Hải,Phát triển Hàng Hải
+1505,VMG,VMG,UpcomIndex,7573,DN,CT,Công ty Cổ phần Thương mại và Dịch vụ Dầu khí Vũng Tàu,Vimexco Gas
+1506,VMGC,ABC,UpcomIndex,6575,DN,CT,Công ty Cổ phần Truyền thông VMG,Truyền thông VMG
+1507,VMGEO,MGC,UpcomIndex,1775,DN,CT,Công ty Cổ phần Địa chất mỏ - TKV,Địa chất mỏ - TKV
+1508,VMIC,VMA,UpcomIndex,3353,DN,CT,Công ty Cổ phần Công nghiệp Ô tô Vinacomin,CN ô tô Vinacomin
+1509,VMTS,MTS,UpcomIndex,2797,DN,CT,Công ty Cổ phần Vật tư - TKV,Vật tư - TKV
+1510,VNA,VNA,UpcomIndex,2773,DN,CT,Công ty Cổ phần Vận tải biển Vinaship,Vận tải biển Vinaship
+1511,VNAI,AIC,UpcomIndex,8536,OTHER,BH,Tổng Công ty Cổ phần Bảo hiểm Hàng không,Bảo hiểm Hàng không
+1512,VNAIR,HVN,VNINDEX,5751,DN,CT,Tổng Công ty Hàng không Việt Nam - CTCP,Vietnam Airlines
+1513,VNC,VNC,HNXIndex,2791,DN,CT,Công ty Cổ phần Tập đoàn Vinacontrol,VINACONTROL
+1514,VNCC,VGV,UpcomIndex,8633,DN,CT,Tổng Công ty Tư vấn Xây dựng Việt Nam - CTCP,Tư vấn Xây dựng Việt Nam
+1515,VNCG,CGV,UpcomIndex,2353,DN,CT,Công ty Cổ phần Vinaceglass,Vinaceglass JSC
+1516,VNCT,TMB,HNXIndex,1771,DN,CT,Công ty Cổ phần Kinh doanh Than Miền Bắc - Vinacomin,Than Miền Bắc - Vinacomin
+1517,VND,VND,VNINDEX,8777,DN,CK,Công ty Cổ phần Chứng khoán VNDIRECT,Chứng khoán VNDIRECT
+1518,VNE,VNE,VNINDEX,2357,DN,CT,Tổng Công ty Cổ phần Xây dựng điện Việt Nam,Xây dựng điện Việt Nam
+1519,VNECO12,E12,UpcomIndex,2357,DN,CT,Công ty Cổ phần Xây Dựng Điện VNECO 12,XD Điện VNECO 12
+1520,VNF,VNF,HNXIndex,2779,DN,CT,Công ty Cổ phần Vinafreight,VINAFREIGHT
+1521,VNF1F,BMV,UpcomIndex,3577,DN,CT,Công ty Cổ phần Bột mỳ Vinafood 1,Bột mỳ Vinafood 1
+1522,VNF2,VSF,UpcomIndex,3577,DN,CT,Tổng Công ty Lương thực Miền Nam - Công ty Cổ phần,Vinafood 2
+1523,VNG,VNG,VNINDEX,5753,DN,CT,Công ty Cổ phần Du Lịch Thành Thành Công,DL Thành Thành Công
+1524,VNGC,VNZ,UpcomIndex,5553,DN,CT,Công ty Cổ phần VNG,CTCP VNG
+1525,VNH,VNH,UpcomIndex,3573,DN,CT,Công ty Cổ phần Đầu tư Việt Việt Nhật,Đầu tư Việt Việt Nhật
+1526,VNI,VNI,UpcomIndex,8633,DN,CT,Công ty Cổ phần Đầu tư Bất động sản Việt Nam,ĐT BĐS Việt Nam
+1527,VNL,VNL,VNINDEX,2779,DN,CT,Công ty Cổ phần Logistics Vinalink,Logistics Vinalink
+1528,VNLINES,MVN,UpcomIndex,2773,DN,CT,Tổng Công ty Hàng hải Việt Nam - CTCP,TCT Hàng hải Việt Nam
+1529,VNLOGISTIC,VLG,UpcomIndex,2779,DN,CT,Công ty Cổ phần VIMC Logistics,VIMC Logistics
+1530,VNM,VNM,VNINDEX,3577,DN,CT,Công ty Cổ phần Sữa Việt Nam,VINAMILK
+1531,VNPD,VPD,VNINDEX,7535,DN,CT,Công ty Cổ phần Phát triển Điện lực Việt Nam,Phát triển Điện lực Việt Nam
+1532,VNPHARM,DVN,UpcomIndex,4577,DN,CT,Tổng Công ty Dược Việt Nam - CTCP,Tổng Công ty Dược Việt Nam
+1533,VNPLAST,VNP,UpcomIndex,1353,DN,CT,Công ty Cổ phần Nhựa Việt Nam,Nhựa Việt Nam
+1534,VNR,VNR,HNXIndex,8538,OTHER,BH,Tổng Công ty Cổ phần Tái bảo hiểm Quốc gia Việt Nam,Tái bảo hiểm Quốc gia
+1535,VNRG,GVR,VNINDEX,1353,DN,CT,Tập đoàn Công nghiệp Cao su Việt Nam - Công ty Cổ phần,Tập đoàn CN Cao su VN
+1536,VNS,VNS,VNINDEX,5759,DN,CT,Công ty Cổ phần Ánh Dương Việt Nam,Ánh Dương Việt Nam
+1537,VNSTEEL,TVN,UpcomIndex,1757,DN,CT,Tổng Công ty Thép Việt Nam - Công ty Cổ phần,Thép Việt Nam
+1538,VNT,VNT,HNXIndex,2779,DN,CT,Công ty Cổ phần Giao nhận Vận tải Ngoại Thương,Vận tải ngoại thương
+1539,VNTRAN,VXT,UpcomIndex,7573,DN,CT,Công ty Cổ phần Kho vận và dịch vụ thương mại,Kho vận và DV Thương mại
+1540,VNVETCO,VNY,UpcomIndex,1357,DN,CT,Công ty Cổ phần Thuốc thú y Trung ương I,Thuốc thú y Trung ương I
+1541,VNX,VNX,UpcomIndex,5555,DN,CT,Công ty Cổ phần Quảng cáo và Hội chợ Thương mại Vinexad,QC và Hội chợ Thương mại
+1542,VOCA,VOC,UpcomIndex,3577,DN,CT,Tổng Công ty Công nghiệp Dầu thực vật Việt Nam - Công ty Cổ phần,Dầu thực vật Việt Nam
+1543,VOS,VOS,VNINDEX,2773,DN,CT,Công ty Cổ phần Vận tải Biển Việt Nam,Vận tải Biển Việt Nam
+1544,VOSA,VSA,HNXIndex,2779,DN,CT,Công ty Cổ phần Đại lý Hàng hải Việt Nam,Đại lý Hàng hải VN
+1545,VPB,VPB,VNINDEX,8355,DN,NH,Ngân hàng Thương mại Cổ phần Việt Nam Thịnh Vượng,VPBank
+1546,VPC,VPC,UpcomIndex,2357,DN,CT,Công ty Cổ phần Đầu tư và Phát triển Năng lượng Việt Nam,V- Power
+1547,VPG,VPG,VNINDEX,1775,DN,CT,Công ty Cổ phần Đầu tư Thương mại Xuất nhập khẩu Việt Phát,Đầu tư TMại XNK Việt Phát
+1548,VPH,VPH,VNINDEX,8633,DN,CT,Công ty Cổ phần Vạn Phát Hưng,Vạn Phát Hưng
+1549,VPR,VPR,UpcomIndex,5557,DN,CT,Công ty Cổ phần VINAPRINT,VINAPRINT
+1550,VPTJ,VPA,UpcomIndex,2773,DN,CT,Công ty Cổ phần Vận tải Hóa dầu VP,Vận tải Hóa dầu VP
+1551,VPVICTO,VPI,VNINDEX,8633,DN,CT,Công ty Cổ phần Đầu tư Văn Phú - Invest,Đầu tư Văn Phú - Invest
+1552,VPW,VPW,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp thoát nước số 1 Vĩnh Phúc,Cấp thoát nước số 1 Vĩnh Phúc
+1553,VPWATER,NVP,UpcomIndex,7577,DN,CT,Công ty Cổ phần Nước sạch Vĩnh Phúc,Nước sạch Vĩnh Phúc
+1554,VQC,VQC,UpcomIndex,2791,DN,CT,Công ty Cổ phần Giám định Vinaconmin,Giám định Vinaconmin
+1555,VRC,VRC,VNINDEX,8633,DN,CT,Công ty Cổ phần Bất động sản và Đầu tư VRC,Bất động sản và Đầu tư VRC
+1556,VRG,VRG,UpcomIndex,8633,DN,CT,Công ty Cổ phần Phát triển Đô thị và Khu Công nghiệp Cao Su Việt Nam,PT Đô thị và KCN Cao su VN
+1557,VRJSC,VRE,VNINDEX,8633,DN,CT,Công ty Cổ phần Vincom Retail,Vincom Retail
+1558,VSC,VSC,VNINDEX,2777,DN,CT,Công ty Cổ phần Container Việt Nam,VICONSHIP
+1559,VSE,VSE,UpcomIndex,2777,DN,CT,Công ty Cổ phần Dịch vụ Đường cao tốc Việt Nam,DV Đường cao tốc Việt Nam
+1560,VSG,VSG,UpcomIndex,2777,DN,CT,Công ty Cổ phần Container Phía Nam,Container Phía Nam
+1561,VSH,VSH,VNINDEX,7535,DN,CT,Công ty Cổ phần Thủy điện Vĩnh Sơn - Sông Hinh,Thủy điện Vĩnh Sơn - Sông Hinh
+1562,VSI,VSI,VNINDEX,2357,DN,CT,Công ty Cổ phần Đầu tư và Xây dựng Cấp thoát nước,Đầu tư và Xây dựng Cấp thoát nước
+1563,VST,VST,UpcomIndex,2773,DN,CT,Công ty Cổ phần Vận tải và Thuê Tàu biển Việt Nam,Vận tải và Thuê Tàu biển Việt Nam
+1564,VTA,VTA,UpcomIndex,2353,DN,CT,Công ty Cổ phần VITALY,Gạch men VITALY
+1565,VTB,VTB,VNINDEX,2733,DN,CT,Công ty Cổ phần Viettronics Tân Bình,Viettronics Tân Bình
+1566,VTC,VTC,HNXIndex,9578,DN,CT,Công ty Cổ phần Viễn Thông VTC,Viễn thông VTC
+1567,VTE,VTE,UpcomIndex,9578,DN,CT,Công ty Cổ phần VINACAP Kim Long,VINACAP Kim Long
+1568,VTEC,VGG,UpcomIndex,3763,DN,CT,Tổng Công Ty Cổ phần May Việt Tiến,May Việt Tiến
+1569,VTGI,VGI,UpcomIndex,6575,DN,CT,Tổng Công ty Cổ phần Đầu tư Quốc tế Viettel,Đầu tư Quốc tế Viettel
+1570,VTH,VTH,HNXIndex,2733,DN,CT,Công ty Cổ phần Dây cáp điện Việt Thái,Dây cáp điện Việt Thái
+1571,VTI,VTI,UpcomIndex,3763,DN,CT,Công ty Cổ phần Sản xuất - Xuất nhập khẩu Dệt may,Sản xuất - XNK Dệt may
+1572,VTJ,VTJ,HNXIndex,3785,DN,CT,Công ty Cổ phần Thương mại và Đầu tư VI NA TA BA,TM và Đầu tư VINATABA
+1573,VTK,VTK,UpcomIndex,2791,DN,CT,Công ty Cổ phần Tư vấn và Dịch vụ Viettel,Tư vấn thiết kế Viettel
+1574,VTL,VTL,UpcomIndex,3535,DN,CT,Công ty Cổ phần Vang Thăng Long,Vang Thăng Long
+1575,VTM,VTM,UpcomIndex,5759,DN,CT,Công ty Cổ phần Vận tải và Đưa đón thợ mỏ - Vinacomin,Đưa đón thợ mỏ - Vinacomin
+1576,VTO,VTO,VNINDEX,2773,DN,CT,Công ty Cổ phần Vận tải Xăng dầu VITACO,VITACO
+1577,VTPO,VTP,VNINDEX,2771,DN,CT,Tổng Công ty Cổ phần Bưu chính Viettel,Bưu chính Viettel
+1578,VTQB,VTQ,UpcomIndex,1353,DN,CT,Công ty Cổ phần Việt Trung Quảng Bình,Việt Trung Quảng Bình
+1579,VTS,VTS,UpcomIndex,2353,DN,CT,Công ty Cổ phần Gạch Ngói Từ Sơn,Gạch Ngói Từ Sơn
+1580,VTTB,VBB,UpcomIndex,8355,DN,NH,Ngân hàng Thương mại Cổ phần Việt Nam Thương Tín,VietBank
+1581,VTTC,DLT,UpcomIndex,5759,DN,CT,Công ty Cổ phần Du lịch và Thương mại - Vinacomin,Du lịch và TM - Vinacomin
+1582,VTV,VTV,HNXIndex,2353,DN,CT,Công ty Cổ phần Năng lượng và Môi trường VICEM,Năng lượng và Môi trường VICEM
+1583,VTVCAB,CAB,UpcomIndex,5553,DN,CT,Công ty Cổ phần Tổng Công ty Truyền hình Cáp Việt Nam,Truyền hình Cáp Việt Nam
+1584,VTX,VTX,UpcomIndex,2779,DN,CT,Công ty Cổ phần Vận tải Đa phương thức VIETRANSTIMEX,Vận tải Đa phương thức
+1585,VVMI,CLH,HNXIndex,2353,DN,CT,Công ty Cổ phần Xi măng La Hiên VVMI,Xi măng La Hiên
+1586,VWACO,VLW,UpcomIndex,7577,DN,CT,Công ty Cổ phần Cấp nước Vĩnh Long,Cấp nước Vĩnh Long
+1587,VWS3,VW3,UpcomIndex,2357,DN,CT,Công ty Cổ phần VIWASEEN3,VIWASEEN.3
+1588,VWSC,VCW,UpcomIndex,7577,DN,CT,Công ty Cổ phần Đầu tư Nước sạch Sông Đà,Đầu tư Nước sạch Sông Đà
+1589,VXB,VXB,UpcomIndex,2353,DN,CT,Công ty Cổ phần Vật liệu xây dựng Bến Tre,VLXD Bến Tre
+1590,VXP,VXP,UpcomIndex,1357,DN,CT,Công ty Cổ phần Thuốc Thú y Trung ương VETVACO,Thuốc Thú y Trung ương VETVACO
+1591,WCS,WCS,HNXIndex,2777,DN,CT,Công ty Cổ phần Bến xe Miền Tây,Bến xe Miền Tây
+1592,WSB,WSB,UpcomIndex,3533,DN,CT,Công ty Cổ phần Bia Sài Gòn - Miền Tây,Bia Sài Gòn - Miền Tây
+1593,WSS,WSS,HNXIndex,8777,OTHER,CK,Công ty Cổ phần Chứng khoán Phố Wall,Chứng khoán Phố Wall
+1594,WTC,WTC,UpcomIndex,2773,DN,CT,Công ty Cổ phần Vận tải thủy - Vinacomin,Vận tải thủy Vinacomin
+1595,X20,X20,HNXIndex,3763,DN,CT,Công ty Cổ phần X20,May mặc X20
+1596,X26,X26,UpcomIndex,3763,DN,CT,Công ty Cổ phần 26,Công ty 26
+1597,X77,X77,UpcomIndex,2353,DN,CT,Công ty Cổ phần Thành An 77,Thành An 77
+1598,XBGDHN,EPH,UpcomIndex,5557,DN,CT,Công ty Cổ phần Dịch vụ Xuất bản Giáo dục Hà Nội,Xuất bản giáo dục Hà Nội
+1599,XDBINHPHUOC,BCO,UpcomIndex,2357,DN,CT,Công ty Cổ phần Xây dựng Bình Phước,Xây dựng Bình Phước
+1600,XLDA,DFC,UpcomIndex,1757,DN,CT,Công ty Cổ phần Xích líp Đông Anh,Xích líp Đông Anh
+1601,XMC,XMC,UpcomIndex,2353,DN,CT,Công ty cổ phần Đầu tư và Xây dựng Xuân Mai,Bê tông Xuân Mai
+1602,XMD,XMD,UpcomIndex,2353,DN,CT,Công ty Cổ phần Xuân Mai - Đạo Tú,Xuân Mai - Đạo Tú
+1603,XMQT,CQT,UpcomIndex,2353,DN,CT,Công ty Cổ phần Xi măng Quán Triều VVMI,Xi măng Quán Triều VVMI
+1604,XPH,XPH,UpcomIndex,3767,DN,CT,Công ty Cổ phần Xà phòng Hà Nội,Xà phòng Hà Nội
+1605,XUANHOA,XHC,UpcomIndex,3726,DN,CT,Công ty Cổ phần Xuân Hòa Việt Nam,Nội thất Xuân Hòa
+1606,XUANMINHHP,XMP,UpcomIndex,7535,DN,CT,Công ty Cổ phần Thủy điện Xuân Minh,Thủy điện Xuân Minh
+1607,YBC,YBC,UpcomIndex,2353,DN,CT,Công ty Cổ phần Xi măng và Khoáng sản Yên Bái,Xi măng và Khoáng sản Yên Bái
+1608,YBMC,YBM,VNINDEX,1775,DN,CT,Công ty Cổ phần Khoáng sản Công nghiệp Yên Bái,Khoáng sản CN Yên Bái
+1609,YEGCORP,YEG,VNINDEX,5553,DN,CT,Công ty Cổ phần Tập đoàn Yeah1,Tập đoàn Yeah1
+1610,YTECO,YTC,UpcomIndex,4537,DN,CT,Công ty Cổ phần Xuất nhập khẩu Y tế Thành phố Hồ Chí Minh,XNK Y tế TP.HCM
