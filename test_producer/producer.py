@@ -17,8 +17,8 @@ conf = {'bootstrap.servers': 'pkc-ldvr1.asia-southeast1.gcp.confluent.cloud:9092
 a = True
 producer = Producer(conf)
 
-# today = str(datetime.now().date())
-today = '2024-04-09'
+today = str(datetime.now().date())
+# today = '2024-04-09'
 cur_time = datetime.now()
 
 stock_symbols = pd.read_csv("company.csv")['ticker'].tolist()
@@ -55,11 +55,13 @@ def retrieve_real_time_data(producer, kafka_topic,stock_symbols):
             print(2)
             for symbol_index, stock_symbol in enumerate(stock_symbols):
                 try:
-                    print(stock_symbol)
-                    real_time_data = stock_historical_data(symbol=stock_symbol, start_date= today , end_date= today , resolution="15", type="stock", beautify=False, decor=False, source='DNSE')
+                    # print(stock_symbol)
+                    real_time_data = stock_historical_data(symbol=stock_symbol, start_date= "2024-04-22" , end_date= "2024-04-22" , resolution="15", type="stock", beautify=False, decor=False, source='DNSE')
                     if not real_time_data.empty:
                         stock_time = datetime.strptime(real_time_data.iloc[-1,0], "%Y-%m-%d %H:%M:%S")
                         if stock_time < cur_time: 
+                            real_time_data.iloc[-1,0]=stock_time.timestamp()
+                            # print(stock_time.timestamp())
                             latest_data_point = real_time_data.iloc[-1].to_dict()
                             send_to_kafka(producer, kafka_topic, stock_symbol, latest_data_point)
                 except Exception as e:
@@ -73,7 +75,7 @@ def chunks(lst, n):
     """Yield successive n-sized chunks from lst."""
     for i in range(0, len(lst), n):
         yield lst[i:i + n]
-@task    
+
 def collect_data():
     num_of_process=2
     process=[]
@@ -81,15 +83,20 @@ def collect_data():
         process.append(mp.Process(name=f'process {i}',target=retrieve_real_time_data,args=(producer,'topic_0',list(chunks(stock_symbols,int(1608/num_of_process)))[i])))
         process[i].start()
         process[i].join()
+    # retrieve_real_time_data(producer=producer,kafka_topic='topic_0',stock_symbols=stock_symbols)
 
-@flow(name = 'collect_stock_data')
-def finel():
-    collect_data()
+@task
+def finel(): 
     schedule.every(15).minutes.do(collect_data)
+    collect_data()
     while (datetime.now().hour < 15):
         schedule.run_pending()
-
-if __name__ == '__main__':
+        time.sleep(1)
+        # print("pending"+datetime.now().hour)
+@flow
+def main():
     finel()
+if __name__ == '__main__':
+    main()
 
 
