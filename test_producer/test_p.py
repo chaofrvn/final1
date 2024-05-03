@@ -5,12 +5,8 @@ import time as t
 from vnstock import * #import all functions
 import multiprocessing as mp
 import pandas as pd
-from prefect import flow, task
-import math
+# from prefect import flow, task
 from datetime import datetime
-from concurrent.futures import ThreadPoolExecutor
-import numpy as np
-
 import schedule
 conf = {'bootstrap.servers': 'pkc-ldvr1.asia-southeast1.gcp.confluent.cloud:9092',
         'security.protocol': 'SASL_SSL',
@@ -44,70 +40,59 @@ def send_to_kafka(producer, topic, key, message):
     producer.flush()
 
 
-def retrieve_real_time_data(stock_symbols):
-    kafka_topic="topic_0"
-    # print(f"process starts")
-    df=pd.DataFrame()
-    # if not stock_symbols:
-    #     print(f"No stock symbols provided in the environment variable.")
-    #     exit(1)
+def retrieve_real_time_data(producer, kafka_topic,stock_symbols):
+    producer=Producer(conf)
+    print(f"process starts")
+    if not stock_symbols:
+        print(f"No stock symbols provided in the environment variable.")
+        exit(1)
     # print(stock_symbols)
     while True:
         # Fetch real-time data for the last 1 minute
- 
+        print(1)
         is_market_open_bool = True
         if is_market_open_bool:
+            print(2)
             for symbol_index, stock_symbol in enumerate(stock_symbols):
                 try:
                     # print(stock_symbol)
                     real_time_data = stock_historical_data(symbol=stock_symbol, start_date= today , end_date= today , resolution="15", type="stock", beautify=False, decor=False, source='DNSE')
-                    if real_time_data and not real_time_data.empty:
+                    if not real_time_data.empty:
                         # stock_time = datetime.strptime(real_time_data.iloc[-1,0], "%Y-%m-%d %H:%M:%S")
                         # if True:
                         #     real_time_data.iloc[-1,0]=stock_time.timestamp()
-                        #     # print(stock_time.timestamp())
-                        #     latest_data_point = real_time_data.iloc[-1].to_dict()
-                        #     send_to_kafka(producer, kafka_topic, stock_symbol, latest_data_point)
-                        df=df._append(real_time_data.iloc[-1])
-                        # df=pd.concat([df,real_time_data.iloc[-1]],axis=0)
+                            # print(stock_time.timestamp())
+                            latest_data_point = real_time_data.iloc[-1].to_dict()
+                            send_to_kafka(producer, kafka_topic, stock_symbol, latest_data_point)
                 except Exception as e:
                     print(f"Error processing stock symbol {stock_symbol}: {str(e)}")
                     continue
         else:
             print("Market is closing")
         # t.sleep(5)
-        return df
+        print("finish 1 round -----------------------------------------")
         break
-def divide_list(input_list, num_sublists):
-    sublist_length = math.ceil(len(input_list) / num_sublists)
-    return [input_list[i:i+sublist_length] for i in range(0, len(input_list), sublist_length)]
-@task
+def chunks(lst, n):
+    """Yield successive n-sized chunks from lst."""
+    for i in range(0, len(lst), n):
+        yield lst[i:i + n]
+
 def collect_data():
-    num_of_thread=100
-    with ThreadPoolExecutor() as pool:
-        return list(pool.map(retrieve_real_time_data,divide_list(stock_symbols,num_of_thread)))
-@task
-def transform_data(data):
-    df=pd.concat(data)
-    df.loc[:,'time']=pd.to_datetime(df.loc[:,'time']).dt.tz_localize('Asia/Ho_Chi_Minh').values.astype(np.int64) // 10 ** 9
-    return df
-@task
-def load_data(df):
-    for index, row in df.iterrows():
-        row=row.to_dict()
-        send_to_kafka(producer=producer,topic='topic_0',key=row['ticker'],message=row)
-# @task
+    num_of_process=2
+    process=[]
+    for i in range(num_of_process):
+        process.append(mp.Process(name=f'process {i}',target=retrieve_real_time_data,args=(producer,'topic_0',list(chunks(stock_symbols,int(1608/num_of_process)))[i])))
+        process[i].start()
+        # process[i].join()
+    # retrieve_real_time_data(producer=producer,kafka_topic='topic_0',stock_symbols=stock_symbols)
+
 # def finel(): 
 #     schedule.every(15).minutes.do(collect_data)
-#     collect_data()
-  
-@flow
-def main():
-    data=collect_data()
-    transformed_data=transform_data(data)
-    load_data(transformed_data)
-
+#     while (datetime.now().hour < 15):
+#         schedule.run_pending()
+#         time.sleep(1)
+#         # print("pending"+datetime.now().hour)
 if __name__ == '__main__':
-    main()
+    collect_data()
 
 
