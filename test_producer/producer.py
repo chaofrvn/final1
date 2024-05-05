@@ -15,15 +15,15 @@ import schedule
 conf = {'bootstrap.servers': 'pkc-ldvr1.asia-southeast1.gcp.confluent.cloud:9092',
         'security.protocol': 'SASL_SSL',
         'sasl.mechanism': 'PLAIN',
-        'sasl.username': 'MPT6ORJOO7EOIBBT',
-        'sasl.password': '/NjGhfqfDTWlLmh2d5iUeKdqz6Bm9POPBEH8S9fv0BiRsIXGmn68CYqPI1lfiOUA',
+        'sasl.username': 'HGLHHLIGH5YQYKVX',
+        'sasl.password': 'gX5Smh7m7hoFTvIxUGPL9hwNJmgo1nQZBr/nHpFXD56jNm52m8i5C5Dor0/XMiD9',
         'client.id': socket.gethostname()}
 a = True
 producer = Producer(conf)
-
-today = str(datetime.now().date())
+kafka_topic="stockPrice"
+today = str((datetime.now()-timedelta(days=1)).date())
 # today = '2024-04-09'
-cur_time = datetime.now()
+# cur_time = datetime.now()
 
 stock_symbols = pd.read_csv("company.csv")['ticker'].tolist()
 # stock_symbols.remove("ROS")
@@ -33,8 +33,8 @@ print(len(stock_symbols))
 def delivery_report(err, msg):
     if err is not None:
         print('Message delivery failed: {}'.format(err))
-    else:
-        print('Message delivered to {} [{}]'.format(msg.topic(), msg.partition()))
+    # else:
+    #     print('Message delivered to {} [{}]'.format(msg.topic(), msg.partition()))
 
 def send_to_kafka(producer, topic, key, message):
     # Sending a message to Kafka
@@ -45,7 +45,7 @@ def send_to_kafka(producer, topic, key, message):
 
 
 def retrieve_real_time_data(stock_symbols):
-    kafka_topic="topic_0"
+
     # print(f"process starts")
     df=pd.DataFrame()
     # if not stock_symbols:
@@ -61,7 +61,7 @@ def retrieve_real_time_data(stock_symbols):
                 try:
                     # print(stock_symbol)
                     real_time_data = stock_historical_data(symbol=stock_symbol, start_date= today , end_date= today , resolution="15", type="stock", beautify=False, decor=False, source='DNSE')
-                    if real_time_data and not real_time_data.empty:
+                    if real_time_data is not None and not real_time_data.empty:
                         # stock_time = datetime.strptime(real_time_data.iloc[-1,0], "%Y-%m-%d %H:%M:%S")
                         # if True:
                         #     real_time_data.iloc[-1,0]=stock_time.timestamp()
@@ -89,13 +89,15 @@ def collect_data():
 @task
 def transform_data(data):
     df=pd.concat(data)
+    if df.empty:
+        return df
     df.loc[:,'time']=pd.to_datetime(df.loc[:,'time']).dt.tz_localize('Asia/Ho_Chi_Minh').values.astype(np.int64) // 10 ** 9
     return df
 @task
 def load_data(df):
     for index, row in df.iterrows():
         row=row.to_dict()
-        send_to_kafka(producer=producer,topic='topic_0',key=row['ticker'],message=row)
+        send_to_kafka(producer=producer,topic=kafka_topic,key=row['ticker'],message=row)
 # @task
 # def finel(): 
 #     schedule.every(15).minutes.do(collect_data)

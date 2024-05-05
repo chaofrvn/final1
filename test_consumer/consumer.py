@@ -6,14 +6,14 @@ import json
 consumer = Consumer({'bootstrap.servers': 'pkc-ldvr1.asia-southeast1.gcp.confluent.cloud:9092',
         'security.protocol': 'SASL_SSL',
         'sasl.mechanism': 'PLAIN',
-        'sasl.username': 'MPT6ORJOO7EOIBBT',
-        'sasl.password': '/NjGhfqfDTWlLmh2d5iUeKdqz6Bm9POPBEH8S9fv0BiRsIXGmn68CYqPI1lfiOUA',
+        'sasl.username': 'HGLHHLIGH5YQYKVX',
+        'sasl.password': 'gX5Smh7m7hoFTvIxUGPL9hwNJmgo1nQZBr/nHpFXD56jNm52m8i5C5Dor0/XMiD9',
         'group.id': 'stock_price_group',
         'auto.offset.reset': 'latest',  # Start from the latest message
         'client.id': socket.gethostname()})
 
 # Subscribe to the Kafka topic
-consumer.subscribe(['topic_0'])
+consumer.subscribe(['stockPrice'])
 
 try:
     while True:
@@ -34,7 +34,7 @@ try:
             # print(type(msg.value()]))
             # push_data(type(msg.value().decode('utf-8')))
             push_data(json.loads(msg.value().decode('utf-8')))
-            print(json.loads(msg.value().decode('utf-8')))
+
 
 except KeyboardInterrupt:
     pass
