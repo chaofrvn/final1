@@ -991,3 +991,151 @@ Error in API response {"status":400,"code":"BAD_REQUEST","message":"invalid symb
  
 
 16:47:23.406 | INFO    | prefect.infrastructure.process - Process 'deft-sparrow' exited cleanly.
+23:01:11.094 | INFO    | prefect.agent - Submitting flow run '56923658-5cbf-4edb-a7ac-2b6a3eb94cbd'
+23:01:12.527 | INFO    | prefect.infrastructure.process - Opening process 'myrtle-smilodon'...
+23:01:12.890 | INFO    | prefect.agent - Completed submission of flow run '56923658-5cbf-4edb-a7ac-2b6a3eb94cbd'
+/usr/lib/python3.8/runpy.py:127: RuntimeWarning: 'prefect.engine' found in sys.modules after import of package 'prefect', but prior to execution of 'prefect.engine'; this may result in unpredictable behaviour
+  warn(RuntimeWarning(msg))
+23:01:17.433 | INFO    | Flow run 'myrtle-smilodon' - Downloading flow code from storage at '/home/huythai/final/test_producer'
+23:01:19.431 | INFO    | Flow run 'myrtle-smilodon' - Created task run 'collect_data-0' for task 'collect_data'
+23:01:19.433 | INFO    | Flow run 'myrtle-smilodon' - Executing 'collect_data-0' immediately...
+23:01:39.536 | INFO    | prefect.agent - Submitting flow run 'dcd79ea1-5def-4ec8-a775-699622fc9a6f'
+23:01:40.821 | INFO    | prefect.infrastructure.process - Opening process 'spry-myna'...
+23:01:41.214 | INFO    | prefect.agent - Completed submission of flow run 'dcd79ea1-5def-4ec8-a775-699622fc9a6f'
+/usr/lib/python3.8/runpy.py:127: RuntimeWarning: 'prefect.engine' found in sys.modules after import of package 'prefect', but prior to execution of 'prefect.engine'; this may result in unpredictable behaviour
+  warn(RuntimeWarning(msg))
+23:01:45.195 | INFO    | Flow run 'spry-myna' - Downloading flow code from storage at '/home/huythai/final/test_producer'
+23:01:47.739 | INFO    | Flow run 'spry-myna' - Created task run 'collect_data-0' for task 'collect_data'
+23:01:47.740 | INFO    | Flow run 'spry-myna' - Executing 'collect_data-0' immediately...
+23:01:58.119 | ERROR   | root - Error processing stock symbol ROS: local variable 'df' referenced before assignment
+23:02:15.894 | ERROR   | root - Error processing stock symbol ROS: local variable 'df' referenced before assignment
+23:03:11.871 | ERROR   | root - Error processing stock symbol TKC: local variable 'df' referenced before assignment
+23:03:17.826 | ERROR   | root - Error processing stock symbol TKC: local variable 'df' referenced before assignment
+23:03:40.721 | INFO    | Task run 'collect_data-0' - Finished in state Completed()
+23:03:41.041 | INFO    | Flow run 'myrtle-smilodon' - Created task run 'transform_data-0' for task 'transform_data'
+23:03:41.043 | INFO    | Flow run 'myrtle-smilodon' - Executing 'transform_data-0' immediately...
+23:03:41.273 | INFO    | Task run 'collect_data-0' - Finished in state Completed()
+23:03:41.655 | INFO    | Flow run 'spry-myna' - Created task run 'transform_data-0' for task 'transform_data'
+23:03:41.657 | INFO    | Flow run 'spry-myna' - Executing 'transform_data-0' immediately...
+23:03:42.016 | INFO    | Task run 'transform_data-0' - Finished in state Completed()
+23:03:42.336 | INFO    | Flow run 'myrtle-smilodon' - Created task run 'load_data-0' for task 'load_data'
+23:03:42.338 | INFO    | Flow run 'myrtle-smilodon' - Executing 'load_data-0' immediately...
+23:03:42.600 | INFO    | Task run 'transform_data-0' - Finished in state Completed()
+23:03:42.935 | INFO    | Flow run 'spry-myna' - Created task run 'load_data-0' for task 'load_data'
+23:03:42.937 | INFO    | Flow run 'spry-myna' - Executing 'load_data-0' immediately...
+23:03:48.921 | INFO    | Task run 'load_data-0' - Finished in state Completed()
+23:03:49.176 | INFO    | Task run 'load_data-0' - Finished in state Completed()
+23:03:49.271 | INFO    | Flow run 'myrtle-smilodon' - Finished in state Completed('All states completed.')
+23:03:49.511 | INFO    | Flow run 'spry-myna' - Finished in state Completed('All states completed.')
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+Error in API response {"status":400,"code":"BAD_REQUEST","message":"invalid symbol"}
+ 
+
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+Error in API response {"status":400,"code":"BAD_REQUEST","message":"invalid symbol"}
+ 
+
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+Error in API response {"status":400,"code":"BAD_REQUEST","message":"invalid symbol"}
+ 
+
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+Error in API response {"status":400,"code":"BAD_REQUEST","message":"invalid symbol"}
+ 
+
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+market is closed
+23:03:52.334 | INFO    | prefect.infrastructure.process - Process 'myrtle-smilodon' exited cleanly.
+23:03:52.566 | INFO    | prefect.infrastructure.process - Process 'spry-myna' exited cleanly.

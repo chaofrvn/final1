@@ -49,18 +49,17 @@ def send_to_kafka(producer, topic, key, message):
 def retrieve_real_time_data(stock_symbols):
     df=pd.DataFrame()
 
-    is_market_open_bool = True
-    if is_market_open_bool: 
-        for symbol_index, stock_symbol in enumerate(stock_symbols):
-            try:
-                real_time_data = stock_historical_data(symbol=stock_symbol, start_date= today , end_date= today , resolution="15", type="stock", beautify=False, decor=False, source='DNSE')
-                if real_time_data is not None and not real_time_data.empty:
-                    df=df._append(real_time_data.iloc[-1])
-            except Exception as e:
-                logger.error(f"Error processing stock symbol {stock_symbol}: {str(e)}")
-                continue
-    else:
-        print("market is closed")
+
+
+    for symbol_index, stock_symbol in enumerate(stock_symbols):
+        try:
+            real_time_data = stock_historical_data(symbol=stock_symbol, start_date= today , end_date= today , resolution="15", type="stock", beautify=False, decor=False, source='DNSE')
+            if real_time_data is not None and not real_time_data.empty:
+                df=df._append(real_time_data.iloc[-1])
+        except Exception as e:
+            logger.error(f"Error processing stock symbol {stock_symbol}: {str(e)}")
+            continue
+
     return df
 
 def divide_list(input_list, num_sublists):
@@ -68,7 +67,7 @@ def divide_list(input_list, num_sublists):
     return [input_list[i:i+sublist_length] for i in range(0, len(input_list), sublist_length)]
 @task
 def collect_data():
-    num_of_thread=100
+    num_of_thread=50
     with ThreadPoolExecutor() as pool:
         return list(pool.map(retrieve_real_time_data,divide_list(stock_symbols,num_of_thread)))
 @task
@@ -78,8 +77,8 @@ def transform_data(data):
         logger.info('There is no data')
         return df
     df.loc[:,'time']=pd.to_datetime(df.loc[:,'time']).dt.tz_localize('Asia/Ho_Chi_Minh').values.astype(np.int64) // 10 ** 9
-    ts_15min_ago = int((now-timedelta(minutes=15)).timestamp())
-    df=df.loc[df['time']>ts_15min_ago]
+    ts_25min_ago = int((now-timedelta(minutes=25)).timestamp())
+    df=df.loc[df['time']>ts_25min_ago]
     logger.info('Transform data successfully')
     return df
 @task

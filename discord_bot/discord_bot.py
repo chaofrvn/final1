@@ -11,29 +11,25 @@ DISCORD_BOT_TOKEN=os.environ["DISCORD_BOT_TOKEN"]
 intents = discord.Intents.default()
 intents.message_content = True
 
-client = discord.Client(intents=intents)
-bot = commands.Bot(command_prefix='$', intents=intents)
-tree = app_commands.CommandTree(client)
-@client.event
-async def on_ready():
-    print(f'We have logged in as {client.user}')
 
-@client.event
+bot = commands.Bot(command_prefix='$', intents=intents)
+tree = bot.tree
+@bot.event
 async def on_message(message):
     # if message.author == client.user:
     #     return
 
     if message.content.startswith('$hello'):
         await message.channel.send('Hello!')
+@bot.event
+async def on_ready():
+    await tree.sync()
+    print(f'We have logged in as {bot.user}')
 @tree.command(
     name="price",
     description="Price of the stock ticker",
 )
-async def first_command(interaction):
-    await interaction.response.send_message("Hello!")
-@client.event
-async def on_ready():
-    await tree.sync()
-    print("Ready!")
-
-client.run(DISCORD_BOT_TOKEN)
+@app_commands.describe(ticker="the ticker of the stock to show price")
+async def first_command(interaction,ticker:str):
+    await interaction.response.send_message("Hello! "+ticker)
+bot.run(DISCORD_BOT_TOKEN)
