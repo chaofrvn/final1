@@ -11,6 +11,7 @@ logging.basicConfig(filename="logging.log",
                     filemode='w',
                     force=True)
 logger = logging.getLogger()
+logger.info("startin.....")
 load_dotenv("../.env")
 INFLUXDB_TOKEN=os.environ["INFLUXDB_TOKEN"]
 

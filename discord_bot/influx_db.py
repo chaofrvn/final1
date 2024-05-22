@@ -7,7 +7,8 @@ import asyncio
 import functools
 import pandas as pd
 import typing
-from datetime import datetime,_Date
+from datetime import datetime
+import pandas_ta as ta
 load_dotenv("../.env")
 INFLUXDB_TOKEN=os.environ["INFLUXDB_TOKEN"]
 vietnam_timezone = pytz.timezone('Asia/Ho_Chi_Minh')
@@ -54,18 +55,43 @@ def get_latest_daily_data(ticker:str):
 
 
 @to_thread
-def get_all_time_data(ticker:str):
+def get_all_time_data(ticker:str,field="close",indicator='normal',period=12):
     query=f'''from(bucket: "stock_data")
     |> range(start:0)
-    |> filter(fn: (r) => r._measurement == "stock_daily")
-    |> filter(fn: (r) => r.ticker == "{ticker}")
+    |> filter(fn: (r) => r.ticker == "{ticker}" and r._measurement=="stock_daily")
     |> pivot(rowKey:["_time"], columnKey: ["_field"], valueColumn: "_value")
     '''
-    df=query_api.query_data_frame(query=query)
-    # df["_time"]=df["_time"].dt.tz_convert("Asia/Ho_Chi_minh").dt.strftime('%Y-%m-%d')
+
+
+    df:pd.DataFrame=query_api.query_data_frame(query=query)
+    df.set_index('_time', inplace=True)
+
+    
+    match indicator:
+        case 'normal':
+            df=df[field].dropna().to_frame()
+        case 'ma':
+            df['MA'] = ta.sma(df[field], length=period)
+            # Create a new DataFrame with only the time and the indicator
+            df = df[['MA']].dropna()
+
+        case 'ema':
+            df['EMA'] = ta.ema(df[field], length=period)
+            # Create a new DataFrame with only the time and the indicator
+            df = df[['EMA']].dropna()
+            # Rename columns if necessary
+            # df.rename(columns={'index': '_time', 'EMA': 'Indicator'}, inplace=True)
+        case 'stoch':
+            df[['STOCH_k', 'STOCH_d']] = ta.stoch(df['high'], df['low'], df['close'])
+            # Create a new DataFrame with only the time and the indicator
+            df = df[['STOCH_k', 'STOCH_d']].dropna()
+
+        case 'rsi':
+            df['RSI'] = ta.rsi(df['close'], length=14)
+            df=df[['RSI']].dropna()
     return df
 @to_thread
-def get_single_day_data(ticker:str,day:_Date=datetime.now().date()):
+def get_single_day_data(ticker:str,day=datetime.now().date()):
     start_timestamp = datetime.combine(day, datetime.time(0, 0, 0)).timestamp()
     end_timestamp = datetime.combine(day, datetime.time(23, 59, 59)).timestamp()
     query=f'''from(bucket: "stock_data")
@@ -75,18 +101,9 @@ def get_single_day_data(ticker:str,day:_Date=datetime.now().date()):
     |> pivot(rowKey:["_time"], columnKey: ["_field"], valueColumn: "_value")
     '''
     df=query_api.query_data_frame(query=query)
+    
     return df
-@to_thread
-def get_moving_average(ticker,period,field,time_type):
-    query=f'''
-from(bucket: "stock_data")
-  |> range(start: 0)
-  |> filter(fn: (r) => r._measurement == "{"stock_daily"if time_type=="1D"else "stock_price"}" and r._field == "{field}" and r.ticker =="{ticker}")
-  |> movingAverage(n: {period}) // Adjust the window size (n) as needed
-  |> keep(columns: ["_time", "_value"])
-'''
-    df=query_api.query_data_frame(query=query)
-    return df
+
 async def main():
     res= await asyncio.gather(get_latest_daily_data("HPG"))
     return res

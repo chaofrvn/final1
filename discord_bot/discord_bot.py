@@ -62,9 +62,9 @@ async def daily(interaction,ticker:str,type:str="close"):
     name="daily_chart",
     description="Chart of the stock ticker",
 )
-@app_commands.describe(ticker="the ticker to show chart",type="the value to query(close, volume,...)")
-async def daily(interaction:discord.Interaction,ticker:str,type:str="close"):
-    data=await get_all_time_data(ticker=ticker)
+@app_commands.describe(ticker="the ticker to show chart",field="the value to query(close, volume,...)",type="the indicator defalut is norma")
+async def daily(interaction:discord.Interaction,ticker:str,field:str="close",type="normal"):
+    data=await get_all_time_data(ticker=ticker,field=field,type=type)
     data_stream=await all_time_chart(ticker=ticker,field=type,data=data,title='')
     chart = discord.File(data_stream,filename="daily_chart.png")
     embed=discord.Embed()
