@@ -2,7 +2,7 @@ from influxdb_client import InfluxDBClient
 import os
 from dotenv import load_dotenv
 import pytz
-from datetime import datetime
+from datetime import datetime,time
 import asyncio
 import functools
 import pandas as pd
@@ -91,9 +91,10 @@ def get_all_time_data(ticker:str,field="close",indicator='normal',period=12):
             df=df[['RSI']].dropna()
     return df
 @to_thread
-def get_single_day_data(ticker:str,day=datetime.now().date()):
-    start_timestamp = datetime.combine(day, datetime.time(0, 0, 0)).timestamp()
-    end_timestamp = datetime.combine(day, datetime.time(23, 59, 59)).timestamp()
+def get_single_day_data(ticker:str,day=datetime.now().date().strftime('%d-%m-%Y')):
+    date_object = datetime.strptime(day, '%d-%m-%Y')
+    start_timestamp = int(datetime.combine(date_object, time.min).timestamp())
+    end_timestamp = int(datetime.combine(date_object, time.max).timestamp())
     query=f'''from(bucket: "stock_data")
     |> range(start:{start_timestamp},stop:{end_timestamp})
     |> filter(fn: (r) => r._measurement == "stock_price")
@@ -105,7 +106,7 @@ def get_single_day_data(ticker:str,day=datetime.now().date()):
     return df
 
 async def main():
-    res= await asyncio.gather(get_latest_daily_data("HPG"))
+    res= await asyncio.gather(get_single_day_data(ticker="HPG"))
     return res
 if __name__=="__main__":  
    print(asyncio.run(main()))

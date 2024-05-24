@@ -22,12 +22,15 @@ async def ping_server():
     except Exception as e:
         print(e)
       
-async def addWarning(user_id:int,ticker:str,indicator:str,time_type:str,period:int,compare:str,thresold:float):
+async def addWarning(user_id:int,ticker:str,field:str,indicator:str,time_type:str,period:int,compare:str,thresold:float):
     is_15_minute=False if time_type=="1D" else True
     is_greater=True if compare=="GREATER" else False
+    print(thresold)
+    print(type(thresold))
     warning={
         "user_id":user_id,
         "ticker":ticker,
+        "field":field,
         "indicator":indicator,
         "period":period,
         "thresold":thresold,

@@ -1,7 +1,7 @@
 # This example requires the 'message_content' intent.
 import discord
 from discord.ext import commands,tasks
-from discord import app_commands,File
+from discord import app_commands,File,Attachment
 from dotenv import load_dotenv,dotenv_values
 import os
 from influx_db import get_latest_data,get_latest_daily_data,get_all_time_data
@@ -12,8 +12,23 @@ import time
 import asyncio
 import functools
 import typing
+from confluent_kafka import Consumer, KafkaError
+import concurrent.futures
+import socket
+import json
 # load_dotenv(dotenv_path=os.path.join(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")),".env"))
 print(load_dotenv("../.env"))
+consumer = Consumer({'bootstrap.servers': 'pkc-ldvr1.asia-southeast1.gcp.confluent.cloud:9092',
+        'security.protocol': 'SASL_SSL',
+        'sasl.mechanism': 'PLAIN',
+        'sasl.username': 'HGLHHLIGH5YQYKVX',
+        'sasl.password': 'gX5Smh7m7hoFTvIxUGPL9hwNJmgo1nQZBr/nHpFXD56jNm52m8i5C5Dor0/XMiD9',
+        'group.id': 'stock_price_group',
+        'auto.offset.reset': 'latest',  # Start from the latest message
+        'client.id': socket.gethostname()})
+
+# Subscribe to the Kafka topic
+consumer.subscribe(['stockWarning'])
 DISCORD_BOT_TOKEN=os.environ["DISCORD_BOT_TOKEN"]
 intents = discord.Intents.default()
 intents.message_content = True
@@ -31,6 +46,11 @@ tree = bot.tree
 @bot.event
 async def on_ready():
     await tree.sync()
+    loop = asyncio.get_running_loop()
+
+    with concurrent.futures.ThreadPoolExecutor() as executor:
+        # Run the blocking function in an executor
+        await loop.run_in_executor(executor, my_task, loop)
     print(f'We have logged in as {bot.user}')
         
 @bot.event
@@ -63,8 +83,8 @@ async def daily(interaction,ticker:str,type:str="close"):
     description="Chart of the stock ticker",
 )
 @app_commands.describe(ticker="the ticker to show chart",field="the value to query(close, volume,...)",type="the indicator defalut is norma")
-async def daily(interaction:discord.Interaction,ticker:str,field:str="close",type="normal"):
-    data=await get_all_time_data(ticker=ticker,field=field,type=type)
+async def daily_chart(interaction:discord.Interaction,ticker:str,field:str="close",type:str="normal"):
+    data=await get_all_time_data(ticker=ticker,field=field,indicator=type)
     data_stream=await all_time_chart(ticker=ticker,field=type,data=data,title='')
     chart = discord.File(data_stream,filename="daily_chart.png")
     embed=discord.Embed()
@@ -76,10 +96,48 @@ async def daily(interaction:discord.Interaction,ticker:str,field:str="close",typ
 
 
 @tree.command(name="add_warning",description="Add warning for the stock")
-@app_commands.describe(ticker="the ticker to add the waring",indicator="ma ema so",time_type="1D 15m",period="integer",compare="GREATER LESS",thresold="float")
-async def add_waring(interaction:discord.Interaction,ticker:str,indicator:str,time_type:str,compare:str,thresold:float,period:int = 0):
+@app_commands.describe(ticker="the ticker to add the waring",field="volume close high low",indicator="ma ema so",time_type="1D 15m",period="integer",compare="GREATER LESS",thresold="float")
+async def add_waring(interaction:discord.Interaction,ticker:str,time_type:str,compare:str,thresold:str,period:int = 0,field:str=None,indicator:str=None):
+    thresold=float(thresold.replace(',','.'))
     user_id=interaction.user.id
-    a=await addWarning(user_id=user_id,ticker=ticker,indicator=indicator,time_type=time_type,period=period,compare=compare,thresold=thresold)
+    print(thresold)
+    print(type(thresold))
+    a=await addWarning(user_id=user_id,ticker=ticker,field=field,indicator=indicator,time_type=time_type,period=period,compare=compare,thresold=thresold)
     await interaction.response.send_message(a)
+
+def my_task(loop):
+    try:
+        while True:
+            msg = consumer.poll(1.0)
+
+            if msg is None:
+                continue
+            if msg.error():
+                if msg.error().code() == KafkaError._PARTITION_EOF:
+                    continue
+                else:
+                    print(f'Error while consuming: {msg.error()}')
+            else:
+                # Parse the received message
+                # value = msg.value().decode('utf-8')
+                # symbol, price = value.split(':')
+                # push_data(json.load(msg.value()))\
+                # print(type(msg.value()]))
+                # push_data(type(msg.value().decode('utf-8')))
+                print(msg.value())
+                data=json.loads(msg.value().decode('utf-8'))
+                print(data)
+                user = asyncio.run_coroutine_threadsafe(bot.fetch_user(data["user_id"]), loop).result()
+                asyncio.run_coroutine_threadsafe(user.send(f'The value of {data["ticker"]} is exceeding'), loop).result()
+                
+                
+
+
+    except KeyboardInterrupt:
+        pass
+    finally:
+        # Close the consumer gracefully
+        consumer.close()
+
 
 bot.run(DISCORD_BOT_TOKEN)
