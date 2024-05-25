@@ -97,7 +97,7 @@ async def daily_chart(interaction:discord.Interaction,ticker:str,field:str="clos
 
 @tree.command(name="add_warning",description="Add warning for the stock")
 @app_commands.describe(ticker="the ticker to add the waring",field="volume close high low",indicator="ma ema so",time_type="1D 15m",period="integer",compare="GREATER LESS",thresold="float")
-async def add_waring(interaction:discord.Interaction,ticker:str,time_type:str,compare:str,thresold:str,period:int = 0,field:str=None,indicator:str=None):
+async def add_waring(interaction:discord.Interaction,ticker:str,time_type:str,compare:str,thresold:str,period:int|None=None,field:str=None,indicator:str=None):
     thresold=float(thresold.replace(',','.'))
     user_id=interaction.user.id
     print(thresold)

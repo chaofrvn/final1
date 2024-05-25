@@ -33,7 +33,6 @@ conf = {'bootstrap.servers': "pkc-ldvr1.asia-southeast1.gcp.confluent.cloud:9092
         'sasl.username': "HGLHHLIGH5YQYKVX",
         'sasl.password': 'gX5Smh7m7hoFTvIxUGPL9hwNJmgo1nQZBr/nHpFXD56jNm52m8i5C5Dor0/XMiD9',
         'client.id': socket.gethostname()}
-a = True
 producer = Producer(conf)
 kafka_topic="stockPrice"
 now=datetime.now()
