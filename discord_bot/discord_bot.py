@@ -33,7 +33,7 @@ consumer = Consumer(
         "security.protocol": "SASL_SSL",
         "sasl.mechanism": "PLAIN",
         "sasl.username": "HGLHHLIGH5YQYKVX",
-        "sasl.password": "gX5Smh7m7hoFTvIxUGPL9hwNJmgo1nQZBr/nHpFXD56jNm52m8i5C5Dor0/XMiD9",
+        "sasl.password": "gX5Smh7m7hoFTvIxUGPL9hwNJmgo1nQZBr\nHpFXD56jNm52m8i5C5Dor0/XMiD9",
         "group.id": "stock_warning",
         "auto.offset.reset": "latest",  # Start from the latest message
         "client.id": socket.gethostname(),
@@ -211,12 +211,25 @@ async def add_warning(
     # await interaction.response.send_modal(addWarningModal())
 
 
-@tree.command(name="get_warning", description="Get all warning u have been created")
+@tree.command(name="đọc_cảnh_báo", description="Đọc các cảnh báo mà bạn đã tạo ra")
 @app_commands.describe()
 async def getAllWarning(interaction: discord.Interaction):
     user_id = interaction.user.id
-    b = await getWarning(user_id)
-    await interaction.response.send_message(b)
+    warnings = await getWarning(user_id)
+    embed = discord.Embed()
+    nl = "\n"
+    for warning in warnings:
+        embed.add_field(
+            name=f'**Mã cảnh báo: {warning["_id"]}**',
+            value=f"""
+> Mã cổ phiếu: {warning["ticker"]}
+> Loại thời gian :{"1 ngày" if warning["is_15_minute"] else "15 phút"}
+{"" if (warning["field"] is None) else f'> Trường: {warning["field"]}'+nl}{"" if (warning["indicator"] is None) else f'> Chỉ báo: {warning["indicator"]}'+nl}{"" if (warning["period"] is None) else f'> Chu kì: {warning["period"]}'+nl}> So sánh:{"Lớn hơn" if warning["is_greater"] else "Bé hơn"}
+> Ngưỡng:{warning["thresold"]}
+""",
+            inline=False,
+        )
+    await interaction.response.send_message(embed=embed)
 
 
 # cần thêm quyền cho bot để chạy được
