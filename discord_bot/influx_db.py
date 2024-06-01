@@ -7,7 +7,6 @@ import asyncio
 import functools
 import pandas as pd
 import typing
-from datetime import datetime
 import pandas_ta as ta
 
 load_dotenv("../.env")
@@ -21,6 +20,15 @@ query_api = client.query_api()
 
 
 def to_thread(func: typing.Callable) -> typing.Coroutine:
+    """Run a blocking function inside a thread for non blocking
+
+    Args:
+        func (typing.Callable): The blocking function
+
+    Returns:
+        typing.Coroutine: The Thread
+    """
+
     @functools.wraps(func)
     async def wrapper(*args, **kwargs):
         loop = asyncio.get_event_loop()
@@ -101,7 +109,9 @@ def get_all_time_data(ticker: str, field="close", indicator="normal", period=12)
 
 
 @to_thread
-def get_single_day_data(ticker: str, day=datetime.now().date().strftime("%d-%m-%Y")):
+def get_single_day_data(
+    ticker: str, field="close", day=datetime.now().date().strftime("%d-%m-%Y")
+):
     date_object = datetime.strptime(day, "%d-%m-%Y")
     start_timestamp = int(datetime.combine(date_object, time.min).timestamp())
     end_timestamp = int(datetime.combine(date_object, time.max).timestamp())
@@ -112,7 +122,9 @@ def get_single_day_data(ticker: str, day=datetime.now().date().strftime("%d-%m-%
     |> pivot(rowKey:["_time"], columnKey: ["_field"], valueColumn: "_value")
     """
     df = query_api.query_data_frame(query=query)
-
+    df.set_index("_time", inplace=True)
+    df = df[field].dropna().to_frame()
+    # print(df)
     return df
 
 

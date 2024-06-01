@@ -1,20 +1,20 @@
+import socket
+from get_value import get_value
+import operator
 from bson import ObjectId
 from confluent_kafka import Producer
-import socket
+
 import pandas as pd
 from prefect import flow, task, get_run_logger
-import logging
+
 from dotenv import load_dotenv
 import os
-from confluent_kafka import Producer
-import socket
 from pymongo import MongoClient
 from pymongo import UpdateOne
-from pymongo.server_api import ServerApi
 import asyncio
-import operator
+
 from influxdb_client import InfluxDBClient
-from get_value import get_value
+
 import json
 
 # logging.basicConfig(filename="logging.log",
@@ -34,7 +34,7 @@ conf = {
     "client.id": socket.gethostname(),
 }
 producer = Producer(conf)
-kafka_topic = "stockWarning"
+KAFKA_TOPIC = "stockWarning"
 uri = os.environ["MONGODB_URL"]
 INFLUXDB_TOKEN = os.environ["INFLUXDB_TOKEN"]
 client = MongoClient(host=uri)
@@ -136,7 +136,7 @@ def generate_message(warnings: pd.DataFrame):
     for time, warning in warnings.iterrows():
         value = ""
         if warning["trigger"]:
-            if warning["indicator"] == None:
+            if warning["indicator"] is None:
                 value = f'Cảnh báo: Giá trị {warning["field"]} của mã cổ phiếu {warning["ticker"]} đã quá ngưỡng cho phép là {warning["thresold"]}. Giá trị tại thời điểm {time} là {warning["value"]}'
 
             elif warning["indicator"] in ["rsi", "stoch_k", "stoch_d"]:
@@ -144,7 +144,7 @@ def generate_message(warnings: pd.DataFrame):
             else:
                 value = f'Cảnh báo: Giá trị {warning["field"]} của trường {warning["indicator"]} của mã cổ phiếu {warning["ticker"]} đã quá ngưỡng cho phép là {warning["thresold"]}. Giá trị tại thời điểm {time} là {warning["value"]}'
         else:
-            if warning["indicator"] == None:
+            if warning["indicator"] is None:
                 value = f'Giá trị {warning["field"]} của mã cổ phiếu {warning["ticker"]} đã về mức cho phép là {warning["thresold"]}. Giá trị tại thời điểm {time} là {warning["value"]}'
             elif warning["indicator"] in ["rsi", "stoch_k", "stoch_d"]:
                 value = f'Giá trị {warning["indicator"]} của mã cổ phiếu {warning["ticker"]} đã về mức cho phép là {warning["thresold"]}. Giá trị tại thời điểm {time} là {warning["value"]}'
@@ -192,7 +192,7 @@ def send_message(msg: pd.DataFrame):
     for user_id, row in msg.iterrows():
         send_to_kafka(
             producer=producer,
-            topic=kafka_topic,
+            topic=KAFKA_TOPIC,
             key=str(user_id),
             message=row["msg"],
             logger=logger,

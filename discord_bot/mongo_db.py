@@ -1,6 +1,7 @@
 from motor.motor_asyncio import AsyncIOMotorClient
 from pymongo.server_api import ServerApi
 import asyncio
+import pandas as pd
 
 # phai dung motor chu khong phai pymongo
 from dotenv import load_dotenv
@@ -36,8 +37,7 @@ async def addWarning(
     compare: str,
     thresold: float,
 ):
-    is_15_minute = False if time_type == "1D" else True
-    is_greater = True if compare == "GREATER" else False
+
     warning = {
         "user_id": user_id,
         "ticker": ticker,
@@ -45,13 +45,63 @@ async def addWarning(
         "indicator": indicator,
         "period": period,
         "thresold": thresold,
-        "is_greater": is_greater,
-        "is_15_minute": is_15_minute,
+        "is_greater": compare,
+        "is_15_minute": time_type,
         "trigger": True,
     }
     result = await warningCollection.insert_one(warning)
     return "result %s" % repr(result.inserted_id)
 
 
+async def getWarningsDataFrame(user_id):
+    warnings = await warningCollection.find({"user_id": user_id}).to_list(None)
+
+    # Chuyển đổi danh sách cảnh báo thành DataFrame
+    if warnings:
+        df = pd.DataFrame(warnings)
+        df.index += 1  # Đánh số index bắt đầu từ 1
+        df["alert_id"] = df.index  # Thêm cột alert_id
+        return df
+    else:
+        return pd.DataFrame()
+
+
+def formatWarningsMarkdown(df):
+    if df.empty:
+        return "You have no warnings."
+    else:
+        # Lựa chọn các cột cần thiết và đổi tên các cột cho dễ hiểu
+        df = df[
+            [
+                "alert_id",
+                "ticker",
+                "field",
+                "indicator",
+                "thresold",
+                "period",
+                "is_greater",
+                "is_15_minute",
+            ]
+        ]
+        df.columns = [
+            "Alert ID",
+            "Ticker",
+            "Field",
+            "Indicator",
+            "Threshold",
+            "Period",
+            "Is_greater",
+            "Is_15m",
+        ]
+        return df.to_markdown(index=True)
+
+
+async def getWarning(user_id):
+    user_id = user_id  # Thay bằng user_id của bạn
+    df = await getWarningsDataFrame(user_id)
+    markdown = f"```\n{formatWarningsMarkdown(df=df)}\n```"
+    return markdown
+
+
 if __name__ == "__main__":
-    asyncio.run(addWarning())
+    asyncio.run(getWarning())

@@ -2,15 +2,18 @@
 import discord
 from discord.ext import commands, tasks
 from discord import app_commands, File, Attachment
+from discord.app_commands import Choice
 from dotenv import load_dotenv, dotenv_values
+from typing import Literal
 import os
+from View.add_warning_modal import addWarningModal
 from influx_db import (
     get_latest_data,
     get_latest_daily_data,
     get_all_time_data,
     get_single_day_data,
 )
-from mongo_db import addWarning
+from mongo_db import addWarning, getWarning
 from chart import all_time_chart, one_day_chart
 from datetime import datetime
 import time
@@ -61,8 +64,9 @@ tree = bot.tree
 @bot.event
 async def on_ready():
     await tree.sync()
-    loop = asyncio.get_running_loop()
+
     print(f"We have logged in as {bot.user}")
+    loop = asyncio.get_running_loop()
     with concurrent.futures.ThreadPoolExecutor() as executor:
         # Run the blocking function in an executor
         await loop.run_in_executor(executor, my_task, loop)
@@ -92,7 +96,7 @@ async def latest(interaction, ticker: str, type: str = "close"):
     )
 
 
-# Get the latest daily price of 1 ticker ()
+# Get the latest daily price of 1 ticker (1D)
 @tree.command(
     name="daily",
     description="Price of the stock ticker",
@@ -131,7 +135,7 @@ async def daily_chart(
     await interaction.response.send_message(embed=embed, file=chart)
 
 
-# Chart of daily_stock
+# Chart of oneday_stock
 @tree.command(
     name="oneday_chart",
     description="Chart of one day stock ticker",
@@ -139,7 +143,6 @@ async def daily_chart(
 @app_commands.describe(
     ticker="the ticker to show chart",
     field="the value to query(close, volume,...)",
-    type="the indicator default is normal",
     day="default day is current day",
 )
 async def oneday_chart(
@@ -148,8 +151,8 @@ async def oneday_chart(
     field: str = "close",
     day: str = datetime.now().date().strftime("%d-%m-%Y"),
 ):
-    data = await get_single_day_data(ticker=ticker, day=day)
-    data_stream = await one_day_chart(ticker=ticker, data=data, title="")
+    data = await get_single_day_data(ticker=ticker, field=field, day=day)
+    data_stream = await one_day_chart(ticker=ticker, data=data, field=field, title="")
     chart = discord.File(data_stream, filename="oneday_chart.png")
     embed = discord.Embed()
     embed.set_image(url="attachment://oneday_chart.png")
@@ -157,7 +160,11 @@ async def oneday_chart(
 
 
 # Add alert into db
-@tree.command(name="add_warning", description="Add warning for the stock")
+@tree.command(name="thêm_cảnh_báo", description="Thêm các cảnh báo cho người dùng")
+@app_commands.choices(
+    time_type=[Choice(name="1 ngày", value=0), Choice(name="15 phút", value=1)],
+    compare=[Choice(name="Lớn hơn", value=1), Choice(name="Bé hơn", value=0)],
+)
 @app_commands.describe(
     ticker="the ticker to add the waring",
     field="volume close high low",
@@ -167,11 +174,20 @@ async def oneday_chart(
     compare="GREATER LESS",
     thresold="float",
 )
-async def add_waring(
+@app_commands.rename(
+    ticker="mã_cổ_phiếu",
+    field="trường",
+    indicator="chỉ_báo",
+    time_type="loại_thời_gian",
+    period="chu_kì",
+    compare="so_sánh",
+    thresold="ngưỡng",
+)
+async def add_warning(
     interaction: discord.Interaction,
     ticker: str,
-    time_type: str,
-    compare: str,
+    time_type: Choice[int],
+    compare: Choice[int],
     thresold: str,
     period: int | None = None,
     field: str = None,
@@ -179,9 +195,9 @@ async def add_waring(
 ):
     thresold = float(thresold.replace(",", "."))
     user_id = interaction.user.id
-    print(thresold)
-    print(type(thresold))
-    a = await addWarning(
+    time_type = bool(time_type)
+    compare = bool(compare)
+    await addWarning(
         user_id=user_id,
         ticker=ticker,
         field=field,
@@ -191,7 +207,24 @@ async def add_waring(
         compare=compare,
         thresold=thresold,
     )
-    await interaction.response.send_message(a)
+    await interaction.response.send_message("Bạn đã thêm cảnh báo thành công")
+    # await interaction.response.send_modal(addWarningModal())
+
+
+@tree.command(name="get_warning", description="Get all warning u have been created")
+@app_commands.describe()
+async def getAllWarning(interaction: discord.Interaction):
+    user_id = interaction.user.id
+    b = await getWarning(user_id)
+    await interaction.response.send_message(b)
+
+
+# cần thêm quyền cho bot để chạy được
+# @app_commands.context_menu(name="hello")
+# async def ban(interaction: discord.Interaction, user: discord.Member):
+#     await interaction.response.send_message(
+#         f"Should I actually ban {user}...", ephemeral=True
+#     )
 
 
 def my_task(loop):
@@ -208,13 +241,6 @@ def my_task(loop):
                 else:
                     print(f"Error while consuming: {msg.error()}")
             else:
-                # Parse the received message
-                # value = msg.value().decode('utf-8')
-                # symbol, price = value.split(':')
-                # push_data(json.load(msg.value()))\
-                # print(type(msg.value()]))
-                # push_data(type(msg.value().decode('utf-8')))
-                # data=json.loads(msg.value().decode('utf-8'))
                 user = asyncio.run_coroutine_threadsafe(
                     bot.fetch_user(int(msg.key())), loop
                 ).result()

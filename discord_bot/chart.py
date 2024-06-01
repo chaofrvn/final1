@@ -6,6 +6,7 @@ import matplotlib.dates as mdates
 from matplotlib.pyplot import figure
 
 dayFmt = mdates.DateFormatter("%Y-%m-%d", tz="Asia/Ho_Chi_Minh")
+hourFmt = mdates.DateFormatter("%H:%M")
 import asyncio
 from influx_db import get_all_time_data
 
@@ -30,7 +31,8 @@ async def one_day_chart(ticker, field, data, title=""):
     data_stream = io.BytesIO()
     figure(figsize=(8, 6), dpi=80)
     fig, ax = plt.subplots()
-    ax.xaxis.set_major_formatter(dayFmt)
+    ax.xaxis.set_major_formatter(hourFmt)
+    # print('------------------2-----------------------')
     for column in data.columns:
         plt.plot(data.index, data[column], label=column)
     plt.xticks(rotation=60)
