@@ -1,7 +1,9 @@
 from motor.motor_asyncio import AsyncIOMotorClient
 from pymongo.server_api import ServerApi
+from bson.objectid import ObjectId
 import asyncio
 import pandas as pd
+
 
 # phai dung motor chu khong phai pymongo
 from dotenv import load_dotenv
@@ -54,9 +56,19 @@ async def addWarning(
 
 
 async def getWarning(user_id):
-
     warnings = await warningCollection.find({"user_id": user_id}).to_list(None)
     return warnings
+
+
+async def getWarningByObjectID(user_id, id):
+    warning = await warningCollection.find_one(
+        {"user_id": user_id, "_id": ObjectId(id)}
+    )
+    return warning
+
+
+async def deleteWarning(id):
+    await warningCollection.find_one_and_delete({"_id": ObjectId(id)})
 
 
 if __name__ == "__main__":

@@ -7,13 +7,14 @@ from dotenv import load_dotenv, dotenv_values
 from typing import Literal
 import os
 from View.add_warning_modal import addWarningModal
+from View.delete_warning import comfirmDeleteWarning
 from influx_db import (
     get_latest_data,
     get_latest_daily_data,
     get_all_time_data,
     get_single_day_data,
 )
-from mongo_db import addWarning, getWarning
+from mongo_db import addWarning, getWarning, getWarningByObjectID
 from chart import all_time_chart, one_day_chart
 from datetime import datetime
 import time
@@ -33,8 +34,8 @@ consumer = Consumer(
         "security.protocol": "SASL_SSL",
         "sasl.mechanism": "PLAIN",
         "sasl.username": "HGLHHLIGH5YQYKVX",
-        "sasl.password": "gX5Smh7m7hoFTvIxUGPL9hwNJmgo1nQZBr\nHpFXD56jNm52m8i5C5Dor0/XMiD9",
-        "group.id": "stock_warning",
+        "sasl.password": "gX5Smh7m7hoFTvIxUGPL9hwNJmgo1nQZBr/nHpFXD56jNm52m8i5C5Dor0/XMiD9",
+        "group.id": "stock_price_group",
         "auto.offset.reset": "latest",  # Start from the latest message
         "client.id": socket.gethostname(),
     }
@@ -216,9 +217,33 @@ async def add_warning(
 async def getAllWarning(interaction: discord.Interaction):
     user_id = interaction.user.id
     warnings = await getWarning(user_id)
-    embed = discord.Embed()
+    embed = discord.Embed(title="**Danh sách các mã cổ phiếu**")
     nl = "\n"
-    for warning in warnings:
+    for index, warning in enumerate(warnings):
+        embed.add_field(
+            name=f'**{index+1}.Mã cảnh báo: {warning["_id"]}**',
+            value=f"""
+> Mã cổ phiếu: {warning["ticker"]}
+> Loại thời gian :{"1 ngày" if warning["is_15_minute"] else "15 phút"}
+{"" if (warning["field"] is None) else f'> Trường: {warning["field"]}'+nl}{"" if (warning["indicator"] is None) else f'> Chỉ báo: {warning["indicator"]}'+nl}{"" if (warning["period"] is None) else f'> Chu kì: {warning["period"]}'+nl}> So sánh:{"Lớn hơn" if warning["is_greater"] else "Bé hơn"}
+> Ngưỡng:{warning["thresold"]}
+""",
+            inline=False,
+        )
+    await interaction.response.send_message(embed=embed)
+
+
+@tree.command(name="xóa_cảnh_báo", description="Xóa một cảnh báo")
+@app_commands.describe(id="Mã cảnh báo bạn muốn xóa")
+@app_commands.rename(id="mã_cảnh_báo")
+async def delete_warning(interaction: discord.Interaction, id: str):
+    warning = await getWarningByObjectID(interaction.user.id, id)
+    if warning is None:
+        await interaction.response.send_message("Bạn không có mã cảnh báo với ID này")
+    else:
+        await interaction.response.defer()
+        nl = "\n"
+        embed = discord.Embed(title="**Mã cổ phiếu cần xóa**")
         embed.add_field(
             name=f'**Mã cảnh báo: {warning["_id"]}**',
             value=f"""
@@ -229,7 +254,8 @@ async def getAllWarning(interaction: discord.Interaction):
 """,
             inline=False,
         )
-    await interaction.response.send_message(embed=embed)
+        view = comfirmDeleteWarning(warning_id=warning["_id"], timeout=60)
+        view.message = await interaction.followup.send(embed=embed, view=view)
 
 
 # cần thêm quyền cho bot để chạy được

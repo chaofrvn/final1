@@ -8,28 +8,31 @@ def get_value(
 
     match indicator:
         case None:
-            df = df[[field]].dropna().tail(1)
+            df = df[[field]]
             df.columns = ["value"]
 
         case "ma":
             df["value"] = ta.sma(df[field], length=period)
-            df = df[["value"]].dropna().tail(1)
+            df = df[["value"]]
 
         case "ema":
             df["value"] = ta.ema(df[field], length=period)
-            df = df[["value"]].dropna().tail(1)
+            df = df[["value"]]
 
         case "stoch_k":
             df["STOCH_k"], _ = ta.stoch(df["high"], df["low"], df["close"])
-            df = df[["STOCH_k"]].rename(columns={"STOCH_k": "value"}).dropna().tail(1)
+            df = df[["STOCH_k"]].rename(columns={"STOCH_k": "value"})
 
         case "stoch_d":
             _, df["STOCH_d"] = ta.stoch(df["high"], df["low"], df["close"])
-            df = df[["STOCH_d"]].rename(columns={"STOCH_d": "value"}).dropna().tail(1)
+            df = df[["STOCH_d"]].rename(columns={"STOCH_d": "value"})
 
         case "rsi":
             df["value"] = ta.rsi(df["close"], length=period)
-            df = df[["value"]].dropna().tail(1)
+            df = df[["value"]]
     # print(type(df))
-    return df
+    if len(df) > 0:
+        df = df.dropna().tail(1)
+        return df
+    return None
     # need to make these so that it all return a slide with value is a value also with time

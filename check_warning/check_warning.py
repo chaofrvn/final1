@@ -103,6 +103,8 @@ def checkWarning(warnings):
             field=warning["field"],
             period=warning["period"],
         )
+        if value is None:
+            continue
         comparison_func = comparison_funcs[(warning["is_greater"], warning["trigger"])]
         if comparison_func(value["value"][0], warning["thresold"]):
             row = pd.DataFrame(
