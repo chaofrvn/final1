@@ -3,7 +3,8 @@ from discord.ext import commands
 from discord import app_commands
 from dotenv import load_dotenv, dotenv_values
 import os
-from influx_db import get_latest_price
+
+# from influx_db import get_latest_price
 from datetime import datetime
 import time
 import asyncio
@@ -15,14 +16,14 @@ intents = discord.Intents.default()
 intents.message_content = True
 
 
-async def my_task():
-    # Blocking operation using time.sleep()
-    time.sleep(100)
-    print("Task completed")
-
-
 bot = commands.Bot(command_prefix="$", intents=intents)
 tree = bot.tree
+
+
+@bot.event
+async def on_ready():
+    print("Success: Bot is connected to Discord")
+    await bot.tree.sync()
 
 
 @bot.event
@@ -34,4 +35,25 @@ async def on_message(message):
         await message.channel.send("Hello!")
 
 
-bot.run(DISCORD_BOT_TOKEN)
+@bot.command(name="sync")
+async def sync(ctx):
+    synced = await bot.tree.sync()
+    print(f"Synced {len(synced)} command(s).")
+    print(synced)
+
+
+async def load():
+    for filename in os.listdir("./cogs"):
+        if filename.endswith("py"):
+            await bot.load_extension(f"cogs.{filename[:-3]}")
+
+
+async def main():
+    async with bot:
+        await load()
+        await bot.start(DISCORD_BOT_TOKEN)
+
+
+asyncio.run(main())
+
+# bot.run(DISCORD_BOT_TOKEN)
