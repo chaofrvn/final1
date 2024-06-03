@@ -56,7 +56,7 @@ def delivery_report(err, msg, logger):
 
 def send_to_kafka(producer: Producer, topic, key, message, logger):
     # Sending a message to Kafka
-    print(type(message))
+    # print(type(message))
     producer.produce(
         topic,
         key=key,
@@ -74,19 +74,20 @@ def getWarning():
 
 @task
 def checkWarning(warnings):
+    # first value is trigger, second value is is_greater
     comparison_funcs = {
         (True, True): operator.ge,  # trigger is True and is_greater is True (>=)
         (True, False): operator.le,  # trigger is True and is_greater is False (<=)
-        (False, True): operator.gt,  # trigger is False and is_greater is True (>)
-        (False, False): operator.lt,  # trigger is False and is_greater is False (<)
+        (False, True): operator.lt,  # trigger is False and is_greater is True (<)
+        (False, False): operator.gt,  # trigger is False and is_greater is False (>)
     }
     datas = {}
     df = pd.DataFrame()
 
     for warning in warnings:
         data = None
-        if warning["ticker"] in datas:
-            data = datas[warning["ticker"]]
+        if warning["ticker"] + str(warning["is_15_minute"]) in datas:
+            data = datas[warning["ticker"] + str(warning["is_15_minute"])]
         else:
             query = f"""from(bucket: "stock_data")
         |> range(start:0)
@@ -94,7 +95,7 @@ def checkWarning(warnings):
         |> pivot(rowKey:["_time"], columnKey: ["_field"], valueColumn: "_value")
         """
             data = query_api.query_data_frame(query=query, data_frame_index=["_time"])
-            datas[warning["ticker"]] = data
+            datas[warning["ticker"] + str(warning["is_15_minute"])] = data
             # print(data.index)
 
         value: pd.DataFrame = get_value(
@@ -105,7 +106,7 @@ def checkWarning(warnings):
         )
         if value is None:
             continue
-        comparison_func = comparison_funcs[(warning["is_greater"], warning["trigger"])]
+        comparison_func = comparison_funcs[(warning["trigger"], warning["is_greater"])]
         if comparison_func(value["value"][0], warning["thresold"]):
             row = pd.DataFrame(
                 {

@@ -196,8 +196,8 @@ async def add_warning(
 ):
     thresold = float(thresold.replace(",", "."))
     user_id = interaction.user.id
-    time_type = bool(time_type)
-    compare = bool(compare)
+    time_type = bool(time_type.value)
+    compare = bool(compare.value)
     await addWarning(
         user_id=user_id,
         ticker=ticker,

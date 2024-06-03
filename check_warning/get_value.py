@@ -30,7 +30,8 @@ def get_value(
         case "rsi":
             df["value"] = ta.rsi(df["close"], length=period)
             df = df[["value"]]
-    # print(type(df))
+            # print(type(df))
+    df = df.dropna().tail(1)
     if len(df) > 0:
         df = df.dropna().tail(1)
         return df
