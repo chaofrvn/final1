@@ -16,7 +16,7 @@ intents = discord.Intents.default()
 intents.message_content = True
 
 
-bot = commands.Bot(command_prefix="$", intents=intents)
+bot = commands.Bot(command_prefix="", intents=intents)
 tree = bot.tree
 
 
@@ -26,19 +26,21 @@ async def on_ready():
     await bot.tree.sync()
 
 
-@bot.event
-async def on_message(message):
-    # if message.author == client.user:
-    #     return
+# @bot.event
+# async def on_message(message):
+#     # if message.author == client.user:
+#     #     return
 
-    if message.content.startswith("a"):
-        await message.channel.send("Hello!")
+#     if message.content.startswith("a"):
+#         await message.channel.send("Hello!")
 
 
-@bot.command(name="sync")
-async def sync(ctx):
+@bot.command()
+async def reload(ctx):
+    # Reloads the file, thus updating the Cog class.
+    print("hello")
+    await reload()
     synced = await bot.tree.sync()
-    print(f"Synced {len(synced)} command(s).")
     print(synced)
 
 
@@ -46,6 +48,12 @@ async def load():
     for filename in os.listdir("./cogs"):
         if filename.endswith("py"):
             await bot.load_extension(f"cogs.{filename[:-3]}")
+
+
+async def reload():
+    for filename in os.listdir("./cogs"):
+        if filename.endswith("py"):
+            await bot.reload_extension(f"cogs.{filename[:-3]}")
 
 
 async def main():
