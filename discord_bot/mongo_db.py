@@ -71,5 +71,9 @@ async def deleteWarning(id):
     await warningCollection.find_one_and_delete({"_id": ObjectId(id)})
 
 
+async def updateWarning(id, new_warning):
+    await warningCollection.find_one_and_replace({"_id": ObjectId(id)}, new_warning)
+
+
 if __name__ == "__main__":
     asyncio.run(getWarning())

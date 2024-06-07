@@ -34,7 +34,7 @@ conf = {
     "client.id": socket.gethostname(),
 }
 producer = Producer(conf)
-KAFKA_TOPIC = "stockWarning"
+KAFKA_TOPIC = "stock_warning"
 uri = os.environ["MONGODB_URL"]
 INFLUXDB_TOKEN = os.environ["INFLUXDB_TOKEN"]
 client = MongoClient(host=uri)
@@ -68,8 +68,9 @@ def send_to_kafka(producer: Producer, topic, key, message, logger):
 
 @task
 def getWarning():
-    warnings = warningCollection.find()
-    return list(warnings)
+    warnings = list(warningCollection.find({"is_15_minute": False}))
+    print(f"Receive {len(warnings)} daily warnings")
+    return warnings
 
 
 @task
@@ -86,8 +87,8 @@ def checkWarning(warnings):
 
     for warning in warnings:
         data = None
-        if warning["ticker"] + str(warning["is_15_minute"]) in datas:
-            data = datas[warning["ticker"] + str(warning["is_15_minute"])]
+        if warning["ticker"] in datas:
+            data = datas[warning["ticker"]]
         else:
             query = f"""from(bucket: "stock_data")
         |> range(start:0)
@@ -95,7 +96,7 @@ def checkWarning(warnings):
         |> pivot(rowKey:["_time"], columnKey: ["_field"], valueColumn: "_value")
         """
             data = query_api.query_data_frame(query=query, data_frame_index=["_time"])
-            datas[warning["ticker"] + str(warning["is_15_minute"])] = data
+            datas[warning["ticker"]] = data
             # print(data.index)
 
         value: pd.DataFrame = get_value(
@@ -145,7 +146,7 @@ def generate_message(warnings: pd.DataFrame):
             elif warning["indicator"] in ["rsi", "stoch_k", "stoch_d"]:
                 value = f'Cảnh báo: Giá trị {warning["indicator"]} của mã cổ phiếu {warning["ticker"]} đã quá ngưỡng cho phép là {warning["thresold"]}. Giá trị tại thời điểm {time} là {warning["value"]}'
             else:
-                value = f'Cảnh báo: Giá trị {warning["field"]} của trường {warning["indicator"]} của mã cổ phiếu {warning["ticker"]} đã quá ngưỡng cho phép là {warning["thresold"]}. Giá trị tại thời điểm {time} là {warning["value"]}'
+                value = f'Cảnh báo: Giá trị {warning["indicator"]} của trường {warning["field"]} của mã cổ phiếu {warning["ticker"]} đã quá ngưỡng cho phép là {warning["thresold"]}. Giá trị tại thời điểm {time} là {warning["value"]}'
         else:
             if warning["indicator"] is None:
                 value = f'Giá trị {warning["field"]} của mã cổ phiếu {warning["ticker"]} đã về mức cho phép là {warning["thresold"]}. Giá trị tại thời điểm {time} là {warning["value"]}'
@@ -202,7 +203,7 @@ def send_message(msg: pd.DataFrame):
         )
 
 
-@flow
+@flow(name="Check warning daily")
 def main():
 
     all_warnings = getWarning()

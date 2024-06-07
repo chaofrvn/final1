@@ -42,7 +42,7 @@ consumer = Consumer(
 )
 
 # Subscribe to the Kafka topic
-consumer.subscribe(["stockWarning"])
+consumer.subscribe(["stock_warning"])
 DISCORD_BOT_TOKEN = os.environ["DISCORD_BOT_TOKEN"]
 intents = discord.Intents.default()
 intents.message_content = True

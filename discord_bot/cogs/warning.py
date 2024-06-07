@@ -12,7 +12,7 @@ from discord.app_commands import Choice
 from dotenv import load_dotenv, dotenv_values
 from typing import Literal
 import os
-from View.add_warning_modal import addWarningModal
+from View.edit_warning import comfirmEditWarning
 from View.delete_warning import comfirmDeleteWarning
 
 # from influx_db import (
@@ -34,20 +34,21 @@ import socket
 import json
 
 print(load_dotenv("../.env"))
-consumer = Consumer(
-    {
-        "bootstrap.servers": "pkc-ldvr1.asia-southeast1.gcp.confluent.cloud:9092",
-        "security.protocol": "SASL_SSL",
-        "sasl.mechanism": "PLAIN",
-        "sasl.username": "HGLHHLIGH5YQYKVX",
-        "sasl.password": "gX5Smh7m7hoFTvIxUGPL9hwNJmgo1nQZBr/nHpFXD56jNm52m8i5C5Dor0/XMiD9",
-        "group.id": "stock_price_group",
-        "auto.offset.reset": "latest",  # Start from the latest message
-        "client.id": socket.gethostname(),
-    }
-)
+# consumer = Consumer(
+#     {
+#         "bootstrap.servers": "pkc-ldvr1.asia-southeast1.gcp.confluent.cloud:9092",
+#         "security.protocol": "SASL_SSL",
+#         "sasl.mechanism": "PLAIN",
+#         "sasl.username": "HGLHHLIGH5YQYKVX",
+#         "sasl.password": "gX5Smh7m7hoFTvIxUGPL9hwNJmgo1nQZBr/nHpFXD56jNm52m8i5C5Dor0/XMiD9",
+#         "group.id": "stock_price_group",
+#         "auto.offset.reset": "latest",  # Start from the latest message
+#         "client.id": socket.gethostname(),
+#         "debug": "security,broker,protocol",
+#     }
+# )
 
-consumer.subscribe(["stockWarning"])
+# consumer.subscribe(["stock_warning"])
 
 
 def to_thread(func: typing.Callable) -> typing.Coroutine:
@@ -69,10 +70,6 @@ class Warning(commands.Cog):
     @commands.Cog.listener()
     async def on_ready(self):
         print("Warning cog loaded")
-        loop = asyncio.get_running_loop()
-        with concurrent.futures.ThreadPoolExecutor() as executor:
-            # Run the blocking function in an executor
-            await loop.run_in_executor(executor, self.my_task, loop)
 
     # Add alert into db
     @app_commands.command(
@@ -126,14 +123,14 @@ class Warning(commands.Cog):
             thresold=thresold,
         )
         await interaction.response.send_message("Bạn đã thêm cảnh báo thành công")
-        await interaction.response.send_modal(addWarningModal())
+        # await interaction.response.send_modal(addWarningModal())
 
     @app_commands.command(
         name="đọc_cảnh_báo", description="Đọc các cảnh báo mà bạn đã tạo ra"
     )
     @app_commands.describe()
     async def getAllWarning(self, interaction: discord.Interaction):
-        print("test")
+        print("testhihi")
         user_id = interaction.user.id
         warnings = await getWarning(user_id)
         embed = discord.Embed(title="**Danh sách các mã cổ phiếu**")
@@ -143,7 +140,7 @@ class Warning(commands.Cog):
                 name=f'**{index+1}.Mã cảnh báo: {warning["_id"]}**',
                 value=f"""
     > Mã cổ phiếu: {warning["ticker"]}
-    > Loại thời gian :{"1 ngày" if warning["is_15_minute"] else "15 phút"}
+    > Loại thời gian :{"15 phút" if warning["is_15_minute"] else "1 ngày"}
     {"" if (warning["field"] is None) else f'> Trường: {warning["field"]}'+nl}{"" if (warning["indicator"] is None) else f'> Chỉ báo: {warning["indicator"]}'+nl}{"" if (warning["period"] is None) else f'> Chu kì: {warning["period"]}'+nl}> So sánh:{"Lớn hơn" if warning["is_greater"] else "Bé hơn"}
     > Ngưỡng:{warning["thresold"]}
     """,
@@ -175,36 +172,93 @@ class Warning(commands.Cog):
                 inline=False,
             )
             view = comfirmDeleteWarning(warning_id=warning["_id"], timeout=60)
-            view.message = await interaction.followup.send(embed=embed, view=view)
+            await interaction.followup.send(embed=embed, view=view)
 
-    def my_task(self, loop):
+    @app_commands.command(name="sửa_cảnh_báo", description="Sửa một cảnh báo")
+    @app_commands.choices(
+        time_type=[Choice(name="1 ngày", value=0), Choice(name="15 phút", value=1)],
+        compare=[Choice(name="Lớn hơn", value=1), Choice(name="Bé hơn", value=0)],
+    )
+    @app_commands.describe(
+        id="Mã cảnh báo bạn muốn sửa",
+        ticker="the ticker to add the waring",
+        field="volume close high low",
+        indicator="ma ema so",
+        time_type="1D 15m",
+        period="integer",
+        compare="GREATER LESS",
+        thresold="float",
+    )
+    @app_commands.rename(
+        id="mã_cảnh_báo",
+        ticker="mã_cổ_phiếu",
+        field="trường",
+        indicator="chỉ_báo",
+        time_type="loại_thời_gian",
+        period="chu_kì",
+        compare="so_sánh",
+        thresold="ngưỡng",
+    )
+    async def edit_warning(
+        self,
+        interaction: discord.Interaction,
+        id: str,
+        ticker: str = None,
+        time_type: Choice[int] = None,
+        compare: Choice[int] = None,
+        thresold: str = None,
+        period: int = None,
+        field: str = None,
+        indicator: str = None,
+    ):
+        old_warning = await getWarningByObjectID(interaction.user.id, id)
+        if old_warning is None:
+            await interaction.response.send_message(
+                "Bạn không có mã cảnh báo với ID này"
+            )
+        else:
+            await interaction.response.defer()
 
-        try:
-            while True:
+            if thresold is not None:
+                thresold = float(thresold.replace(",", "."))
+            if time_type is not None:
+                time_type = bool(time_type.value)
+            if compare is not None:
+                compare = bool(compare.value)
 
-                # print("my_task2")
-                msg = consumer.poll(1)
-                if msg is None:
-                    continue
-                if msg.error():
-                    if msg.error().code() == KafkaError._PARTITION_EOF:
-                        continue
-                    else:
-                        print(f"Error while consuming: {msg.error()}")
-                else:
+            editing_warning = {
+                "ticker": ticker,
+                "field": field,
+                "indicator": indicator,
+                "period": period,
+                "thresold": thresold,
+                "is_greater": compare,
+                "is_15_minute": time_type,
+                "trigger": True,
+            }
 
-                    user = asyncio.run_coroutine_threadsafe(
-                        self.bot.fetch_user(int(msg.key())), loop
-                    ).result()
-                    asyncio.run_coroutine_threadsafe(
-                        user.send(msg.value().decode("utf-8")), loop
-                    ).result()
+            new_warning = old_warning.copy()
+            for key, value in editing_warning.items():
+                if value is not None:
+                    new_warning[key] = value
 
-        except KeyboardInterrupt:
-            pass
-        finally:
-            # Close the consumer gracefully
-            consumer.close()
+            nl = "\n"
+            embed = discord.Embed(
+                title="**Đây là cảnh báo mới sau khi sửa. Bạn có muốn sửa:**"
+            )
+            embed.add_field(
+                name=f'**Mã cảnh báo: {new_warning["_id"]}**',
+                value=f"""
+    > Mã cổ phiếu: {new_warning["ticker"]}
+    > Loại thời gian :{"1 ngày" if new_warning["is_15_minute"] else "15 phút"}
+    {"" if (new_warning["field"] is None) else f'> Trường: {new_warning["field"]}'+nl}{"" if (new_warning["indicator"] is None) else f'> Chỉ báo: {new_warning["indicator"]}'+nl}{"" if (new_warning["period"] is None) else f'> Chu kì: {new_warning["period"]}'+nl}> So sánh:{"Lớn hơn" if new_warning["is_greater"] else "Bé hơn"}
+    > Ngưỡng:{new_warning["thresold"]}
+    """,
+                inline=False,
+            )
+
+            view = comfirmEditWarning(warning_id=id, new_warning=new_warning)
+            await interaction.followup.send(embed=embed, view=view)
 
 
 async def setup(client):
