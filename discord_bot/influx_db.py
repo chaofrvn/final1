@@ -73,7 +73,8 @@ def get_latest_daily_data(ticker: str):
 
 
 @to_thread
-def get_all_time_data(ticker: str, field="close", indicator="normal", period=12):
+def get_all_time_data(ticker: str, field="close", indicator=None, period=12):
+    print("get")
     query = f"""from(bucket: "stock_data")
     |> range(start:0)
     |> filter(fn: (r) => r.ticker == "{ticker}" and r._measurement=="stock_daily")
@@ -84,7 +85,7 @@ def get_all_time_data(ticker: str, field="close", indicator="normal", period=12)
     df.set_index("_time", inplace=True)
 
     match indicator:
-        case "normal":
+        case None:
             df = df[field].dropna().to_frame()
         case "ma":
             df["MA"] = ta.sma(df[field], length=period)
@@ -110,7 +111,11 @@ def get_all_time_data(ticker: str, field="close", indicator="normal", period=12)
 
 @to_thread
 def get_single_day_data(
-    ticker: str, field="close", day=datetime.now().date().strftime("%d-%m-%Y")
+    ticker: str,
+    field="close",
+    indicator=None,
+    day=datetime.now().date().strftime("%d-%m-%Y"),
+    period=12,
 ):
     date_object = datetime.strptime(day, "%d-%m-%Y")
     start_timestamp = int(datetime.combine(date_object, time.min).timestamp())
@@ -121,10 +126,29 @@ def get_single_day_data(
     |> filter(fn: (r) => r.ticker == "{ticker}")
     |> pivot(rowKey:["_time"], columnKey: ["_field"], valueColumn: "_value")
     """
-    df = query_api.query_data_frame(query=query)
+    print(query)
+    df: pd.DataFrame = query_api.query_data_frame(query=query)
     df.set_index("_time", inplace=True)
-    df = df[field].dropna().to_frame()
-    # print(df)
+
+    match indicator:
+        case None:
+            df = df[field].dropna().to_frame()
+        case "ma":
+            df["MA"] = ta.sma(df[field], length=period)
+            # Create a new DataFrame with only the time and the indicator
+            df = df[["MA"]].dropna()
+
+        case "ema":
+            df["EMA"] = ta.ema(df[field], length=period)
+            # Create a new DataFrame with only the time and the indicator
+            df = df[["EMA"]].dropna()
+            # Rename columns if necessary
+            # df.rename(columns={'index': '_time', 'EMA': 'Indicator'}, inplace=True)
+
+        case "rsi":
+            df["RSI"] = ta.rsi(df["close"], length=period)
+            df = df[["RSI"]].dropna()
+
     return df
 
 

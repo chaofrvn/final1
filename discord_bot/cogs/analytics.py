@@ -67,21 +67,29 @@ class Analaytics(commands.Cog):
     @app_commands.describe(
         ticker="the ticker to show chart",
         field="the value to query(close, volume,...)",
-        type="the indicator defalut is norma",
+        indicator="the indicator ",
     )
     async def daily_chart(
         self,
         interaction: discord.Interaction,
         ticker: str,
-        field: str = "close",
-        type: str = "normal",
+        field: str = None,
+        indicator: str = None,
+        period: int = None,
     ):
-        data = await get_all_time_data(ticker=ticker, field=field, indicator=type)
-        data_stream = await all_time_chart(
-            ticker=ticker, field=type, data=data, title=""
+        data = await get_all_time_data(
+            ticker=ticker, field=field, indicator=indicator, period=period
         )
+
+        data_stream = all_time_chart(
+            ticker=ticker,
+            field=field,
+            indicator=indicator,
+            data=data,
+        )
+
         chart = discord.File(data_stream, filename="daily_chart.png")
-        embed = discord.Embed()
+        embed = discord.Embed(title="Đây là biểu đồ của bạn:")
         embed.set_image(url="attachment://daily_chart.png")
         await interaction.response.send_message(embed=embed, file=chart)
 
@@ -93,21 +101,26 @@ class Analaytics(commands.Cog):
     @app_commands.describe(
         ticker="the ticker to show chart",
         field="the value to query(close, volume,...)",
+        indicator="chỉ báo",
         day="default day is current day",
     )
     async def oneday_chart(
         self,
         interaction: discord.Interaction,
         ticker: str,
-        field: str = "close",
+        field: str = None,
+        indicator: str = None,
+        period: int = None,
         day: str = datetime.now().date().strftime("%d-%m-%Y"),
     ):
-        data = await get_single_day_data(ticker=ticker, field=field, day=day)
-        data_stream = await one_day_chart(
-            ticker=ticker, data=data, field=field, title=""
+        data = await get_single_day_data(
+            ticker=ticker, indicator=indicator, field=field, day=day, period=period
+        )
+        data_stream = one_day_chart(
+            ticker=ticker, data=data, indicator=indicator, field=field
         )
         chart = discord.File(data_stream, filename="oneday_chart.png")
-        embed = discord.Embed()
+        embed = discord.Embed(title="Đây là biểu đồ của bạn:")
         embed.set_image(url="attachment://oneday_chart.png")
         await interaction.response.send_message(embed=embed, file=chart)
 
