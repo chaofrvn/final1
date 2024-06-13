@@ -12,7 +12,7 @@ import os
 from pymongo import MongoClient
 from pymongo import UpdateOne
 import asyncio
-
+from mailjet_rest import Client
 from influxdb_client import InfluxDBClient
 
 import json
@@ -66,11 +66,39 @@ def send_to_kafka(producer: Producer, topic, key, message, logger):
     producer.flush()
 
 
+def send_email(mailjet: Client, msg: str, email: str, user_id: str):
+    if email is None:
+        return
+    data = {
+        "Messages": [
+            {
+                "From": {"Email": "huyhoang123abcdef@gmail.com", "Name": "Stock"},
+                "To": [{"Email": email, "Name": "Người dùng Discord " + user_id}],
+                "Subject": "Cảnh báo chứng khoán",
+                "TextPart": msg,
+            }
+        ]
+    }
+    result = mailjet.send.create(data=data)
+    print(result)
+    print(result.json())
+
+
 @task
 def getWarning():
-    warnings = list(warningCollection.find({"is_15_minute": False}))
-    print(f"Receive {len(warnings)} daily warnings")
-    return warnings
+    pipeline = [
+        {"$unwind": "$warnings"},  # Deconstruct the warnings array
+        {
+            "$match": {"warnings.is_15_minute": False}
+        },  # Filter warnings with is_15_minute set to True
+        {"$addFields": {"warnings.user_id": "$user_id"}},
+        {
+            "$replaceRoot": {"newRoot": "$warnings"}
+        },  # Replace the root document with the warnings
+    ]
+    result = list(warningCollection.aggregate(pipeline))
+    # print(result)
+    return result
 
 
 @task
@@ -108,6 +136,7 @@ def checkWarning(warnings):
         if value is None:
             continue
         comparison_func = comparison_funcs[(warning["trigger"], warning["is_greater"])]
+        # print(value["value"])
         if comparison_func(value["value"][0], warning["thresold"]):
             row = pd.DataFrame(
                 {
@@ -167,27 +196,30 @@ def generate_message(warnings: pd.DataFrame):
 async def trigger_trigger(warnings):
     if "id" not in warnings.columns:
         return
-    object_ids = [ObjectId(oid) for oid in warnings["id"]]
 
-    # Retrieve all documents with these ObjectIds
-    query = {"_id": {"$in": object_ids}}
-    documents = warningCollection.find(query)
+    operations = []
 
-    # print(documents)
-    if documents:
-        bulk_updates = []
-        for doc in documents:
-            new_trigger_value = not doc.get("trigger", False)
-            bulk_updates.append(
-                UpdateOne({"_id": doc["_id"]}, {"$set": {"trigger": new_trigger_value}})
+    # Retrieve the documents containing the warnings
+    documents = warningCollection.find({"warnings._id": {"$in": list(warnings["id"])}})
+
+    for document in documents:
+        for warning in document.get("warnings", []):
+            if warning["_id"] in list(warnings["id"]):
+                # Toggle the trigger field
+                warning["trigger"] = not warning["trigger"]
+
+        # Create an update operation
+        operations.append(
+            UpdateOne(
+                {"_id": document["_id"]}, {"$set": {"warnings": document["warnings"]}}
             )
+        )
 
-        if bulk_updates:
-            result = warningCollection.bulk_write(bulk_updates)
-            print(f"Trigger values updated for {result.modified_count} documents")
-    else:
-        print("No documents found")
-    return ""
+    # Execute the bulk update
+    if operations:
+        result = warningCollection.bulk_write(operations, ordered=False)
+        return result.bulk_api_result
+    return None
 
 
 @task
@@ -203,6 +235,17 @@ def send_message(msg: pd.DataFrame):
         )
 
 
+@task
+def send_emails(msg: pd.DataFrame):
+    API_KEY = os.environ["MJ_APIKEY_PUBLIC"]
+    API_SECRET = os.environ["MJ_APIKEY_PRIVATE"]
+
+    mailjet = Client(auth=(API_KEY, API_SECRET), version="v3.1")
+    for user_id, row in msg.iterrows():
+        # thêm email
+        send_email(mailjet, row["msg"], row["email"], str(user_id))
+
+
 @flow(name="Check warning daily")
 def main():
 
@@ -211,6 +254,7 @@ def main():
     msg = generate_message(warnings)
     send_message(msg)
     trigger_trigger(warnings)
+    send_emails(msg)
 
 
 if __name__ == "__main__":

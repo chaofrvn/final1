@@ -133,6 +133,11 @@ class Warning(commands.Cog):
         print("testhihi")
         user_id = interaction.user.id
         warnings = await getWarning(user_id)
+        if len(warnings) == 0:
+            return await interaction.response.send_message(
+                "Bạn chưa có cảnh báo để xem"
+            )
+        warnings = warnings[0]["warnings"]
         embed = discord.Embed(title="**Danh sách các mã cổ phiếu**")
         nl = "\n"
         for index, warning in enumerate(warnings):
@@ -165,7 +170,7 @@ class Warning(commands.Cog):
                 name=f'**Mã cảnh báo: {warning["_id"]}**',
                 value=f"""
     > Mã cổ phiếu: {warning["ticker"]}
-    > Loại thời gian :{"1 ngày" if warning["is_15_minute"] else "15 phút"}
+    > Loại thời gian :{"15 phút" if warning["is_15_minute"] else "1 ngày"}
     {"" if (warning["field"] is None) else f'> Trường: {warning["field"]}'+nl}{"" if (warning["indicator"] is None) else f'> Chỉ báo: {warning["indicator"]}'+nl}{"" if (warning["period"] is None) else f'> Chu kì: {warning["period"]}'+nl}> So sánh:{"Lớn hơn" if warning["is_greater"] else "Bé hơn"}
     > Ngưỡng:{warning["thresold"]}
     """,
@@ -250,7 +255,7 @@ class Warning(commands.Cog):
                 name=f'**Mã cảnh báo: {new_warning["_id"]}**',
                 value=f"""
     > Mã cổ phiếu: {new_warning["ticker"]}
-    > Loại thời gian :{"1 ngày" if new_warning["is_15_minute"] else "15 phút"}
+    > Loại thời gian :{"15 phút" if new_warning["is_15_minute"] else"1 ngày" }
     {"" if (new_warning["field"] is None) else f'> Trường: {new_warning["field"]}'+nl}{"" if (new_warning["indicator"] is None) else f'> Chỉ báo: {new_warning["indicator"]}'+nl}{"" if (new_warning["period"] is None) else f'> Chu kì: {new_warning["period"]}'+nl}> So sánh:{"Lớn hơn" if new_warning["is_greater"] else "Bé hơn"}
     > Ngưỡng:{new_warning["thresold"]}
     """,

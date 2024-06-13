@@ -36,6 +36,7 @@ class Explain(commands.Cog):
         else:
             await interaction.response.defer()
             image_url = message.embeds[0].image.proxy_url
+            print(image_url)
             response = await self.client.chat.completions.create(
                 model="gpt-4o",
                 messages=[
@@ -61,11 +62,21 @@ class Explain(commands.Cog):
                     },
                 ],
                 max_tokens=4096,
+                timeout=100,
             )
+            print(response)
             # print(image)
             # print(image.proxy_url)
             # print(image.url)
-            await interaction.followup.send(response.choices[0].message.content)
+            embed = discord.Embed()
+            embed.set_image(url=image_url)
+            await interaction.followup.send(
+                content=response.choices[0].message.content, embed=embed
+            )
+
+    @app_commands.command(name="dự_đoán")
+    async def predict(self, interaction: discord.Interaction):
+        await interaction.response.send_message("chua viet")
 
     async def cog_unload(self) -> None:
         self.bot.tree.remove_command(self.explain.name, type=self.explain.type)

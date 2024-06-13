@@ -6,7 +6,7 @@ from discord.app_commands import Choice
 from dotenv import load_dotenv, dotenv_values
 from typing import Literal
 import os
-from View.add_warning_modal import addWarningModal
+import pandas as pd
 from View.delete_warning import comfirmDeleteWarning
 from influx_db import (
     get_latest_data,

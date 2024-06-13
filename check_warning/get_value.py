@@ -20,11 +20,11 @@ def get_value(
             df = df[["value"]]
 
         case "stoch_k":
-            df["STOCH_k"], _ = ta.stoch(df["high"], df["low"], df["close"])
+            df["STOCH_k"] = ta.stoch(df["high"], df["low"], df["close"]).iloc[:, 0]
             df = df[["STOCH_k"]].rename(columns={"STOCH_k": "value"})
 
         case "stoch_d":
-            _, df["STOCH_d"] = ta.stoch(df["high"], df["low"], df["close"])
+            df["STOCH_d"] = ta.stoch(df["high"], df["low"], df["close"]).iloc[:, 1]
             df = df[["STOCH_d"]].rename(columns={"STOCH_d": "value"})
 
         case "rsi":

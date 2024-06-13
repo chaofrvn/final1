@@ -104,7 +104,7 @@ def get_all_time_data(ticker: str, field="close", indicator=None, period=12):
             df = df[["STOCH_k", "STOCH_d"]].dropna()
 
         case "rsi":
-            df["RSI"] = ta.rsi(df["close"], length=14)
+            df["RSI"] = ta.rsi(df["close"], length=period)
             df = df[["RSI"]].dropna()
     return df
 

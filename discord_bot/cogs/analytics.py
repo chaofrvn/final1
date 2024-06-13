@@ -1,6 +1,9 @@
 import os
 import sys
 import inspect
+from pydantic import BaseModel, field_validator, ValidationError, Field
+from typing import List, ClassVar
+import pandas as pd
 
 currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 parentdir = os.path.dirname(currentdir)
@@ -16,6 +19,72 @@ from influx_db import (
 )
 from chart import all_time_chart, one_day_chart
 from datetime import datetime
+
+df = pd.read_csv("../test_producer/company.csv")
+tickers_list = df["ticker"].tolist()
+
+
+class CommandInput(BaseModel):
+    ticker: str
+    type: str
+
+    _allowed_tickers: ClassVar[List[str]] = tickers_list  # List of valid tickers
+    _allowed_types: ClassVar[List[str]] = [
+        "close",
+        "volume",
+        "high",
+        "low",
+        "open",
+    ]  # List of valid types
+
+    @field_validator("ticker")
+    def validate_ticker(cls, value):
+
+        if value not in cls._allowed_tickers:
+
+            raise ValueError(f"Ticker must be one of ")
+
+        print(3)
+        return value
+
+    @field_validator("type")
+    def validate_type(cls, value):
+        if value not in cls._allowed_types:
+            raise ValueError(f"Type must be one of {cls._allowed_types}")
+
+        return value
+
+
+class CommandInput1(BaseModel):
+    ticker: str
+    type: str
+
+    _allowed_tickers: ClassVar[List[str]] = tickers_list  # List of valid tickers
+    _allowed_types: ClassVar[List[str]] = [
+        "close",
+        "volume",
+        "high",
+        "low",
+        "open",
+    ]  # List of valid types
+    _allowed_indicator: ClassVar[List[str]] = ["ma", "ema", ""]
+
+    @field_validator("ticker")
+    def validate_ticker(cls, value):
+
+        if value not in cls._allowed_tickers:
+
+            raise ValueError(f"Ticker must be one of ")
+
+        print(3)
+        return value
+
+    @field_validator("type")
+    def validate_type(cls, value):
+        if value not in cls._allowed_types:
+            raise ValueError(f"Type must be one of {cls._allowed_types}")
+
+        return value
 
 
 class Analaytics(commands.Cog):
@@ -38,6 +107,14 @@ class Analaytics(commands.Cog):
     async def latest(
         self, interaction: discord.Interaction, ticker: str, type: str = "close"
     ):
+        try:
+            validated_data = CommandInput(ticker=ticker, type=type)
+        except ValidationError as e:
+            await interaction.response.send_message(
+                f"Error: {e.errors()[0]['msg']}", ephemeral=True
+            )
+            return
+
         obj = await get_latest_data(ticker)
         await interaction.response.send_message(
             f'latest {type} value of {ticker} is {obj[type]} at {obj["_time"]}'
@@ -54,6 +131,13 @@ class Analaytics(commands.Cog):
     async def daily(
         self, interaction: discord.Interaction, ticker: str, type: str = "close"
     ):
+        try:
+            validated_data = CommandInput(ticker=ticker, type=type)
+        except ValidationError as e:
+            await interaction.response.send_message(
+                f"Error: {e.errors()[0]['msg']}", ephemeral=True
+            )
+            return
         obj = await get_latest_daily_data(ticker)
         await interaction.response.send_message(
             f'latest daily {type} value of {ticker} is {obj[type]} at {obj["_time"]}'
