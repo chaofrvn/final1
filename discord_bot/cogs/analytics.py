@@ -34,33 +34,73 @@ tickers_list = df["ticker"].tolist()
 
 class CommandInput(BaseModel):
     ticker: str
-    type: str
+    field: Optional[str]
+    indicator: Optional[str]
+    period: Optional[int]
 
     _allowed_tickers: ClassVar[List[str]] = tickers_list  # List of valid tickers
-    _allowed_types: ClassVar[List[str]] = [
+    _allowed_fields: ClassVar[List[str]] = [
         "close",
         "volume",
         "high",
         "low",
         "open",
-    ]  # List of valid types
+    ]  # List of valid fields
+    _allowed_indicators: ClassVar[List[str]] = ["ma", "ema", "stoch", "rsi"]
 
-    @field_validator("ticker")
-    def validate_ticker(cls, value):
+    # @field_validator("ticker")
+    # def validate_ticker(cls, value):
 
-        if value not in cls._allowed_tickers:
+    #     if value not in cls._allowed_tickers:
 
-            raise ValueError(f"Ticker must be one of ")
+    #         raise ValueError(f"Ticker must be one of ")
 
-        print(3)
-        return value
+    #     print(3)
+    #     return value
 
-    @field_validator("type")
-    def validate_type(cls, value):
-        if value not in cls._allowed_types:
-            raise ValueError(f"Type must be one of {cls._allowed_types}")
+    # @field_validator("field")
+    # def validate_field(cls, value):
+    #     if value not in cls._allowed_fields:
+    #         raise ValueError(f"field must be one of {cls._allowed_fields}")
 
-        return value
+    #     return value
+
+    @model_validator(mode="before")
+    def check(cls, values):
+        ticker = values.get("ticker")
+        field = values.get("field")
+        indicator = values.get("indicator")
+        period = values.get("period")
+
+        # ticker phải thuộc danh sách cho trước
+        if ticker not in cls._allowed_tickers:
+            raise ValueError(f"Ticker {ticker} is not allowed.")
+
+        # indicator phải thuộc danh sách cho trước
+        if indicator and indicator not in cls._allowed_indicators:
+            raise ValueError(f"Indicator {indicator} is not allowed.")
+
+        # field phải thuộc danh sách cho trước
+        if field and field not in cls._allowed_fields:
+            raise ValueError(f"Field {field} is not allowed.")
+
+        # Nếu indicator là stoch hoặc rsi thì không được nhập field
+        if indicator in {"stoch", "rsi"} and field:
+            raise ValueError(f"If indicator is {indicator}, field must be None.")
+
+        # Nếu indicator là ma hoặc ema thì bắt buộc nhập field
+        if indicator in {"ma", "ema"} and not field:
+            raise ValueError(f"If indicator is {indicator}, field is required.")
+
+        # Nếu không có indicator thì không có period
+        if not indicator and period:
+            raise ValueError("Không cần nhập giá trị period")
+
+        # Có thể không nhập indicator, khi đó bắt buộc nhập field
+        if not indicator and not field:
+            raise ValueError("If indicator is None, field is required.")
+
+        return values
 
 
 class DataModel1(BaseModel):
@@ -202,23 +242,34 @@ class Analaytics(commands.Cog):
         description="Price of the stock ticker",
     )
     @app_commands.describe(
-        ticker="the ticker to show price", type="the value to query(close, volume,...)"
+        ticker="the ticker to show price",
+        field="the value to query(close, volume,...)",
+        indicator="the indicator (ma, ema, ...)",
+        period="the period of indicator",
     )
     async def latest(
-        self, interaction: discord.Interaction, ticker: str, type: str = "close"
+        self,
+        interaction: discord.Interaction,
+        ticker: str,
+        field: str = None,
+        indicator: str = None,
+        period: int = None,
     ):
         try:
-            validated_data = CommandInput(ticker=ticker, type=type)
+            validated_data = CommandInput(
+                ticker=ticker, field=field, indicator=indicator, period=period
+            )
         except ValidationError as e:
             await interaction.response.send_message(
                 f"Error: {e.errors()[0]['msg']}", ephemeral=True
             )
             return
 
-        obj = await get_latest_data(ticker)
-        await interaction.response.send_message(
-            f'latest {type} value of {ticker} is {obj[type]} at {obj["_time"]}'
-        )
+        return await interaction.response.send_message("success")
+        # obj = await get_latest_data(ticker)
+        # await interaction.response.send_message(
+        #     f'latest {field} value of {ticker} is {obj[field]} at {obj["_time"]}'
+        # )
 
     # Get the latest daily price of 1 ticker (1D)
     @app_commands.command(
@@ -226,22 +277,29 @@ class Analaytics(commands.Cog):
         description="Price of the stock ticker",
     )
     @app_commands.describe(
-        ticker="the ticker to show price", type="the value to query(close, volume,...)"
+        ticker="the ticker to show price", field="the value to query(close, volume,...)"
     )
     async def daily(
-        self, interaction: discord.Interaction, ticker: str, type: str = "close"
+        self,
+        interaction: discord.Interaction,
+        ticker: str,
+        field: str = None,
+        indicator: str = None,
+        period: int = None,
     ):
         try:
-            validated_data = CommandInput(ticker=ticker, type=type)
+            validated_data = CommandInput(
+                ticker=ticker, field=field, indicator=indicator, period=period
+            )
         except ValidationError as e:
             await interaction.response.send_message(
                 f"Error: {e.errors()[0]['msg']}", ephemeral=True
             )
             return
-        obj = await get_latest_daily_data(ticker)
-        await interaction.response.send_message(
-            f'latest daily {type} value of {ticker} is {obj[type]} at {obj["_time"]}'
-        )
+        # obj = await get_latest_daily_data(ticker)
+        # await interaction.response.send_message(
+        #     f'latest daily {field} value of {ticker} is {obj[field]} at {obj["_time"]}'
+        # )
 
     # Chart of daily_stock
     @app_commands.command(
