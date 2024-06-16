@@ -10,17 +10,20 @@ from discord.ext import commands, tasks
 from discord import app_commands, File, Attachment
 from discord.app_commands import Choice
 from dotenv import load_dotenv, dotenv_values
-from typing import Literal
+from typing import Literal, ClassVar, Optional, List
 import os
 from View.edit_warning import comfirmEditWarning
 from View.delete_warning import comfirmDeleteWarning
+from pydantic import (
+    BaseModel,
+    field_validator,
+    ValidationError,
+    model_validator,
+    Field,
+    conint,
+    PositiveInt,
+)
 
-# from influx_db import (
-#     get_latest_data,
-#     get_latest_daily_data,
-#     get_all_time_data,
-#     get_single_day_data,
-# )
 from mongo_db import addWarning, getWarning, getWarningByObjectID
 from chart import all_time_chart, one_day_chart
 from datetime import datetime
@@ -32,23 +35,13 @@ from confluent_kafka import Consumer, KafkaError
 import concurrent.futures
 import socket
 import json
+import pandas as pd
 
 print(load_dotenv("../.env"))
-# consumer = Consumer(
-#     {
-#         "bootstrap.servers": "pkc-ldvr1.asia-southeast1.gcp.confluent.cloud:9092",
-#         "security.protocol": "SASL_SSL",
-#         "sasl.mechanism": "PLAIN",
-#         "sasl.username": "HGLHHLIGH5YQYKVX",
-#         "sasl.password": "gX5Smh7m7hoFTvIxUGPL9hwNJmgo1nQZBr/nHpFXD56jNm52m8i5C5Dor0/XMiD9",
-#         "group.id": "stock_price_group",
-#         "auto.offset.reset": "latest",  # Start from the latest message
-#         "client.id": socket.gethostname(),
-#         "debug": "security,broker,protocol",
-#     }
-# )
 
-# consumer.subscribe(["stock_warning"])
+
+df = pd.read_csv("../test_producer/company.csv")
+tickers_list = df["ticker"].tolist()
 
 
 def to_thread(func: typing.Callable) -> typing.Coroutine:
@@ -59,6 +52,74 @@ def to_thread(func: typing.Callable) -> typing.Coroutine:
         return await loop.run_in_executor(None, wrapped)
 
     return wrapper
+
+
+class DataModel3(BaseModel):
+    ticker: str
+    field: Optional[str]
+    indicator: Optional[str]
+    threshold: str
+    period: Optional[PositiveInt]  # period phải là số nguyên dương
+
+    _allowed_tickers: ClassVar[List[str]] = tickers_list
+    _allowed_fields: ClassVar[List[str]] = [
+        "close",
+        "volume",
+        "high",
+        "low",
+        "open",
+    ]
+    _allowed_indicators: ClassVar[List[str]] = ["ma", "ema", "stoch", "rsi"]
+
+    @model_validator(mode="before")
+    def check_constraints(cls, values):
+        print(values)
+        ticker = values.get("ticker")
+        field = values.get("field")
+        indicator = values.get("indicator")
+        period = values.get("period")
+        threshold = values.get("threshold")
+        print(ticker + "----------------------")
+
+        # ticker phải thuộc danh sách cho trước
+        if ticker not in cls._allowed_tickers:
+            raise ValueError(f"Ticker {ticker} is not allowed.")
+
+        # indicator phải thuộc danh sách cho trước
+        if indicator and indicator not in cls._allowed_indicators:
+            raise ValueError(f"Indicator {indicator} is not allowed.")
+
+        # field phải thuộc danh sách cho trước
+        if field and field not in cls._allowed_fields:
+            raise ValueError(f"Field {field} is not allowed.")
+
+        # Nếu indicator là stoch hoặc rsi thì không được nhập field
+        if indicator in {"stoch", "rsi"} and field:
+            raise ValueError(f"If indicator is {indicator}, field must be None.")
+
+        # Nếu indicator là ma hoặc ema thì bắt buộc nhập field
+        if indicator in {"ma", "ema"} and not field:
+            raise ValueError(f"If indicator is {indicator}, field is required.")
+
+        # Nếu không có indicator thì không có period và ngược lại
+        if (indicator is None and period is not None) or (
+            indicator is not None and period is None
+        ):
+            raise ValueError(
+                "Both indicator and period must be provided together or neither"
+            )
+
+        # Có thể không nhập indicator, khi đó bắt buộc nhập field
+        if not indicator and not field:
+            raise ValueError("If indicator is None, field is required.")
+
+        # Xac thuc threshold
+        if not threshold.replace(".", "", 1).replace(",", "", 1).isdigit():
+            raise ValueError(
+                "threshold must only contain digits and at most one . or ,"
+            )
+
+        return values
 
 
 class Warning(commands.Cog):
@@ -86,7 +147,7 @@ class Warning(commands.Cog):
         time_type="1D 15m",
         period="integer",
         compare="GREATER LESS",
-        thresold="float",
+        threshold="float",
     )
     @app_commands.rename(
         ticker="mã_cổ_phiếu",
@@ -95,7 +156,7 @@ class Warning(commands.Cog):
         time_type="loại_thời_gian",
         period="chu_kì",
         compare="so_sánh",
-        thresold="ngưỡng",
+        threshold="ngưỡng",
     )
     async def add_warning(
         self,
@@ -103,12 +164,26 @@ class Warning(commands.Cog):
         ticker: str,
         time_type: Choice[int],
         compare: Choice[int],
-        thresold: str,
+        threshold: str,
         period: int | None = None,
         field: str = None,
         indicator: str = None,
     ):
-        thresold = float(thresold.replace(",", "."))
+
+        try:
+            validated_data = DataModel3(
+                ticker=ticker,
+                field=field,
+                indicator=indicator,
+                period=period,
+                threshold=threshold,
+            )
+        except ValidationError as e:
+            await interaction.response.send_message(
+                f"Error: {e.errors()[0]['msg']}", ephemeral=True
+            )
+            return
+        threshold = float(threshold.replace(",", "."))
         user_id = interaction.user.id
         time_type = bool(time_type.value)
         compare = bool(compare.value)
@@ -120,7 +195,7 @@ class Warning(commands.Cog):
             time_type=time_type,
             period=period,
             compare=compare,
-            thresold=thresold,
+            threshold=threshold,
         )
         await interaction.response.send_message("Bạn đã thêm cảnh báo thành công")
         # await interaction.response.send_modal(addWarningModal())
@@ -147,7 +222,7 @@ class Warning(commands.Cog):
     > Mã cổ phiếu: {warning["ticker"]}
     > Loại thời gian :{"15 phút" if warning["is_15_minute"] else "1 ngày"}
     {"" if (warning["field"] is None) else f'> Trường: {warning["field"]}'+nl}{"" if (warning["indicator"] is None) else f'> Chỉ báo: {warning["indicator"]}'+nl}{"" if (warning["period"] is None) else f'> Chu kì: {warning["period"]}'+nl}> So sánh:{"Lớn hơn" if warning["is_greater"] else "Bé hơn"}
-    > Ngưỡng:{warning["thresold"]}
+    > Ngưỡng:{warning["threshold"]}
     """,
                 inline=False,
             )
@@ -172,7 +247,7 @@ class Warning(commands.Cog):
     > Mã cổ phiếu: {warning["ticker"]}
     > Loại thời gian :{"15 phút" if warning["is_15_minute"] else "1 ngày"}
     {"" if (warning["field"] is None) else f'> Trường: {warning["field"]}'+nl}{"" if (warning["indicator"] is None) else f'> Chỉ báo: {warning["indicator"]}'+nl}{"" if (warning["period"] is None) else f'> Chu kì: {warning["period"]}'+nl}> So sánh:{"Lớn hơn" if warning["is_greater"] else "Bé hơn"}
-    > Ngưỡng:{warning["thresold"]}
+    > Ngưỡng:{warning["threshold"]}
     """,
                 inline=False,
             )
@@ -192,7 +267,7 @@ class Warning(commands.Cog):
         time_type="1D 15m",
         period="integer",
         compare="GREATER LESS",
-        thresold="float",
+        threshold="float",
     )
     @app_commands.rename(
         id="mã_cảnh_báo",
@@ -202,7 +277,7 @@ class Warning(commands.Cog):
         time_type="loại_thời_gian",
         period="chu_kì",
         compare="so_sánh",
-        thresold="ngưỡng",
+        threshold="ngưỡng",
     )
     async def edit_warning(
         self,
@@ -211,7 +286,7 @@ class Warning(commands.Cog):
         ticker: str = None,
         time_type: Choice[int] = None,
         compare: Choice[int] = None,
-        thresold: str = None,
+        threshold: str = None,
         period: int = None,
         field: str = None,
         indicator: str = None,
@@ -224,8 +299,8 @@ class Warning(commands.Cog):
         else:
             await interaction.response.defer()
 
-            if thresold is not None:
-                thresold = float(thresold.replace(",", "."))
+            if threshold is not None:
+                threshold = float(threshold.replace(",", "."))
             if time_type is not None:
                 time_type = bool(time_type.value)
             if compare is not None:
@@ -236,7 +311,7 @@ class Warning(commands.Cog):
                 "field": field,
                 "indicator": indicator,
                 "period": period,
-                "thresold": thresold,
+                "threshold": threshold,
                 "is_greater": compare,
                 "is_15_minute": time_type,
                 "trigger": True,
@@ -257,7 +332,7 @@ class Warning(commands.Cog):
     > Mã cổ phiếu: {new_warning["ticker"]}
     > Loại thời gian :{"15 phút" if new_warning["is_15_minute"] else"1 ngày" }
     {"" if (new_warning["field"] is None) else f'> Trường: {new_warning["field"]}'+nl}{"" if (new_warning["indicator"] is None) else f'> Chỉ báo: {new_warning["indicator"]}'+nl}{"" if (new_warning["period"] is None) else f'> Chu kì: {new_warning["period"]}'+nl}> So sánh:{"Lớn hơn" if new_warning["is_greater"] else "Bé hơn"}
-    > Ngưỡng:{new_warning["thresold"]}
+    > Ngưỡng:{new_warning["threshold"]}
     """,
                 inline=False,
             )

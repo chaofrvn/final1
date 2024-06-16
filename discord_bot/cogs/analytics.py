@@ -1,8 +1,16 @@
 import os
 import sys
 import inspect
-from pydantic import BaseModel, field_validator, ValidationError, Field
-from typing import List, ClassVar
+from pydantic import (
+    BaseModel,
+    field_validator,
+    ValidationError,
+    model_validator,
+    Field,
+    conint,
+    PositiveInt,
+)
+from typing import List, ClassVar, Optional
 import pandas as pd
 
 currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
@@ -55,36 +63,128 @@ class CommandInput(BaseModel):
         return value
 
 
-class CommandInput1(BaseModel):
+class DataModel1(BaseModel):
     ticker: str
-    type: str
+    field: Optional[str]
+    indicator: Optional[str]
+    period: Optional[PositiveInt]  # period phải là số nguyên dương
 
-    _allowed_tickers: ClassVar[List[str]] = tickers_list  # List of valid tickers
-    _allowed_types: ClassVar[List[str]] = [
+    _allowed_tickers: ClassVar[List[str]] = tickers_list
+    _allowed_fields: ClassVar[List[str]] = [
         "close",
         "volume",
         "high",
         "low",
         "open",
-    ]  # List of valid types
-    _allowed_indicator: ClassVar[List[str]] = ["ma", "ema", ""]
+    ]
+    _allowed_indicators: ClassVar[List[str]] = ["ma", "ema", "stoch", "rsi"]
 
-    @field_validator("ticker")
-    def validate_ticker(cls, value):
+    @model_validator(mode="before")
+    def check_constraints(cls, values):
+        print(values)
+        ticker = values.get("ticker")
+        field = values.get("field")
+        indicator = values.get("indicator")
+        period = values.get("period")
+        print(ticker + "----------------------")
 
-        if value not in cls._allowed_tickers:
+        # ticker phải thuộc danh sách cho trước
+        if ticker not in cls._allowed_tickers:
+            raise ValueError(f"Ticker {ticker} is not allowed.")
 
-            raise ValueError(f"Ticker must be one of ")
+        # indicator phải thuộc danh sách cho trước
+        if indicator and indicator not in cls._allowed_indicators:
+            raise ValueError(f"Indicator {indicator} is not allowed.")
 
-        print(3)
-        return value
+        # field phải thuộc danh sách cho trước
+        if field and field not in cls._allowed_fields:
+            raise ValueError(f"Field {field} is not allowed.")
 
-    @field_validator("type")
-    def validate_type(cls, value):
-        if value not in cls._allowed_types:
-            raise ValueError(f"Type must be one of {cls._allowed_types}")
+        # Nếu indicator là stoch hoặc rsi thì không được nhập field
+        if indicator in {"stoch", "rsi"} and field:
+            raise ValueError(f"If indicator is {indicator}, field must be None.")
 
-        return value
+        # Nếu indicator là ma hoặc ema thì bắt buộc nhập field
+        if indicator in {"ma", "ema"} and not field:
+            raise ValueError(f"If indicator is {indicator}, field is required.")
+
+        # Nếu không có indicator thì không có period
+        if not indicator and period:
+            raise ValueError("Không cần nhập giá trị period")
+
+        # Có thể không nhập indicator, khi đó bắt buộc nhập field
+        if not indicator and not field:
+            raise ValueError("If indicator is None, field is required.")
+
+        return values
+
+
+class DataModel2(BaseModel):
+    ticker: str
+    field: Optional[str]
+    indicator: Optional[str]
+    period: Optional[PositiveInt]  # period phải là số nguyên dương
+    day: str
+
+    _allowed_tickers: ClassVar[List[str]] = tickers_list
+    _allowed_fields: ClassVar[List[str]] = [
+        "close",
+        "volume",
+        "high",
+        "low",
+        "open",
+    ]
+    _allowed_indicators: ClassVar[List[str]] = ["ma", "ema", "stoch", "rsi"]
+
+    @model_validator(mode="before")
+    def check_constraints(cls, values):
+        print(values)
+        ticker = values.get("ticker")
+        field = values.get("field")
+        indicator = values.get("indicator")
+        period = values.get("period")
+        day = values.get("day")
+        print(ticker + "----------------------")
+
+        # ticker phải thuộc danh sách cho trước
+        if ticker not in cls._allowed_tickers:
+            raise ValueError(f"Ticker {ticker} is not allowed.")
+
+        # indicator phải thuộc danh sách cho trước
+        if indicator and indicator not in cls._allowed_indicators:
+            raise ValueError(f"Indicator {indicator} is not allowed.")
+
+        # field phải thuộc danh sách cho trước
+        if field and field not in cls._allowed_fields:
+            raise ValueError(f"Field {field} is not allowed.")
+
+        # Nếu indicator là stoch hoặc rsi thì không được nhập field
+        if indicator in {"stoch", "rsi"} and field:
+            raise ValueError(f"If indicator is {indicator}, field must be None.")
+
+        # Nếu indicator là ma hoặc ema thì bắt buộc nhập field
+        if indicator in {"ma", "ema"} and not field:
+            raise ValueError(f"If indicator is {indicator}, field is required.")
+
+        # Nếu không có indicator thì không có period
+        if not indicator and period:
+            raise ValueError("Không cần nhập giá trị period")
+
+        # Có thể không nhập indicator, khi đó bắt buộc nhập field
+        if not indicator and not field:
+            raise ValueError("If indicator is None, field is required.")
+
+        try:
+            day_date = datetime.strptime(day, "%d-%m-%Y")
+        except Exception as e:
+            print(e)
+            raise ValueError("day must be in the format 'dd-mm-yyyy'")
+
+        # Kiểm tra ngày phải là ngày hôm nay hoặc trước đó
+        if day_date > datetime.now():
+            raise ValueError("day must be today or in the past")
+
+        return values
 
 
 class Analaytics(commands.Cog):
@@ -152,6 +252,7 @@ class Analaytics(commands.Cog):
         ticker="the ticker to show chart",
         field="the value to query(close, volume,...)",
         indicator="the indicator ",
+        period="độ dài khoảng thời gian để vẽ biểu đồ",
     )
     async def daily_chart(
         self,
@@ -161,6 +262,15 @@ class Analaytics(commands.Cog):
         indicator: str = None,
         period: int = None,
     ):
+        try:
+            validated_data = DataModel1(
+                ticker=ticker, field=field, indicator=indicator, period=period
+            )
+        except ValidationError as e:
+            await interaction.response.send_message(
+                f"Error: {e.errors()[0]['msg']}", ephemeral=True
+            )
+            return
         data = await get_all_time_data(
             ticker=ticker, field=field, indicator=indicator, period=period
         )
@@ -197,6 +307,15 @@ class Analaytics(commands.Cog):
         period: int = None,
         day: str = datetime.now().date().strftime("%d-%m-%Y"),
     ):
+        try:
+            validated_data = DataModel2(
+                ticker=ticker, field=field, indicator=indicator, period=period, day=day
+            )
+        except ValidationError as e:
+            await interaction.response.send_message(
+                f"Error: {e.errors()[0]['msg']}", ephemeral=True
+            )
+            return
         data = await get_single_day_data(
             ticker=ticker, indicator=indicator, field=field, day=day, period=period
         )
