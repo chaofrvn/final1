@@ -2,9 +2,9 @@ import pandas as pd
 import pandas_ta as ta
 
 
-def get_value(
+def get_latest_data_point(
     df: pd.DataFrame, field: str | None, indicator: str | None, period: int | None
-) -> float:
+):
 
     match indicator:
         case None:
@@ -37,3 +37,31 @@ def get_value(
         return df
     return None
     # need to make these so that it all return a slide with value is a value also with time
+
+
+def get_all_data_point(
+    df: pd.DataFrame, field: str | None, indicator: str | None, period: int | None
+):
+    match indicator:
+        case None:
+            df = df[field].dropna().to_frame()
+        case "ma":
+            df["MA"] = ta.sma(df[field], length=period)
+            # Create a new DataFrame with only the time and the indicator
+            df = df[["MA"]].dropna()
+
+        case "ema":
+            df["EMA"] = ta.ema(df[field], length=period)
+            # Create a new DataFrame with only the time and the indicator
+            df = df[["EMA"]].dropna()
+            # Rename columns if necessary
+            # df.rename(columns={'index': '_time', 'EMA': 'Indicator'}, inplace=True)
+        case "stoch":
+            df[["STOCH_k", "STOCH_d"]] = ta.stoch(df["high"], df["low"], df["close"])
+            # Create a new DataFrame with only the time and the indicator
+            df = df[["STOCH_k", "STOCH_d"]].dropna()
+
+        case "rsi":
+            df["RSI"] = ta.rsi(df["close"], length=period)
+            df = df[["RSI"]].dropna()
+    return df

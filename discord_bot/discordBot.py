@@ -1,3 +1,4 @@
+import json
 import discord
 from discord.ext import commands
 from discord import app_commands
@@ -60,7 +61,7 @@ async def on_ready():
 @bot.command()
 async def reload(ctx):
     # Reloads the file, thus updating the Cog class.
-    print("hello")
+
     await reload_ext()
     synced = await bot.tree.sync()
     print(synced)
@@ -86,22 +87,24 @@ def receive_message(loop):
     try:
         while True:
             # print("my_task2")
-            msg = consumer.poll(1)
-            if msg is None:
-                continue
-            if msg.error():
-                if msg.error().code() == KafkaError._PARTITION_EOF:
+            try:
+                msg = consumer.poll(1)
+                if msg is None:
                     continue
+                if msg.error():
+                    if msg.error().code() == KafkaError._PARTITION_EOF:
+                        continue
+                    else:
+                        print(f"Error while consuming: {msg.error()}")
                 else:
-                    print(f"Error while consuming: {msg.error()}")
-            else:
-                user = asyncio.run_coroutine_threadsafe(
-                    bot.fetch_user(int(msg.key())), loop
-                ).result()
-                asyncio.run_coroutine_threadsafe(
-                    user.send(msg.value().decode("utf-8")), loop
-                ).result()
-
+                    user = asyncio.run_coroutine_threadsafe(
+                        bot.fetch_user(int(msg.key())), loop
+                    ).result()
+                    asyncio.run_coroutine_threadsafe(
+                        user.send(json.loads(msg.value().decode("utf-8"))["msg"]), loop
+                    ).result()
+            except Exception as e:
+                print(e)
     except KeyboardInterrupt:
         pass
     finally:

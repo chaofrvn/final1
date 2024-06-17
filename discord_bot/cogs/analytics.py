@@ -48,23 +48,6 @@ class CommandInput(BaseModel):
     ]  # List of valid fields
     _allowed_indicators: ClassVar[List[str]] = ["ma", "ema", "stoch", "rsi"]
 
-    # @field_validator("ticker")
-    # def validate_ticker(cls, value):
-
-    #     if value not in cls._allowed_tickers:
-
-    #         raise ValueError(f"Ticker must be one of ")
-
-    #     print(3)
-    #     return value
-
-    # @field_validator("field")
-    # def validate_field(cls, value):
-    #     if value not in cls._allowed_fields:
-    #         raise ValueError(f"field must be one of {cls._allowed_fields}")
-
-    #     return value
-
     @model_validator(mode="before")
     def check(cls, values):
         ticker = values.get("ticker")
@@ -265,11 +248,15 @@ class Analaytics(commands.Cog):
             )
             return
 
-        return await interaction.response.send_message("success")
-        # obj = await get_latest_data(ticker)
-        # await interaction.response.send_message(
-        #     f'latest {field} value of {ticker} is {obj[field]} at {obj["_time"]}'
-        # )
+        obj = await get_latest_data(
+            ticker, field=field, indicator=indicator, period=period
+        )
+        if len(obj) > 0:
+            await interaction.response.send_message(
+                f'latest {field} value of {ticker} is {obj["value"]} at {obj["_time"]}'
+            )
+        else:
+            return await interaction.response.send_message("...")
 
     # Get the latest daily price of 1 ticker (1D)
     @app_commands.command(
@@ -296,10 +283,15 @@ class Analaytics(commands.Cog):
                 f"Error: {e.errors()[0]['msg']}", ephemeral=True
             )
             return
-        # obj = await get_latest_daily_data(ticker)
-        # await interaction.response.send_message(
-        #     f'latest daily {field} value of {ticker} is {obj[field]} at {obj["_time"]}'
-        # )
+        print("1")
+        obj: pd.Series = await get_latest_daily_data(
+            ticker=ticker, field=field, indicator=indicator, period=period
+        )
+        print(type(obj))
+
+        await interaction.response.send_message(
+            f'latest {field} value of  {ticker} is {obj["value"]} at {obj.name}'
+        )
 
     # Chart of daily_stock
     @app_commands.command(

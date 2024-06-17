@@ -7,7 +7,8 @@ parentdir = os.path.dirname(currentdir)
 sys.path.insert(0, parentdir)
 import discord
 from discord.ext import commands, tasks
-from discord import app_commands, File, Attachment
+from discord.utils import get
+from discord import app_commands, File, Attachment, errors
 from discord.app_commands import Choice
 from dotenv import load_dotenv, dotenv_values
 from typing import Literal, ClassVar, Optional, List
@@ -129,6 +130,35 @@ class Warning(commands.Cog):
         self.tree = bot.tree
 
     @commands.Cog.listener()
+    async def on_command_error(self, ctx, err):
+        "Command on Cooldown"
+        if isinstance(err, errors.CommandOnCooldown):
+            await ctx.send(
+                f":stopwatch: Command is on Cooldown for **{err.retry_after:.2f}** seconds."
+            )
+            " Missing Permissions "
+        elif isinstance(err, errors.MissingPermissions):
+            await ctx.send(f":x: You can't use that command.")
+            " Missing Arguments "
+        elif isinstance(err, commands.MissingRequiredArgument):
+            await ctx.send(f":x: Required arguments aren't passed.")
+            " Command not found "
+        elif isinstance(err, errors.CommandNotFound):
+            pass
+            " Any Other Error "
+        else:
+            ss = get(self.bot.guilds, id=791553406266245121)
+            report = get(ss.text_channels, id=791556612715708448)
+            embed = discord.Embed(
+                title="An Error has occurred",
+                description=f"Error: \n `{err}`",
+                timestamp=ctx.message.created_at,
+                color=242424,
+            )
+            await report.send(embed=embed)
+            print(err)
+
+    @commands.Cog.listener()
     async def on_ready(self):
         print("Warning cog loaded")
 
@@ -183,20 +213,27 @@ class Warning(commands.Cog):
                 f"Error: {e.errors()[0]['msg']}", ephemeral=True
             )
             return
+
         threshold = float(threshold.replace(",", "."))
         user_id = interaction.user.id
         time_type = bool(time_type.value)
         compare = bool(compare.value)
-        await addWarning(
-            user_id=user_id,
-            ticker=ticker,
-            field=field,
-            indicator=indicator,
-            time_type=time_type,
-            period=period,
-            compare=compare,
-            threshold=threshold,
-        )
+        print("hello2")
+        try:
+            print(1)
+            await addWarning(
+                user_id=user_id,
+                ticker=ticker,
+                field=field,
+                indicator=indicator,
+                time_type=time_type,
+                period=period,
+                compare=compare,
+                thresold=threshold,
+            )
+            print(2)
+        except Exception as e:
+            print(e)
         await interaction.response.send_message("Bạn đã thêm cảnh báo thành công")
         # await interaction.response.send_modal(addWarningModal())
 
@@ -222,7 +259,7 @@ class Warning(commands.Cog):
     > Mã cổ phiếu: {warning["ticker"]}
     > Loại thời gian :{"15 phút" if warning["is_15_minute"] else "1 ngày"}
     {"" if (warning["field"] is None) else f'> Trường: {warning["field"]}'+nl}{"" if (warning["indicator"] is None) else f'> Chỉ báo: {warning["indicator"]}'+nl}{"" if (warning["period"] is None) else f'> Chu kì: {warning["period"]}'+nl}> So sánh:{"Lớn hơn" if warning["is_greater"] else "Bé hơn"}
-    > Ngưỡng:{warning["threshold"]}
+    > Ngưỡng:{warning["thresold"]}
     """,
                 inline=False,
             )
@@ -247,7 +284,7 @@ class Warning(commands.Cog):
     > Mã cổ phiếu: {warning["ticker"]}
     > Loại thời gian :{"15 phút" if warning["is_15_minute"] else "1 ngày"}
     {"" if (warning["field"] is None) else f'> Trường: {warning["field"]}'+nl}{"" if (warning["indicator"] is None) else f'> Chỉ báo: {warning["indicator"]}'+nl}{"" if (warning["period"] is None) else f'> Chu kì: {warning["period"]}'+nl}> So sánh:{"Lớn hơn" if warning["is_greater"] else "Bé hơn"}
-    > Ngưỡng:{warning["threshold"]}
+    > Ngưỡng:{warning["thresold"]}
     """,
                 inline=False,
             )
@@ -311,7 +348,7 @@ class Warning(commands.Cog):
                 "field": field,
                 "indicator": indicator,
                 "period": period,
-                "threshold": threshold,
+                "thresold": threshold,
                 "is_greater": compare,
                 "is_15_minute": time_type,
                 "trigger": True,
@@ -332,7 +369,7 @@ class Warning(commands.Cog):
     > Mã cổ phiếu: {new_warning["ticker"]}
     > Loại thời gian :{"15 phút" if new_warning["is_15_minute"] else"1 ngày" }
     {"" if (new_warning["field"] is None) else f'> Trường: {new_warning["field"]}'+nl}{"" if (new_warning["indicator"] is None) else f'> Chỉ báo: {new_warning["indicator"]}'+nl}{"" if (new_warning["period"] is None) else f'> Chu kì: {new_warning["period"]}'+nl}> So sánh:{"Lớn hơn" if new_warning["is_greater"] else "Bé hơn"}
-    > Ngưỡng:{new_warning["threshold"]}
+    > Ngưỡng:{new_warning["threhold"]}
     """,
                 inline=False,
             )

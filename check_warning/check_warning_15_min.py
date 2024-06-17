@@ -1,7 +1,5 @@
 import socket
-from get_value import get_value
 import operator
-from bson import ObjectId
 from confluent_kafka import Producer
 import pandas as pd
 from prefect import flow, task, get_run_logger
@@ -9,10 +7,11 @@ from dotenv import load_dotenv
 import os
 from pymongo import MongoClient
 from pymongo import UpdateOne
-import asyncio
 from mailjet_rest import Client
 from influxdb_client import InfluxDBClient
-
+import sys
+import os
+import inspect
 import json
 
 # logging.basicConfig(filename="logging.log",
@@ -23,6 +22,11 @@ import json
 # logger = logging.getLogger()
 
 load_dotenv("../.env")
+currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+parentdir = os.path.dirname(currentdir)
+sys.path.insert(0, parentdir)
+from util.caculate_indicator import get_latest_data_point
+
 conf = {
     "bootstrap.servers": "pkc-ldvr1.asia-southeast1.gcp.confluent.cloud:9092",
     "security.protocol": "SASL_SSL",
@@ -58,7 +62,7 @@ def send_to_kafka(producer: Producer, topic, key, message, logger):
     producer.produce(
         topic,
         key=key,
-        value=message,
+        value=json.dumps(message).encode("utf-8"),
         callback=lambda err, msg: delivery_report(err=err, msg=msg, logger=logger),
     )
     producer.flush()
@@ -128,7 +132,7 @@ def checkWarning(warnings):
             datas[warning["ticker"]] = data
             # print(data.index)
 
-        value: pd.DataFrame = get_value(
+        value: pd.DataFrame = get_latest_data_point(
             df=data,
             indicator=warning["indicator"],
             field=warning["field"],
@@ -239,22 +243,22 @@ def send_message(msg: pd.DataFrame):
             producer=producer,
             topic=KAFKA_TOPIC,
             key=str(user_id),
-            message=row["msg"],
+            message=row.to_dict(),
             logger=logger,
         )
 
 
-@task
-def send_emails(msg: pd.DataFrame):
-    API_KEY = os.environ["MJ_APIKEY_PUBLIC"]
-    API_SECRET = os.environ["MJ_APIKEY_PRIVATE"]
+# @task
+# def send_emails(msg: pd.DataFrame):
+#     API_KEY = os.environ["MJ_APIKEY_PUBLIC"]
+#     API_SECRET = os.environ["MJ_APIKEY_PRIVATE"]
 
-    mailjet = Client(auth=(API_KEY, API_SECRET), version="v3.1")
-    for user_id, row in msg.iterrows():
-        # thêm email
-        send_email(mailjet, row["msg"], row["email"], str(user_id))
+#     mailjet = Client(auth=(API_KEY, API_SECRET), version="v3.1")
+#     for user_id, row in msg.iterrows():
+#         # thêm email
+#         send_email(mailjet, row["msg"], row["email"], str(user_id))
 
-    return
+#     return
 
 
 @flow(name="Check_warning_15_minute")
@@ -265,7 +269,7 @@ def main():
     msg = generate_message(warnings)
     send_message(msg)
     trigger_trigger(warnings)
-    send_emails(msg)
+    # send_emails(msg)
 
 
 if __name__ == "__main__":
