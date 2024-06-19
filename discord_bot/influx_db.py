@@ -78,12 +78,9 @@ def get_latest_daily_data(
     """
     df = query_api.query_data_frame(query=query)
     df.set_index("_time", inplace=True)
-    print(df)
     df = get_latest_data_point(df, field=field, indicator=indicator, period=period)
-    print(df)
 
     df.index = df.index.tz_convert("Asia/Ho_Chi_minh").strftime("%Y-%m-%d")
-    print(3)
     return df.iloc[0]
 
 
@@ -98,28 +95,6 @@ def get_all_time_data(ticker: str, field=None, indicator=None, period=12):
     df: pd.DataFrame = query_api.query_data_frame(query=query)
     df.set_index("_time", inplace=True)
     df = get_all_data_point(df, field=field, indicator=indicator, period=period)
-    # match indicator:
-    #     case None:
-    #         df = df[field].dropna().to_frame()
-    #     case "ma":
-    #         df["MA"] = ta.sma(df[field], length=period)
-    #         # Create a new DataFrame with only the time and the indicator
-    #         df = df[["MA"]].dropna()
-
-    #     case "ema":
-    #         df["EMA"] = ta.ema(df[field], length=period)
-    #         # Create a new DataFrame with only the time and the indicator
-    #         df = df[["EMA"]].dropna()
-    #         # Rename columns if necessary
-    #         # df.rename(columns={'index': '_time', 'EMA': 'Indicator'}, inplace=True)
-    #     case "stoch":
-    #         df[["STOCH_k", "STOCH_d"]] = ta.stoch(df["high"], df["low"], df["close"])
-    #         # Create a new DataFrame with only the time and the indicator
-    #         df = df[["STOCH_k", "STOCH_d"]].dropna()
-
-    #     case "rsi":
-    #         df["RSI"] = ta.rsi(df["close"], length=period)
-    #         df = df[["RSI"]].dropna()
     return df
 
 

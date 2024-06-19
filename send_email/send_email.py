@@ -31,7 +31,7 @@ def send_email(mailjet: Client, msg: str, email: str, user_id: str):
     data = {
         "Messages": [
             {
-                "From": {"Email": "huyhoang123abcdef@gmail.com", "Name": "Stock"},
+                "From": {"Email": "Thai.BH204688@sis.hust.edu.vn", "Name": "Stock"},
                 "To": [{"Email": email, "Name": "Người dùng Discord " + user_id}],
                 "Subject": "Cảnh báo chứng khoán",
                 "TextPart": msg,

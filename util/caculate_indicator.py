@@ -30,7 +30,27 @@ def get_latest_data_point(
         case "rsi":
             df["value"] = ta.rsi(df["close"], length=period)
             df = df[["value"]]
-            # print(type(df))
+
+        case "macd":
+            df["value"] = ta.macd(df["close"])["MACD_12_26_9"]
+            df = df[["value"]]
+
+        case "vwap":
+            df["value"] = ta.vwap(df["high"], df["low"], df["close"], df["volume"])
+            df = df[["value"]]
+
+        case "atr":
+            df["value"] = ta.atr(df["high"], df["low"], df["close"], length=period)
+            df = df[["value"]]
+
+        case "obv":
+            df["value"] = ta.obv(df["close"], df["volume"])
+            df = df[["value"]]
+
+        case "roc":
+            df["value"] = ta.roc(df["close"], length=period)
+            df = df[["value"]]
+
     df = df.dropna().tail(1)
     if len(df) > 0:
         df = df.dropna().tail(1)
@@ -64,4 +84,24 @@ def get_all_data_point(
         case "rsi":
             df["RSI"] = ta.rsi(df["close"], length=period)
             df = df[["RSI"]].dropna()
+
+        case "macd":
+            df[["MACD", "MACD_h", "MACD_s"]] = ta.macd(df["close"])
+            df = df[["MACD", "MACD_h", "MACD_s"]].dropna()
+
+        case "vwap":
+            df["VWAP"] = ta.vwap(df["high"], df["low"], df["close"], df["volume"])
+            df = df[["VWAP"]]
+
+        case "atr":
+            df["ATR"] = ta.atr(df["high"], df["low"], df["close"], length=period)
+            df = df[["ATR"]]
+
+        case "obv":
+            df["OBV"] = ta.obv(df["close"], df["volume"])
+            df = df[["OBV"]]
+
+        case "roc":
+            df["ROC"] = ta.roc(df["close"], length=period)
+            df = df[["ROC"]]
     return df

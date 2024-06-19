@@ -46,7 +46,18 @@ class CommandInput(BaseModel):
         "low",
         "open",
     ]  # List of valid fields
-    _allowed_indicators: ClassVar[List[str]] = ["ma", "ema", "stoch", "rsi"]
+    _allowed_indicators: ClassVar[List[str]] = [
+        "ma",
+        "ema",
+        "stoch_k",
+        "stoch_d",
+        "rsi",
+        "macd",
+        "vwap",
+        "roc",
+        "atr",
+        "obv",
+    ]
 
     @model_validator(mode="before")
     def check(cls, values):
@@ -79,6 +90,9 @@ class CommandInput(BaseModel):
         if not indicator and period:
             raise ValueError("Không cần nhập giá trị period")
 
+        if not period and indicator in {"ma", "ema", "atr", "roc", "rsi"}:
+            raise ValueError("Bắt buộc nhập chu kỳ")
+
         # Có thể không nhập indicator, khi đó bắt buộc nhập field
         if not indicator and not field:
             raise ValueError("If indicator is None, field is required.")
@@ -104,12 +118,11 @@ class DataModel1(BaseModel):
 
     @model_validator(mode="before")
     def check_constraints(cls, values):
-        print(values)
+
         ticker = values.get("ticker")
         field = values.get("field")
         indicator = values.get("indicator")
         period = values.get("period")
-        print(ticker + "----------------------")
 
         # ticker phải thuộc danh sách cho trước
         if ticker not in cls._allowed_tickers:
@@ -161,13 +174,12 @@ class DataModel2(BaseModel):
 
     @model_validator(mode="before")
     def check_constraints(cls, values):
-        print(values)
+
         ticker = values.get("ticker")
         field = values.get("field")
         indicator = values.get("indicator")
         period = values.get("period")
         day = values.get("day")
-        print(ticker + "----------------------")
 
         # ticker phải thuộc danh sách cho trước
         if ticker not in cls._allowed_tickers:
@@ -247,13 +259,12 @@ class Analaytics(commands.Cog):
                 f"Error: {e.errors()[0]['msg']}", ephemeral=True
             )
             return
-
-        obj = await get_latest_data(
-            ticker, field=field, indicator=indicator, period=period
+        obj: pd.Series = await get_latest_data(
+            ticker=ticker, field=field, indicator=indicator, period=period
         )
         if len(obj) > 0:
             await interaction.response.send_message(
-                f'latest {field} value of {ticker} is {obj["value"]} at {obj["_time"]}'
+                f'latest {field} value of {ticker} is {obj["value"]} at {obj.name}'
             )
         else:
             return await interaction.response.send_message("...")
@@ -283,11 +294,10 @@ class Analaytics(commands.Cog):
                 f"Error: {e.errors()[0]['msg']}", ephemeral=True
             )
             return
-        print("1")
+
         obj: pd.Series = await get_latest_daily_data(
             ticker=ticker, field=field, indicator=indicator, period=period
         )
-        print(type(obj))
 
         await interaction.response.send_message(
             f'latest {field} value of  {ticker} is {obj["value"]} at {obj.name}'

@@ -32,12 +32,7 @@ try:
             else:
                 print(f"Error while consuming: {msg.error()}")
         else:
-            # Parse the received message
-            # value = msg.value().decode('utf-8')
-            # symbol, price = value.split(':')
-            # push_data(json.load(msg.value()))\
-            # print(type(msg.value()]))
-            # push_data(type(msg.value().decode('utf-8')))
+
             push_data(json.loads(msg.value().decode("utf-8")))
 
 
