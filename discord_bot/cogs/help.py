@@ -19,14 +19,6 @@ class Help(commands.Cog):
     )
     @app_commands.describe()
     async def getAllCommands(self, interaction: discord.Interaction):
-        # for cmd in self.bot.commands:
-        #     print(cmd)
-        #     command_list = "\n".join([f"!{cmd.name} - {cmd.help}" for cmd in commands])
-        # embed = discord.Embed(
-        #     title="Danh sách các lệnh",
-        #     description="\n".join(command_list),
-        #     color=discord.Color.blue(),
-        # )
         message = (
             "/daily: xem thông tin mới nhất (theo ngày) \n"
             "/latest: xem thông tin mới nhất (theo 15 phút) \n"

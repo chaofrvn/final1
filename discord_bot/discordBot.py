@@ -49,15 +49,6 @@ async def on_ready():
         await loop.run_in_executor(executor, receive_message, loop)
 
 
-# @bot.event
-# async def on_message(message):
-#     # if message.author == client.user:
-#     #     return
-
-#     if message.content.startswith("a"):
-#         await message.channel.send("Hello!")
-
-
 @bot.command()
 async def reload(ctx):
     # Reloads the file, thus updating the Cog class.

@@ -49,8 +49,8 @@ class CommandInput(BaseModel):
     _allowed_indicators: ClassVar[List[str]] = [
         "ma",
         "ema",
-        "stoch_k",
-        "stoch_d",
+        "stoch",
+        "stoch",
         "rsi",
         "macd",
         "vwap",
@@ -68,18 +68,22 @@ class CommandInput(BaseModel):
 
         # ticker phải thuộc danh sách cho trước
         if ticker not in cls._allowed_tickers:
-            raise ValueError(f"Ticker {ticker} is not allowed.")
+            raise ValueError(
+                f"Ticker {ticker} không nằm trong danh sách được hỗ trợ, kiểm tra danh sách các mã cổ phiếu phù hợp trong link sau: https://finance.vietstock.vn/trang-thai-co-phieu/danh-sach-niem-yet"
+            )
 
         # indicator phải thuộc danh sách cho trước
         if indicator and indicator not in cls._allowed_indicators:
-            raise ValueError(f"Indicator {indicator} is not allowed.")
+            raise ValueError(
+                f"Chỉ báo {indicator} is chưa được hỗ trợ, để xem danh sách các chỉ báo được hỗ trợ /danh_sách_chỉ_báo"
+            )
 
         # field phải thuộc danh sách cho trước
         if field and field not in cls._allowed_fields:
-            raise ValueError(f"Field {field} is not allowed.")
+            raise ValueError(f"Trường {field} không được hỗ trợ")
 
         # Nếu indicator là stoch hoặc rsi thì không được nhập field
-        if indicator in {"stoch", "rsi"} and field:
+        if indicator in {"stoch", "rsi", "macd", "vwap", "atr", "obv", "roc"} and field:
             raise ValueError(f"If indicator is {indicator}, field must be None.")
 
         # Nếu indicator là ma hoặc ema thì bắt buộc nhập field
@@ -92,6 +96,9 @@ class CommandInput(BaseModel):
 
         if not period and indicator in {"ma", "ema", "atr", "roc", "rsi"}:
             raise ValueError("Bắt buộc nhập chu kỳ")
+
+        if period and indicator in {"stoch", "macd", "vwap", "obv"}:
+            raise ValueError("Không cần nhập chu kỳ")
 
         # Có thể không nhập indicator, khi đó bắt buộc nhập field
         if not indicator and not field:
@@ -114,7 +121,18 @@ class DataModel1(BaseModel):
         "low",
         "open",
     ]
-    _allowed_indicators: ClassVar[List[str]] = ["ma", "ema", "stoch", "rsi"]
+    _allowed_indicators: ClassVar[List[str]] = [
+        "ma",
+        "ema",
+        "stoch",
+        "stoch",
+        "rsi",
+        "macd",
+        "vwap",
+        "roc",
+        "atr",
+        "obv",
+    ]
 
     @model_validator(mode="before")
     def check_constraints(cls, values):
@@ -126,18 +144,22 @@ class DataModel1(BaseModel):
 
         # ticker phải thuộc danh sách cho trước
         if ticker not in cls._allowed_tickers:
-            raise ValueError(f"Ticker {ticker} is not allowed.")
+            raise ValueError(
+                f"Ticker {ticker} không nằm trong danh sách được hỗ trợ, kiểm tra danh sách các mã cổ phiếu phù hợp trong link sau: https://finance.vietstock.vn/trang-thai-co-phieu/danh-sach-niem-yet"
+            )
 
         # indicator phải thuộc danh sách cho trước
         if indicator and indicator not in cls._allowed_indicators:
-            raise ValueError(f"Indicator {indicator} is not allowed.")
+            raise ValueError(
+                f"Chỉ báo {indicator} is chưa được hỗ trợ, để xem danh sách các chỉ báo được hỗ trợ /danh_sách_chỉ_báo"
+            )
 
         # field phải thuộc danh sách cho trước
         if field and field not in cls._allowed_fields:
-            raise ValueError(f"Field {field} is not allowed.")
+            raise ValueError(f"Trường {field} không được hỗ trợ")
 
         # Nếu indicator là stoch hoặc rsi thì không được nhập field
-        if indicator in {"stoch", "rsi"} and field:
+        if indicator in {"stoch", "rsi", "macd", "vwap", "atr", "obv", "roc"} and field:
             raise ValueError(f"If indicator is {indicator}, field must be None.")
 
         # Nếu indicator là ma hoặc ema thì bắt buộc nhập field
@@ -147,6 +169,12 @@ class DataModel1(BaseModel):
         # Nếu không có indicator thì không có period
         if not indicator and period:
             raise ValueError("Không cần nhập giá trị period")
+
+        if not period and indicator in {"ma", "ema", "atr", "roc", "rsi"}:
+            raise ValueError("Bắt buộc nhập chu kỳ")
+
+        if period and indicator in {"stoch", "macd", "vwap", "obv"}:
+            raise ValueError("Không cần nhập chu kỳ")
 
         # Có thể không nhập indicator, khi đó bắt buộc nhập field
         if not indicator and not field:
@@ -170,7 +198,18 @@ class DataModel2(BaseModel):
         "low",
         "open",
     ]
-    _allowed_indicators: ClassVar[List[str]] = ["ma", "ema", "stoch", "rsi"]
+    _allowed_indicators: ClassVar[List[str]] = [
+        "ma",
+        "ema",
+        "stoch",
+        "stoch",
+        "rsi",
+        "macd",
+        "vwap",
+        "roc",
+        "atr",
+        "obv",
+    ]
 
     @model_validator(mode="before")
     def check_constraints(cls, values):
@@ -183,18 +222,22 @@ class DataModel2(BaseModel):
 
         # ticker phải thuộc danh sách cho trước
         if ticker not in cls._allowed_tickers:
-            raise ValueError(f"Ticker {ticker} is not allowed.")
+            raise ValueError(
+                f"Ticker {ticker} không nằm trong danh sách được hỗ trợ, kiểm tra danh sách các mã cổ phiếu phù hợp trong link sau: https://finance.vietstock.vn/trang-thai-co-phieu/danh-sach-niem-yet"
+            )
 
         # indicator phải thuộc danh sách cho trước
         if indicator and indicator not in cls._allowed_indicators:
-            raise ValueError(f"Indicator {indicator} is not allowed.")
+            raise ValueError(
+                f"Chỉ báo {indicator} is chưa được hỗ trợ, để xem danh sách các chỉ báo được hỗ trợ /danh_sách_chỉ_báo"
+            )
 
         # field phải thuộc danh sách cho trước
         if field and field not in cls._allowed_fields:
-            raise ValueError(f"Field {field} is not allowed.")
+            raise ValueError(f"Trường {field} không được hỗ trợ")
 
         # Nếu indicator là stoch hoặc rsi thì không được nhập field
-        if indicator in {"stoch", "rsi"} and field:
+        if indicator in {"stoch", "rsi", "macd", "vwap", "atr", "obv", "roc"} and field:
             raise ValueError(f"If indicator is {indicator}, field must be None.")
 
         # Nếu indicator là ma hoặc ema thì bắt buộc nhập field
@@ -205,6 +248,12 @@ class DataModel2(BaseModel):
         if not indicator and period:
             raise ValueError("Không cần nhập giá trị period")
 
+        if not period and indicator in {"ma", "ema", "atr", "roc", "rsi"}:
+            raise ValueError("Bắt buộc nhập chu kỳ")
+
+        if period and indicator in {"stoch", "macd", "vwap", "obv"}:
+            raise ValueError("Không cần nhập chu kỳ")
+
         # Có thể không nhập indicator, khi đó bắt buộc nhập field
         if not indicator and not field:
             raise ValueError("If indicator is None, field is required.")
@@ -213,11 +262,11 @@ class DataModel2(BaseModel):
             day_date = datetime.strptime(day, "%d-%m-%Y")
         except Exception as e:
             print(e)
-            raise ValueError("day must be in the format 'dd-mm-yyyy'")
+            raise ValueError("Cần nhập ngày theo format 'dd-mm-yyyy'")
 
         # Kiểm tra ngày phải là ngày hôm nay hoặc trước đó
         if day_date > datetime.now():
-            raise ValueError("day must be today or in the past")
+            raise ValueError("Không nhập ngày trong tương lai")
 
         return values
 
@@ -256,15 +305,16 @@ class Analaytics(commands.Cog):
             )
         except ValidationError as e:
             await interaction.response.send_message(
-                f"Error: {e.errors()[0]['msg']}", ephemeral=True
+                f"Lỗi: {e.errors()[0]['msg']}", ephemeral=True
             )
             return
         obj: pd.Series = await get_latest_data(
             ticker=ticker, field=field, indicator=indicator, period=period
         )
         if len(obj) > 0:
+            print("------------------------------")
             await interaction.response.send_message(
-                f'latest {field} value of {ticker} is {obj["value"]} at {obj.name}'
+                f'Giá trị gần nhất {indicator if indicator is not None else ""} {period if period is not None else ""} {field if field is not None else ""} của mã cổ phiếu {ticker} trong phiên 15 phút là {obj["value"]} tại thời điểm {obj.name}'
             )
         else:
             return await interaction.response.send_message("...")
@@ -300,7 +350,7 @@ class Analaytics(commands.Cog):
         )
 
         await interaction.response.send_message(
-            f'latest {field} value of  {ticker} is {obj["value"]} at {obj.name}'
+            f'Giá trị gần nhất {indicator if indicator is not None else ""} {period if period is not None else ""} {field if field is not None else ""} của mã cổ phiếu {ticker} với trong phiên 1 ngày là {obj["value"]} tại thời điểm {obj.name}'
         )
 
     # Chart of daily_stock
