@@ -69,7 +69,8 @@ def one_day_chart(ticker, field, indicator, data):
 
 
 async def main():
-    data = await get_all_time_data(ticker="BID", indicator="macd")
+    data = await get_all_time_data(ticker="BID", indicator="rsi")
+    print(data)
     data_stream = all_time_chart("BID", field=None, indicator="macd", data=data)
     with open("output_image.png", "wb") as output_file:
         output_file.write(data_stream.read())

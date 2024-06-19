@@ -344,14 +344,15 @@ class Analaytics(commands.Cog):
                 f"Error: {e.errors()[0]['msg']}", ephemeral=True
             )
             return
-
+        print("heloooooooooooooooooooooooooooooooooooooooooooooo")
         obj: pd.Series = await get_latest_daily_data(
             ticker=ticker, field=field, indicator=indicator, period=period
         )
-
+        print("alooooooooooooooooooooo")
         await interaction.response.send_message(
             f'Giá trị gần nhất {indicator if indicator is not None else ""} {period if period is not None else ""} {field if field is not None else ""} của mã cổ phiếu {ticker} với trong phiên 1 ngày là {obj["value"]} tại thời điểm {obj.name}'
         )
+        # await interaction.response.send_message("hello mai fen")
 
     # Chart of daily_stock
     @app_commands.command(

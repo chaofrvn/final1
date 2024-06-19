@@ -51,9 +51,9 @@ def get_latest_data_point(
             df["value"] = ta.roc(df["close"], length=period)
             df = df[["value"]]
 
-    df = df.dropna().tail(1)
+    df = df.dropna().head(1)
     if len(df) > 0:
-        df = df.dropna().tail(1)
+        df = df.dropna().head(1)
         return df
     return None
     # need to make these so that it all return a slide with value is a value also with time

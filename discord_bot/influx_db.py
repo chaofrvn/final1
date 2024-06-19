@@ -55,12 +55,15 @@ def get_latest_data(
 |> filter(fn:(r) => r._measurement == "stock_price")
 |> filter(fn:(r) => r.ticker == "{ticker}")
 |> pivot(rowKey:["_time"], columnKey: ["_field"], valueColumn: "_value")
+|> sort(columns:["_time"], desc: true)
+|> limit(n:100)
 """
 
     # df=write_api.write(query=query)
     # print(df)
     df = query_api.query_data_frame(query=query)
     df.set_index("_time", inplace=True)
+    print(df)
     df = get_latest_data_point(df, field=field, indicator=indicator, period=period)
     df.index = df.index.tz_convert("Asia/Ho_Chi_minh").strftime("%Y-%m-%d %H:%M:%S")
     return df.iloc[0]
@@ -75,6 +78,8 @@ def get_latest_daily_data(
     |> filter(fn: (r) => r._measurement == "stock_daily")
     |> filter(fn: (r) => r.ticker == "{ticker}")
     |> pivot(rowKey:["_time"], columnKey: ["_field"], valueColumn: "_value")
+    |> sort(columns:["_time"], desc: true)
+    |> limit(n:100)
     """
     df = query_api.query_data_frame(query=query)
     df.set_index("_time", inplace=True)
