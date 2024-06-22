@@ -1,3 +1,4 @@
+import re
 import discord
 from discord.ext import commands
 from discord import app_commands
@@ -7,6 +8,9 @@ from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_openai import ChatOpenAI, OpenAI
 import pandas as pd
 import pandas_ta as ta
+
+
+from influx_db import get_analaytic_data
 
 print(load_dotenv("../.env"))
 
@@ -73,8 +77,44 @@ class Explain(commands.Cog):
     @app_commands.describe(ticker="Mã cổ phiếu cần dự đoán")
     @app_commands.rename(ticker="mã_cổ_phiếu")
     async def predict(self, interaction: discord.Interaction, ticker: str):
-
-        await interaction.response.send_message("chua viet")
+        try:
+            await interaction.response.defer()
+            df = await get_analaytic_data(ticker=ticker)
+            df.columns = [re.sub(r"[_\d.]", "", name) for name in df.columns]
+            df.index = df.index.tz_convert("Asia/Ho_Chi_minh").strftime("%Y-%m-%d")
+            df.reset_index(inplace=True)
+            data = df.to_json(orient="records")
+            msg = await self.llm.ainvoke(
+                [
+                    SystemMessage(
+                        [
+                            {
+                                "type": "text",
+                                # "text": "Analyze the stock trend from the graph user given, then give response with your analyze and predict trend of the stock and give advice like whether or not to buy or sell the stock. Response with no spare information like how the indicator works,... and also response in Vietnamese and add some markdown component for better visualization but dont use any codeblock or table",
+                                "text": """You are a financial analyst. Analyze the following stock data and provide insights on the overall trend, potential trading signals, and market sentiment. The data includes the following columns: _time, close, high, low, volume, SMA, MACD, RSI, STOCHk, OBV, BBL, BBM, BBU, and ATRr in JSON format. 1. **Overall Trend**: - Examine the closing prices and Simple Moving Average (SMA) to determine the overall trend of the stock. - Analyze the MACD values to understand the momentum and potential trend reversals. 2. **Trading Signals**: - Use the Relative Strength Index (RSI) to identify overbought or oversold conditions. - Evaluate the Stochastic Oscillator (STOCHk) for additional momentum and reversal signals. 3. **Volume Analysis**: - Assess the On-Balance Volume (OBV) to understand the buying and selling pressure. 4. **Volatility**: - Interpret the Bollinger Bands (BBL, BBM, BBU) to gauge market volatility and potential breakouts. - Use the Average True Range (ATRr) to measure market volatility. 5. **Key Support and Resistance Levels**: - Identify key support and resistance levels based on high and low prices. Provide a detailed analysis of the stock's performance over time, highlighting any significant patterns or signals that could inform trading decisions. Use the provided data to support your analysis. Predict trend of the stock and give advice like whether or not to buy or sell the stock right at that moment The stock data is given by user Response in Vietnamese and add some markdown component for better visualization but dont use any codeblock or table or heading. Please provide your analysis.""",
+                            }
+                        ]
+                    ),
+                    HumanMessage(
+                        content=[
+                            {
+                                "type": "text",
+                                "text": data,
+                            },
+                        ]
+                    ),
+                ]
+            )
+            text = msg.content
+            split_index = text.rfind("\n", 0, 1800)
+            if split_index == -1:
+                return await interaction.followup.send("Đã có lỗi xảy ra")
+            part1 = text[:split_index].strip()
+            part2 = text[split_index + 1 :].strip()
+            await interaction.followup.send(content=part1)
+            await interaction.followup.send(content=part2)
+        except Exception as e:
+            print(e)
 
     async def cog_unload(self) -> None:
         self.bot.tree.remove_command(self.explain.name, type=self.explain.type)

@@ -7,7 +7,6 @@ import asyncio
 import functools
 import pandas as pd
 import typing
-import pandas_ta as ta
 import inspect
 import sys
 
@@ -16,7 +15,11 @@ load_dotenv("../.env")
 currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 parentdir = os.path.dirname(currentdir)
 sys.path.insert(0, parentdir)
-from util.caculate_indicator import get_all_data_point, get_latest_data_point
+from util.caculate_indicator import (
+    get_all_data_point,
+    get_latest_data_point,
+    caculate_analaytic_data,
+)
 
 INFLUXDB_TOKEN = os.environ["INFLUXDB_TOKEN"]
 vietnam_timezone = pytz.timezone("Asia/Ho_Chi_Minh")
@@ -129,10 +132,21 @@ def get_single_day_data(
     return df
 
 
+@to_thread
+def get_analaytic_data(ticker: str):
+    query = f"""from(bucket: "stock_data")
+    |> range(start:0)
+    |> filter(fn: (r) => r.ticker == "{ticker}" and r._measurement=="stock_daily")
+    |> pivot(rowKey:["_time"], columnKey: ["_field"], valueColumn: "_value")
+    """
+    df: pd.DataFrame = query_api.query_data_frame(query=query)
+    df.set_index("_time", inplace=True)
+    df = caculate_analaytic_data(df)
+    return df
+
+
 async def main():
-    res = await asyncio.gather(
-        get_latest_daily_data(ticker="HPG", indicator="rsi", period=14)
-    )
+    res = await asyncio.gather(get_analaytic_data(ticker="HPG"))
     return res
 
 

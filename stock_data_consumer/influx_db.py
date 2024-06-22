@@ -39,6 +39,6 @@ def push_data(stock):
             .time(int(stock["time"]), write_precision=WritePrecision.S)
         )
         write_api.write(bucket=bucket, record=point)
-        logger.info(f"Successfully push data for{stock['ticker']}")
+        logger.info(f"Successfully push data for {stock['ticker']}")
     except Exception as err:
         logger.error(f"Error processing stock symbol {stock['ticker']}: {str(err)}")

@@ -7,7 +7,7 @@ import multiprocessing as mp
 import pandas as pd
 from prefect import flow, task
 import math
-from datetime import datetime
+from datetime import datetime, timedelta
 from concurrent.futures import ThreadPoolExecutor
 import numpy as np
 import logging
@@ -135,7 +135,7 @@ def load_data(df):
         logger.info("Send data to kafka successfully")
 
 
-@flow
+@flow(name="dailyProducer")
 def main1():
     data = collect_data()
     transformed_data = transform_data(data)

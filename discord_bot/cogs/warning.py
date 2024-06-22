@@ -41,7 +41,7 @@ import pandas as pd
 print(load_dotenv("../.env"))
 
 
-df = pd.read_csv("../test_producer/company.csv")
+df = pd.read_csv("../stock_data_producer/company.csv")
 tickers_list = df["ticker"].tolist()
 
 

@@ -28,7 +28,7 @@ from influx_db import (
 from chart import all_time_chart, one_day_chart
 from datetime import datetime
 
-df = pd.read_csv("../test_producer/company.csv")
+df = pd.read_csv("../stock_data_producer/company.csv")
 tickers_list = df["ticker"].tolist()
 
 

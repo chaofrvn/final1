@@ -142,7 +142,7 @@ def load_data(df):
         logger.info("Send data to kafka successfully")
 
 
-@flow
+@flow(name="producer")
 def main():
     data = collect_data()
     transformed_data = transform_data(data)

@@ -1,9 +1,9 @@
 ###
-### A complete description of a Prefect Deployment for flow 'main1'
+### A complete description of a Prefect Deployment for flow 'producer'
 ###
-name: stock daily
+name: producer
 description: null
-version: 4853678d9a277b716ba6a4527e1e3689
+version: 7fbbe7a65a4967f991efb537402ee899
 # The work queue that will handle this deployment's runs
 work_queue_name: default
 work_pool_name: null
@@ -27,17 +27,17 @@ infrastructure:
 ###
 ### DO NOT EDIT BELOW THIS LINE
 ###
-flow_name: main1
+flow_name: producer
 manifest_path: null
 storage: null
-path: /home/huythai/final/test_producer
-entrypoint: dailyProducer.py:main1
+path: /home/huythai/final/stock_data_producer
+entrypoint: producer.py:main
 parameter_openapi_schema:
   title: Parameters
   type: object
   properties: {}
   required: null
   definitions: null
-timestamp: '2024-05-07T15:49:31.066078+00:00'
+timestamp: '2024-06-22T16:05:37.040406+00:00'
 triggers: []
 enforce_parameter_schema: null

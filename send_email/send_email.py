@@ -7,6 +7,15 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv("../.env")
+import logging
+
+logging.basicConfig(
+    filename="logging.log",
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    filemode="w",
+    force=True,
+)
+logger = logging.getLogger()
 # Initialize the Kafka consumer with SASL_SSL authentication
 consumer = Consumer(
     {
@@ -39,8 +48,7 @@ def send_email(mailjet: Client, msg: str, email: str, user_id: str):
         ]
     }
     result = mailjet.send.create(data=data)
-    print(result)
-    print(result.json())
+    logger.info(result.json())
 
 
 # Subscribe to the Kafka topic
@@ -66,13 +74,15 @@ try:
             # push_data(type(msg.value().decode('utf-8')))
             data = json.loads(msg.value().decode("utf-8"))
             if data["msg"] is not None:
-                send_email(
-                    mailjet=mailjet,
-                    msg=data["msg"],
-                    email=data["email"],
-                    user_id=str(msg.key()),
-                )
-
+                try:
+                    send_email(
+                        mailjet=mailjet,
+                        msg=data["msg"],
+                        email=data["email"],
+                        user_id=str(msg.key()),
+                    )
+                except Exception as e:
+                    logger.error(e)
 
 except KeyboardInterrupt:
     pass
