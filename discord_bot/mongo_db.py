@@ -103,14 +103,17 @@ async def getWarningByObjectID(user_id, id):
 
 
 async def deleteWarning(id):
+
     result = await warningCollection.update_one(
-        {}, {"$pull": {"warnings": {"_id": id}}}
+        {"warnings._id": id}, {"$pull": {"warnings": {"_id": id}}}
     )
+
     return result
 
 
 async def updateWarning(id, new_warning):
     # await warningCollection.find_one_and_replace({"_id": ObjectId(id)}, new_warning)
+
     result = await warningCollection.update_one(
         {"warnings._id": id},
         {"$set": {"warnings.$[elem]": new_warning}},
@@ -164,7 +167,8 @@ async def main():
     # )
     # result = await getWarning(user_id=112276668849717250)
 
-    result = await getEmail(1122766688497172520)
+    # result = await getEmail(1122766688497172520)
+    result = await deleteWarning("b06d41b5825d43a9a0742813")
     # result = await deleteEmail(1122766688497172520)
     print(result)
 

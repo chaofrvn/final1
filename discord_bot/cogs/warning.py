@@ -218,7 +218,6 @@ class Warning(commands.Cog):
         user_id = interaction.user.id
         time_type = bool(time_type.value)
         compare = bool(compare.value)
-        print("hello2")
         try:
             print(1)
             await addWarning(
@@ -334,7 +333,7 @@ class Warning(commands.Cog):
                 "Bạn không có mã cảnh báo với ID này"
             )
         else:
-            await interaction.response.defer()
+            # await interaction.response.defer(thinking=False)
 
             if threshold is not None:
                 threshold = float(threshold.replace(",", "."))
@@ -353,29 +352,29 @@ class Warning(commands.Cog):
                 "is_15_minute": time_type,
                 "trigger": True,
             }
-
             new_warning = old_warning.copy()
             for key, value in editing_warning.items():
                 if value is not None:
                     new_warning[key] = value
-
+            print(new_warning)
             nl = "\n"
             embed = discord.Embed(
                 title="**Đây là cảnh báo mới sau khi sửa. Bạn có muốn sửa:**"
             )
+
             embed.add_field(
                 name=f'**Mã cảnh báo: {new_warning["_id"]}**',
                 value=f"""
     > Mã cổ phiếu: {new_warning["ticker"]}
     > Loại thời gian :{"15 phút" if new_warning["is_15_minute"] else"1 ngày" }
     {"" if (new_warning["field"] is None) else f'> Trường: {new_warning["field"]}'+nl}{"" if (new_warning["indicator"] is None) else f'> Chỉ báo: {new_warning["indicator"]}'+nl}{"" if (new_warning["period"] is None) else f'> Chu kì: {new_warning["period"]}'+nl}> So sánh:{"Lớn hơn" if new_warning["is_greater"] else "Bé hơn"}
-    > Ngưỡng:{new_warning["threhold"]}
+    > Ngưỡng:{new_warning["thresold"]}
     """,
                 inline=False,
             )
 
             view = comfirmEditWarning(warning_id=id, new_warning=new_warning)
-            await interaction.followup.send(embed=embed, view=view)
+            await interaction.response.send_message(embed=embed, view=view)
 
 
 async def setup(client):

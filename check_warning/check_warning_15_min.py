@@ -22,10 +22,9 @@ import json
 # logger = logging.getLogger()
 
 load_dotenv("../.env")
-currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
-parentdir = os.path.dirname(currentdir)
-sys.path.insert(0, parentdir)
-from util.caculate_indicator import get_latest_data_point
+
+
+from caculate_indicator import get_latest_data_point
 
 conf = {
     "bootstrap.servers": "pkc-ldvr1.asia-southeast1.gcp.confluent.cloud:9092",
@@ -88,9 +87,6 @@ def send_email(mailjet: Client, msg: str, email: str, user_id: str):
 
 @task
 def getWarning():
-    # warnings = list(warningCollection.find({"is_15_minute": True}))
-    # print(f"Receive {len(warnings)} 15 minute warnings")
-    # return warnings
     pipeline = [
         {"$unwind": "$warnings"},  # Deconstruct the warnings array
         {
@@ -102,7 +98,6 @@ def getWarning():
         },  # Replace the root document with the warnings
     ]
     result = list(warningCollection.aggregate(pipeline))
-    print(result)
     return result
 
 
@@ -127,6 +122,7 @@ def checkWarning(warnings):
         |> range(start:0)
         |> filter(fn: (r) => r.ticker == "{warning["ticker"]}" and r._measurement=="{"stock_price" if warning["is_15_minute"]else "stock_daily"}")
         |> pivot(rowKey:["_time"], columnKey: ["_field"], valueColumn: "_value")
+        |> sort(columns:["_time"], desc: true)
         """
             data = query_api.query_data_frame(query=query, data_frame_index=["_time"])
             datas[warning["ticker"]] = data
@@ -246,19 +242,6 @@ def send_message(msg: pd.DataFrame):
             message=row.to_dict(),
             logger=logger,
         )
-
-
-# @task
-# def send_emails(msg: pd.DataFrame):
-#     API_KEY = os.environ["MJ_APIKEY_PUBLIC"]
-#     API_SECRET = os.environ["MJ_APIKEY_PRIVATE"]
-
-#     mailjet = Client(auth=(API_KEY, API_SECRET), version="v3.1")
-#     for user_id, row in msg.iterrows():
-#         # thêm email
-#         send_email(mailjet, row["msg"], row["email"], str(user_id))
-
-#     return
 
 
 @flow(name="Check_warning_15_minute")

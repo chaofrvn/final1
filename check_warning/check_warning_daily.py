@@ -1,5 +1,6 @@
 import socket
-from get_value import get_value
+
+# from get_value import get_value
 import operator
 from bson import ObjectId
 from confluent_kafka import Producer
@@ -27,10 +28,7 @@ import json
 # logger = logging.getLogger()
 
 load_dotenv("../.env")
-currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
-parentdir = os.path.dirname(currentdir)
-sys.path.insert(0, parentdir)
-from util.caculate_indicator import get_latest_data_point
+from caculate_indicator import get_latest_data_point
 
 conf = {
     "bootstrap.servers": "pkc-ldvr1.asia-southeast1.gcp.confluent.cloud:9092",
