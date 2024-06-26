@@ -5,9 +5,9 @@ import time as t
 from vnstock import *  # import all functions
 import multiprocessing as mp
 import pandas as pd
-from prefect import flow, task
+from prefect import flow, task, get_run_logger
 import math
-from datetime import datetime, timedelta
+from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor
 import numpy as np
 import logging
@@ -23,7 +23,8 @@ logging.basicConfig(
 # Creating an object
 logger = logging.getLogger()
 load_dotenv("../.env")
-# conf = {'bootstrap.servers': os.environ["CONFLUENT_BOOTSTRAP_SERVER"],
+# print(os.environ.keys())
+# conf = {'bootstrap.servers': os.environ['CONFLUENT_BOOTSTRAP_SERVER'],
 #         'security.protocol': 'SASL_SSL',
 #         'sasl.mechanism': 'PLAIN',
 #         'sasl.username': os.environ["CONFLUENT_USERNAME"],
@@ -47,40 +48,41 @@ today = str(now.date())
 stock_symbols = pd.read_csv("company.csv")["ticker"].tolist()
 
 
-def delivery_report(err, msg):
+def delivery_report(err, msg, logger):
     if err is not None:
         logger.error("Message delivery failed: {}".format(err))
     else:
         logger.info("Message delivered to {} [{}]".format(msg.topic(), msg.partition()))
 
 
-def send_to_kafka(producer, topic, key, message):
+def send_to_kafka(producer, topic, key, message, logger):
     # Sending a message to Kafka
     producer.produce(
         topic,
         key=key,
         value=json.dumps(message).encode("utf-8"),
-        callback=delivery_report,
+        callback=lambda err, msg: delivery_report(err=err, msg=msg, logger=logger),
     )
     producer.flush()
 
 
 def retrieve_real_time_data(stock_symbols):
     df = pd.DataFrame()
+
     for symbol_index, stock_symbol in enumerate(stock_symbols):
         try:
             real_time_data = stock_historical_data(
                 symbol=stock_symbol,
                 start_date=today,
                 end_date=today,
-                resolution="1D",
+                resolution="15",
                 type="stock",
                 beautify=False,
                 decor=False,
                 source="DNSE",
             )
             if real_time_data is not None and not real_time_data.empty:
-                df = df._append(real_time_data.iloc[-1])
+                df = df._append(real_time_data, ignore_index=True)
         except Exception as e:
             logger.error(f"Error processing stock symbol {stock_symbol}: {str(e)}")
             continue
@@ -120,27 +122,32 @@ def transform_data(data):
     )
     # ts_25min_ago = int((now-timedelta(minutes=25)).timestamp())
     # df=df.loc[df['time']>ts_25min_ago]
-    df["type"] = "stock_daily"
+    df["type"] = "stock_price"
     logger.info("Transform data successfully")
     return df
 
 
 @task
 def load_data(df):
+    logger = get_run_logger()
     for index, row in df.iterrows():
         row = row.to_dict()
         send_to_kafka(
-            producer=producer, topic=kafka_topic, key=row["ticker"], message=row
+            producer=producer,
+            topic=kafka_topic,
+            key=row["ticker"],
+            message=row,
+            logger=logger,
         )
         logger.info("Send data to kafka successfully")
 
 
-@flow(name="dailyProducer")
-def main1():
+@flow(name="producer")
+def main():
     data = collect_data()
     transformed_data = transform_data(data)
     load_data(transformed_data)
 
 
 if __name__ == "__main__":
-    main1()
+    main()

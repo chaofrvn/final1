@@ -142,6 +142,7 @@ def get_analaytic_data(ticker: str):
     df: pd.DataFrame = query_api.query_data_frame(query=query)
     df.set_index("_time", inplace=True)
     df = caculate_analaytic_data(df)
+    print(df)
     return df
 
 

@@ -11,7 +11,7 @@ class Help(commands.Cog):
 
     @commands.Cog.listener()
     async def on_ready(self):
-        print("help cog loaded")
+        print("Help cog loaded")
 
     @app_commands.command(
         name="danh_sách_lệnh",
@@ -30,7 +30,8 @@ class Help(commands.Cog):
             "/sửa_cảnh_báo: sửa một cảnh báo đã tạo \n"
             "/đọc_email: xem email đã thiết lập \n"
             "/thiết_lập_email: thêm hoặc chỉnh sửa email để gửi cảnh báo \n"
-            "/xóa_email: xóa email đã thiết lập"
+            "/xóa_email: xóa email đã thiết lập \n"
+            "/dự_đoán: Đưa ra các dự đoán về tương lai của cổ phiếu"
         )
         await interaction.response.send_message(message)
 
@@ -39,7 +40,7 @@ class Help(commands.Cog):
         description="danh sách các chỉ báo có sẵn trong stock_bot",
     )
     @app_commands.describe()
-    async def getAllCommands(self, interaction: discord.Interaction):
+    async def getAllIndicators(self, interaction: discord.Interaction):
         indicators_description = (
             "- ma: Moving Average -  Một giá trị trung bình liên tục.\n"
             "- ema: Exponential Moving Average - trung bình động đặt nhiều trọng số hơn vào các giá trị gần đây để phản ánh biến động giá mới nhất.\n"

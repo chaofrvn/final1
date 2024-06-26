@@ -1,7 +1,7 @@
 # import influxdb_client_3
 # from influxdb_client_3.client.write_api import SYNCHRONOUS
 from influxdb_client import Point, InfluxDBClient, WritePrecision
-from influxdb_client.client.write_api import SYNCHRONOUS
+from influxdb_client.client.write_api import SYNCHRONOUS, ASYNCHRONOUS
 import os
 from dotenv import load_dotenv
 import time

@@ -100,7 +100,7 @@ def divide_list(input_list, num_sublists):
 
 @task
 def collect_data():
-    num_of_thread = 50
+    num_of_thread = 10
     with ThreadPoolExecutor() as pool:
         return list(
             pool.map(retrieve_real_time_data, divide_list(stock_symbols, num_of_thread))
