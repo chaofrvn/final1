@@ -299,6 +299,11 @@ class Analaytics(commands.Cog):
         indicator: str = None,
         period: int = None,
     ):
+        ticker = ticker.upper()
+        if field != None:
+            field = field.lower()
+        if indicator != None:
+            indicator = indicator.lower()
         try:
             validated_data = CommandInput(
                 ticker=ticker, field=field, indicator=indicator, period=period
@@ -335,6 +340,11 @@ class Analaytics(commands.Cog):
         indicator: str = None,
         period: int = None,
     ):
+        ticker = ticker.upper()
+        if field != None:
+            field = field.lower()
+        if indicator != None:
+            indicator = indicator.lower()
         try:
             validated_data = CommandInput(
                 ticker=ticker, field=field, indicator=indicator, period=period
@@ -344,11 +354,11 @@ class Analaytics(commands.Cog):
                 f"Error: {e.errors()[0]['msg']}", ephemeral=True
             )
             return
-        print("heloooooooooooooooooooooooooooooooooooooooooooooo")
+        # print("heloooooooooooooooooooooooooooooooooooooooooooooo")
         obj: pd.Series = await get_latest_daily_data(
             ticker=ticker, field=field, indicator=indicator, period=period
         )
-        print("alooooooooooooooooooooo")
+        # print("alooooooooooooooooooooo")
         await interaction.response.send_message(
             f'Giá trị gần nhất {indicator if indicator is not None else ""} {period if period is not None else ""} {field if field is not None else ""} của mã cổ phiếu {ticker} với trong phiên 1 ngày là {obj["value"]} tại thời điểm {obj.name}'
         )
@@ -373,6 +383,11 @@ class Analaytics(commands.Cog):
         indicator: str = None,
         period: int = None,
     ):
+        ticker = ticker.upper()
+        if field != None:
+            field = field.lower()
+        if indicator != None:
+            indicator = indicator.lower()
         try:
             validated_data = DataModel1(
                 ticker=ticker, field=field, indicator=indicator, period=period
@@ -418,6 +433,11 @@ class Analaytics(commands.Cog):
         period: int = None,
         day: str = datetime.now().date().strftime("%d-%m-%Y"),
     ):
+        ticker = ticker.upper()
+        if field != None:
+            field = field.lower()
+        if indicator != None:
+            indicator = indicator.lower()
         try:
             validated_data = DataModel2(
                 ticker=ticker, field=field, indicator=indicator, period=period, day=day

@@ -199,7 +199,11 @@ class Warning(commands.Cog):
         field: str = None,
         indicator: str = None,
     ):
-
+        ticker = ticker.upper()
+        if field != None:
+            field = field.lower()
+        if indicator != None:
+            indicator = indicator.lower()
         try:
             validated_data = DataModel3(
                 ticker=ticker,
@@ -327,6 +331,11 @@ class Warning(commands.Cog):
         field: str = None,
         indicator: str = None,
     ):
+        ticker = ticker.upper()
+        if field != None:
+            field = field.lower()
+        if indicator != None:
+            indicator = indicator.lower()
         old_warning = await getWarningByObjectID(interaction.user.id, id)
         if old_warning is None:
             await interaction.response.send_message(

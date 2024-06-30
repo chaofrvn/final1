@@ -8,11 +8,28 @@ from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_openai import ChatOpenAI, OpenAI
 import pandas as pd
 import pandas_ta as ta
-
+from pydantic import BaseModel, field_validator, ValidationError, model_validator
+from typing import List, ClassVar
 
 from influx_db import get_analaytic_data
 
 print(load_dotenv("../.env"))
+df = pd.read_csv("../stock_data_producer/company.csv")
+tickers_list = df["ticker"].tolist()
+
+
+class CommandInput(BaseModel):
+    ticker: str
+    _allowed_tickers: ClassVar[List[str]] = tickers_list  # List of valid tickers
+
+    @model_validator(mode="before")
+    def check(cls, values):
+        ticker = values.get("ticker")
+        if ticker not in cls._allowed_tickers:
+            raise ValueError(
+                f"Ticker {ticker} không nằm trong danh sách được hỗ trợ, kiểm tra danh sách các mã cổ phiếu phù hợp trong link sau: https://finance.vietstock.vn/trang-thai-co-phieu/danh-sach-niem-yet"
+            )
+        return values
 
 
 class Explain(commands.Cog):
@@ -78,6 +95,7 @@ class Explain(commands.Cog):
     @app_commands.rename(ticker="mã_cổ_phiếu")
     async def predict(self, interaction: discord.Interaction, ticker: str):
         try:
+            ticker = ticker.upper()
             await interaction.response.defer()
             df = await get_analaytic_data(ticker=ticker)
             df.columns = [re.sub(r"[_\d.]", "", name) for name in df.columns]

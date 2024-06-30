@@ -15,10 +15,13 @@ class comfirmEditWarning(discord.ui.View):
     async def ComfirmButton(
         self, interaction: discord.Interaction, button: discord.ui.Button
     ):
-        await updateWarning(self.warning_id, self.new_warning)
-        await interaction.response.edit_message(
-            content="Cảnh báo đã được cập nhật thành công", view=None
-        )
+        try:
+            await updateWarning(self.warning_id, self.new_warning)
+            await interaction.response.edit_message(
+                content="Cảnh báo đã được cập nhật thành công", view=None
+            )
+        except Exception as e:
+            await interaction.response.edit_message(e)
 
     @discord.ui.button(label="Hủy", style=discord.ButtonStyle.danger)
     async def DeferButton(

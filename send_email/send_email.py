@@ -73,7 +73,7 @@ try:
             # print(type(msg.value()]))
             # push_data(type(msg.value().decode('utf-8')))
             data = json.loads(msg.value().decode("utf-8"))
-            if data["msg"] is not None:
+            if data["email"] is not None:
                 try:
                     send_email(
                         mailjet=mailjet,
@@ -82,7 +82,7 @@ try:
                         user_id=str(msg.key()),
                     )
                 except Exception as e:
-                    logger.error(e)
+                    logger.error(e.with_traceback())
 
 except KeyboardInterrupt:
     pass
