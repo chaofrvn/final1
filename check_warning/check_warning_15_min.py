@@ -123,8 +123,12 @@ def checkWarning(warnings):
         |> filter(fn: (r) => r.ticker == "{warning["ticker"]}" and r._measurement=="{"stock_price" if warning["is_15_minute"]else "stock_daily"}")
         |> pivot(rowKey:["_time"], columnKey: ["_field"], valueColumn: "_value")
         |> sort(columns:["_time"], desc: true)
+        |> limit(n:100)
         """
             data = query_api.query_data_frame(query=query, data_frame_index=["_time"])
+            print(data)
+            data = data.iloc[::-1]
+            print(data)
             datas[warning["ticker"]] = data
             # print(data.index)
 
@@ -134,6 +138,7 @@ def checkWarning(warnings):
             field=warning["field"],
             period=warning["period"],
         )
+        print(value)
         if value is None:
             continue
         comparison_func = comparison_funcs[(warning["trigger"], warning["is_greater"])]

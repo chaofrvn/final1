@@ -20,13 +20,13 @@ def get_latest_data_point(
             df["value"] = ta.ema(df[field], length=period)
             df = df[["value"]]
 
-        case "stoch_k":
-            df["STOCH_k"] = ta.stoch(df["high"], df["low"], df["close"]).iloc[:, 0]
-            df = df[["STOCH_k"]].rename(columns={"STOCH_k": "value"})
+        case "stoch":
+            df["stoch"] = ta.stoch(df["high"], df["low"], df["close"]).iloc[:, 0]
+            df = df[["stoch"]].rename(columns={"stoch": "value"})
 
-        case "stoch_d":
-            df["STOCH_d"] = ta.stoch(df["high"], df["low"], df["close"]).iloc[:, 1]
-            df = df[["STOCH_d"]].rename(columns={"STOCH_d": "value"})
+        # case "stoch_d":
+        #     df["STOCH_d"] = ta.stoch(df["high"], df["low"], df["close"]).iloc[:, 1]
+        #     df = df[["STOCH_d"]].rename(columns={"STOCH_d": "value"})
 
         case "rsi":
             df["value"] = ta.rsi(df["close"], length=period)
@@ -52,9 +52,9 @@ def get_latest_data_point(
             df["value"] = ta.roc(df["close"], length=period)
             df = df[["value"]]
 
-    df = df.dropna().head(1)
+    df = df.dropna().tail(1)
     if len(df) > 0:
-        df = df.dropna().head(1)
+        df = df.dropna().tail(1)
         return df
     return None
     # need to make these so that it all return a slide with value is a value also with time

@@ -73,7 +73,7 @@ try:
             # print(type(msg.value()]))
             # push_data(type(msg.value().decode('utf-8')))
             data = json.loads(msg.value().decode("utf-8"))
-            if data["email"] is not None:
+            if "email" in data and data["email"] != None:
                 try:
                     send_email(
                         mailjet=mailjet,
@@ -89,3 +89,4 @@ except KeyboardInterrupt:
 finally:
     # Close the consumer gracefully
     consumer.close()
+print("send email stop")

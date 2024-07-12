@@ -43,7 +43,7 @@ kafka_topic = "stockPrice"
 now = datetime.now()
 today = str(now.date())
 
-# today = '2024-05-03'
+# today = "2024-07-10"
 
 stock_symbols = pd.read_csv("company.csv")["ticker"].tolist()
 

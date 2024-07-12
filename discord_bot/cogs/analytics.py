@@ -84,11 +84,11 @@ class CommandInput(BaseModel):
 
         # Nếu indicator là stoch hoặc rsi thì không được nhập field
         if indicator in {"stoch", "rsi", "macd", "vwap", "atr", "obv", "roc"} and field:
-            raise ValueError(f"If indicator is {indicator}, field must be None.")
+            raise ValueError(f"Nếu chỉ báo là {indicator}, không cần nhập field")
 
         # Nếu indicator là ma hoặc ema thì bắt buộc nhập field
         if indicator in {"ma", "ema"} and not field:
-            raise ValueError(f"If indicator is {indicator}, field is required.")
+            raise ValueError(f"Nếu chỉ báo là {indicator}, bắt buộc nhập field")
 
         # Nếu không có indicator thì không có period
         if not indicator and period:
@@ -100,9 +100,11 @@ class CommandInput(BaseModel):
         if period and indicator in {"stoch", "macd", "vwap", "obv"}:
             raise ValueError("Không cần nhập chu kỳ")
 
+        if period and period > 99:
+            raise ValueError("Hãy nhập giá trị period nhỏ hơn 100")
         # Có thể không nhập indicator, khi đó bắt buộc nhập field
         if not indicator and not field:
-            raise ValueError("If indicator is None, field is required.")
+            raise ValueError("Nếu không nhập indicator, bắt buộc nhập field")
 
         return values
 
@@ -160,11 +162,11 @@ class DataModel1(BaseModel):
 
         # Nếu indicator là stoch hoặc rsi thì không được nhập field
         if indicator in {"stoch", "rsi", "macd", "vwap", "atr", "obv", "roc"} and field:
-            raise ValueError(f"If indicator is {indicator}, field must be None.")
+            raise ValueError(f"Nếu chỉ báo là {indicator}, không cần nhập field")
 
         # Nếu indicator là ma hoặc ema thì bắt buộc nhập field
         if indicator in {"ma", "ema"} and not field:
-            raise ValueError(f"If indicator is {indicator}, field is required.")
+            raise ValueError(f"Nếu chỉ báo là {indicator}, bắt buộc nhập field")
 
         # Nếu không có indicator thì không có period
         if not indicator and period:
@@ -176,6 +178,8 @@ class DataModel1(BaseModel):
         if period and indicator in {"stoch", "macd", "vwap", "obv"}:
             raise ValueError("Không cần nhập chu kỳ")
 
+        if period and period > 99:
+            raise ValueError("Hãy nhập giá trị period nhỏ hơn 100")
         # Có thể không nhập indicator, khi đó bắt buộc nhập field
         if not indicator and not field:
             raise ValueError("If indicator is None, field is required.")
@@ -238,11 +242,11 @@ class DataModel2(BaseModel):
 
         # Nếu indicator là stoch hoặc rsi thì không được nhập field
         if indicator in {"stoch", "rsi", "macd", "vwap", "atr", "obv", "roc"} and field:
-            raise ValueError(f"If indicator is {indicator}, field must be None.")
+            raise ValueError(f"Nếu chỉ báo là {indicator}, không cần nhập field")
 
         # Nếu indicator là ma hoặc ema thì bắt buộc nhập field
         if indicator in {"ma", "ema"} and not field:
-            raise ValueError(f"If indicator is {indicator}, field is required.")
+            raise ValueError(f"Nếu chỉ báo là {indicator}, bắt buộc nhập field")
 
         # Nếu không có indicator thì không có period
         if not indicator and period:
@@ -256,7 +260,7 @@ class DataModel2(BaseModel):
 
         # Có thể không nhập indicator, khi đó bắt buộc nhập field
         if not indicator and not field:
-            raise ValueError("If indicator is None, field is required.")
+            raise ValueError("Nếu không nhập chỉ báo, bắt buộc nhập field")
 
         try:
             day_date = datetime.strptime(day, "%d-%m-%Y")

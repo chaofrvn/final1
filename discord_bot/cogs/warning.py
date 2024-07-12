@@ -70,7 +70,18 @@ class DataModel3(BaseModel):
         "low",
         "open",
     ]
-    _allowed_indicators: ClassVar[List[str]] = ["ma", "ema", "stoch", "rsi"]
+    _allowed_indicators: ClassVar[List[str]] = [
+        "ma",
+        "ema",
+        "stoch",
+        "stoch",
+        "rsi",
+        "macd",
+        "vwap",
+        "roc",
+        "atr",
+        "obv",
+    ]
 
     @model_validator(mode="before")
     def check_constraints(cls, values):
@@ -331,59 +342,77 @@ class Warning(commands.Cog):
         field: str = None,
         indicator: str = None,
     ):
-        ticker = ticker.upper()
-        if field != None:
-            field = field.lower()
-        if indicator != None:
-            indicator = indicator.lower()
-        old_warning = await getWarningByObjectID(interaction.user.id, id)
-        if old_warning is None:
-            await interaction.response.send_message(
-                "Bạn không có mã cảnh báo với ID này"
-            )
-        else:
-            # await interaction.response.defer(thinking=False)
+        # print("hello")
+        try:
+            ticker = ticker.upper()
+            if field != None:
+                field = field.lower()
+            if indicator != None:
+                indicator = indicator.lower()
+            old_warning = await getWarningByObjectID(interaction.user.id, id)
+            if old_warning is None:
+                await interaction.response.send_message(
+                    "Bạn không có mã cảnh báo với ID này"
+                )
+            else:
+                # await interaction.response.defer(thinking=False)
 
-            if threshold is not None:
-                threshold = float(threshold.replace(",", "."))
-            if time_type is not None:
-                time_type = bool(time_type.value)
-            if compare is not None:
-                compare = bool(compare.value)
+                if threshold is not None:
+                    threshold = float(threshold.replace(",", "."))
+                if time_type is not None:
+                    time_type = bool(time_type.value)
+                if compare is not None:
+                    compare = bool(compare.value)
 
-            editing_warning = {
-                "ticker": ticker,
-                "field": field,
-                "indicator": indicator,
-                "period": period,
-                "thresold": threshold,
-                "is_greater": compare,
-                "is_15_minute": time_type,
-                "trigger": True,
-            }
-            new_warning = old_warning.copy()
-            for key, value in editing_warning.items():
-                if value is not None:
-                    new_warning[key] = value
-            print(new_warning)
-            nl = "\n"
-            embed = discord.Embed(
-                title="**Đây là cảnh báo mới sau khi sửa. Bạn có muốn sửa:**"
-            )
+                editing_warning = {
+                    "ticker": ticker,
+                    "field": field,
+                    "indicator": indicator,
+                    "period": period,
+                    "thresold": threshold,
+                    "is_greater": compare,
+                    "is_15_minute": time_type,
+                    "trigger": True,
+                }
+                new_warning = old_warning.copy()
+                for key, value in editing_warning.items():
+                    if value is not None:
+                        new_warning[key] = value
+                print(new_warning)
+                print(new_warning["ticker"])
+                try:
+                    validated_data = DataModel3(
+                        ticker=new_warning["ticker"],
+                        field=new_warning["field"],
+                        indicator=new_warning["indicator"],
+                        period=new_warning["period"],
+                        threshold=str(new_warning["thresold"]),
+                    )
+                except ValidationError as e:
+                    await interaction.response.send_message(
+                        f"Error: {e.errors()[0]['msg']}", ephemeral=True
+                    )
+                    return
+                nl = "\n"
+                embed = discord.Embed(
+                    title="**Đây là cảnh báo mới sau khi sửa. Bạn có muốn sửa:**"
+                )
 
-            embed.add_field(
-                name=f'**Mã cảnh báo: {new_warning["_id"]}**',
-                value=f"""
-    > Mã cổ phiếu: {new_warning["ticker"]}
-    > Loại thời gian :{"15 phút" if new_warning["is_15_minute"] else"1 ngày" }
-    {"" if (new_warning["field"] is None) else f'> Trường: {new_warning["field"]}'+nl}{"" if (new_warning["indicator"] is None) else f'> Chỉ báo: {new_warning["indicator"]}'+nl}{"" if (new_warning["period"] is None) else f'> Chu kì: {new_warning["period"]}'+nl}> So sánh:{"Lớn hơn" if new_warning["is_greater"] else "Bé hơn"}
-    > Ngưỡng:{new_warning["thresold"]}
-    """,
-                inline=False,
-            )
+                embed.add_field(
+                    name=f'**Mã cảnh báo: {new_warning["_id"]}**',
+                    value=f"""
+        > Mã cổ phiếu: {new_warning["ticker"]}
+        > Loại thời gian :{"15 phút" if new_warning["is_15_minute"] else"1 ngày" }
+        {"" if (new_warning["field"] is None) else f'> Trường: {new_warning["field"]}'+nl}{"" if (new_warning["indicator"] is None) else f'> Chỉ báo: {new_warning["indicator"]}'+nl}{"" if (new_warning["period"] is None) else f'> Chu kì: {new_warning["period"]}'+nl}> So sánh:{"Lớn hơn" if new_warning["is_greater"] else "Bé hơn"}
+        > Ngưỡng:{new_warning["thresold"]}
+        """,
+                    inline=False,
+                )
 
-            view = comfirmEditWarning(warning_id=id, new_warning=new_warning)
-            await interaction.response.send_message(embed=embed, view=view)
+                view = comfirmEditWarning(warning_id=id, new_warning=new_warning)
+                await interaction.response.send_message(embed=embed, view=view)
+        except Exception as e:
+            await interaction.response.send_message(e)
 
 
 async def setup(client):

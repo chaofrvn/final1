@@ -67,7 +67,7 @@ async def load():
 async def reload_ext():
     print("reloading...")
     for filename in os.listdir("./cogs"):
-        if filename.endswith("py") and not (filename in ["receive_warning.py"]):
+        if filename.endswith("py"):
             await bot.reload_extension(f"cogs.{filename[:-3]}")
             print("reload" + filename)
     print("reloaded")
